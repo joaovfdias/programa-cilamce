@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <div class="subtle">
+  Fonte dos dados: <strong id="datasource">—</strong>
+  </div>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Programa do Evento — Demo</title>
@@ -142,9 +145,10 @@ async function loadData() {
   try {
     const res = await fetch(`${url}?ts=${Date.now()}`, { cache: 'no-store' });
     if (!res.ok) throw new Error(`HTTP ${res.status} ao buscar ${url}`);
+
     const text = await res.text();
 
-    // Diagnóstico: se por acaso veio HTML (404 estilizado), detecta e não tenta parsear como JSON silenciosamente
+    // Se o servidor devolveu HTML (ex.: 404 estilizado), aborta o parse:
     if (text.trim().startsWith('<')) {
       throw new Error('O servidor retornou HTML (provável 404). Verifique o caminho do program.json');
     }
@@ -157,7 +161,7 @@ async function loadData() {
     }
   } catch (err) {
     console.error('Falha ao carregar JSON externo. Motivo:', err);
-    // Fallback explícito para os dados inline
+    // Fallback explícito para os dados inline (seu demo embutido)
     state.sessions = %PROGRAM_JSON%;
     setSource('Inline (fallback)');
   }
