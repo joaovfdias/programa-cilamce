@@ -1,0 +1,110 @@
+[
+  {
+    "session_id": "S1",
+    "day": "2025-11-26",
+    "time_start": "09:00",
+    "time_end": "10:30",
+    "room": "Sala 1",
+    "track": "Computational Intelligence Techniques",
+    "title": "Minisimpósio: Técnicas de Inteligência Computacional",
+    "chair": "Prof. A. Souza",
+    "papers": [
+      {
+        "paper_id": "P001",
+        "title": "Aplicação de BO na calibração FEMU",
+        "authors": "K. Souza; P. Santos",
+        "abstract": "Exploramos Bayesian Optimization para calibrar modelos numéricos de pontes, reduzindo MAPE em 18%."
+      },
+      {
+        "paper_id": "P002",
+        "title": "Ensembles de redes neurais para detecção de danos",
+        "authors": "J. Dias; M. Lima; R. Alves",
+        "abstract": "Comparação de ensembles em SHM com base em modos de vibração e frequências naturais."
+      },
+      {
+        "paper_id": "P003",
+        "title": "Surrogates para análises não lineares",
+        "authors": "L. Braga; T. Rocha",
+        "abstract": "Modelos substitutos (GP e XGBoost) acelerando análises pushover em 30x."
+      }
+    ]
+  },
+  {
+    "session_id": "S2",
+    "day": "2025-11-26",
+    "time_start": "09:00",
+    "time_end": "10:30",
+    "room": "Sala 2",
+    "track": "Steel & Composite Structures",
+    "title": "Minisimpósio: Aço e Mistas",
+    "chair": "Profa. B. Pereira",
+    "papers": [
+      {
+        "paper_id": "P004",
+        "title": "Vigas mistas sob fadiga térmica",
+        "authors": "C. Ruggieri; A. Prado",
+        "abstract": "Avaliação térmica e de fadiga em ligações de vigas mistas sob ciclos de incêndio."
+      },
+      {
+        "paper_id": "P005",
+        "title": "Soldas de filete em pontes ferroviárias",
+        "authors": "K. Ferro; J. Barth",
+        "abstract": "Modelos globais-locais para previsão de vida à fadiga em ligações soldadas."
+      }
+    ]
+  },
+  {
+    "session_id": "S3",
+    "day": "2025-11-26",
+    "time_start": "11:00",
+    "time_end": "12:30",
+    "room": "Sala 3",
+    "track": "Research Beginners",
+    "title": "Sessão: Iniciação Científica",
+    "chair": "Prof. C. Lima",
+    "papers": [
+      {
+        "paper_id": "P006",
+        "title": "Análise modal experimental em ponte escola",
+        "authors": "A. Silva; M. Costa",
+        "abstract": "Identificação de frequências e modos usando FDD/SSI com baixo custo."
+      },
+      {
+        "paper_id": "P007",
+        "title": "Protensão perdida em vigas pré-moldadas",
+        "authors": "B. Nunes; E. Prado",
+        "abstract": "Estimativa de perdas de protensão por relaxação e atrito com dados in-situ."
+      },
+      {
+        "paper_id": "P008",
+        "title": "Gêmeos digitais para passarelas urbanas",
+        "authors": "L. Torres; P. Gomes",
+        "abstract": "Proposta de gêmeo digital com sensores IoT e atualização bayesiana."
+      }
+    ]
+  },
+  {
+    "session_id": "S4",
+    "day": "2025-11-27",
+    "time_start": "14:00",
+    "time_end": "15:30",
+    "room": "Sala 1",
+    "track": "Dynamics of Structures",
+    "title": "Sessão: Dinâmica das Estruturas",
+    "chair": "Profa. D. Rocha",
+    "papers": [
+      {
+        "paper_id": "P009",
+        "title": "Método de Newmark: estabilidade e acurácia",
+        "authors": "J. Dias",
+        "abstract": "Discussão de critérios de estabilidade e escolha de parâmetros γ, β."
+      },
+      {
+        "paper_id": "P010",
+        "title": "Excitação harmônica em SDOF: solução analítica vs numérica",
+        "authors": "M. Tavares",
+        "abstract": "Comparação com integrações explícitas e implícitas em diferentes razões de amortecimento."
+      }
+    ]
+  }
+]

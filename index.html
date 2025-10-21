@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programa do Evento — Demo</title>
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --ink: #111827;
+      --muted: #6b7280;
+      --brand: #1f6feb;
+      --accent: #10b981;
+      --line: #e5e7eb;
+      --chip: #eef2ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial;
+      color: var(--ink); background: var(--bg);
+      display: grid; grid-template-columns: 300px 1fr; min-height: 100vh;
+    }
+    header {
+      grid-column: 1 / -1; background: linear-gradient(90deg, var(--brand), #7c3aed);
+      color: #fff; padding: 18px 24px;
+    }
+    header h1 { margin: 0; font-size: 20px; }
+    aside {
+      border-right: 1px solid var(--line); padding: 16px; background: #fff; position: sticky; top: 0; height: calc(100vh - 67px); overflow: auto;
+    }
+    main { padding: 16px 20px; }
+    .filters h2 { font-size: 14px; margin: 0 0 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .filter-group { margin-bottom: 16px; }
+    label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+    input[type="text"], select {
+      width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff;
+    }
+    .chip {
+      display: inline-block; background: var(--chip); color: #3730a3; padding: 4px 10px; border-radius: 999px; font-size: 12px; margin: 2px 6px 2px 0;
+    }
+    .toolbar { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .btn {
+      border: 1px solid var(--line); background: #fff; padding: 8px 10px; border-radius: 10px; cursor: pointer; font-size: 14px;
+    }
+    .btn.primary { background: var(--brand); color: #fff; border-color: transparent; }
+    .btn.ghost { background: transparent; }
+    .view-switch { margin-left: auto; }
+    .day-group { margin: 16px 0 28px; }
+    .day-title { font-size: 18px; font-weight: 700; margin: 8px 0 12px; }
+    .session-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px;
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: flex; flex-direction: column; gap: 8px;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+    }
+    .card h3 { margin: 0; font-size: 16px; }
+    .meta { color: var(--muted); font-size: 13px; }
+    .papers { margin-top: 6px; border-top: 1px dashed var(--line); padding-top: 8px; }
+    .paper { padding: 8px 0; }
+    .paper-title { font-weight: 600; }
+    .paper-auth { color: var(--muted); font-size: 13px; }
+    .paper-abs { margin-top: 4px; font-size: 14px; }
+    details .paper-abs { color: #1f2937; }
+    .tag { font-size: 12px; background: #f0fdf4; color: #065f46; padding: 2px 8px; border-radius: 999px; margin-left: 8px; }
+    .divider { height: 1px; background: var(--line); margin: 12px 0; }
+    .subtle { color: var(--muted); font-size: 13px; }
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas; background: #f3f4f6; border: 1px solid #e5e7eb; border-bottom-width: 2px; padding: 1px 6px; border-radius: 6px; font-size: 12px; }
+    .empty { padding: 24px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: 12px; background: #fff; }
+    .footer-note { color: var(--muted); font-size: 12px; margin-top: 8px; }
+    .sticky-actions { position: sticky; bottom: 0; background: #fff; padding: 8px 0 0; }
+    .muted-link { color: var(--muted); text-decoration: none; }
+    .muted-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Programa do Evento — Demo</h1>
+  </header>
+  <aside>
+    <div class="filters">
+      <h2>Filtros</h2>
+      <div class="filter-group">
+        <label for="q">Buscar por título ou autor</label>
+        <input id="q" type="text" placeholder="Ex.: Newmark, BO, vibração..." />
+      </div>
+      <div class="filter-group">
+        <label for="day">Dia</label>
+        <select id="day">
+          <option value="">Todos</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="room">Sala</label>
+        <select id="room">
+          <option value="">Todas</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="track">Mini‑simpósio / Trilha</label>
+        <select id="track">
+          <option value="">Todos</option>
+        </select>
+      </div>
+      <div class="sticky-actions">
+        <div class="toolbar">
+          <button class="btn" id="clear">Limpar filtros</button>
+          <button class="btn" id="expandAll">Expandir todos</button>
+          <button class="btn" id="collapseAll">Recolher todos</button>
+        </div>
+        <div class="footer-note">
+          Dica: use <span class="kbd">Ctrl</span>+<span class="kbd">F</span> para localizar rapidamente.
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main>
+    <div class="toolbar">
+      <div class="subtle">Visualizando <span id="count">0</span> sessões</div>
+      <div class="view-switch">
+        <button class="btn ghost" id="viewByDay">Por dia</button>
+        <button class="btn ghost" id="viewByRoom">Por sala</button>
+      </div>
+      <a class="btn primary" id="downloadPdf" href="#" download>Baixar PDF (demo)</a>
+    </div>
+    <div id="container"></div>
+  </main>
+
+  <script>
+    const state = {
+      sessions: [],
+      view: 'day', // 'day' | 'room'
+      filters: { q: '', day: '', room: '', track: '' }
+    };
+
+    async function loadData() {
+      // Tenta buscar um arquivo externo program.json; se falhar, usa embutido.
+      try {
+        const res = await fetch('./program.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('not ok');
+        const data = await res.json();
+        state.sessions = data;
+      } catch (e) {
+        // Fallback com dados inline (mínimos) — o mesmo dos arquivos de exemplo
+        state.sessions = [{"session_id": "S1", "day": "2025-11-26", "time_start": "09:00", "time_end": "10:30", "room": "Sala 1", "track": "Computational Intelligence Techniques", "title": "Minisimpósio: Técnicas de Inteligência Computacional", "chair": "Prof. A. Souza", "papers": [{"paper_id": "P001", "title": "Aplicação de BO na calibração FEMU", "authors": "K. Souza; P. Santos", "abstract": "Exploramos Bayesian Optimization para calibrar modelos numéricos de pontes, reduzindo MAPE em 18%."}, {"paper_id": "P002", "title": "Ensembles de redes neurais para detecção de danos", "authors": "J. Dias; M. Lima; R. Alves", "abstract": "Comparação de ensembles em SHM com base em modos de vibração e frequências naturais."}, {"paper_id": "P003", "title": "Surrogates para análises não lineares", "authors": "L. Braga; T. Rocha", "abstract": "Modelos substitutos (GP e XGBoost) acelerando análises pushover em 30x."}]}, {"session_id": "S2", "day": "2025-11-26", "time_start": "09:00", "time_end": "10:30", "room": "Sala 2", "track": "Steel & Composite Structures", "title": "Minisimpósio: Aço e Mistas", "chair": "Profa. B. Pereira", "papers": [{"paper_id": "P004", "title": "Vigas mistas sob fadiga térmica", "authors": "C. Ruggieri; A. Prado", "abstract": "Avaliação térmica e de fadiga em ligações de vigas mistas sob ciclos de incêndio."}, {"paper_id": "P005", "title": "Soldas de filete em pontes ferroviárias", "authors": "K. Ferro; J. Barth", "abstract": "Modelos globais-locais para previsão de vida à fadiga em ligações soldadas."}]}, {"session_id": "S3", "day": "2025-11-26", "time_start": "11:00", "time_end": "12:30", "room": "Sala 3", "track": "Research Beginners", "title": "Sessão: Iniciação Científica", "chair": "Prof. C. Lima", "papers": [{"paper_id": "P006", "title": "Análise modal experimental em ponte escola", "authors": "A. Silva; M. Costa", "abstract": "Identificação de frequências e modos usando FDD/SSI com baixo custo."}, {"paper_id": "P007", "title": "Protensão perdida em vigas pré-moldadas", "authors": "B. Nunes; E. Prado", "abstract": "Estimativa de perdas de protensão por relaxação e atrito com dados in-situ."}, {"paper_id": "P008", "title": "Gêmeos digitais para passarelas urbanas", "authors": "L. Torres; P. Gomes", "abstract": "Proposta de gêmeo digital com sensores IoT e atualização bayesiana."}]}, {"session_id": "S4", "day": "2025-11-27", "time_start": "14:00", "time_end": "15:30", "room": "Sala 1", "track": "Dynamics of Structures", "title": "Sessão: Dinâmica das Estruturas", "chair": "Profa. D. Rocha", "papers": [{"paper_id": "P009", "title": "Método de Newmark: estabilidade e acurácia", "authors": "J. Dias", "abstract": "Discussão de critérios de estabilidade e escolha de parâmetros γ, β."}, {"paper_id": "P010", "title": "Excitação harmônica em SDOF: solução analítica vs numérica", "authors": "M. Tavares", "abstract": "Comparação com integrações explícitas e implícitas em diferentes razões de amortecimento."}]}];
+      }
+      hydrateFilters();
+      render();
+    }
+
+    function hydrateFilters() {
+      const unique = (arr) => [...new Set(arr)].sort();
+      const days = unique(state.sessions.map(s => s.day));
+      const rooms = unique(state.sessions.map(s => s.room));
+      const tracks = unique(state.sessions.map(s => s.track));
+
+      fillSelect('day', days);
+      fillSelect('room', rooms);
+      fillSelect('track', tracks);
+    }
+
+    function fillSelect(id, options) {
+      const sel = document.getElementById(id);
+      // preserve first option
+      sel.querySelectorAll('option:not(:first-child)').forEach(o => o.remove());
+      options.forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v; opt.textContent = v;
+        sel.appendChild(opt);
+      });
+    }
+
+    function applyFilters(session) {
+      const { q, day, room, track } = state.filters;
+      if (day && session.day !== day) return false;
+      if (room && session.room !== room) return false;
+      if (track && session.track !== track) return false;
+      if (q) {
+        const hay = [
+          session.title, session.track, session.room, session.chair,
+          ...session.papers.flatMap(p => [p.title, p.authors, p.abstract])
+        ].join(' ').toLowerCase();
+        if (!hay.includes(q.toLowerCase())) return false;
+      }
+      return true;
+    }
+
+    function groupBy(arr, keyFn) {
+      return arr.reduce((acc, item) => {
+        const k = keyFn(item);
+        acc[k] = acc[k] || [];
+        acc[k].push(item);
+        return acc;
+      }, {});
+    }
+
+    function render() {
+      const container = document.getElementById('container');
+      container.innerHTML = '';
+      const filtered = state.sessions.filter(applyFilters);
+
+      document.getElementById('count').textContent = filtered.length;
+
+      if (!filtered.length) {
+        container.innerHTML = '<div class="empty">Nenhuma sessão encontrada com os filtros atuais.</div>';
+        return;
+      }
+
+      if (state.view === 'day') {
+        const byDay = groupBy(filtered, s => s.day);
+        Object.keys(byDay).sort().forEach(day => {
+          const group = document.createElement('section');
+          group.className = 'day-group';
+          const title = document.createElement('div');
+          title.className = 'day-title';
+          title.textContent = formatDay(day);
+          group.appendChild(title);
+
+          const grid = document.createElement('div');
+          grid.className = 'session-grid';
+          byDay[day].sort(sortByTimeThenRoom).forEach(s => grid.appendChild(sessionCard(s)));
+          group.appendChild(grid);
+
+          container.appendChild(group);
+        });
+      } else {
+        const byRoom = groupBy(filtered, s => s.room);
+        Object.keys(byRoom).sort().forEach(room => {
+          const group = document.createElement('section');
+          group.className = 'day-group';
+          const title = document.createElement('div');
+          title.className = 'day-title';
+          title.textContent = room;
+          group.appendChild(title);
+
+          const grid = document.createElement('div');
+          grid.className = 'session-grid';
+          byRoom[room].sort(sortByDayThenTime).forEach(s => grid.appendChild(sessionCard(s)));
+          group.appendChild(grid);
+
+          container.appendChild(group);
+        });
+      }
+    }
+
+    function sortByTimeThenRoom(a, b) {
+      if (a.time_start !== b.time_start) return a.time_start.localeCompare(b.time_start);
+      return a.room.localeCompare(b.room);
+    }
+    function sortByDayThenTime(a, b) {
+      if (a.day !== b.day) return a.day.localeCompare(b.day);
+      return a.time_start.localeCompare(b.time_start);
+    }
+
+    function sessionCard(s) {
+      const el = document.createElement('article');
+      el.className = 'card';
+
+      const h3 = document.createElement('h3');
+      h3.textContent = s.title;
+      const tag = document.createElement('span');
+      tag.className = 'tag';
+      tag.textContent = s.track;
+      h3.appendChild(tag);
+
+      const meta = document.createElement('div');
+      meta.className = 'meta';
+      meta.textContent = `${fmtTime(s.time_start)}–${fmtTime(s.time_end)} · ${s.room} · Coord.: ${s.chair}`;
+
+      const papers = document.createElement('div');
+      papers.className = 'papers';
+
+      s.papers.forEach(p => {
+        const details = document.createElement('details');
+        const summary = document.createElement('summary');
+        summary.innerHTML = `<span class="paper-title">${p.title}</span><div class="paper-auth">${p.authors}</div>`;
+        const abs = document.createElement('div');
+        abs.className = 'paper-abs';
+        abs.textContent = p.abstract;
+        details.appendChild(summary);
+        details.appendChild(abs);
+        papers.appendChild(details);
+      });
+
+      el.appendChild(h3);
+      el.appendChild(meta);
+      el.appendChild(papers);
+      return el;
+    }
+
+    function formatDay(d) {
+      // d = YYYY-MM-DD
+      const [y,m,day] = d.split('-').map(Number);
+      const date = new Date(y, m-1, day);
+      return date.toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    }
+    function fmtTime(t) {
+      return t.replace(':', 'h');
+    }
+
+    // Events
+    document.addEventListener('input', (e) => {
+      if (e.target.id === 'q') { state.filters.q = e.target.value; render(); }
+      if (e.target.id === 'day') { state.filters.day = e.target.value; render(); }
+      if (e.target.id === 'room') { state.filters.room = e.target.value; render(); }
+      if (e.target.id === 'track') { state.filters.track = e.target.value; render(); }
+    });
+    document.getElementById('clear').addEventListener('click', () => {
+      state.filters = { q: '', day: '', room: '', track: '' };
+      document.getElementById('q').value = '';
+      document.getElementById('day').value = '';
+      document.getElementById('room').value = '';
+      document.getElementById('track').value = '';
+      render();
+    });
+    document.getElementById('expandAll').addEventListener('click', () => {
+      document.querySelectorAll('details').forEach(d => d.open = true);
+    });
+    document.getElementById('collapseAll').addEventListener('click', () => {
+      document.querySelectorAll('details').forEach(d => d.open = false);
+    });
+    document.getElementById('viewByDay').addEventListener('click', () => { state.view = 'day'; render(); });
+    document.getElementById('viewByRoom').addEventListener('click', () => { state.view = 'room'; render(); });
+
+    // Demo PDF link (placeholder): gera um PDF simples via data URL (poderia ser trocado por arquivo gerado no servidor)
+    document.getElementById('downloadPdf').addEventListener('click', (e) => {
+      e.preventDefault();
+      const content = `Programa (DEMO)\n\nSessões: ${state.sessions.length}\nGerado em: ${new Date().toLocaleString('pt-BR')}`;
+      const blob = new Blob([content], { type: 'application/pdf' }); // not a real PDF, just placeholder text
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'programa_demo.pdf'; a.click();
+      URL.revokeObjectURL(url);
+    });
+
+    // Boot
+    loadData();
+  </script>
+</body>
+</html>
