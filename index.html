@@ -255,7 +255,11 @@
       return date.toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
     }
     function fmtTime(t) { return (t || '').replace(':', 'h'); }
-    function escapeHtml(str) { return String(str).replace(/[&<>"]g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[s])); }
+    // CERTO
+  function escapeHtml(str) {
+    return String(str).replace(/[&<>"]/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[s]));
+  }
+
 
     // UI events
     document.addEventListener('input', (e) => {
