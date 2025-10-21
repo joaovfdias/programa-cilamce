@@ -1,109 +1,631 @@
 [
   {
-    "session_id": "S1",
-    "day": "2025-11-26",
-    "time_start": "09:00",
-    "time_end": "10:30",
-    "room": "Sala 1",
-    "track": "Computational Intelligence Techniques",
-    "title": "Minisimpósio: Técnicas de Inteligência Computacional",
-    "chair": "Prof. A. Souza",
+    "session_id": "MS24-1a",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "One Tower",
+    "track": "Structural Reliability",
+    "title": "Structural Reliability (MS24-1a)",
+    "chair": "",
     "papers": [
       {
-        "paper_id": "P001",
-        "title": "Aplicação de BO na calibração FEMU",
-        "authors": "K. Souza; P. Santos",
-        "abstract": "Exploramos Bayesian Optimization para calibrar modelos numéricos de pontes, reduzindo MAPE em 18%."
-      },
-      {
-        "paper_id": "P002",
-        "title": "Ensembles de redes neurais para detecção de danos",
-        "authors": "J. Dias; M. Lima; R. Alves",
-        "abstract": "Comparação de ensembles em SHM com base em modos de vibração e frequências naturais."
-      },
-      {
-        "paper_id": "P003",
-        "title": "Surrogates para análises não lineares",
-        "authors": "L. Braga; T. Rocha",
-        "abstract": "Modelos substitutos (GP e XGBoost) acelerando análises pushover em 30x."
+        "paper_id": "MS24-1a_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
       }
     ]
   },
   {
-    "session_id": "S2",
-    "day": "2025-11-26",
-    "time_start": "09:00",
-    "time_end": "10:30",
-    "room": "Sala 2",
-    "track": "Steel & Composite Structures",
-    "title": "Minisimpósio: Aço e Mistas",
-    "chair": "Profa. B. Pereira",
+    "session_id": "MS24-1b",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Taj Mahal",
+    "track": "Vibration Control",
+    "title": "Vibration Control (MS24-1b)",
+    "chair": "",
     "papers": [
       {
-        "paper_id": "P004",
-        "title": "Vigas mistas sob fadiga térmica",
-        "authors": "C. Ruggieri; A. Prado",
-        "abstract": "Avaliação térmica e de fadiga em ligações de vigas mistas sob ciclos de incêndio."
-      },
-      {
-        "paper_id": "P005",
-        "title": "Soldas de filete em pontes ferroviárias",
-        "authors": "K. Ferro; J. Barth",
-        "abstract": "Modelos globais-locais para previsão de vida à fadiga em ligações soldadas."
+        "paper_id": "MS24-1b_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
       }
     ]
   },
   {
-    "session_id": "S3",
-    "day": "2025-11-26",
-    "time_start": "11:00",
-    "time_end": "12:30",
-    "room": "Sala 3",
-    "track": "Research Beginners",
-    "title": "Sessão: Iniciação Científica",
-    "chair": "Prof. C. Lima",
+    "session_id": "MS24-1c",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Khalifa",
+    "track": "Computational Intelligence",
+    "title": "Computational Intelligence (MS24-1c)",
+    "chair": "",
     "papers": [
       {
-        "paper_id": "P006",
-        "title": "Análise modal experimental em ponte escola",
-        "authors": "A. Silva; M. Costa",
-        "abstract": "Identificação de frequências e modos usando FDD/SSI com baixo custo."
-      },
-      {
-        "paper_id": "P007",
-        "title": "Protensão perdida em vigas pré-moldadas",
-        "authors": "B. Nunes; E. Prado",
-        "abstract": "Estimativa de perdas de protensão por relaxação e atrito com dados in-situ."
-      },
-      {
-        "paper_id": "P008",
-        "title": "Gêmeos digitais para passarelas urbanas",
-        "authors": "L. Torres; P. Gomes",
-        "abstract": "Proposta de gêmeo digital com sensores IoT e atualização bayesiana."
+        "paper_id": "MS24-1c_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
       }
     ]
   },
   {
-    "session_id": "S4",
-    "day": "2025-11-27",
-    "time_start": "14:00",
-    "time_end": "15:30",
-    "room": "Sala 1",
-    "track": "Dynamics of Structures",
-    "title": "Sessão: Dinâmica das Estruturas",
-    "chair": "Profa. D. Rocha",
+    "session_id": "MS24-1d",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Sky Tree",
+    "track": "Data Processing",
+    "title": "Data Processing (MS24-1d)",
+    "chair": "",
     "papers": [
       {
-        "paper_id": "P009",
-        "title": "Método de Newmark: estabilidade e acurácia",
-        "authors": "J. Dias",
-        "abstract": "Discussão de critérios de estabilidade e escolha de parâmetros γ, β."
-      },
+        "paper_id": "MS24-1d_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS24-1e",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Milad",
+    "track": "Boundary Elements",
+    "title": "Boundary Elements (MS24-1e)",
+    "chair": "",
+    "papers": [
       {
-        "paper_id": "P010",
-        "title": "Excitação harmônica em SDOF: solução analítica vs numérica",
-        "authors": "M. Tavares",
-        "abstract": "Comparação com integrações explícitas e implícitas em diferentes razões de amortecimento."
+        "paper_id": "MS24-1e_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS24-1f",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Pisa",
+    "track": "Numerical Modeling",
+    "title": "Numerical Modeling (MS24-1f)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS24-1f_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS24-1g",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Big Ben",
+    "track": "Particle Based",
+    "title": "Particle Based (MS24-1g)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS24-1g_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS24-2a",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "One Tower",
+    "track": "Structural Reliability",
+    "title": "Structural Reliability (MS24-2a)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS24-2a_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS24-2b",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Taj Mahal",
+    "track": "Emergin Frontiers",
+    "title": "Emergin Frontiers (MS24-2b)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS24-2b_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS24-2c",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Khalifa",
+    "track": "Computational Intelligence",
+    "title": "Computational Intelligence (MS24-2c)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS24-2c_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS24-2d",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Sky Tree",
+    "track": "Data Processing",
+    "title": "Data Processing (MS24-2d)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS24-2d_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS24-2e",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Milad",
+    "track": "Boundary Elements",
+    "title": "Boundary Elements (MS24-2e)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS24-2e_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS24-2f",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Pisa",
+    "track": "Concrete",
+    "title": "Concrete (MS24-2f)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS24-2f_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS24-2g",
+    "day": "2025-11-24",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Big Ben",
+    "track": "Wind Energy",
+    "title": "Wind Energy (MS24-2g)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS24-2g_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-1a",
+    "day": "2025-11-25",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "One Tower",
+    "track": "Structural Reliability",
+    "title": "Structural Reliability (MS25-1a)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-1a_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-1b",
+    "day": "2025-11-25",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Taj Mahal",
+    "track": "Advances in solid mechanics",
+    "title": "Advances in solid mechanics (MS25-1b)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-1b_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-1c",
+    "day": "2025-11-25",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Khalifa",
+    "track": "Nonlinear Analysis",
+    "title": "Nonlinear Analysis (MS25-1c)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-1c_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-1d",
+    "day": "2025-11-25",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Sky Tree",
+    "track": "Computational Intelligence",
+    "title": "Computational Intelligence (MS25-1d)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-1d_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-1e",
+    "day": "2025-11-25",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Milad",
+    "track": "Flow in porous media",
+    "title": "Flow in porous media (MS25-1e)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-1e_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-1f",
+    "day": "2025-11-25",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Pisa",
+    "track": "Concrete",
+    "title": "Concrete (MS25-1f)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-1f_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-1g",
+    "day": "2025-11-25",
+    "time_start": "10:00:00",
+    "time_end": "12:00:00",
+    "room": "Big Ben",
+    "track": "Aerospace",
+    "title": "Aerospace (MS25-1g)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-1g_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-2a",
+    "day": "2025-11-25",
+    "time_start": "14:30:00",
+    "time_end": "15:30:00",
+    "room": "One Tower",
+    "track": "Structural Reliability",
+    "title": "Structural Reliability (MS25-2a)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-2a_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-2b",
+    "day": "2025-11-25",
+    "time_start": "14:30:00",
+    "time_end": "15:30:00",
+    "room": "Taj Mahal",
+    "track": "Advances in solid mechanics",
+    "title": "Advances in solid mechanics (MS25-2b)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-2b_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-2c",
+    "day": "2025-11-25",
+    "time_start": "14:30:00",
+    "time_end": "15:30:00",
+    "room": "Khalifa",
+    "track": "Computational geomechanics",
+    "title": "Computational geomechanics (MS25-2c)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-2c_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-2d",
+    "day": "2025-11-25",
+    "time_start": "14:30:00",
+    "time_end": "15:30:00",
+    "room": "Sky Tree",
+    "track": "Computational Intelligence",
+    "title": "Computational Intelligence (MS25-2d)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-2d_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-2e",
+    "day": "2025-11-25",
+    "time_start": "14:30:00",
+    "time_end": "15:30:00",
+    "room": "Milad",
+    "track": "Flow in porous media",
+    "title": "Flow in porous media (MS25-2e)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-2e_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-2f",
+    "day": "2025-11-25",
+    "time_start": "14:30:00",
+    "time_end": "15:30:00",
+    "room": "Pisa",
+    "track": "Martha",
+    "title": "Martha (MS25-2f)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-2f_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-2g",
+    "day": "2025-11-25",
+    "time_start": "14:30:00",
+    "time_end": "15:30:00",
+    "room": "Big Ben",
+    "track": "Aerospace",
+    "title": "Aerospace (MS25-2g)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-2g_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-3a",
+    "day": "2025-11-25",
+    "time_start": "16:30:00",
+    "time_end": "18:30:00",
+    "room": "One Tower",
+    "track": "Structural Reliability",
+    "title": "Structural Reliability (MS25-3a)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-3a_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-3b",
+    "day": "2025-11-25",
+    "time_start": "16:30:00",
+    "time_end": "18:30:00",
+    "room": "Taj Mahal",
+    "track": "Advances in solid mechanics",
+    "title": "Advances in solid mechanics (MS25-3b)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-3b_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-3c",
+    "day": "2025-11-25",
+    "time_start": "16:30:00",
+    "time_end": "18:30:00",
+    "room": "Khalifa",
+    "track": "Nonlinear Analysis",
+    "title": "Nonlinear Analysis (MS25-3c)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-3c_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-3d",
+    "day": "2025-11-25",
+    "time_start": "16:30:00",
+    "time_end": "18:30:00",
+    "room": "Sky Tree",
+    "track": "Data processing",
+    "title": "Data processing (MS25-3d)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-3d_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-3e",
+    "day": "2025-11-25",
+    "time_start": "16:30:00",
+    "time_end": "18:30:00",
+    "room": "Milad",
+    "track": "Fire",
+    "title": "Fire (MS25-3e)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-3e_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-3f",
+    "day": "2025-11-25",
+    "time_start": "16:30:00",
+    "time_end": "18:30:00",
+    "room": "Pisa",
+    "track": "Martha",
+    "title": "Martha (MS25-3f)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-3f_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
+      }
+    ]
+  },
+  {
+    "session_id": "MS25-3g",
+    "day": "2025-11-25",
+    "time_start": "16:30:00",
+    "time_end": "18:30:00",
+    "room": "Big Ben",
+    "track": "Aerospace",
+    "title": "Aerospace (MS25-3g)",
+    "chair": "",
+    "papers": [
+      {
+        "paper_id": "MS25-3g_P001",
+        "title": "Dummy paper title",
+        "authors": "Author 1; Author 2",
+        "abstract": "Resumo fictício para demonstração."
       }
     ]
   }
