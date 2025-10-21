@@ -1,0 +1,20 @@
+[
+  {
+    "session_id": "TEST01",
+    "day": "2025-11-24",
+    "time_start": "10:00",
+    "time_end": "12:00",
+    "room": "Sala Teste",
+    "track": "Track Teste",
+    "title": "Sessão de Teste",
+    "chair": "Prof. Teste",
+    "papers": [
+      {
+        "paper_id": "TEST_P1",
+        "title": "Trabalho de Teste",
+        "authors": "Autor Exemplo; Coautor Exemplo",
+        "abstract": "Resumo curto apenas para validar o carregamento do JSON."
+      }
+    ]
+  }
+]
