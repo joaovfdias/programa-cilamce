@@ -138,37 +138,40 @@
       filters: { q: '', day: '', room: '', track: '' }
     };
 
+<script>
 async function loadData() {
-  const url = new URL('https://joaovfdias.github.io/programa-cilamce/program.json', window.location.href).toString();
-  const setSource = (src) => (document.getElementById('datasource').textContent = src);
+  // Fixed absolute URL (GitHub Pages)
+  const url = 'https://joaovfdias.github.io/programa-cilamce/program.json';
 
   try {
+    // cache-buster to avoid stale JSON on Pages/CDN
     const res = await fetch(`${url}?ts=${Date.now()}`, { cache: 'no-store' });
     if (!res.ok) throw new Error(`HTTP ${res.status} ao buscar ${url}`);
 
     const text = await res.text();
 
-    // Se o servidor devolveu HTML (ex.: 404 estilizado), aborta o parse:
+    // Se o servidor devolve HTML de erro (404 estilizado), evite parsear como JSON
     if (text.trim().startsWith('<')) {
       throw new Error('O servidor retornou HTML (provável 404). Verifique o caminho do program.json');
     }
 
-    try {
-      state.sessions = JSON.parse(text);
-      setSource('JSON externo');
-    } catch (e) {
-      throw new Error('Erro de parse do JSON: ' + e.message);
-    }
+    state.sessions = JSON.parse(text);
   } catch (err) {
-    console.error('Falha ao carregar JSON externo. Motivo:', err);
-    // Fallback explícito para os dados inline (seu demo embutido)
-    state.sessions = %PROGRAM_JSON%;
-    setSource('Inline (fallback)');
+    console.error('Falha ao carregar JSON externo:', err);
+    // Opcional: mostre uma mensagem na tela em vez de cair em fallback silencioso
+    document.getElementById('container').innerHTML =
+      `<div class="empty">Não foi possível carregar o program.json em ${url}.<br><small>${String(err)}</small></div>`;
+    return; // não continua se falhou
   }
 
   hydrateFilters();
   render();
 }
+
+// Boot
+loadData();
+</script>
+
 
 
     function hydrateFilters() {
