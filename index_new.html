@@ -134,183 +134,276 @@
   </div>
 
   <script>
-    const state = {
-      sessions: [],
-      view: 'day', // 'day' | 'room'
-      filters: { q: '', day: '', room: '', track: '', time: '' }
-    };
+  const state = {
+    sessions: [],
+    view: 'day',
+    filters: { q: '', day: '', room: '', track: '', time: '' }
+  };
 
-    function setSource(src) { document.getElementById('datasource').textContent = src; }
+  function setSource(src) {
+    const el = document.getElementById('datasource');
+    if (el) el.textContent = src;
+  }
 
-    async function loadData() {
-      // 1) Tenta URL fixa do seu Pages (robusto para onde quer que hospede o HTML)
-      const fixed = 'https://joaovfdias.github.io/programa-cilamce/program.json';
-      // 2) Fallback: arquivo relativo (funciona se você mudar o domínio/repo no futuro)
-      const relative = './program.json';
+  async function loadData() {
+    const fixed = 'https://joaovfdias.github.io/programa-cilamce/program.json';
+    const relative = './program.json';
 
-      const tryFetch = async (url, label) => {
-        const res = await fetch(`${url}?ts=${Date.now()}`, { cache: 'no-store' });
-        if (!res.ok) throw new Error(`HTTP ${res.status} em ${url}`);
-        const text = await res.text();
-        if (text.trim().startsWith('<')) throw new Error(`Resposta HTML (prov. 404) em ${url}`);
-        const data = JSON.parse(text);
-        setSource(label);
-        return data;
-      };
+    async function tryFetch(url, label) {
+      const res = await fetch(url + '?ts=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status + ' em ' + url);
+      const text = await res.text();
+      if (text.trim().startsWith('<')) throw new Error('Resposta HTML (prov. 404) em ' + url);
+      const data = JSON.parse(text);
+      setSource(label);
+      return data;
+    }
 
+    try {
+      state.sessions = await tryFetch(fixed, 'JSON fixo (GitHub Pages)');
+    } catch (e1) {
+      console.warn('[fetch fixed] falhou:', e1);
       try {
-        state.sessions = await tryFetch(fixed, 'JSON fixo (GitHub Pages)');
-      } catch (e1) {
-        console.warn('[fetch fixed] falhou:', e1);
-        try {
-          state.sessions = await tryFetch(relative, 'JSON relativo (./program.json)');
-        } catch (e2) {
-          console.error('[fetch relative] falhou também:', e2);
-          document.getElementById('container').innerHTML = `
-            <div class="empty">
-              Não foi possível carregar os dados.<br/>
-              <small>${String(e2 && e2.message || e2)}</small>
-            </div>
-          `;
-          setSource('—');
-          return;
+        state.sessions = await tryFetch(relative, 'JSON relativo (./program.json)');
+      } catch (e2) {
+        console.error('[fetch relative] falhou também:', e2);
+        const ctn = document.getElementById('container');
+        if (ctn) {
+          ctn.innerHTML =
+            '<div class="empty">' +
+              'Não foi possível carregar os dados.<br/>' +
+              '<small>' + String((e2 && e2.message) || e2) + '</small>' +
+            '</div>';
         }
+        setSource('—');
+        return;
       }
+    }
 
-      hydrateFilters();
+    hydrateFilters();
+    render();
+  }
+
+  function hydrateFilters() {
+    const unique = (arr) => Array.from(new Set(arr)).sort();
+    const days = unique(state.sessions.map((s) => s.day));
+    const rooms = unique(state.sessions.map((s) => s.room));
+    const tracks = unique(state.sessions.map((s) => s.track));
+    const times = unique(state.sessions.map((s) => (s.time_start + '-' + s.time_end)));
+    fillSelect('day', days);
+    fillSelect('room', rooms);
+    fillSelect('track', tracks);
+    fillSelect('time', times);
+  }
+
+  function fillSelect(id, options) {
+    const sel = document.getElementById(id);
+    if (!sel) return;
+    Array.from(sel.querySelectorAll('option:not(:first-child)')).forEach((o) => o.remove());
+    options.forEach((v) => {
+      const opt = document.createElement('option');
+      opt.value = v;
+      opt.textContent = v;
+      sel.appendChild(opt);
+    });
+  }
+
+  function applyFilters(session) {
+    const f = state.filters;
+    if (f.day && session.day !== f.day) return false;
+    if (f.room && session.room !== f.room) return false;
+    if (f.track && session.track !== f.track) return false;
+    if (f.time && (session.time_start + '-' + session.time_end) !== f.time) return false;
+    if (f.q) {
+      const hay = [
+        session.title,
+        session.track,
+        session.room,
+        session.chair || '',
+        session.time_start + '-' + session.time_end,
+        (session.papers || []).map((p) => [p.title, p.authors, p.abstract].join(' ')).join(' ')
+      ].join(' ').toLowerCase();
+      if (!hay.includes(f.q.toLowerCase())) return false;
+    }
+    return true;
+  }
+
+  function groupBy(arr, keyFn) {
+    const acc = {};
+    for (const item of arr) {
+      const k = keyFn(item);
+      if (!acc[k]) acc[k] = [];
+      acc[k].push(item);
+    }
+    return acc;
+  }
+
+  function render() {
+    const container = document.getElementById('container');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const filtered = state.sessions.filter(applyFilters);
+    const countEl = document.getElementById('count');
+    if (countEl) countEl.textContent = String(filtered.length);
+
+    if (!filtered.length) {
+      container.innerHTML = '<div class="empty">Nenhuma sessão encontrada com os filtros atuais.</div>';
+      return;
+    }
+
+    if (state.view === 'day') {
+      const byDay = groupBy(filtered, (s) => s.day);
+      Object.keys(byDay).sort().forEach((day) => {
+        const group = document.createElement('section');
+        group.className = 'day-group';
+
+        const title = document.createElement('div');
+        title.className = 'day-title';
+        title.textContent = formatDay(day);
+        group.appendChild(title);
+
+        const bySlot = groupBy(byDay[day], (s) => s.time_start + '-' + s.time_end);
+        const slots = Object.keys(bySlot).sort();
+        for (const slot of slots) {
+          const parts = slot.split('-');
+          const ts = parts[0] || '';
+          const te = parts[1] || '';
+
+          const slotTitle = document.createElement('div');
+          slotTitle.className = 'slot-title';
+          slotTitle.textContent = fmtTime(ts) + ' – ' + fmtTime(te);
+          group.appendChild(slotTitle);
+
+          const grid = document.createElement('div');
+          grid.className = 'session-grid';
+          bySlot[slot]
+            .sort((a, b) => a.room.localeCompare(b.room))
+            .forEach((s) => grid.appendChild(sessionCard(s)));
+          group.appendChild(grid);
+        }
+
+        container.appendChild(group);
+      });
+    } else {
+      const byRoom = groupBy(filtered, (s) => s.room);
+      Object.keys(byRoom).sort().forEach((room) => {
+        const group = document.createElement('section');
+        group.className = 'day-group';
+
+        const title = document.createElement('div');
+        title.className = 'day-title';
+        title.textContent = room;
+        group.appendChild(title);
+
+        const grid = document.createElement('div');
+        grid.className = 'session-grid';
+        byRoom[room]
+          .sort((a, b) => (a.day === b.day ? a.time_start.localeCompare(b.time_start) : a.day.localeCompare(b.day)))
+          .forEach((s) => grid.appendChild(sessionCard(s)));
+        group.appendChild(grid);
+
+        container.appendChild(group);
+      });
+    }
+  }
+
+  function sessionCard(s) {
+    const el = document.createElement('article');
+    el.className = 'card';
+
+    const h3 = document.createElement('h3');
+    h3.textContent = s.title || '';
+
+    const tag = document.createElement('span');
+    tag.className = 'tag';
+    tag.textContent = s.track || '';
+    h3.appendChild(tag);
+
+    const meta = document.createElement('div');
+    meta.className = 'meta';
+    meta.textContent =
+      fmtTime(s.time_start) + '–' + fmtTime(s.time_end) + ' · ' + (s.room || '') + (s.chair ? ' · Coord.: ' + s.chair : '');
+
+    const papers = document.createElement('div');
+    papers.className = 'papers';
+
+    (s.papers || []).forEach((p) => {
+      const details = document.createElement('details');
+      const summary = document.createElement('summary');
+      summary.innerHTML =
+        '<span class="paper-title">' + escapeHtml(p.title || '') + '</span>' +
+        '<div class="paper-auth">' + escapeHtml(p.authors || '') + '</div>';
+      const abs = document.createElement('div');
+      abs.className = 'paper-abs';
+      abs.textContent = p.abstract || '';
+      details.appendChild(summary);
+      details.appendChild(abs);
+      papers.appendChild(details);
+    });
+
+    el.appendChild(h3);
+    el.appendChild(meta);
+    el.appendChild(papers);
+    return el;
+  }
+
+  function formatDay(d) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(String(d || ''))) return d || '';
+    const parts = String(d).split('-').map(Number);
+    const date = new Date(parts[0], parts[1] - 1, parts[2]);
+    return date.toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  }
+
+  function fmtTime(t) {
+    const s = String(t || '');
+    if (s.length >= 5) return s.slice(0, 5).replace(':', 'h');
+    return s.replace(':', 'h');
+  }
+
+  function escapeHtml(str) {
+    const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+    return String(str).replace(/[&<>\"']/g, function (ch) { return map[ch] || ch; });
+  }
+
+  document.addEventListener('input', function (e) {
+    const id = e.target && e.target.id;
+    if (id === 'q')   { state.filters.q   = e.target.value; render(); }
+    if (id === 'day') { state.filters.day = e.target.value; render(); }
+    if (id === 'room'){ state.filters.room= e.target.value; render(); }
+    if (id === 'track'){state.filters.track= e.target.value; render(); }
+    if (id === 'time'){ state.filters.time= e.target.value; render(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    const id = e.target && e.target.id;
+    if (id === 'clear') {
+      state.filters = { q: '', day: '', room: '', track: '', time: '' };
+      ['q','day','room','track','time'].forEach(function (x) {
+        var el = document.getElementById(x);
+        if (el) el.value = '';
+      });
       render();
     }
-
-    function hydrateFilters() {
-      const unique = (arr) => [...new Set(arr)].sort();
-      const days = unique(state.sessions.map(s => s.day));
-      const rooms = unique(state.sessions.map(s => s.room));
-      const tracks = unique(state.sessions.map(s => s.track));
-      const times = unique(state.sessions.map(s => `${s.time_start}-${s.time_end}`));
-      fillSelect('day', days); fillSelect('room', rooms); fillSelect('track', tracks); fillSelect('time', times);
+    if (id === 'expandAll') { document.querySelectorAll('details').forEach(function (d) { d.open = true; }); }
+    if (id === 'collapseAll'){ document.querySelectorAll('details').forEach(function (d) { d.open = false; }); }
+    if (id === 'viewByDay') { state.view = 'day'; render(); }
+    if (id === 'viewByRoom'){ state.view = 'room'; render(); }
+    if (id === 'downloadPdf') {
+      e.preventDefault();
+      const content = 'Programa (DEMO)\\n\\nSessões: ' + state.sessions.length + '\\nGerado em: ' + new Date().toLocaleString('pt-BR');
+      const blob = new Blob([content], { type: 'application/pdf' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'programa_demo.pdf';
+      a.click();
+      URL.revokeObjectURL(url);
     }
-    function fillSelect(id, options) {
-      const sel = document.getElementById(id);
-      sel.querySelectorAll('option:not(:first-child)').forEach(o => o.remove());
-      options.forEach(v => { const opt = document.createElement('option'); opt.value = v; opt.textContent = v; sel.appendChild(opt); });
-    }
+  });
 
-    function applyFilters(session) {
-      const { q, day, room, track, time } = state.filters;
-      if (day && session.day !== day) return false;
-      if (room && session.room !== room) return false;
-      if (track && session.track !== track) return false;
-      if (time && `${session.time_start}-${session.time_end}` !== time) return false;
-      if (q) {
-        const hay = [session.title, session.track, session.room, session.chair, ...session.papers.flatMap(p => [p.title, p.authors, p.abstract])].join(' ').toLowerCase();
-        if (!hay.includes(q.toLowerCase())) return false;
-      }
-      return true;
-    }
+  loadData();
+</script>
 
-    function groupBy(arr, keyFn) { return arr.reduce((acc, item) => { const k = keyFn(item); (acc[k] ||= []).push(item); return acc; }, {}); }
-
-    function render() {
-      const container = document.getElementById('container');
-      container.innerHTML = '';
-      const filtered = state.sessions.filter(applyFilters);
-      document.getElementById('count').textContent = filtered.length;
-      if (!filtered.length) { container.innerHTML = '<div class="empty">Nenhuma sessão encontrada com os filtros atuais.</div>'; return; }
-
-      if (state.view === 'day') {
-        const byDay = groupBy(filtered, s => s.day);
-        Object.keys(byDay).sort().forEach(day => {
-          const group = document.createElement('section'); group.className = 'day-group';
-          const title = document.createElement('div'); title.className = 'day-title'; title.textContent = formatDay(day); group.appendChild(title);
-
-          // Agrupa por horário dentro do dia
-          const bySlot = groupBy(byDay[day], s => `${s.time_start}-${s.time_end}`);
-          const slots = Object.keys(bySlot).sort();
-          slots.forEach(slot => {
-            const [ts, te] = slot.split('-');
-            const slotTitle = document.createElement('div');
-            slotTitle.className = 'slot-title';
-            slotTitle.textContent = `${fmtTime(ts)} – ${fmtTime(te)}`;
-            group.appendChild(slotTitle);
-
-            const grid = document.createElement('div'); grid.className = 'session-grid';
-            bySlot[slot].sort((a,b)=> a.room.localeCompare(b.room)).forEach(s => grid.appendChild(sessionCard(s)));
-            group.appendChild(grid);
-          });
-
-          container.appendChild(group);
-        });
-      } else {
-        const byRoom = groupBy(filtered, s => s.room);
-        Object.keys(byRoom).sort().forEach(room => {
-          const group = document.createElement('section'); group.className = 'day-group';
-          const title = document.createElement('div'); title.className = 'day-title'; title.textContent = room; group.appendChild(title);
-          const grid = document.createElement('div'); grid.className = 'session-grid';
-          byRoom[room].sort(sortByDayThenTime).forEach(s => grid.appendChild(sessionCard(s)));
-          group.appendChild(grid);
-          container.appendChild(group);
-        });
-      }
-    }
-
-    function sortByTimeThenRoom(a, b) { if (a.time_start !== b.time_start) return a.time_start.localeCompare(b.time_start); return a.room.localeCompare(b.room); }
-    function sortByDayThenTime(a, b) { if (a.day !== b.day) return a.day.localeCompare(b.day); return a.time_start.localeCompare(b.time_start); }
-
-    function sessionCard(s) {
-      const el = document.createElement('article'); el.className = 'card';
-      const h3 = document.createElement('h3'); h3.textContent = s.title;
-      const tag = document.createElement('span'); tag.className = 'tag'; tag.textContent = s.track; h3.appendChild(tag);
-      const meta = document.createElement('div'); meta.className = 'meta'; meta.textContent = `${fmtTime(s.time_start)}–${fmtTime(s.time_end)} · ${s.room}${s.chair ? ` · Coord.: ${s.chair}` : ''}`;
-
-      const papers = document.createElement('div'); papers.className = 'papers';
-      s.papers.forEach(p => {
-        const details = document.createElement('details');
-        const summary = document.createElement('summary');
-        summary.innerHTML = `<span class="paper-title">${escapeHtml(p.title)}</span><div class="paper-auth">${escapeHtml(p.authors || '')}</div>`;
-        const abs = document.createElement('div'); abs.className = 'paper-abs'; abs.textContent = p.abstract || '';
-        details.appendChild(summary); details.appendChild(abs); papers.appendChild(details);
-      });
-
-      el.appendChild(h3); el.appendChild(meta); el.appendChild(papers); return el;
-    }
-
-    function formatDay(d) { // d = YYYY-MM-DD
-      if (!/^\d{4}-\d{2}-\d{2}$/.test(d || '')) return d || '';
-      const [y,m,day] = d.split('-').map(Number); const date = new Date(y, m-1, day);
-      return date.toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-    }
-    function fmtTime(t) { return (t || '').slice(0,5).replace(':','h'); }
-    function escapeHtml(str) {
-      const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
-      return String(str).replace(/[&<>"']/g, (ch) => map[ch] || ch);
-    }
-
-    // UI events
-    document.addEventListener('input', (e) => {
-      if (e.target.id === 'q') { state.filters.q = e.target.value; render(); }
-      if (e.target.id === 'day') { state.filters.day = e.target.value; render(); }
-      if (e.target.id === 'room') { state.filters.room = e.target.value; render(); }
-      if (e.target.id === 'track') { state.filters.track = e.target.value; render(); }
-      if (e.target.id === 'time') { state.filters.time = e.target.value; render(); }
-    });
-    document.addEventListener('click', (e) => {
-      if (e.target.id === 'clear') { state.filters = { q: '', day: '', room: '', track: '' }; ['q','day','room','track','time'].forEach(id => { const el = document.getElementById(id); if (el) el.value=''; }); render(); }
-      if (e.target.id === 'expandAll') document.querySelectorAll('details').forEach(d => d.open = true);
-      if (e.target.id === 'collapseAll') document.querySelectorAll('details').forEach(d => d.open = false);
-      if (e.target.id === 'viewByDay') { state.view = 'day'; render(); }
-      if (e.target.id === 'viewByRoom') { state.view = 'room'; render(); }
-      if (e.target.id === 'downloadPdf') {
-        e.preventDefault();
-        // Placeholder simples (texto) — troque por gerador real de PDF quando quiser
-        const content = `Programa (DEMO)\n\nSessões: ${state.sessions.length}\nGerado em: ${new Date().toLocaleString('pt-BR')}`;
-        const blob = new Blob([content], { type: 'application/pdf' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a'); a.href = url; a.download = 'programa_demo.pdf'; a.click(); URL.revokeObjectURL(url);
-      }
-    });
-
-    // Boot
-    loadData();
-  </script>
 </body>
 </html>
