@@ -171,10 +171,6 @@
         }
       }
 
-      hydrateFilters();
-      render();
-    }
-
     function hydrateFilters() {
       const unique = (arr) => [...new Set(arr)].sort();
       const days = unique(state.sessions.map(s => s.day));
