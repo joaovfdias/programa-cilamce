@@ -51,7 +51,8 @@
     .view-switch { margin-left: auto; }
 
     .day-group { margin: 18px 0 30px; }
-    .day-title { font-size: 18px; font-weight: 800; margin: 8px 0 12px; color: #dbeafe; }
+    .day-title { font-size: 18px; font-weight: 800; margin: 8px 0 8px; color: #dbeafe; }
+    .slot-title { font-size: 14px; font-weight: 700; margin: 10px 0 8px; color: #93c5fd; letter-spacing: .02em; }
     .session-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
 
     .card {
@@ -165,11 +166,20 @@
           state.sessions = await tryFetch(relative, 'JSON relativo (./program.json)');
         } catch (e2) {
           console.error('[fetch relative] falhou também:', e2);
-          document.getElementById('container').innerHTML = `\n            <div class="empty">\n              Não foi possível carregar os dados.<br/>\n              <small>${e2.message}</small>\n            </div>\n          `;
+          document.getElementById('container').innerHTML = `
+            <div class="empty">
+              Não foi possível carregar os dados.<br/>
+              <small>${String(e2 && e2.message || e2)}</small>
+            </div>
+          `;
           setSource('—');
           return;
         }
       }
+
+      hydrateFilters();
+      render();
+    }
 
     function hydrateFilters() {
       const unique = (arr) => [...new Set(arr)].sort();
@@ -186,10 +196,11 @@
     }
 
     function applyFilters(session) {
-      const { q, day, room, track } = state.filters;
+      const { q, day, room, track, time } = state.filters;
       if (day && session.day !== day) return false;
       if (room && session.room !== room) return false;
       if (track && session.track !== track) return false;
+      if (time && `${session.time_start}-${session.time_end}` !== time) return false;
       if (q) {
         const hay = [session.title, session.track, session.room, session.chair, ...session.papers.flatMap(p => [p.title, p.authors, p.abstract])].join(' ').toLowerCase();
         if (!hay.includes(q.toLowerCase())) return false;
@@ -211,9 +222,22 @@
         Object.keys(byDay).sort().forEach(day => {
           const group = document.createElement('section'); group.className = 'day-group';
           const title = document.createElement('div'); title.className = 'day-title'; title.textContent = formatDay(day); group.appendChild(title);
-          const grid = document.createElement('div'); grid.className = 'session-grid';
-          byDay[day].sort(sortByTimeThenRoom).forEach(s => grid.appendChild(sessionCard(s)));
-          group.appendChild(grid);
+
+          // Agrupa por horário dentro do dia
+          const bySlot = groupBy(byDay[day], s => `${s.time_start}-${s.time_end}`);
+          const slots = Object.keys(bySlot).sort();
+          slots.forEach(slot => {
+            const [ts, te] = slot.split('-');
+            const slotTitle = document.createElement('div');
+            slotTitle.className = 'slot-title';
+            slotTitle.textContent = `${fmtTime(ts)} – ${fmtTime(te)}`;
+            group.appendChild(slotTitle);
+
+            const grid = document.createElement('div'); grid.className = 'session-grid';
+            bySlot[slot].sort((a,b)=> a.room.localeCompare(b.room)).forEach(s => grid.appendChild(sessionCard(s)));
+            group.appendChild(grid);
+          });
+
           container.appendChild(group);
         });
       } else {
@@ -255,8 +279,12 @@
       const [y,m,day] = d.split('-').map(Number); const date = new Date(y, m-1, day);
       return date.toLocaleDateString('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
     }
-    function fmtTime(t) { return (t || '').replace(':', 'h'); }
-    function escapeHtml(str) { return String(str).replace(/[&<>"]g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[s])); }
+    function fmtTime(t) { return (t || '').slice(0,5).replace(':','h'); }
+    function escapeHtml(str) {
+      const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+      return String(str).replace(/[&<>"']/g, (ch) => map[ch] || ch);
+    }[s]));
+    }[s])); }
 
     // UI events
     document.addEventListener('input', (e) => {
@@ -264,9 +292,10 @@
       if (e.target.id === 'day') { state.filters.day = e.target.value; render(); }
       if (e.target.id === 'room') { state.filters.room = e.target.value; render(); }
       if (e.target.id === 'track') { state.filters.track = e.target.value; render(); }
+      if (e.target.id === 'time') { state.filters.time = e.target.value; render(); }
     });
     document.addEventListener('click', (e) => {
-      if (e.target.id === 'clear') { state.filters = { q: '', day: '', room: '', track: '' }; ['q','day','room','track'].forEach(id => { const el = document.getElementById(id); if (el) el.value=''; }); render(); }
+      if (e.target.id === 'clear') { state.filters = { q: '', day: '', room: '', track: '' }; ['q','day','room','track','time'].forEach(id => { const el = document.getElementById(id); if (el) el.value=''; }); render(); }
       if (e.target.id === 'expandAll') document.querySelectorAll('details').forEach(d => d.open = true);
       if (e.target.id === 'collapseAll') document.querySelectorAll('details').forEach(d => d.open = false);
       if (e.target.id === 'viewByDay') { state.view = 'day'; render(); }
