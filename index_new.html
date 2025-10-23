@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Programa do Evento</title>
+  <title>XLVI CILAMCE - Full Program</title>
   <style>
     :root {
       --bg: #0b1220;
@@ -83,49 +83,49 @@
 </head>
 <body>
   <header>
-    <h1>Programa do Evento</h1>
-    <div class="badge">Fonte dos dados: <span id="datasource" class="datasource">—</span></div>
+    <h1>Conference Program</h1>
+    <div class="badge">Program Version: <span id="datasource" class="datasource">—</span></div>
   </header>
 
   <div class="layout">
     <aside>
       <div class="filters">
-        <h2>Filtros</h2>
+        <h2>Filters</h2>
         <div class="filter-group">
-          <label for="q">Buscar por título ou autor</label>
-          <input id="q" type="text" placeholder="Ex.: Newmark, BO, vibração..." />
+          <label for="q">Search by title or author</label>
+          <input id="q" type="text" placeholder="E.g. John Doe; Numerical Analusis" />
         </div>
         <div class="filter-group">
-          <label for="day">Dia</label>
-          <select id="day"><option value="">Todos</option></select>
+          <label for="day">Day</label>
+          <select id="day"><option value="">All</option></select>
         </div>
         <div class="filter-group">
-          <label for="room">Sala</label>
-          <select id="room"><option value="">Todas</option></select>
+          <label for="room">Room</label>
+          <select id="room"><option value="">All</option></select>
         </div>
         <div class="filter-group">
-          <label for="time">Horário</label>
-          <select id="time"><option value="">Todos</option></select>
+          <label for="time">Time</label>
+          <select id="time"><option value="">All</option></select>
         </div>
         <div class="filter-group">
-          <label for="track">Mini-simpósio / Trilha</label>
-          <select id="track"><option value="">Todos</option></select>
+          <label for="track">Mini-Symposia</label>
+          <select id="track"><option value="">All</option></select>
         </div>
         <div class="toolbar">
-          <button class="btn" id="clear">Limpar filtros</button>
-          <button class="btn" id="expandAll">Expandir todos</button>
-          <button class="btn" id="collapseAll">Recolher todos</button>
+          <button class="btn" id="clear">Clear filters</button>
+          <button class="btn" id="expandAll">Expand all</button>
+          <button class="btn" id="collapseAll">Retract all</button>
         </div>
-        <div class="footer-note">Dica: use <span class="kbd">Ctrl</span>+<span class="kbd">F</span> para localizar rapidamente.</div>
+        <div class="footer-note">Tip: use <span class="kbd">Ctrl</span>+<span class="kbd">F</span> to find information quickly.</div>
       </div>
     </aside>
 
     <main>
       <div class="toolbar">
-        <div class="subtle">Visualizando <span id="count">0</span> sessões</div>
+        <div class="subtle">Viewing <span id="count">0</span> sessions</div>
         <div class="view-switch">
-          <button class="btn ghost" id="viewByDay">Por dia</button>
-          <button class="btn ghost" id="viewByRoom">Por sala</button>
+          <button class="btn ghost" id="viewByDay">By day</button>
+          <button class="btn ghost" id="viewByRoom">By room</button>
         </div>
       </div>
       <div id="container"></div>
@@ -247,7 +247,7 @@
     if (countEl) countEl.textContent = String(filtered.length);
 
     if (!filtered.length) {
-      container.innerHTML = '<div class="empty">Nenhuma sessão encontrada com os filtros atuais.</div>';
+      container.innerHTML = '<div class="empty">No session with the current filters.</div>';
       return;
     }
 
