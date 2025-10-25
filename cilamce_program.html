@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XLVI CILAMCE - Full Program</title>
+  <style>
+    :root{
+      --bg: #0a1633;
+      --bg-accent: #0e214d;
+      --panel:#0f1f45;
+      --card:#101e3f;
+      --card-elev:#142554;
+      --muted:#a2b3d6;
+      --text:#e9f1ff;
+      --accent:#72a6ff;
+      --accent-2:#5ce1ff;
+      --ok:#22c55e;
+      --warn:#f59e0b;
+      --radius:20px;
+      --shadow: 0 10px 30px rgba(3, 10, 28, .45);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; background:
+        radial-gradient(1200px 900px at -15% -10%, rgba(114,166,255,.20), transparent 60%),
+        radial-gradient(1000px 800px at 115% 115%, rgba(92,225,255,.18), transparent 60%), var(--bg);
+      color:var(--text); font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+    }
+
+    header{ position:sticky;top:0;z-index:10; backdrop-filter:saturate(1.2) blur(8px);
+      background:linear-gradient(180deg, rgba(9,17,43,.75), rgba(9,17,43,.5) 60%, transparent), linear-gradient(180deg, var(--bg-accent), var(--bg-accent));
+      border-bottom:1px solid rgba(162,179,214,.18); }
+    .container{max-width:1200px;margin:0 auto;padding: clamp(16px, 3vw, 28px)}
+    .titlebar{display:flex;gap:14px;align-items:center;justify-content:space-between}
+    h1{font-weight:900;letter-spacing:0.2px;margin:0;font-size:clamp(22px, 4.2vw, 36px)}
+
+    /* Day picker */
+    .daybar{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:10px}
+    .seg{display:inline-flex; gap:8px; background:linear-gradient(180deg, var(--panel), var(--card)); border:1px solid rgba(162,179,214,.25); padding:6px; border-radius:14px}
+    .seg button{appearance:none; border:none; padding:10px 14px; border-radius:10px; color:var(--text); background:transparent; cursor:pointer; font-weight:800}
+    .seg button[aria-pressed="true"]{background:rgba(114,166,255,.18); color:var(--accent); box-shadow: inset 0 0 0 1px rgba(114,166,255,.35)}
+
+    .controls{display:grid; grid-template-columns: 1.3fr 1fr 1fr auto; gap:12px; margin-top:14px}
+    .controls input,.controls select{width:100%; padding:12px 14px; border-radius:14px; border:1px solid rgba(162,179,214,.25); background:linear-gradient(180deg, var(--panel), var(--card)); color:var(--text); outline:none}
+    .controls input::placeholder{color:var(--muted)}
+    .btn{appearance:none; border:none; background:var(--accent); color:#061027; padding:12px 16px; border-radius:14px; font-weight:800; cursor:pointer; box-shadow: var(--shadow); transition:transform .06s ease, filter .2s}
+    .btn:active{transform:translateY(1px)}
+    .btn.secondary{background:transparent; color:var(--text); border:1px solid rgba(162,179,214,.25); box-shadow:none}
+
+    main{padding-top:10px}
+    .slot{margin:26px 0}
+    .slot h2{font-size:18px; font-weight:900; margin:0 0 14px; color:var(--accent)}
+
+    /* GRID with span logic for wide/small cards */
+    .grid{display:grid; grid-template-columns: repeat(12, 1fr); gap:16px}
+
+    .card{background:linear-gradient(180deg, var(--card), var(--card-elev)); border:1px solid rgba(162,179,214,.18); border-radius:var(--radius); box-shadow: var(--shadow); overflow:hidden; cursor:pointer; transition:transform 0.18s ease, box-shadow 0.25s ease, filter .25s}
+    .card:hover{transform:translateY(-2px); box-shadow:0 20px 44px rgba(3,10,28,.55)}
+    .card .head{display:flex; gap:12px; align-items:flex-start; padding:16px}
+    .badge{display:inline-flex; gap:8px; align-items:center; font-size:12px; font-weight:800; letter-spacing:.25px; padding:6px 10px; border-radius:999px; background:rgba(114,166,255,.14); color:var(--accent);}
+    .badge.room{background:rgba(34,197,94,.14); color:var(--ok)}
+    .badge.theme{background:rgba(92,225,255,.14); color:var(--accent-2)}
+    .card-title{font-weight:900; font-size:18px; margin:6px 0 8px; padding:0 16px}
+    .meta{display:flex; gap:8px; flex-wrap:wrap; color:var(--muted); font-size:12px; padding:0 16px 16px}
+
+    /* size variants */
+    .card.wide{grid-column: 1 / -1}
+    .card.small{grid-column: span 3}
+    @media (max-width: 1200px){ .card.small{grid-column: span 4} }
+    @media (max-width: 900px){ .card.small{grid-column: span 6} }
+    @media (max-width: 640px){ .card.small, .card.wide{grid-column: 1 / -1} }
+
+    /* Overlay */
+    .overlay{position:fixed; inset:0; background:rgba(5,12,32,0.72); display:flex; align-items:center; justify-content:center; z-index:100; opacity:0; pointer-events:none; transition:opacity 0.28s ease}
+    .overlay.active{opacity:1; pointer-events:auto}
+    .overlay .card-expanded{background:linear-gradient(180deg, var(--card-elev), var(--card)); border:1px solid rgba(162,179,214,.22); border-radius:var(--radius); padding:26px; max-width:980px; width:min(94%, 1000px); max-height:82vh; overflow-y:auto; box-shadow: 0 30px 60px rgba(3,10,28,.65); position:relative; animation:popIn 0.25s ease}
+    @keyframes popIn{from{transform:scale(0.96) translateY(6px);opacity:0} to{transform:scale(1) translateY(0);opacity:1}}
+    .close-btn{position:absolute; top:14px; right:14px; background:rgba(162,179,214,.14); border:1px solid rgba(162,179,214,.25); color:var(--text); font-weight:900; padding:6px 12px; border-radius:12px; cursor:pointer}
+    .expanded-head{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:14px}
+
+    /* Papers */
+    .papers{margin-top:14px; display:grid; gap:12px}
+    .paper{border:1px solid rgba(162,179,214,.18); border-radius:16px; padding:12px 14px; background:linear-gradient(180deg, rgba(20,37,84,.35), rgba(16,30,63,.35)); display:grid; gap:6px}
+    .paper-head{display:grid; grid-template-columns: 1fr auto; gap:8px; align-items:center}
+    .paper h3{margin:0; font-size:16px}
+    .paper .sub{display:flex; flex-wrap:wrap; gap:12px; color:var(--muted); font-size:13px}
+    .paper .ptime{font-weight:800; color:var(--accent)}
+
+    details.paper-details > summary{ width:22px; height:22px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; list-style:none; border:1px solid rgba(162,179,214,.25); background:rgba(162,179,214,.10); }
+    details.paper-details > summary::-webkit-details-marker{display:none}
+    details.paper-details > summary::after{content:'\25B8'; font-size:13px}
+    details.paper-details[open] > summary::after{content:'\25BE'}
+    .paper-body{margin-top:10px; padding:10px 12px; border:1px solid rgba(162,179,214,.18); border-radius:12px; background:rgba(162,179,214,.08)}
+    .keywords{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px}
+    .kw{background:rgba(92,225,255,.14); color:var(--accent-2); padding:4px 8px; border-radius:999px; font-size:12px}
+
+    .no-results{padding:40px; text-align:center; color:var(--muted)}
+    .hint{padding:40px; text-align:center; color:var(--muted)}
+    .loading{padding:40px; text-align:center; color:var(--accent)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="titlebar">
+        <h1>XLVI CILAMCE - Full Program</h1>
+      </div>
+
+      <!-- Day selector -->
+      <div class="daybar" role="group" aria-label="Select day">
+        <div class="seg" id="daySeg">
+          <button data-day="2025-11-24" data-src="2025-11-24.json" aria-pressed="false">Mon 24</button>
+          <button data-day="2025-11-25" data-src="2025-11-25.json" aria-pressed="false">Tue 25</button>
+          <button data-day="2025-11-26" data-src="2025-11-26.json" aria-pressed="false">Wed 26</button>
+          <button data-day="2025-11-27" data-src="2025-11-27.json" aria-pressed="false">Thu 27</button>
+        </div>
+      </div>
+
+      <div class="controls" role="region" aria-label="Filters">
+        <input id="search" type="search" placeholder="Search title, authors, abstract, keywords… (select a day first)" aria-label="Search" disabled />
+        <select id="roomFilter" aria-label="Room filter" disabled><option value="">All rooms</option></select>
+        <select id="themeFilter" aria-label="Theme filter" disabled><option value="">All themes</option></select>
+        <button class="btn secondary" id="clearBtn" title="Clear filters" disabled>Clear</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="program"><div class="hint">Select a day to load the program.</div></main>
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+  <script>
+    // ---------------------- Data loading (one JSON per day) ----------------------
+    const dayCache = new Map(); // dayKey -> array of sessions
+    let SESSIONS = []; // currently loaded day's sessions
+
+    const $ = (sel, root=document) => root.querySelector(sel);
+    const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+    function fmtTime(iso){ const d = new Date(iso); return d.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}); }
+    function fmtDateHeader(iso){ const d = new Date(iso); return d.toLocaleDateString([], {weekday:'long', month:'short', day:'numeric'}); }
+
+    function groupByDayAndSlot(list){
+      const bySlot = new Map();
+      for(const s of list){
+        const slotKey = s.start + '|' + s.end;
+        if(!bySlot.has(slotKey)) bySlot.set(slotKey, []);
+        bySlot.get(slotKey).push(s);
+      }
+      return [{
+        dayKey: list[0] ? new Date(list[0].start).toISOString().slice(0,10) : null,
+        slots: [...bySlot.entries()].sort(([a],[b])=> a.localeCompare(b)).map(([slotKey, sessions])=>{
+          const [start,end] = slotKey.split('|');
+          sessions.sort((a,b)=> a.room.localeCompare(b.room) || a.title.localeCompare(b.title));
+          return { start, end, sessions };
+        })
+      }];
+    }
+
+    function unique(list, key){ return [...new Set(list.map(x=> x[key]).filter(Boolean))].sort((a,b)=> a.localeCompare(b)); }
+
+    const state = { q:'', room:'', theme:'', day:null };
+    const programEl = $('#program');
+    const roomSel = $('#roomFilter');
+    const themeSel = $('#themeFilter');
+    const searchInput = $('#search');
+    const clearBtn = $('#clearBtn');
+    const overlay = $('#overlay');
+    const daySeg = $('#daySeg');
+
+    function enableFilters(){ searchInput.disabled = roomSel.disabled = themeSel.disabled = clearBtn.disabled = false; }
+    function disableFilters(){ searchInput.disabled = roomSel.disabled = themeSel.disabled = clearBtn.disabled = true; }
+
+    function populateFilters(data){
+      const rooms = unique(data, 'room');
+      const themes = unique(data, 'theme');
+      roomSel.innerHTML = '<option value="">All rooms</option>' + rooms.map(r=>`<option>${escapeHtml(r)}</option>`).join('');
+      themeSel.innerHTML = '<option value="">All themes</option>' + themes.map(t=>`<option>${escapeHtml(t)}</option>`).join('');
+    }
+
+    function escapeHtml(str){
+      return String(str).replace(/[&<>"']/g, s=>({"&":"&amp;","<":"&lt;",
+        ">":"&gt;","\"":"&quot;","'":"&#039;"}[s]));
+    }
+
+    function matchQuerySessionOrPapers(s, q){
+      if(!q) return true;
+      const base = [s.title, s.authors, s.abstract, s.chair, s.theme, s.room].join(' ').toLowerCase();
+      if(base.includes(q)) return true;
+      if(Array.isArray(s.papers)){
+        for(const p of s.papers){
+          const paperHay = [p.title, p.authors, p.abstract, (p.keywords||[]).join(' ')].join(' ').toLowerCase();
+          if(paperHay.includes(q)) return true;
+        }
+      }
+      return false;
+    }
+
+    function filterData(){
+      const q = state.q.trim().toLowerCase();
+      return SESSIONS.filter(s=>{
+        if(state.room && s.room !== state.room) return false;
+        if(state.theme && s.theme !== state.theme) return false;
+        return matchQuerySessionOrPapers(s, q);
+      });
+    }
+
+    // Card HTML with conditional theme badge (hide for small)
+    function cardHtml(s){
+      const sizeCls = s.size === 'wide' ? 'wide' : 'small';
+      const themeBadge = s.size === 'wide' ? `<span class="badge theme">${escapeHtml(s.theme)}</span>` : '';
+      return `<article class="card ${sizeCls}" data-id="${escapeHtml(s.id)}" tabindex="0" aria-label="Open details for ${escapeHtml(s.title)}">
+        <div class="head">
+          <span class="badge">${escapeHtml(fmtTime(s.start))}–${escapeHtml(fmtTime(s.end))}</span>
+          <span class="badge room">${escapeHtml(s.room)}</span>
+          ${themeBadge}
+        </div>
+        <div class="card-title">${escapeHtml(s.title)}</div>
+        <div class="meta">
+          <span><strong>Chair:</strong> ${escapeHtml(s.chair || '—')}</span>
+          <span><strong>Authors:</strong> ${escapeHtml(s.authors || '—')}</span>
+          <span><strong>Papers:</strong> ${escapeHtml((s.papers||[]).length)}</span>
+        </div>
+      </article>`;
+    }
+
+    function render(){
+      if(!state.day){ programEl.innerHTML = `<div class="hint">Select a day to load the program.</div>`; disableFilters(); updateDayButtons(); return; }
+      const filtered = filterData().sort((a,b)=> a.start.localeCompare(b.start));
+      if(!filtered.length){ programEl.innerHTML = `<div class="no-results">No sessions match your filters for this day.</div>`; updateDayButtons(); return; }
+      const grouped = groupByDayAndSlot(filtered);
+      programEl.innerHTML = grouped.map(day=>{
+        const dayLabel = fmtDateHeader(day.slots[0]?.start || new Date(state.day).toISOString());
+        const slotsHtml = day.slots.map(slot=>{
+          const timeLabel = `${fmtTime(slot.start)} – ${fmtTime(slot.end)}`;
+          const cards = slot.sessions.map(s=> cardHtml(s)).join('');
+          return `<section class="slot" aria-labelledby="slot-${slot.start}">
+            <h2 id="slot-${slot.start}">${escapeHtml(dayLabel)} · ${escapeHtml(timeLabel)}</h2>
+            <div class="grid">${cards}</div>
+          </section>`
+        }).join('');
+        return slotsHtml;
+      }).join('');
+      wireCardOpener();
+      updateDayButtons();
+      enableFilters();
+    }
+
+    function wireCardOpener(){
+      $$('.card').forEach(card=>{
+        const id = card.getAttribute('data-id');
+        const open = ()=> openCard(id);
+        card.addEventListener('click', open);
+        card.addEventListener('keypress', e=>{ if(e.key==='Enter' || e.key===' ') { e.preventDefault(); open(); } });
+      });
+    }
+
+    function updateDayButtons(){ $$('#daySeg button').forEach(btn=> btn.setAttribute('aria-pressed', btn.dataset.day === state.day ? 'true' : 'false')); }
+
+    function paperHtml(p, idx){
+      return `<section class="paper" aria-labelledby="paper-${idx}">
+        <div class="paper-head">
+          <div>
+            <h3 id="paper-${idx}">${escapeHtml(p.title)}</h3>
+            <div class="sub">
+              <span class="ptime">${escapeHtml(fmtTime(p.start))}–${escapeHtml(fmtTime(p.end))}</span>
+              <span>${escapeHtml(p.authors || '—')}</span>
+            </div>
+          </div>
+          <details class="paper-details">
+            <summary aria-label="Toggle paper details"></summary>
+            <div class="paper-body">
+              <div><strong>Abstract:</strong> ${escapeHtml(p.abstract || '—')}</div>
+              <div class="keywords">${(p.keywords||[]).map(k=>`<span class='kw'>${escapeHtml(k)}</span>`).join('') || '<span class="kw">—</span>'}</div>
+            </div>
+          </details>
+        </div>
+      </section>`;
+    }
+
+    function openCard(id){
+      const s = SESSIONS.find(x=> x.id === id);
+      const papersHtml = (s.papers||[]).map((p,i)=> paperHtml(p, i+1)).join('');
+      overlay.innerHTML = `<div class='card-expanded' role='dialog' aria-modal='true' aria-label='Session details: ${escapeHtml(s.title)}'>
+        <button class='close-btn' aria-label='Close'>&times;</button>
+        <div class='expanded-head'>
+          <span class='badge'>${escapeHtml(fmtTime(s.start))}–${escapeHtml(fmtTime(s.end))}</span>
+          <span class='badge room'>${escapeHtml(s.room)}</span>
+          <span class='badge theme'>${escapeHtml(s.theme)}</span>
+          <span class='badge'>${escapeHtml((s.papers||[]).length)} papers</span>
+        </div>
+        <h2 style='margin:6px 0 6px'>${escapeHtml(s.title)}</h2>
+        <p style='margin:0 0 6px'><strong>Chair:</strong> ${escapeHtml(s.chair || '—')}</p>
+        <p style='margin:0 0 10px'><strong>Authors:</strong> ${escapeHtml(s.authors || '—')}</p>
+
+        <details class="paper-details"><summary aria-label="Toggle session abstract"></summary>
+          <div class='paper-body'>${escapeHtml(s.abstract || '—')}</div>
+        </details>
+
+        ${papersHtml ? `<hr style='border:0;border-top:1px solid rgba(162,179,214,.18);margin:16px 0'>
+        <h3 style='margin:0 0 8px'>Papers</h3>
+        <div class='papers'>${papersHtml}</div>` : ''}
+      </div>`;
+      overlay.classList.add('active');
+      overlay.setAttribute('aria-hidden','false');
+      overlay.querySelector('.close-btn').onclick = closeOverlay;
+      overlay.onclick = e=>{ if(e.target===overlay) closeOverlay(); };
+      document.addEventListener('keydown', escClose);
+    }
+    function escClose(e){ if(e.key==='Escape') closeOverlay(); }
+    function closeOverlay(){ overlay.classList.remove('active'); overlay.setAttribute('aria-hidden','true'); document.removeEventListener('keydown', escClose); }
+
+    function attachEvents(){
+      searchInput.addEventListener('input', (e)=>{ state.q = e.target.value; render(); });
+      roomSel.addEventListener('change', (e)=>{ state.room = e.target.value; render(); });
+      themeSel.addEventListener('change', (e)=>{ state.theme = e.target.value; render(); });
+      clearBtn.addEventListener('click', ()=>{ state.q=''; state.room=''; state.theme=''; searchInput.value=''; roomSel.value=''; themeSel.value=''; render(); });
+      daySeg.addEventListener('click', async (e)=>{
+        const btn = e.target.closest('button[data-day]');
+        if(!btn) return;
+        const day = btn.dataset.day; const url = btn.dataset.src || `${day}.json`;
+        state.day = day; state.q=''; state.room=''; state.theme='';
+        programEl.innerHTML = `<div class='loading'>Loading ${day}…</div>`;
+        try{
+          if(dayCache.has(day)){
+            SESSIONS = dayCache.get(day);
+          } else {
+            const res = await fetch(url, {cache:'no-store'});
+            if(!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            const sessions = Array.isArray(data) ? data : (data.sessions || []);
+            SESSIONS = sessions;
+            dayCache.set(day, sessions);
+          }
+          populateFilters(SESSIONS);
+        }catch(err){
+          console.warn('Failed to load', url, err);
+          SESSIONS = [];
+          programEl.innerHTML = `<div class='no-results'>Could not load the program for this day.</div>`;
+        }
+        render();
+        if(state.day) enableFilters();
+        searchInput.value=''; roomSel.value=''; themeSel.value='';
+      });
+    }
+
+    (function init(){ attachEvents(); render(); })();
+  </script>
+</body>
+</html>
