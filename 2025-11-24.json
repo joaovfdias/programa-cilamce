@@ -1,80 +1,238 @@
 {
   "sessions": [
     {
-      "id": "S1",
+      "id": "Registration",
       "size": "wide",
-      "title": "Opening & Keynote: Advances in Structural Health Monitoring",
-      "theme": "Keynote",
-      "room": "Auditorium A",
+      "title": "Registration",
+      "theme": "",
+      "room": "All",
       "start": "2025-11-24T09:00",
       "end": "2025-11-24T10:00",
-      "chair": "Dr. Jane Smith",
-      "authors": "Prof. Alex Johnson",
-      "abstract": "An overview of recent breakthroughs in SHM, digital twins, and AI-enabled sensing.",
-      "papers": [
-        {
-          "title": "Fiber Bragg Grating Sensors for Bridge Monitoring",
-          "authors": "M. Costa; R. Lima; J. Dias",
-          "start": "2025-11-24T09:20",
-          "end": "2025-11-24T09:40",
-          "abstract": "Field deployment of FBG arrays with strain-temperature compensation strategies.",
-          "keywords": [
-            "FBG",
-            "bridges",
-            "strain"
-          ]
-        },
-        {
-          "title": "Digital Twins for Fatigue Life Estimation",
-          "authors": "P. Rocha; T. Mendes",
-          "start": "2025-11-24T09:40",
-          "end": "2025-11-24T10:00",
-          "abstract": "Twin-driven updates to improve fatigue predictions in welded details.",
-          "keywords": [
-            "digital twins",
-            "fatigue",
-            "SHM"
-          ]
-        }
-      ]
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
     },
     {
-      "id": "S2",
+      "id": "MS-24-BB-01",
       "size": "small",
-      "title": "FEM Model Updating for Bridges I",
-      "theme": "FEMU & Bridges",
-      "room": "Room 101",
-      "start": "2025-11-24T10:15",
+      "title": "Advances in AI and BIM for Structural Assessment and Design",
+      "theme": "",
+      "room": "Big Ben",
+      "start": "2025-11-24T10:00",
       "end": "2025-11-24T12:00",
-      "chair": "Prof. Maria Silva",
-      "authors": "A. Lee; B. Kumar; C. Souza; D. Tan",
-      "abstract": "Case studies and methods for calibrating large FE models with experimental data.",
-      "papers": [
-        {
-          "title": "Bayesian Model Updating on a Concrete Arch",
-          "authors": "A. Lee; Y. Chen",
-          "start": "2025-11-24T10:20",
-          "end": "2025-11-24T10:40",
-          "abstract": "Hierarchical Bayesian calibration vs deterministic for modal targets.",
-          "keywords": [
-            "Bayesian",
-            "arch",
-            "modal"
-          ]
-        },
-        {
-          "title": "Surrogate-Assisted FEMU for Steel Truss",
-          "authors": "B. Kumar; L. Park",
-          "start": "2025-11-24T10:45",
-          "end": "2025-11-24T11:05",
-          "abstract": "Gaussian-process surrogates accelerate calibration by 20x.",
-          "keywords": [
-            "surrogate",
-            "Gaussian process",
-            "truss"
-          ]
-        }
-      ]
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-MI-01",
+      "size": "small",
+      "title": "Boundary element and mesh-reduced methods",
+      "theme": "",
+      "room": "Milad",
+      "start": "2025-11-24T10:00",
+      "end": "2025-11-24T12:00",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-OT-01",
+      "size": "small",
+      "title": "Structural Reliability Methods and Design Optimization Under Uncertainties",
+      "theme": "",
+      "room": "One Tower",
+      "start": "2025-11-24T10:00",
+      "end": "2025-11-24T12:00",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-PI-01",
+      "size": "small",
+      "title": "Scientific Machine Learning and Applications",
+      "theme": "",
+      "room": "Pisa",
+      "start": "2025-11-24T10:00",
+      "end": "2025-11-24T12:00",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-ST-01",
+      "size": "small",
+      "title": "Analysis and Design of Offshore Systems",
+      "theme": "",
+      "room": "Sky Tree",
+      "start": "2025-11-24T10:00",
+      "end": "2025-11-24T12:00",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-TM-01",
+      "size": "small",
+      "title": "Computational Fluid Dynamics in Environmental Engineering",
+      "theme": "",
+      "room": "Taj Mahal",
+      "start": "2025-11-24T10:00",
+      "end": "2025-11-24T12:00",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-BB-02",
+      "size": "small",
+      "title": "Vibration Control",
+      "theme": "",
+      "room": "Big Ben",
+      "start": "2025-11-24T13:30",
+      "end": "2025-11-24T15:30",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-KH-02",
+      "size": "small",
+      "title": "Modeling and Simulation of Dynamics, Stability, Control, and Reliability of Aerospace Structures",
+      "theme": "",
+      "room": "Khalifa",
+      "start": "2025-11-24T13:30",
+      "end": "2025-11-24T15:30",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-MI-02",
+      "size": "small",
+      "title": "Boundary element and mesh-reduced methods",
+      "theme": "",
+      "room": "Milad",
+      "start": "2025-11-24T13:30",
+      "end": "2025-11-24T15:30",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-OT-02",
+      "size": "small",
+      "title": "Structural Reliability Methods and Design Optimization Under Uncertainties",
+      "theme": "",
+      "room": "One Tower",
+      "start": "2025-11-24T13:30",
+      "end": "2025-11-24T15:30",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-PI-02",
+      "size": "small",
+      "title": "Scientific Machine Learning and Applications",
+      "theme": "",
+      "room": "Pisa",
+      "start": "2025-11-24T13:30",
+      "end": "2025-11-24T15:30",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-ST-02",
+      "size": "small",
+      "title": "Analysis and Design of Offshore Systems",
+      "theme": "",
+      "room": "Sky Tree",
+      "start": "2025-11-24T13:30",
+      "end": "2025-11-24T15:30",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "MS-24-TM-02",
+      "size": "small",
+      "title": "Computational Fluid Dynamics in Environmental Engineering",
+      "theme": "",
+      "room": "Taj Mahal",
+      "start": "2025-11-24T13:30",
+      "end": "2025-11-24T15:30",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "CB01",
+      "size": "wide",
+      "title": "Coffee Break",
+      "theme": "",
+      "room": "All",
+      "start": "2025-11-24T15:30",
+      "end": "2025-11-24T16:00",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "Opening",
+      "size": "wide",
+      "title": "Opening Ceremony",
+      "theme": "",
+      "room": "All",
+      "start": "2025-11-24T16:00",
+      "end": "2025-11-24T17:30",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "KS-JD",
+      "size": "wide",
+      "title": "Keynote Speech - John Dolbow",
+      "theme": "",
+      "room": "All",
+      "start": "2025-11-24T17:30",
+      "end": "2025-11-24T18:30",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
+      "id": "Cocktail",
+      "size": "wide",
+      "title": "Opening Cocktail",
+      "theme": "",
+      "room": "All",
+      "start": "2025-11-24T19:00",
+      "end": "2025-11-24T21:00",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
     }
   ]
 }
