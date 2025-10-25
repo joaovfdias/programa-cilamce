@@ -1,0 +1,30 @@
+{
+  "sessions": [
+    {
+      "id": "S4",
+      "size": "small",
+      "title": "Optimization & Reliability I",
+      "theme": "Optimization",
+      "room": "Room 103",
+      "start": "2025-11-26T10:15",
+      "end": "2025-11-26T12:00",
+      "chair": "Prof. Victor Yepes",
+      "authors": "I. Santos; L. Park; M. Almeida",
+      "abstract": "Surrogate-assisted optimization, robust design, and decision-making frameworks.",
+      "papers": [
+        {
+          "title": "Multi-objective Robust Design of Web-Tapered Beams",
+          "authors": "I. Santos; M. Almeida",
+          "start": "2025-11-26T11:10",
+          "end": "2025-11-26T11:30",
+          "abstract": "Pareto-optimal designs under load uncertainty.",
+          "keywords": [
+            "robust design",
+            "tapered beams",
+            "Pareto"
+          ]
+        }
+      ]
+    }
+  ]
+}

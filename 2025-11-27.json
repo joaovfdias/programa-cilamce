@@ -1,0 +1,43 @@
+{
+  "sessions": [
+    {
+      "id": "S6",
+      "size": "wide",
+      "title": "Poster Hour: Emerging Methods",
+      "theme": "Posters",
+      "room": "Hall B",
+      "start": "2025-11-27T13:30",
+      "end": "2025-11-27T14:30",
+      "chair": "Committee",
+      "authors": "Multiple",
+      "abstract": "Rapid-fire posters on optimization, reliability, and uncertainty quantification.",
+      "papers": [
+        {
+          "title": "Fast Reliability via Polynomial Chaos",
+          "authors": "N. Oliveira; C. Souza",
+          "start": "2025-11-27T13:35",
+          "end": "2025-11-27T13:55",
+          "abstract": "Non-intrusive PCE for reliability with scarce data.",
+          "keywords": [
+            "PCE",
+            "reliability",
+            "scarce data"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "size": "small",
+      "title": "AI & BIM for Lifecycle Mgmt (Panel)",
+      "theme": "AI & BIM",
+      "room": "Auditorium A",
+      "start": "2025-11-27T16:30",
+      "end": "2025-11-27T17:45",
+      "chair": "Dr. Cristiano Carmo",
+      "authors": "Panelists from academia & industry",
+      "abstract": "Integrating BIM with AI for predictive maintenance and asset management.",
+      "papers": []
+    }
+  ]
+}

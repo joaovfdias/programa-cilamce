@@ -1,0 +1,30 @@
+{
+  "sessions": [
+    {
+      "id": "S3",
+      "size": "small",
+      "title": "Steel & Composite Structures I",
+      "theme": "Steel & Composites",
+      "room": "Room 102",
+      "start": "2025-11-25T10:15",
+      "end": "2025-11-25T12:00",
+      "chair": "Dr. Elena Petrova",
+      "authors": "H. Wang; R. Dias; N. Oliveira",
+      "abstract": "Behavior and design of steel-concrete composite members with innovative connectors.",
+      "papers": [
+        {
+          "title": "Shear Connection Optimization in Composite Girders",
+          "authors": "H. Wang; R. Dias",
+          "start": "2025-11-25T10:20",
+          "end": "2025-11-25T10:40",
+          "abstract": "Mixed-integer optimization validated with push-out tests.",
+          "keywords": [
+            "composite girders",
+            "optimization",
+            "push-out"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "sessions": [
+    {
+      "id": "S1",
+      "size": "wide",
+      "title": "Opening & Keynote: Advances in Structural Health Monitoring",
+      "theme": "Keynote",
+      "room": "Auditorium A",
+      "start": "2025-11-24T09:00",
+      "end": "2025-11-24T10:00",
+      "chair": "Dr. Jane Smith",
+      "authors": "Prof. Alex Johnson",
+      "abstract": "An overview of recent breakthroughs in SHM, digital twins, and AI-enabled sensing.",
+      "papers": [
+        {
+          "title": "Fiber Bragg Grating Sensors for Bridge Monitoring",
+          "authors": "M. Costa; R. Lima; J. Dias",
+          "start": "2025-11-24T09:20",
+          "end": "2025-11-24T09:40",
+          "abstract": "Field deployment of FBG arrays with strain-temperature compensation strategies.",
+          "keywords": [
+            "FBG",
+            "bridges",
+            "strain"
+          ]
+        },
+        {
+          "title": "Digital Twins for Fatigue Life Estimation",
+          "authors": "P. Rocha; T. Mendes",
+          "start": "2025-11-24T09:40",
+          "end": "2025-11-24T10:00",
+          "abstract": "Twin-driven updates to improve fatigue predictions in welded details.",
+          "keywords": [
+            "digital twins",
+            "fatigue",
+            "SHM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "size": "small",
+      "title": "FEM Model Updating for Bridges I",
+      "theme": "FEMU & Bridges",
+      "room": "Room 101",
+      "start": "2025-11-24T10:15",
+      "end": "2025-11-24T12:00",
+      "chair": "Prof. Maria Silva",
+      "authors": "A. Lee; B. Kumar; C. Souza; D. Tan",
+      "abstract": "Case studies and methods for calibrating large FE models with experimental data.",
+      "papers": [
+        {
+          "title": "Bayesian Model Updating on a Concrete Arch",
+          "authors": "A. Lee; Y. Chen",
+          "start": "2025-11-24T10:20",
+          "end": "2025-11-24T10:40",
+          "abstract": "Hierarchical Bayesian calibration vs deterministic for modal targets.",
+          "keywords": [
+            "Bayesian",
+            "arch",
+            "modal"
+          ]
+        },
+        {
+          "title": "Surrogate-Assisted FEMU for Steel Truss",
+          "authors": "B. Kumar; L. Park",
+          "start": "2025-11-24T10:45",
+          "end": "2025-11-24T11:05",
+          "abstract": "Gaussian-process surrogates accelerate calibration by 20x.",
+          "keywords": [
+            "surrogate",
+            "Gaussian process",
+            "truss"
+          ]
+        }
+      ]
+    }
+  ]
+}
