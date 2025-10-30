@@ -4,8 +4,8 @@
       "id": "Registration",
       "size": "wide",
       "title": "Registration",
-      "theme": "",
-      "room": "All",
+      "theme": "Registration",
+      "room": "Foyer",
       "start": "2025-11-24T09:00",
       "end": "2025-11-24T10:00",
       "chair": "",
@@ -17,177 +17,1265 @@
       "id": "MS-24-BB-01",
       "size": "small",
       "title": "Advances in AI and BIM for Structural Assessment and Design",
-      "theme": "",
+      "theme": "Advances in AI and BIM for Structural Assessment and Design",
       "room": "Big Ben",
       "start": "2025-11-24T10:00",
       "end": "2025-11-24T12:00",
-      "chair": "",
+      "chair": "Cristiano Saad Travassos do Carmo; Elisa Dominguez Sotelino; Matheus Lopes Peres; José Guilherme Porto Oliveira",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "An Artificial Neural Network Approach to Structural Condition Assessment of a Reinforced Concrete Viaduct",
+          "authors": "José Guilherme Porto Oliveira, Elisa Dominguez Sotelino",
+          "start": "2025-11-24T10:00",
+          "end": "2025-11-24T10:15",
+          "abstract": "Early damage detection is essential for asset managers to implement less invasive, cost-effective maintenance strategies and extend service life. Finite element models enable the simulation of complex scenarios that could be impractical to test on full-scale structures, making them valuable tools for managing these assets. The variability of operational and environmental conditions that influence the structural response can effectively conceal the effects of damage, thereby increasing the uncertainty associated with the damage detection task. Artificial Neural Networks (ANNs) specialize in pattern recognition and can handle large amounts of data. However, a key consideration regarding their use concerns the selection of input variables, as environmental effects can interfere with input data quality. This study presents a methodology based on Artificial Intelligence (AI) methodology for detecting and locating damage in a reinforced concrete viaduct. The case study investigates a viaduct located on the SP-340 highway, an important connection between the cities of Rio Claro and São Carlos, Brazil. Artificial damage scenarios with varying severity levels were created in critical structural elements were simulated to train ANNs. Different levels of white noise were introduced into the mode shapes extracted from numerical models. This step aimed to approximate these data to those captured in field tests and test the algorithm’s robustness to noise. Two ANNs were developed: one for detecting and locating damage, and another for estimating its severity. This AI-driven methodology aims to provide a support tool for structural health monitoring, combining numerical modeling and machine learning to enhance early damage detection.",
+          "keywords": [
+            "SHM",
+            "Artificial Neural Networks",
+            "Reinforced Concrete",
+            "Finite Element Method",
+            "Damage Detection"
+          ]
+        },
+        {
+          "title": "Automated Detection of Exposed Rebar in Civil Structures Using UAV-Based Image Processing: Case Study in a Real Infrastructure",
+          "authors": "Vinícius Mota, Elisa Dominguez Sotelino, Cristiano Saad Travassos do Carmo",
+          "start": "2025-11-24T10:15",
+          "end": "2025-11-24T10:30",
+          "abstract": "This study proposes and evaluates deep learning models for the segmentation of exposed steel rebar in concrete structures — a critical damage type often linked to concrete delamination. The motivation emerged from technical discussions with the Municipal Infrastructure Secretaria(SMI) of Rio de Janeiro, which identified this pathology as a priority in the inspection of urban bridges. The dataset used includes approximately 100 images, combining real UAV-captured frames and publicly available databases, with precise binary masks manually annotated. Three segmentation architectures were evaluated: U-Net with ResNet-34 encoder, lightweight U²-NetP, and a hybrid model combining Swin Transformer and DeepLabV3. Training employed k-fold cross-validation, data augmentation, and grid search with BCE+Dice+Focal loss functions. Only U-Net and Swin+DeepLabV3 were tested in real UAV inspection footage. Results show that Swin+DeepLabV3 achieved higher accuracy in detectingrebar under diverse lighting and textures, outperforming U-Net especially in multi-instance scenarios. The study highlights the potential of modern semantic segmentation models for field-ready structural diagnostics and contributes to closing a gap in the literature regarding real-world applications focused on rebar exposure.",
+          "keywords": [
+            "Deep Learning",
+            "Computer Vision",
+            "Unmanned Aerial Vehicles (UAVs)",
+            "Structural Inspection",
+            "Exposed Rebar"
+          ]
+        },
+        {
+          "title": "An approach for displacement field prediction in structures combining the Finite Element Method and Deep Learning Techniques",
+          "authors": "Mateus de Paula Ferreira, Elisa Dominguez Sotelino",
+          "start": "2025-11-24T10:30",
+          "end": "2025-11-24T10:45",
+          "abstract": "Recent advancements in machine learning have facilitated groundbreaking\napplications across different domains. In this study, we present a novel application of\nDeep Learning (DL) combined with the FEM for predicting nodal displacements in\nstructures. The proposed approach retains all traditional FEM steps up to the\nformulation of the global system of equations, which includes the stiffness matrix,\nnodal load vector, and boundary conditions. However, instead of relying on classical\nnumerical methods to solve the system, we employ a DL model capable of correlating\napplied loads and stiffness with the displacement field. This allows the model to act as\nan alternative solver for the discrete problem, offering the advantage of instantaneous\nand computationally efficient results. The methodology used in this study is divided\ninto two stages: exploration and exploitation. In the exploration stage, we search for\nthe DL architecture that performs best for the given problem by testing various\nmodels and configurations on an initial dataset. In the exploitation stage, the optimal\nmodel is applied to solve more complex structural problems. The outcomes\nunderscore the significance of this approach; the proposed model demonstrates\ncommendable performance in this task, exhibiting a maximum absolute mean error of\napproximately 2% and a maximum mean squared error of 0.2%, when contrasted with\nclassical FEM solutions.",
+          "keywords": [
+            "FEM",
+            "machine learning"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-MI-01",
       "size": "small",
       "title": "Boundary element and mesh-reduced methods",
-      "theme": "",
+      "theme": "Boundary element and mesh-reduced methods",
       "room": "Milad",
       "start": "2025-11-24T10:00",
       "end": "2025-11-24T12:00",
-      "chair": "",
+      "chair": "Ney Dumont; Francisco Célio de Araújo; Josué Labaki",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "A study on the Radial Integration Method for elastoplastic analysis",
+          "authors": "Nathalia da Silva Manoel, Rodrigo Guerra Peixoto",
+          "start": "2025-11-24T10:00",
+          "end": "2025-11-24T10:15",
+          "abstract": "In the context of numerical analysis for structural engineering problems, the Boundary Element Method (BEM) offers a significant computational advantage by reducing problem dimensionality through boundary-only discretization. However, in elastoplastic problems, domain integrals arise, requiring special treatment. A widely adopted approach involves discretizing the domain into internal cells to evaluate these integrals, which, however, eliminates the primary advantage of dimensionality reduction. An alternative technique for handling domain integrals in nonlinear problems using BEM is the Radial Integration Method (RIM), which extinguish the need for domain discretization. In elastoplastic problems, the RIM transforms domain integrals into boundary integrals by approximating initial stress increments using Radial Basis Functions (RBFs) augmented with polynomial terms. In this study, the RIM is implemented within a BEM methodology to perform two and three-dimensional elastoplastic analysis. Numerical experiments demonstrate that this methodology  maintains a reduced-order formulation in terms of dimensionality and achieves good results for appropriate mesh refinements. However, for excessive (and unnecessary) mesh refinements, the RIM decreases in accuracy when compared to cells approach.",
+          "keywords": [
+            "Radial Integral Method",
+            "Elastoplasticity",
+            "Boundary Element Method"
+          ]
+        },
+        {
+          "title": "Boundary Element Analysis of Fretting in Anisotropic Materials under Centrifugal Loads",
+          "authors": "EDER LIMA DE ALBUQUERQUE, Lucas Silveira Campos, Weslei Rodrigues Niz, Leonardo Bernardo E Silva, Thiago  Doca, Fernando Moraes de Loyola",
+          "start": "2025-11-24T10:15",
+          "end": "2025-11-24T10:30",
+          "abstract": "This work presents a boundary element method (BEM) formulation for analyzing frictional contact problems, with a focus on fretting behavior in anisotropic materials subjected to centrifugal forces. A two-dimensional elastic BEM framework is developed, incorporating displacement constraints and force equilibrium to model the mechanical interaction between contacting bodies. The contact problem is inherently nonlinear, as the initial contact area is unknown and evolves throughout the loading process. To account for centrifugal body forces, domain integrals are exactly converted into equivalent boundary integrals using the radial integration method. The proposed formulation is applied to a representative aeronautical application involving contact between an anisotropic single-crystal metallic blade and an isotropic metallic rotor. Numerical results are compared with those obtained via the finite element method (FEM) to validate the accuracy and efficiency of the approach.",
+          "keywords": [
+            "Boundary element method",
+            "contact mechanics",
+            "fretting",
+            "anisotropic materials",
+            "centrifugal loads"
+          ]
+        },
+        {
+          "title": "Numerical estimation of effective mechanical properties in polycrystalline materials from a microscale analysis using the Boundary Element Method",
+          "authors": "Beatriz Borges Faria Fonseca, Rodrigo Guerra Peixoto",
+          "start": "2025-11-24T10:30",
+          "end": "2025-11-24T10:45",
+          "abstract": "In this paper, the effective mechanical properties of polycrystalline materials are determined from a microscale analysis using the Boundary Element Method. The macroscopic behavior of polycrystalline materials, such as ceramics and metals, is directly related to their microstructure. Therefore, it is of interest to determine the apparent mechanical properties of the material, based on its heterogeneous behavior at the microscale. These materials have a microstructure composed of several grains, with different orientations and, consequently, different mechanical properties. For this reason, a multiregion formulation of the Boundary Element Method is used in the analysis of polycrystalline microstructures, in which each grain is treated as a domain with orthotropic behavior and random crystallographic orientation. The formulation is based on the displacement boundary integral equation, with the use of anisotropic fundamental solution, so that the entire problem is written in terms of the displacements and tractions measured at the grain boundaries. The integrity of the polycrystalline aggregate is ensured by imposing interface conditions that guarantee the equilibrium of tractions and prevent relative displacements between the faces of two adjacent grains. The artificial morphology of the polycrystalline aggregate is generated using Voronoi tesselations. The described formulation is applied to the analysis of polycrystalline aggregates in order to determine their effective mechanical properties.",
+          "keywords": [
+            "Effective isotropic properties",
+            "Polycrystalline microstructure",
+            "Multiregions",
+            "Boundary Element Method"
+          ]
+        },
+        {
+          "title": "An extended Isogeometric Boundary Element formulation for the three-dimensional fatigue crack propagation modelling",
+          "authors": "Matheus Rocha, Jon Trevelyan, Edson Denner Leonel",
+          "start": "2025-11-24T10:45",
+          "end": "2025-11-24T11:00",
+          "abstract": "The fatigue crack propagation is responsible for the failure of various engineering components, which justifies the importance of its proper modelling. Its accurate prediction in real-life applications requires a numerical approach to account for complex details in geometry, boundary conditions and mechanical response. In this sense, the Boundary Element Method (BEM) has proven to be as a highly attractive approach to fracture mechanics applications, especially for three-dimensional models, since its boundary-only discretisation simplifies the re-meshing process and allows for the precise representation of the singular stress field near the crack front in these problems. The isogeometric approach in the BEM enables a smooth coupling with models built in CAD software. This stems from using the same approximation functions for the mechanical fields as these models use for their geometric description, in this study, the Non-Uniform Rational B-Splines (NURBS). However, the standard isogeometric BEM does not capture the asymptotic behaviour close to the crack front, and it also introduces a non-physical jump displacement at this region. The enrichment approach has demonstrated to be a successful strategy to circumvent these issues, in which the Williams solution expands the displacement approximation close to the crack front. Additionally, it introduces Stress Intensity Factors (SIFs) parameters that directly interpolate them, dismissing the need for computationally costly strategies such as the J-integral. In this context, this study proposes the fatigue crack growth modelling with the eXtended Isogeometric Boundary Element Method (XIGABEM) in which the SIFs are directly obtained by the XIGABEM formulation. Two different crack growth criteria are responsible for defining the crack growth advance: the hoop stress and the Schollmann criteria. In addition, a curve fitting algorithm defines the new crack front by finding the position of both control points and weights. Furthermore, a fine-tuning strategy guarantees C^0 and C^1 continuity between adjacent patches, which is required by the enrichment functions and enables a multi-patch description of cracks. One numerical application demonstrates the robustness and accuracy of the proposed scheme through its comparison with a reference solution. Thus, the XIGABEM strategy demonstrates its suitability for the three-dimensional fatigue crack growth analysis.",
+          "keywords": [
+            "Boundary Element Method",
+            "Isogeometric Analysis",
+            "Fatigue analysis",
+            "Enrichment formulation",
+            "Crack growth"
+          ]
+        },
+        {
+          "title": "DYNAMIC RESPONSE OF A ROTOR INTERACTING WITH A PERIODIC FOUNDATION SUPPORTED BY THE SOIL",
+          "authors": "Amauri Ferraz, LUIS FILIPE DO VALE LIMA, EUCLIDES MESQUITA",
+          "start": "2025-11-24T11:00",
+          "end": "2025-11-24T11:15",
+          "abstract": "The dynamic response of mechanical systems depends largely on the boundary conditions prescribed to the system. The dynamic response of a rotor is also strongly influenced by the supporting system. The soil dynamic behavior has a strong influence on the stationary and transient response of a rotor-structure-foundation system. On the other hand, much research has been done on the filtering properties of periodic structures. The current paper discusses a system composed of a rotor, a structure and a periodic foundation supported by the soil. The main idea is to investigate the behavior of this complex system in frequencies where the periodic structure presents a ‘band gap’. The article will address the possibilities of isolating the rotor-structure dynamic behavior from that of soil, in given frequency ranges. The soil is modelled by the Boundary Element Method, the structure is linear and described by the Finite Element Method. The rotor is a Laval-Jefcott rotor presenting internal and external damping mechanisms. The excitations applied to the systems are unbalanced rotor forces or an incoming wave field impinging on the foundation. The questions to be addressed is whether the periodic structure can isolate the rotor system form the soil response for the two mentioned excitation mechanisms.",
+          "keywords": [
+            "Dymanics of Rotors and Structures",
+            "periodic structures",
+            "soil dynamics"
+          ]
+        },
+        {
+          "title": "Testing Two Time Marching Schemes for Solving Transient Heat Transfer Problems Using the Boundary Element Method with Direct Interpolation Technique.",
+          "authors": "Thiago Galdino Balista, Carlos Friedrich Loeffler, Luciano de Oliveira Castro Lara",
+          "start": "2025-11-24T11:15",
+          "end": "2025-11-24T11:30",
+          "abstract": "The boundary element method is one of the main numerical methods used to solve transient heat transfer problems. If a simpler fundamental solution is used, the solution is advanced in time by direct integration schemes based on the first-order finite difference model, normally used with the finite element method. The results obtained with this methodology are satisfactory, but some numerical difficulties are observed in cases where only exclusive Dirichlet conditions are present and also in the calculation of heat fluxes, which are determined directly with the Boundary Element method, due to its mixed formulation. In this work, due to the greater sensitivity of the two-dimensional problems mentioned, two new time-marching schemes are tested: a variation of the well-known Crank-Nicolson scheme and the Houbolt scheme. It is expected that such schemes accurately represent the numerical response of fluxes and temperatures along the time, expanding the range of integration steps suitable for obtaining stable responses, with lower computational cost.",
+          "keywords": [
+            "Boundary element",
+            "Crank-Nicolson scheme",
+            "Houbolt scheme"
+          ]
+        },
+        {
+          "title": "Machine-precision implementation of higher-order, generally curved boundary elements for three-dimensional potential problems",
+          "authors": "Ney Dumont,",
+          "start": "2025-11-24T11:30",
+          "end": "2025-11-24T11:45",
+          "abstract": "The author recently revisited the collocation boundary element method for its consistency. Arbitrary rigid-body displacements, as for elasticity of a finite domain, are naturally taken into account, and traction force parameters are always in balance independently of problem scale and mesh discretization. For generally curved boundaries, the correct definition of traction force interpolation functions enables the enunciation of a general convergence theorem, the introduction of patch and cut-out tests for precision and accuracy assessments, and, most importantly, a considerable simplification of the numerical implementations. The formulation became extremely simple to code for two-dimensional elasticity problems in terms of a complex variable, with precision only limited by the machine and less liable to round-off errors than its real-variable counterpart: precision is only conditioned by the Gauss-Legendre quadrature of the regular parts of the integrands. We now present the three-dimensional counterpart of such general implementation for potential problems, which is far less intuitive but is based on the same concepts of a complex quasi-singularity. A more general mathematical framework is required, which resorts to the hypercomplex – but surprisingly simple – description of the problem’s geometry, as we have been able to develop. We show that the old concepts of geometric near singularities – with many badly and highly constrained approximating solutions – should be abandoned in the face of the proposed general, precise, and accurate methodology. We present the basics of this new formulation, discuss a geometry-preserving alternative (besides the isoparametric one), and close with some applications to topologically challenging problems.",
+          "keywords": [
+            "Boundary elements",
+            "Curved elements",
+            "Higher-order elements",
+            "Machine-precision implementation",
+            "3D potential problems"
+          ]
+        },
+        {
+          "title": "DeepONet Surrogate Modeling for Continuum Mechanics in Unbounded Domains: Bypassing BEM Scalability via Operator Learning",
+          "authors": "Leonardo Santiago, George Em Karniadakis, Josué Labaki",
+          "start": "2025-11-24T11:45",
+          "end": "2025-11-24T12:00",
+          "abstract": "Continuum mechanics problems over unbounded domains demand the use of mathematical models due to the nature of these systems being governed by partial differential equations. One such tool is the Boundary Element Method (BEM), which reformulates a given boundary-value problem into equivalent integral equations posed solely on the domain’s boundary. However, classical numerical approaches such as BEM involve computing a large number of numerical integrals, representing a significant computational cost, especially in large-scale problems, as the total computing time for this method scales poorly with problem size due to dense kernel evaluations. This work presents a data-driven approach using DeepONet architectures trained on synthetic data from analytical solutions and numerical simulations. The model employs a branch-trunk structure, with the branch encoding system parameters and the trunk evaluating field points in defined domains. After training, it performs fixed-cost inference independent of problem scale, enabling the evaluation of solutions in milliseconds. We demonstrate close correspondence with analytical solutions for the Kelvin problem in elasticity, as well as problems involving harmonic surface loads for linear-elastic, isotropic material bodies in a half-space.",
+          "keywords": [
+            "DeepONet",
+            "Boundary Element Method",
+            "Operator Learning",
+            "Linear Elasticity"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-OT-01",
       "size": "small",
       "title": "Structural Reliability Methods and Design Optimization Under Uncertainties",
-      "theme": "",
+      "theme": "Structural Reliability Methods and Design Optimization Under Uncertainties",
       "room": "One Tower",
       "start": "2025-11-24T10:00",
       "end": "2025-11-24T12:00",
-      "chair": "",
+      "chair": "Andre Beck; Henrique Machado Kroetz; Rafael Holdorf Lopes; Wellison J. S. Gomes; André Jacomel Torii; Leandro F. Fadel Miguel",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Failure probability calculation model applied to gas pipelines",
+          "authors": "Frederico Thom, Geraldo Rossoni Sisquini, Matheus Jordão de Jesus, Oldrich Joel Romero",
+          "start": "2025-11-24T10:00",
+          "end": "2025-11-24T10:15",
+          "abstract": "This article presents an application for failure probability in long-pipeline gas systems through the development of trend curves over time for the attributes of corrosion wear, which are related to the length, width, and depth of the defect. In addition, Risk-Based Inspection (RBI) is applied in the most favorable numerical failure values according to the location of the defect, with the aim of analyzing the structural reliability and the expected useful life of the gas pipeline. To do this, it was necessary to use the data provided by pig readings in 2008, 2012 and 2018 by an instrumented pig, type Magnetic Flux Leakage (MFL), inspecting a gas pipeline with the finality to measure wall thickness. The 56 km long and 18 in diameter pipeline is partly onshore and partly offshore. Also, the pipeline anomaliesare standardized according to the standards established in POF (2016). It is important to emphasize that the methodology described in this article can be used in the industry where the prevention of leakage incidents, the predictability of maintenance, and the elaboration of the respective inspection plans are required, since it has been theoretically possible to calculate the probability of failure in time beyond the respective impact on risk for the operational variables presented.",
+          "keywords": [
+            "smart pigs",
+            "RBI",
+            "structural reliability",
+            "failure probability",
+            "gas pipelines"
+          ]
+        },
+        {
+          "title": "Enhancing Structural Health Monitoring with Probabilistic Analysis: A Case Study on a Bridge Reclaimer",
+          "authors": "Cádmo Rodrigues, Fernando Texeira, Gabriel M. C. Machado, Jánes Landre Jr",
+          "start": "2025-11-24T10:15",
+          "end": "2025-11-24T10:30",
+          "abstract": "Bridge reclaimers play a crucial role in industrial operations, yet their structural integrity is often threatened by environmental exposure and cyclic loading. Meanwhile, traditional deterministic methods may overlook early signs of degradation, compromising maintenance strategies. In this context, this study introduces a probabilistic approach to structural health monitoring (SHM), emphasizing its advantages over conventional techniques. Visual inspections revealed cracks in critical regions of a bridge reclaimer’s box girder that deterministic simulations failed to predict. In addition, finite element analysis was employed to define key monitoring points, followed by the acquisition of hourly stress and strain data over fifteen days. Using the VibraConf (VcE) software and the Probabilistic Condition-Based Maintenance (PCBM) methodology, failure probabilities and reliability indices were computed. The analysis identified a significantly higher probability of failure in the box girder diaphragms, precisely where physical cracks were observed. These findings highlight the limitations of deterministic assessments and demonstrate the value of probabilistic simulations in forecasting failures and prioritizing maintenance. By integrating field observations with numerical and probabilistic tools, this case study provides a robust framework for proactive asset management and more reliable SHM practices.",
+          "keywords": [
+            "probabilistic condition-based maintenance",
+            "structural health monitoring",
+            "bridge reclaimer",
+            "asset management",
+            "Structural reliability"
+          ]
+        },
+        {
+          "title": "Reliability-Based Multi-Material 3D Topology Optimization: A Comparative Study Between SIMP and SESO Methods",
+          "authors": "Marcio Maciel da Silva, Francisco de Assis das Neves, Hélio Luiz Simonetti, Marcílio Sousa da Rocha Freitas",
+          "start": "2025-11-24T10:30",
+          "end": "2025-11-24T10:45",
+          "abstract": "Topology optimization aims to improve structural design efficiency by determining the optimal material distribution within the solution domain. This paper presents an automated approach for three-dimensional multi-material topology optimization using the Solid Isotropic Material with Penalization (SIMP) and Smoothing-ESO (SESO) methods, implemented in MATLAB. The formulation employs hexahedral finite elements and a power-law interpolation scheme to minimize material discontinuities during the discrete optimization process. A three-dimensional linear elastic analysis is adopted for both methods, integrating commercial materials including steel, aluminum, and concrete. Additionally, the optimization program is coupled with a reliability-based topology optimization analysis module where Young's modulus, force, volume, and compliance are treated as random variables using the First-order Reliability Method (FORM), considering both normal and lognormal distributions with target reliability indices β = 3.0 and β = 2.5. Numerical examples, including a Michell-type structure and bridge design, demonstrate the method's effectiveness in achieving material efficiency while ensuring structural reliability. The results show significant reductions in high-performance material usage, confirming the approach's potential for practical engineering applications.",
+          "keywords": [
+            "Multi-material topology optimization",
+            "SESO and SIMP",
+            "RBTO."
+          ]
+        },
+        {
+          "title": "A Modified FOSM Method for the Reliability Assessment of Cold-Formed Steel Members",
+          "authors": "André Brandão, Eloá Faria Brandão, Giovanne de Lana Santana, Marcílio Sousa da Rocha Freitas",
+          "start": "2025-11-24T10:45",
+          "end": "2025-11-24T11:00",
+          "abstract": "The FOSM (First Order Second Moment) method is a structural reliability analysis technique that estimates the probability of failure based on the first two statistical moments (mean and variance) of the variables involved. Structural reliability assessments are often conducted using the FOSM method due to its simplicity and the absence of advanced computational requirements. Unlike more complex approaches—such as the First Order Reliability Method (FORM), which involves variable transformations and iterative procedures, or Monte Carlo Simulation (MCS), whose accuracy depends on a large number of simulations—FOSM provides a straightforward and practical framework, suitable for the calibration of design codes. However, this simplification compromises the accuracy of FOSM. This paper proposes a modified version of the FOSM method (denoted FOSMₘ), which incorporates adjustment functions to better approximate the results of MCS in the reliability analysis of cold-formed steel members. The FOSMₘ method showed excellent agreement with MCS results for load combinations of the type D (dead load) + L (live load), with L/D ratios ranging from 1 to 10. Moreover, FOSMₘ proved to be effective when applied to typical ranges of load factors used in the design of structural members. The proposed methodology retains the simplicity of FOSM while significantly improving its accuracy, offering a robust and accessible alternative for structural reliability assessments.",
+          "keywords": [
+            "reliability",
+            "FOSM",
+            "FORM",
+            "MCS",
+            "cold-formed"
+          ]
+        },
+        {
+          "title": "Structural Reliability Analysis of Reinforced Concrete: A Comparison of MCS, FORM, SORM, and Parallelized Subset Simulation in Julia",
+          "authors": "Kristian Yuiti Matsushita, Herbert Martins Gomes , Felipe Schaedler de Almeida",
+          "start": "2025-11-24T11:00",
+          "end": "2025-11-24T11:15",
+          "abstract": "In civil engineering, estimating the probability of rare events is essential for ensuring the safety and reliability of structural systems. Scenarios such as failures in reinforced concrete elements, progressive collapse, and performance-based design require accurate evaluation of low-probability events. Traditional methods like Monte Carlo Simulation (MCS), the First-Order Reliability Method (FORM), and the Second-Order Reliability Method (SORM) are widely used due to their theoretical foundation and practical simplicity. However, MCS becomes computationally prohibitive for rare events, while FORM and SORM may lose accuracy in nonlinear or non-Gaussian problems, common in structural analysis. Subset Simulation (SuS) overcomes these limitations by decomposing the rare event into a sequence of intermediate events, sampled efficiently through Markov Chain Monte Carlo (MCMC) techniques. To reduce computational time, SuS can be parallelized by distributing the sampling across multiple processors, this strategy enables faster analysis without compromising accuracy, making it suitable for large-scale models in civil engineering. This work explores the use of MCS, FORM, SORM, and SuS within the Julia programming environment, which offers high-performance computing capabilities. The methods are evaluated based on accuracy, computational cost, and robustness across a range of examples, including benchmark problems and structural models of reinforced concrete. Results indicate that SuS delivers accurate estimates with significantly fewer samples. When parallelized, it becomes a computationally efficient tool for reliability analysis in civil engineering, outperforming traditional methods in complex scenarios.",
+          "keywords": [
+            "Structural Reliability",
+            "Reinforced Concrete",
+            "Subset Simulation",
+            "Monte Carlo Methods",
+            "Parallel Computing"
+          ]
+        },
+        {
+          "title": "Reliability of cold-formed steel frames for serviceability limit states using second order elastic analysis",
+          "authors": "Victor Antônio Moreira Faria, Marcílio Sousa Rocha Freitas, Danilo Luiz Santana Mapa",
+          "start": "2025-11-24T11:15",
+          "end": "2025-11-24T11:30",
+          "abstract": "The use of the finite element method in advanced structural analysis has allowed structural engineers to analyze and understand the behavior of structures as a whole, which provides an efficient alternative to overcome some deficiencies in member-based analysis and design procedures. The use of slender elements in structures, particularly cold-formed steel members, highlights the need to pay attention to excessive displacements and the accuracy of finite element formulations to monitor them. This paper presents the development and application of a framework to assess the reliability of two- and three-dimensional cold-formed steel structures when the serviceability limit state of excessive displacement is considered. An advanced beam-column finite element is introduced and used to compare the actual displacement of the frames to the normative maximum displacement in the limit state equation. The obtained reliability results and the influence of random variables are discussed.",
+          "keywords": [
+            "cold-formed steel frames",
+            "reliability analysis",
+            "serviceability limit states",
+            "finite element method"
+          ]
+        },
+        {
+          "title": "Reliability based analysis of a railway temperature prediction model",
+          "authors": "Ary V. N. Frigeri, Paulo A. G. Piloto, Manuel Minhoto, Dyorgge A. Silva, Rubia M. Bosse",
+          "start": "2025-11-24T11:30",
+          "end": "2025-11-24T11:45",
+          "abstract": "Rail temperature prediction plays a crucial role in ensuring railway safety, as extreme temperatures can cause local buckling and track instability. This study conducts a reliability-based sensitivity analysis of a previously developed prediction model using MATLAB and UQLab. Two analyses were performed: a global sensitivity analysis considering all parameters as random variables and a Data-Driven Sensitivity Analysis incorporating measured data for key variables to refine the model and enhance its practical applicability. Results indicate that uncertainties in convection and solar absorption are the most influential parameters affecting the response statistics of the rail temperature predictions. Furthermore, Monte Carlo simulation was employed to estimate the daily probability along one year of rail temperatures exceeding the threshold for local thermal buckling of a railway track.",
+          "keywords": [
+            "railway",
+            "prediction model",
+            "temperature",
+            "sensitivity analysis"
+          ]
+        },
+        {
+          "title": "Time-dependent reliability analysis of corroded pipelines using a hybrid successive Pareto simulation and importance sampling approach",
+          "authors": "Rodrigo Santos de Oliveira, Renato de Siqueira Motta, Eduardo Alberto de Souza Neto, Silvana Maria Bastos Afonso da Silva",
+          "start": "2025-11-24T11:45",
+          "end": "2025-11-24T12:00",
+          "abstract": "The present study introduces a methodology for time-dependent structural reliability analysis of corroded pipelines by integrating the successive Pareto simulation (SPS) method with importance sampling (IS). This paper extends the application of SPS to assess the probability of failure evolution over time due to corrosion defects. First, the methodology is validated against results from the literature, where the DNV RP-F101 equation is applied. Then, the pipeline is modeled using a 2D axisymmetric finite element mesh automatically generated by using the PIPEFLAW software. Structural non-linear analysis is performed using the HYPLAS finite element code, considering failures due to small leak and burst. The reduction in the number of evaluations, compared to IS, is up to 34.52%. The hybrid SPS-IS approach improves the efficiency of reliability analysis for corroded pipelines by combining the lower number of function evaluations achieved by SPS with the variance reduction of IS.",
+          "keywords": [
+            "Successive Pareto simulation",
+            "Corroded pipelines",
+            "Importance sampling",
+            "Reliability analysis"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-PI-01",
       "size": "small",
       "title": "Scientific Machine Learning and Applications",
-      "theme": "",
+      "theme": "Scientific Machine Learning and Applications",
       "room": "Pisa",
       "start": "2025-11-24T10:00",
       "end": "2025-11-24T12:00",
-      "chair": "",
+      "chair": "Adriano Cortes; Alvaro Coutinho; Fernando Rochinha",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "U-net-based Segmentation Of Sensor Data For Detecting Important Events In Oil Wells",
+          "authors": "Lucas Gouveia Omena Lopes, Thales Miranda de Almeida Vieira, Andressa Celestino Araújo Da Silva, Igor de Melo Nery, Davi Leão Ramos, Eduardo Toledo de Lima Junior, William Wagner Matos Lira, Pedro Esteves Aranha",
+          "start": "2025-11-24T10:00",
+          "end": "2025-11-24T10:15",
+          "abstract": "Detecting key events in oil well sensor data is essential for optimizing operations and preventing failures. This study presents a non-parametric, U-Net-based deep learning approach for segmenting time-series sensor data to identify significant changes. Unlike analytical methods that require manual tuning or machine learning models dependent on fixed thresholds and frequent retraining due to concept drift, our model adapts automatically to different wells without the need for manual adjustment. We modify the U-Net architecture to handle time-series segmentation, enabling automatic detection of sensor transitions without predefined thresholds. Trained on both synthetic and real-world data, the model is evaluated across diverse operational conditions. The segmented output supports downstream classification models in determining whether detected events correspond to regular human operations or previously unnoticed anomalies. To enhance reliability, we incorporate wavelet-based denoising, which effectively removes noise while preserving critical transitions. By combining U-Net segmentation with wavelet-based denoising, this approach offers a novel solution for event detection in industrial time-series data, advancing automation and anomaly detection in oilfield operations.",
+          "keywords": [
+            "Oil Production Event Analysis",
+            "U-net",
+            "Time Series Segmentation",
+            "Anomaly Detection",
+            "Signal Processing"
+          ]
+        },
+        {
+          "title": "Estimation of concrete compressive strength using machine learning",
+          "authors": "Dimas Ribeiro, Pedro Cesar Rodrigues Alves Abrão, Carlos Jose Massucato, Vanderley Moacyr John, André Carlos Ponce de Leon Ferreira de Carvalho",
+          "start": "2025-11-24T10:15",
+          "end": "2025-11-24T10:30",
+          "abstract": "Due to its strength and durability, concrete is one of the primary building materials. These properties are crucial for the safety of concrete-based constructions. Although the final concrete strength can only be known after 28 days of production, building companies often employ concrete in the construction process before this period. Consequently, they use concrete strength that is much larger or smaller than safe and necessary. If the companies can predict the strength of the concrete before 28 days, the construction process can be faster, safer, and cost-effective. Thus, one of the main challenges of the construction industry is making the construction process faster without jeopardizing structural safety. A promising approach to this challenge is to predict concrete compressive strength using the concrete industry data. The main goal of this study is to support construction companies in defining the construction process schedule. For this, it investigates using Machine Learning to predict concrete strength before 28 days. For the Machine Learning experiments, the authors collected a dataset with 236,407 examples and 69 attributes, obtained from four Brazilian concrete industries. These industries do not share standards for data collection. Data curation reduced the dataset to 23 attributes and 56,508 examples. The predictive features were collected from many diverse sources. More than just giving a number for the 28-day-old concrete compressive strength, this study uses random forest quantile regression (RFQR) to produce 95 % prediction intervals. By using Random Forest, it is possible to explain how an induced model makes inferences. According to the experimental results, the predictions for the central value (quantile = 0.500) presented a high predictive performance, even when using a small number of the collected features.",
+          "keywords": [
+            "Concrete Strength",
+            "Industry Data",
+            "Quantile Regression",
+            "Random Forest"
+          ]
+        },
+        {
+          "title": "Hybrid DeepONet Architectures for Porous Media Flow Simulation",
+          "authors": "EZEQUIEL SOUZA DOS SANTOS, Alvaro L.G.A. Coutinho, Gabriel F. Barros, Romulo M. Silva, Amanda C.N. Oliveira, Rodolfo S.M. Freitas, Fernando A. Rochinha",
+          "start": "2025-11-24T10:30",
+          "end": "2025-11-24T10:45",
+          "abstract": "The solution of partial differential equations (PDEs) plays a central role in several areas of science and engineering. With the advancement of deep learning and the growing interest in data-driven methods, new approaches have emerged that aim to capture the behavior of PDE solutions. As surrogate models, Neural Operators [1] have gained notoriety for learning parameter-to-solution operators, enabling the learning and representation of families of PDE solutions. On the other hand, Kolmogorov–Arnold Networks (KANs) [2] represent an alternative to traditional MLP-type neural networks, replacing fixed linear connections with compositions of learnable univariate functions. This work presents hybrid models of Deep Operator Networks (DeepONet) [3]. As a distinguishing feature, we integrated different DeepONet architectures within the NVIDIA PhysicsNeMo framework, exploring both native models, such as the Fourier Neural Operator (FNO) and MLP, as well as a custom implementation of KAN. We applied these hybrid models to the context of porous media, where the partial differential equations are governed by system characteristics that model fluid flow, as in the Tenth SPE Comparative Solution Project [4], which consists of a transient two-phase flow application in a 2D spatial porous medium domain. The entire modeling process, from construction to training and inference, was carried out entirely within the PhysicsNeMo environment, with the goal of investigating the impact of combining different architectures.\n \nREFERENCES \n[1] Li, Z., Kovachki, N., Azizzadenesheli, K., Liu, B., Bhattacharya, K., Stuart, A. and Anandkumar, A. Fourier neural operator for parametric partial differential equations. arXiv preprint arXiv:2010.08895, 2020.  \n[2] Liu, Z., Wang, Y., Vaidya, S., Ruehle, F., Halverson, J., Soljačić, M., Hou, TY. and Tegmark, M. Kan: Kolmogorov-arnold networks. arXiv preprint arXiv:2404.19756, 2024.\n[3] Lu, L., Jin, P., and Karniadakis, G. E. Deeponet: Learning nonlinear operators for identifying differential equations based on the universal approximation theorem of operators. arXiv preprint arXiv:1910.03193, 2019.\n[4] Christie, M. A., and Blunt, M. J. Tenth SPE Comparative Solution Project: A Comparison of Upscaling Techniques. SPE Reservoir Evaluation &amp; Engineering 4(04): 308–317, 2001.",
+          "keywords": [
+            "Deep Operator Networks",
+            "Fourier Neural Operators",
+            "Kolmogorov-Arnold Networks",
+            "porous media flow",
+            "Scientific Machine Learning"
+          ]
+        },
+        {
+          "title": "Numerical Simulation Using Nonlinear Finite Elements and Machine Learning for the Evaluation of Failure Probability of Reinforced Concrete Beams",
+          "authors": "Oswald Casaverde Lopez, Leandro Lopes da Silva",
+          "start": "2025-11-24T10:45",
+          "end": "2025-11-24T11:00",
+          "abstract": "Reinforced concrete beams are fundamental structural elements designed to resist bending moments and shear forces resulting from gravitational loads. Their performance is critical for the structural integrity and serviceability of buildings and infrastructure. Accurate prediction of their load-bearing capacity contributes to safer and more economical structural designs.\nIn recent years, artificial intelligence-based methods, particularly machine learning techniques, have gained increasing relevance in structural engineering due to their ability to model complex nonlinear behavior with high accuracy and reduced computational effort. Among these techniques, genetic programming has proven effective in discovering symbolic relationships and generating predictive equations for structural performance parameters.\nIn this study, a numerical simulation of a reinforced concrete beam is carried out using the Abaqus software with nonlinear finite elements. The beam’s load-bearing capacity is evaluated for different combinations of parameters, including compressive strength, yield stress, reinforcement area, and depth. Based on the simulation results, a data cloud is created to train a genetic programming model capable of deriving an equation that estimates the beam’s ultimate strength without the need for further simulations.\nThe predictive equation generated through genetic programming is employed to estimate the probability of failure of the beam using structural reliability methods, allowing for the probabilistic evaluation of safety in reinforced concrete beam design.",
+          "keywords": [
+            "Nonlinear Finite Element Method",
+            "Machine Learning",
+            "Reinforced Concrete Beam",
+            "Structural Reliability"
+          ]
+        },
+        {
+          "title": "Performance Assessment on Neural Operator Surrogate Models For Porous Media Flows",
+          "authors": "Gabriel F. Barros, Rômulo M. Silva, Amanda C. N. Oliveira, Ezequiel S. Santos, Rodolfo S. M. Freitas, Fernando A. Rochinha, Alvaro L. G. A. Coutinho",
+          "start": "2025-11-24T11:00",
+          "end": "2025-11-24T11:15",
+          "abstract": "Despite being resource demanding for real world applications, numerical simulations are a powerful tool for investigating physical phenomena. For many applications - especially those involving many-query procedures such as optimization and uncertainty quantification -, the extensive use of numerical simulations can be prohibitive due to computational effort. The growing interest in Scientific Machine Learning (SciML) techniques have been enabling the construction of data-driven surrogate models able to predict unseen scenarios and reduce the dependency on the said expensive numerical simulations. Amidst the wide variety of SciML models, Fourier Neural Operators (FNOs) arise as a powerful tool to learn the mapping between functions using spectral convolutions over the problem dimensions as their kernel operations, leading to a more generalizable model for parameter exploitation or time prediction. It is known, however, that high-dimensional tensors are used for data ingestion on FNOs, leading to an undesired spatial complexity and memory footprint when considering these algorithms. In this study, we investigate the computational complexity of using FNOs on different flow applications by identifying bottlenecks and limitations of the existing architectures for porous media flow. PyTorch's Memory Viz profiler is selected as our tool to measure the GPU memory usage while Weights &amp; Biases is set to instrument the code efficiency. Our surrogate model results are assessed via SciML metrics for the model performance.",
+          "keywords": [
+            "Fourier Neural Operators",
+            "Porous Media Flow",
+            "High Performance Computing"
+          ]
+        },
+        {
+          "title": "A Proposal for Quality Classification of Cocoa Beans Using Convolutional Neural Networks",
+          "authors": "BRENDA BAYERL PINHEIRO, Luiz Alberto Pinto",
+          "start": "2025-11-24T11:15",
+          "end": "2025-11-24T11:30",
+          "abstract": "The growing demand for technological innovations in the cacao sector and the need for standardization in the physical quality analysis of cocoa beans, given the complexity of conventional methods, motivated the development of this work. The primary goal was to build an automated cocoa bean classification tool using Convolutional Neural Networks (CNNs) applied to digital images. The proposal aims to classify cocoa beans into five specific classes, based on an image database composed of labeled samples.\nFor performance evaluation, traditional classification metrics such as accuracy, precision, recall, F1 score, and support were adopted. Initially, three pre-trained models were used: MobileNetV2, ResNet101V2, and a network without a pre-trained model, to compare how the use of these models would influence the results. The networks were tested on two image databases: one created specifically for this study and another pre-existing, to validate the robustness of the models in different scenarios.\nThe results were analyzed both quantitatively and visually, using graphs and confusion matrices, which facilitated the interpretation of the metrics and the performance of each network. To test the model under real-world conditions, a segmentation code based on the Otsu method was developed to identify cocoa beans through image thresholding and classify them according to the trained model.\nThe results showed that the main network, based on MobileNetV2, achieved an accuracy of 67.14%, with an F1 score of 0.81 for the White and Defective classes, 0.60 for the Brown class, 0.49 for Partially Brown, and 0.78 for Violet. These results indicate good model performance, highlighting its potential for future mobile device applications. However, variations in the F1 scores pointed to the need for improvement in distinguishing some classes.\nCurrently, the work is evolving with the implementation of the YOLOv12 network, an advanced pre-trained model to enhance the accuracy and speed of cocoa bean detection, benefiting from its real-time processing capability, which is essential for mobile devices and industrial environments. This study contributes to optimizing cocoa bean quality analysis, offering more precise and accessible technological solutions for the cacao industry.",
+          "keywords": [
+            "Cocoa bean classification",
+            "Convolutional Neural Networks (CNNs)",
+            "Image segmentation"
+          ]
+        },
+        {
+          "title": "Enhanced EEG Classification of Foot Motor Imagery Using Unscented Kalman Filtering for Neurorehabilitation",
+          "authors": "Rodrigo Oliveira Altoé, Gabriel da Silva Braz, Guilherme Rangel Furtado, Cristian Felipe Blanco‑Diaz, Cristian David Guerrero‑Mendez, Rafhael Milanezi de Andrade",
+          "start": "2025-11-24T11:30",
+          "end": "2025-11-24T11:45",
+          "abstract": "Electroencephalography-based brain-computer interfaces for lower-limb prosthetic control face significant challenges in motor imagery classification accuracy due to signal noise and artifacts. This study investigates the potencial use of Unscented Kalman Filter (UKF) to enhance foot motor imagery classification in virtual reality (VR) and non-VR environments. Six participants performed dorsiflexion and plantarflexion motor imagery while EEG signals were recorded using 16-channel OpenBCI. Data were processed with/without UKF preprocessing, then segmented into temporal windows (0.25s, 0.5s, 1s, 2s) with varying overlap. Feature extraction combined temporal (RMS, variance, Hjorth parameters) and spectral features (mu/beta band power and entropy). Three algorithms – Linear Discriminant Analysis (LDA), Support Vector Machine (SVM), and Knearest Neighbors (KNN) – were evaluated using leave-one-subject-out cross-validation. Results showed that UKF provided selective improvements, with significant accuracy gains for 1s overlapping windows (52-54% vs. 47-50%, p &lt; 0.01) and SVM performance with 2s windows reaching 72.05% ± 8.71%. However, minimal differences occurred between VR and non-VR conditions (1-3%), challenging immersive environment assumptions. Individual variability was substantial, with Kalman filtering effects ranging from a 2.2% decrease to a 5.4% increase in accuracy, demonstrating participant-dependent filter effectiveness. These findings suggest preprocessing strategies should be individually optimized rather than universally applied, and simpler non-VR interfaces may suffice for effective motor imagery training.",
+          "keywords": [
+            "Lower-Limb Motor Imagery",
+            "Immersive Virtual Reality (VR)",
+            "Electroencephalography (EEG)",
+            "Common Spatial Patterns (CSP)",
+            "Brain–Computer Interface (BCI)"
+          ]
+        },
+        {
+          "title": "Ensemble methodology incorporating uncertainty quantification applied to modeling COVID-19 outbreaks",
+          "authors": "Douglas de Albuquerque, Renato Simões Silva, Gilson Antonio Giraldi, Regina Célia Cerqueira de Almeida",
+          "start": "2025-11-24T11:45",
+          "end": "2025-11-24T12:00",
+          "abstract": "Mathematical models are essential for understanding physical phenomena and making predictions. However, complex systems often exhibit dynamics that a single model cannot fully capture. To address this, ensemble methods combine the individual outputs of multiple models to improve performance, specifically aiming to enhance the accuracy of the final prediction. In this work,  we construct an ensemble integrating different types of models, including mechanistic and machine learning models. The mechanistic component comprises epidemiological compartmental models, while the machine learning component employs a physics-informed neural network (PINN). Each individual model was calibrated based on real COVID-19 data from the city of Recife, with the mechanistic models specifically being treated by the Markov Chain Monte Carlo (MCMC) method. The uncertainty measures of the models were evaluated to verify the robustness of the simulations. The final response was then determined by combining the individual outputs of each model. According to our preliminary results, the ensemble demonstrated an advantage by effectively highlighting the strengths of each model.",
+          "keywords": [
+            "Ensemble method",
+            "Epidemiological compartmental models",
+            "PINN",
+            "Uncertainty Quantification",
+            "Covid-19"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-ST-01",
       "size": "small",
       "title": "Analysis and Design of Offshore Systems",
-      "theme": "",
+      "theme": "Analysis and Design of Offshore Systems",
       "room": "Sky Tree",
       "start": "2025-11-24T10:00",
       "end": "2025-11-24T12:00",
-      "chair": "",
+      "chair": "Bruno da Fonseca Monteiro; Bruno Martins Jacovazzo; Juliana Souza Baioco; Mauro Henrique Alves de Lima Junior",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Constitutive Simulation of Synthetic Fibers for Offshore Mooring Under Cyclic Loading: Hysteresis Stabilization and Stiffness Evolution",
+          "authors": "Daniel Magalhães da Cruz, Larissa Basei Zangalli, Aleones José da Cruz Júnior, Ana Lúcia Nazareth da Silva, Ivan Napoleão Bastos, Carlos Eduardo Marcos Guilherme, Fernanda Mazuco Clain, Jakson Manfredini Vassoler, Felipe Tempel Stumpf",
+          "start": "2025-11-24T10:00",
+          "end": "2025-11-24T10:15",
+          "abstract": "The mechanical performance of synthetic fibers used in offshore mooring systems is strongly influenced by their nonlinear response under cyclic loading. This study presents a constitutive simulation framework aimed at capturing the complex cyclic behavior of different synthetic fibers, particularly focusing on hysteresis stabilization and stiffness evolution during repeated loading cycles. The proposed model is grounded in hyperelastic theory, adopting a modified Yeoh strain energy density function to represent the fiber material response.\nThe simulations are driven by a parametric optimization strategy based on continuum mechanics principles, involving iterative fitting between stress and strain tensors. This approach enables the calibration of model parameters to reflect the progressive mechanical behavior observed in experimental cyclic tests. By incorporating multiple loading cycles into the analysis, the model captures the gradual stabilization of mechanical hysteresis and tracks changes in normalized stiffness throughout the loading history.\nThe results highlight the capability of the modified energy-based model to reproduce key features of fiber cyclic behavior, including load-unload asymmetry, residual strain accumulation, and nonlinear stiffness degradation. Additionally, the study demonstrates the sensitivity of the constitutive parameters to the number of cycles required for hysteresis stabilization, providing insights into the fatigue-like mechanical adaptation of fiber structures.\nThis framework offers a robust foundation for integrating synthetic fiber behavior into larger-scale offshore system simulations, contributing to more accurate mooring design under realistic loading conditions. The proposed method can be adapted for different synthetic fiber types and extended to multi-scale modeling approaches, strengthening the predictive capability of offshore engineering tools.",
+          "keywords": [
+            "Numeric Assessment",
+            "Mechanical Properties",
+            "Dynamic Load",
+            "Continuum Mechanics",
+            "Strain Energy Function"
+          ]
+        },
+        {
+          "title": "On the influence of waves and seismic loads on granular seabed stability",
+          "authors": "João Paulo Chodacki Quiuqui, Samir Maghous",
+          "start": "2025-11-24T10:15",
+          "end": "2025-11-24T10:30",
+          "abstract": "A stability study of granular seabed subjected to cyclic wave loading and seismic actions, based on limit analysis in terms of effective stress, was conducted. Seismic loading is considered using the pseudo-static method, while wave loading is modeled by the first-order Stokes theory. The adopted formulation incorporates the effects of seepage forces arising from pore pressure gradients induced both by wave pressure oscillations and by soil densification due to cyclic shearing of the granular material. The analysis is conducted using the kinematic approach, based on representative failure mechanisms, and the Mohr-Coulomb strength criterion is adopted. Numerical results highlight the significant destabilizing influence of seismic loading, especially when combined with wave-induced cyclic loading.",
+          "keywords": [
+            "Water waves",
+            "Stability of submarine slopes",
+            "Pseudo static method"
+          ]
+        },
+        {
+          "title": "Electrical Cable Routing Optimization in Offshore Wind Farms",
+          "authors": "Murilo Fiorenzano Rapozo, Philip Stape, Rafael P. Longhi, Bruno F. Monteiro, Juliana Souza Baioco, Breno P. Jacob, Marcelo Igor L. de Souza",
+          "start": "2025-11-24T10:30",
+          "end": "2025-11-24T10:45",
+          "abstract": "Wind energy production has garnered increasing attention as a leading source of renewable energy, thanks to its widespread availability and increasingly competitive costs. Wind power is a renewable energy source that efficiently and sustainably converts the kinetic energy of wind into electricity through the rotation of wind turbines. In Brazil, onshore wind energy is the second largest source of electricity generation, surpassed only by hydroelectric power. In contrast, despite its abundant wind resources and extensive coastline, Brazil has not yet implemented any offshore wind energy infrastructure, highlighting the significant research potential in this field. In this context, this manuscript proposes a model for optimizing the routing of electrical cables and the interconnection of system components in previously defined positions   — namely, wind turbines and the electrical substation — with the objective of automating the design of offshore wind farms layout. The wind farm electrical cable routing problem must consider design and seabed constraints, while coordinating different objectives, such as minimizing cable length, enhancing energy efficiency, and reducing overall costs. Specifically, the developed routing model aims to minimize the total length of electrical cables, using a minimum spanning tree (MST) approach. In the model, wind farm elements are modeled as a graph, with turbines and substations represented by nodes and possible interconnections between elements represented by the edges. A case study was conducted to assess the proposed model, and the results demonstrate the feasibility of the tool. With the proposed tool, we expect to reduce the time required for designing offshore wind farm projects, while also delivering more efficient and cost-effective solutions.",
+          "keywords": [
+            "Offshore Wind Farms",
+            "Wind Energy Production",
+            "Renewable Energy",
+            "Optimization"
+          ]
+        },
+        {
+          "title": "Comparative study of assessment methods to predict the hydrostatic collapse of subsea pipelines with interacting corrosion defects",
+          "authors": "Savanna  Cristina Medeiros D'Aguiar, Renato de Siqueira Motta , Adriano Dayvson Marques Ferreira,  Silvana Maria Bastos Afonso da Silva",
+          "start": "2025-11-24T10:45",
+          "end": "2025-11-24T11:00",
+          "abstract": "Assessing corroded subsea pipelines' structural integrity and risk management is a current challenge for the offshore industry. Corrosion defects are commonly distributed randomly along the subsea pipeline, leading to interactions between neighboring defects. Interacting corrosion defects play an important role in the evaluation of the collapse response of these pipes. So, this paper investigates the hydrostatic collapse of subsea pipelines with interacting corrosion defects through numerical analyses based on finite element models. The PIPEFLAW system, developed by the PADMEC (High-Performance Processing in Computational Mechanics) research group at UFPE (Federal University of Pernambuco), is used to generate the 3D FE models and perform nonlinear analyses automatically. The analyses include subsea pipelines with dual and multiple corrosion defect configurations. A parametric study is carried out to compare the collapse prediction and different semi-empirical methods available in the literature. Additionally, a novel approach introduced in recent research is evaluated. This approach subdivides the corrosion zone into sub-defects with an equivalent length, width, and depth. The findings demonstrate that this methodology performs better than traditional evaluation methods for predicting the collapse pressure of subsea pipelines with interacting corrosion defects. Thus, the novel approach contributes to more accurate and less conservative assessments and may become a practical tool for the integrity assessment of corroded pipelines in offshore environments.",
+          "keywords": [
+            "Subsea pipelines",
+            "Collapse Hydrostatic",
+            "Corrosion",
+            "Interacting defects."
+          ]
+        },
+        {
+          "title": "Dynamic Catenary: A Simulation Model for Heterogeneous Mooring Lines",
+          "authors": "Milton Mateus Guimarães dos Santos, Eduardo Nobre Lages",
+          "start": "2025-11-24T11:00",
+          "end": "2025-11-24T11:15",
+          "abstract": "This study presents Dynamic Catenary (DynCat), an extended methodology for simulating elastic mooring lines in free-catenary configurations connected to floating offshore units. Traditional analyses rely either on catenary models, which are computationally efficient but dynamically oversimplified, or on finite element models (FEM), which provide higher fidelity at a greater computational cost. DynCat bridges this gap by combining the low computational cost of catenary models with enhanced physical accuracy, grounded in principles of deformable-solid mechanics. The formulation revisits deformable cable elements within the FEM framework, assembles multi-material line segments into a unified model, and incorporates environmental loading effects, resulting in numerically stable simulations that provide instantaneous line geometry and tension profiles at each time step. Validation studies covering shallow, intermediate, and deep waters under various fairlead motion regimes demonstrate that DynCat maintains good accuracy under low-to-moderate motion conditions. Although its performance deteriorates under highly dynamic deep-water conditions, DynCat remains accurate and robust within the operational envelope of shallow-to-intermediate water depths and low-to-moderate motion intensities, with simulation time reductions of 60–70% compared to conventional FEM approaches. This makes DynCat a promising tool for preliminary design and time-constrained analyses.",
+          "keywords": [
+            "Mooring lines",
+            "Cable structures",
+            "Morison’s forces",
+            "Numerical simulation",
+            "Computational efficiency"
+          ]
+        },
+        {
+          "title": "MODELING AND SIMULATION OF PULL-OUT OF FLEXIBLE LAZY-WAVE RISERS",
+          "authors": "Luis Carlos  do Nascimento Filho, Luana Andreza Gomes Moura, Leonardo Gonçalves Ribeiro, Evandro Parente Junior, Antônio Macário Cartaxo de Melo, Marcelo Silva Medeiros Júnior, Elias Saraiva Barroso",
+          "start": "2025-11-24T11:15",
+          "end": "2025-11-24T11:30",
+          "abstract": "The decommissioning of offshore structures is a challenge due to the numerous factors influencing the decision-making process regarding the methodology to be adopted. Activity planning involves a multidisciplinary study that considers regulatory, logistical, economic, environmental, and operational issues. One of the main stages is the pull-out, which consists of disconnecting and retrieving flexible pipes. This stage is a time-consuming and costly procedure due to the need for support vessels. Consequently, there is a constant search for alternatives to optimize this activity. A simple and economical alternative is the surface cutting of the riser followed by its free fall to the seabed. Assessing the technical feasibility of this alternative requires computational simulations to determine the geometry and internal forces during the fall. It is important to note that cutting the riser leads to the sudden release of a large amount of energy, in addition to generating a compression wave that travels through the riser, which can cause the phenomenon of dynamic buckling when another compression wave returns. Thus, this work aims to develop a computational model able to simulate the surface cutting of a flexible lazy-wave riser, considering the dynamic and nonlinear aspects involved. The studied parameters include mesh discretization, the time increment of the integration algorithm, and the effect of the drag coefficient. Initially, the riser’s static configuration will be obtained to verify the loads before cutting. Subsequently, the surface cutting of the structure will be simulated, followed by a study of the riser’s configuration during the fall, as well as the envelopes of velocity, acceleration, effective tension and compression, and curvature radius, which are all essential for assessing the operation's feasibility.",
+          "keywords": [
+            "Flexible risers",
+            "Lazy-wave",
+            "Decommissioning",
+            "Non-linear analysis"
+          ]
+        },
+        {
+          "title": "Bend stiffeners for flexible pipes: A comparative study between Attachment and Pipe in Pipe modeling",
+          "authors": "Bruno da Fonseca Monteiro, Ana Paula Oliveira Benete, Carl Horst Albrecht, Juliana Souza Baioco, Breno Pinheiro Jacob, Marcelo Igor L. de Souza",
+          "start": "2025-11-24T11:30",
+          "end": "2025-11-24T11:45",
+          "abstract": "This paper presents a comparative analysis between two modeling methodologies for bend stiffeners applied to subsea flexible pipes: the Attachment model and the Pipe in Pipe model. The main motivation lies in the need to ensure the structural integrity of pipelines during installation operations in offshore environments, especially in deep and ultra deep waters, where dynamic loads are significant. A top riser deployment scenario was simulated under different environmental conditions and top angle presets of 1º, 3º, and 5º. The analysis focused on maximum top tension, top angle, shear force and bending moment of the stiffener, line curvature below the stiffener, and simulation runtime. Results show that both approaches yield similar global performance for top tension and angle, while the Pipe in Pipe model offers greater freedom of movement for the riser and shorter simulation times (on average 22% faster). However, this approach requires more detailed input data, especially regarding the definition of contact stiffness, which can cause convergence problems. It is possible to conclude that Attachment is preferable for early design stages or when frequent adjustments are needed, whereas Pipe in Pipe is recommended for consolidated projects demanding greater accuracy in representing stresses and relative motions.",
+          "keywords": [
+            "Offshore systems",
+            "Installation Engineering",
+            "Flexible Pipes",
+            "Bend Stiffener"
+          ]
+        },
+        {
+          "title": "A FINITE ELEMENT APPROACH FOR EVALUATION OF THE MOMENT–CURVATURE RESPONSE OF FLEXIBLE RISERS",
+          "authors": "Johon Lenon dos Santos Rocha, Marcelo Silva Medeiros Júnior, Elias Saraiva Barroso, Evandro Parente Junior, Antônio Macário Cartaxo de Melo, Gabriel Braga Alves de Matos",
+          "start": "2025-11-24T11:45",
+          "end": "2025-11-24T12:00",
+          "abstract": "Flexible risers are critical components employed in the offshore oil and gas industry, designed to withstand significant loads arising from their self-weight, environmental actions (such as ocean currents and wave loads), and the dynamic motions imposed by floating production platforms. These systems are engineered to exhibit high axial tensile stiffness while maintaining low bending stiffness — a fundamental characteristic for operations in dynamic environments. This anisotropic mechanical response is enabled by a multilayered architecture, composed of alternating structural and sealing elements with varying levels of interlayer adhesion. Helically wound metallic layers provide structural reinforcement and resistance to both tensile forces and internal/external pressures, whereas polymeric layers ensure fluid tightness throughout the system. This configuration allows flexible risers to operate under considerably smaller bending radii compared to metallic pipes of equivalent pressure capacity, making them particularly suitable for scenarios requiring high flexibility without compromising structural integrity. Due to their intricate construction, the global mechanical behavior of flexible risers is inherently nonlinear and strongly influenced by interlayer interactions. Under bending loads, this behavior becomes even more complex, as relative sliding between layers induces hysteresis effects in the moment-curvature response, thereby necessitating advanced modeling techniques for accurate representation. In this context, the present work proposes a methodology for estimating the moment-curvature behavior of flexible risers. To this end, various analytical formulations available in the technical literature were reviewed and compared, forming the foundation for the proposed procedure. The approach includes numerical modeling using the finite element method (FEM) implemented in the Abaqus software, with particular attention given to the interlayer interaction and sliding mechanisms between layers. The methodology was validated through comparison with experimental data and reference models reported in the literature. The proposed model was able to capture the moment-curvature response, including the unloading path hysteresis. The bending stiffnesses obtained through this methodology showed good agreement with the values reported in previous studies, demonstrating its effectiveness.",
+          "keywords": [
+            "Flexible riser",
+            "moment–curvature response",
+            "offshore riser",
+            "computational modeling",
+            "analytical model"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-TM-01",
       "size": "small",
       "title": "Computational Fluid Dynamics in Environmental Engineering",
-      "theme": "",
+      "theme": "Computational Fluid Dynamics in Environmental Engineering",
       "room": "Taj Mahal",
       "start": "2025-11-24T10:00",
       "end": "2025-11-24T12:00",
-      "chair": "",
+      "chair": "Bruno Furieri; Cristina Lima de Morais; Enilene Regina Lovatte; Maria Clara Schuwartz Ferreira",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "CFD Modeling of Sanitary Effluent Flow in Parshall Flumes Considering Surface Tension Variability",
+          "authors": "Bruno de Oliveira Lázaro, João Marcelo Vedovotto",
+          "start": "2025-11-24T10:00",
+          "end": "2025-11-24T10:15",
+          "abstract": "This research aims to analyze the flow behavior of sanitary effluents in Parshall flumes through Computational Fluid Dynamics (CFD) simulations performed using ANSYS Fluent. The central hypothesis is that the surface tension of wastewater, which differs from that of pure water, significantly influences the hydraulic behavior of the flow, especially in critical regions of the flume. To represent wastewater in a simplified but technically grounded manner, water was used as the base fluid, with surface tension values varied across three scenarios: 0.030 N/m, 0.040 N/m, and 0.050 N/m, as recommended by the literature.\nThe flume geometry was modeled according to technical standards, and the flow was considered two-phase (water–air), incompressible, and transient, with the interface between phases captured using the Volume of Fluid (VOF) method. Turbulence was modeled using the Shear Stress Transport k-omega (k-ω SST) model, chosen for its proven capability to capture strong shear zones and boundary layer behavior in transitional flows. Boundary conditions included a uniform velocity profile at the inlet, atmospheric pressure at the outlet, rough no-slip walls, and a free surface representing air–water interaction.\nThe results revealed that lower surface tension values lead to greater surface instability, enhanced recirculation zones downstream of the throat, and increased air entrainment. These effects can compromise flow measurement accuracy, particularly in flumes equipped with ultrasonic or pressure-based level sensors. Variations were also observed in velocity profiles and stage-discharge curves, with higher surface tensions yielding smoother flow surfaces and more stable hydraulic conditions.\nIt is concluded that surface tension is a non-negligible parameter in CFD modeling of wastewater flows in Parshall flumes. Its influence extends beyond surface aesthetics, impacting the internal flow structure and potentially altering hydraulic measurements. The study contributes to advancing CFD applications in sanitary engineering by proposing a realistic and computationally efficient approach for simulating effluent flows with varying physicochemical properties.",
+          "keywords": [
+            "Computational Fluid Dynamics (CFD)",
+            "Parshall Flume",
+            "Surface Tension",
+            "Wastewater Flow Modeling",
+            "Turbulence Model"
+          ]
+        },
+        {
+          "title": "A High-Performance ADI–Pressure Projection Method for Solving the Navier–Stokes Equations",
+          "authors": "Raphael Laroca, Iury Igreja",
+          "start": "2025-11-24T10:15",
+          "end": "2025-11-24T10:30",
+          "abstract": "The Navier–Stokes equations are fundamental for describing fluid motion, yet they remain among the most challenging problems in mathematical and computational fluid dynamics. Their strong nonlinearity, coupled with the necessity of simultaneously approximating velocity and pressure fields, leads to a highly complex and computationally demanding system. In particular, mixed formulations introduce compatibility requirements that add further difficulty to ensuring stable and accurate solutions. Moreover, the consistent enforcement of mass conservation remains a delicate aspect in numerical schemes. To address these challenges, this work proposes a simple and efficient numerical strategy that combines an Alternating Direction Implicit (ADI) method with a Pressure Projection technique. The ADI method efficiently handles the velocity computation, while the Pressure Projection ensures the enforcement of the divergence-free condition, preserving mass conservation naturally. For enhanced computational performance, the velocity field is solved in CPU using OpenMP parallelization in the ADI steps, while GPU acceleration using CUDA is employed for the solution of the pressure equation. The proposed methodology is validated through convergence studies and comparisons with benchmark solutions from the literature, applied to classical CFD test cases. The results demonstrate the accuracy, efficiency, and robustness of the approach, highlighting its potential for scalable and reliable simulations in computational fluid dynamics.",
+          "keywords": [
+            "CFD",
+            "ADI",
+            "Navier-Stokes",
+            "Pressure Projection"
+          ]
+        },
+        {
+          "title": "A simple mass-conserved Level Set Method for FSI problems with free-surface flows",
+          "authors": "Mateus Guimarães Tonin, Alexandre Luis Braun",
+          "start": "2025-11-24T10:30",
+          "end": "2025-11-24T10:45",
+          "abstract": "The present work is dedicated to the numerical simulation of Fluid-Structure Interaction (FSI) problems involving floating bodies subjected to the action of free-surface flows. The free-surface treatment is considered using the Level Set Method (LSM), which historically has a drawback of being too dissipative, leading to mass conservation errors. In a relatively new modification, proposed by Yuan et al. (2018) and implemented here, a source or sink term is introduced into the original Level Set equation to compensate the mass loss or offset the mass increase, leading to better results. Also, in our model, the flow equations are discretized using the Characteristic-Based Split (CBS) method in the context of the Finite Element Method (FEM). The structure is kinematically described using a rigid body approach. The system of equations of motion is discretized in time using the implicit Newmark and a-Generalized methods. Several problems are simulated, comparing the results with those from the original LSM, demonstrating that the modified version has the capability of accurately capturing the interface and keeping the mass conservation.",
+          "keywords": [
+            "Free-Surface Flows",
+            "Level Set Method",
+            "Floating Structures",
+            "Fluid-Structure Interaction"
+          ]
+        },
+        {
+          "title": "Numerical Modeling and Simulation of Wind-Induced Water Elevation By Tropical Cyclones Using Shallow Water Equations",
+          "authors": "Marcos Wilson Ogata, Renato Vaz Linn, Alexandre Luis Braun, Herbert Martins Gomes",
+          "start": "2025-11-24T10:45",
+          "end": "2025-11-24T11:00",
+          "abstract": "Modeling the interaction between storms such as tropical cyclones over the ocean is highly relevant in the fields of ocean, coastal, and offshore engineering, as it enables the forecasting of loads and risks, as well as the mitigation of damages caused by these extreme events in coastal areas. The present study aims to investigate the water elevation caused by the formation of tropical cyclones at sea, using the Finite Element Method to solve the Shallow Water Equations. The wind generated by the cyclone was simulated using an analytical model that accounts for meteorological parameters and their interaction with water bodies, modeled as tangential stresses applied to the free surface. After verifying the shallow water flow solver with a benchmark problem, simulations of wind-induced flows were performed considering two different domains: one with constant bathymetry and another representing a linearly varying coastal region. The effects of model parameters describing the tropical cyclone were investigated and discussed. As a result, it was found that the most significant factors influencing water elevation are the radius at which the cyclone's maximum wind speed occurs and the pressure difference between the storm center and its periphery, leading to considerable water elevation in the most severe cases. In contrast, the translational speed of the cyclone had little impact on water elevation, whereas smaller wind incidence angles produced higher elevations along the coastline. Finally, an additional investigation is presented, considering a more complex domain configuration to illustrate the potential applications of the proposed model.",
+          "keywords": [
+            "Tropical Cyclones",
+            "Shallow Water Equations",
+            "Computational Fluid Dynamics"
+          ]
+        },
+        {
+          "title": "Nonlinear Shallow Water Wave Propagation in a Variable-Depth Channel",
+          "authors": "Renan André Peres, Antônio Manoel Ferreira Frasson, Carlos Friedrich Loeffler, Fábio Pavan Piccoli, Julio Tomás Aquije Chacaltana",
+          "start": "2025-11-24T11:00",
+          "end": "2025-11-24T11:15",
+          "abstract": "The nonlinear Shallow Water Equations (SWE) for a homogeneous fluid (see, e.g., Wu et al. [1], Struve et al. [2]) is solved numerically by the Finite Element Method (FEM). Advective, hydrostatic pressure, atmospheric pressure and viscosity effects are included in the numerical solution. The baroclinic effect, Coriolis force and the wind action are disregarded in this simulation. To minimize the residual in each element, the Weighted Residuals (Galerkin) Method is used. The reflective (natural) boundary condition was implemented in order to simulate the rigid wall on right side of the channel (tank). The numerical code is written in Fortran 95 language and the Octave graphical interface is used to analyze the results. The GMSH mesh generator (v. 4.8.4) is used to represent the continuous domain by a set of discrete points that are grouped to form a non-uniform mesh of triangular elements. The numerical results of wave generation by a piston-type wavemaker (Goring [3], Whitham [4]) are compared with experimental results (Briggs et al. [5]) for the generation of solitary waves in a variable depth channel. The numerical results are in good agreement with those reported in the literature (Silva et al. [6], Takagi [7], Gardarsson [8]).",
+          "keywords": [
+            "Nonlinear",
+            "Shallow Water Equations",
+            "Finite Element Method",
+            "Solitary wave"
+          ]
+        },
+        {
+          "title": "CFD Analysis of Urban Airflow and Particulate Dispersion in a Mining-Influenced Neighborhood Using Real Topography Data",
+          "authors": "Eduardo Pescada, Bruna Lima Veras Maia, Renata Drumond Corrêa, Bruno Furieri, Taciana Toledo de Almeida Albuquerque",
+          "start": "2025-11-24T11:15",
+          "end": "2025-11-24T11:30",
+          "abstract": "Urban areas located near ore management or mining sites may be affected by air pollution caused by the emission of particulate matter resulting from activities associated with the mineral production chain. Besides the deposition of dust in roads, plants and houses everywhere along the wind stream, suspended particulate matter has negative effects on the population’s health, from aggravating to being the cause of cardiovascular and respiratory diseases. Accordingly, the present study aims to evaluate the airflow through the streets and between residential blocks located in a neighborhood within the urban area of the municipality of Congonhas, in the state of Minas Gerais, situated near mining activities, using computational fluid dynamics (CFD). For this purpose, the software Ansys Fluent was employed to carry out the computational simulations, in which the actual topography of the terrain related to the studied case was considered. Recent works in particulate matter carried by wind uses simplified geometry of the terrain to model the basis of the air flow in urban regions. In contrast, the present analysis uses the official terrain scan made available by the city hall which excludes buildings and vegetation, but considers the detailed topography. Also, the input data of wind velocity profile is from a mining site, to better suit the local context and use an already fully developed airflow. Based on the analysis of different wind directions, it is possible to identify areas with low and high wind velocities, in which occurs deposition and emission of particulate matter. Furthermore, the integrated use of these tools and datasets enables a quantitative assessment of the performance of existing strategies in controlling particulate matter emissions. Moreover, the methodology supports the identification of optimal technologies and spatial deployment strategies for future interventions aimed at achieving effective dust pollution reduction.",
+          "keywords": [
+            "CFD Analysis",
+            "Real Topography Data",
+            "particulate matter"
+          ]
+        },
+        {
+          "title": "Numerical Analysis of Erodible Particle Transport over a Rough Surface with 20% Non-Erodible Elements Using LES and Euler-Lagrange",
+          "authors": "DIOGO OLIVEIRA, Bruno Furieri, Jane Meri dos Santos, Geisiely do Espírito Santo",
+          "start": "2025-11-24T11:30",
+          "end": "2025-11-24T11:45",
+          "abstract": "Wind erosion is a relevant environmental and industrial phenomenon, with impacts on air quality, public health, and the operation of logistical systems, particularly in the mining sector. The release of fine particles into the atmosphere depends on factors such as surface roughness, which influences the development of turbulent structures in the near-surface flow. This study proposes to numerically analyze the transport and emission of erodible particles over a surface with 20% coverage by non-erodible elements, represented by cylindrical bodies—a condition commonly observed in real environments.\nSimulations will be performed using the Large-Eddy Simulation (LES) approach coupled with the Euler-Lagrange method, enabling accurate representation of large-scale turbulent structures and individual particle motion. The continuous phase will be solved using the Navier–Stokes equations with LES, while the particulate phase (sand particles between 60–100 μm) will be modeled in a Lagrangian framework, accounting for drag, gravity, cohesion, and collisions. Boundary conditions will include periodic boundaries and a rough bottom wall, with particle emission occurring when the local friction velocity exceeds a critical threshold.\nThe focus will be on analyzing particle concentration distribution and transport over the bed with 20% roughness, evaluating the effect of non-erodible particles on the formation of coherent flow structures, recirculation zones, and variations in shear stress. Different boundary conditions for particles will be tested to assess their influence on the dynamics of emission and transport.\nThe results are expected to support the development of more robust predictive emission models, with applications in dust control, planning of particulate material storage areas, and environmental studies related to wind erosion. This case study will also serve as a foundation for future analyses involving other roughness configurations.",
+          "keywords": [
+            "Wind erosion",
+            "Particle transport modeling",
+            "Surface roughness"
+          ]
+        },
+        {
+          "title": "AEROELASTIC ANALYSIS OF SPOILERS ON LOW-RISE BUILDINGS USING A FINITE ELEMENT MODEL FOR FLUID-STRUCTURE INTERACTION",
+          "authors": "Gabriela Bianchin, Renato Vaz Linn, Alexandre Luis Braun",
+          "start": "2025-11-24T11:45",
+          "end": "2025-11-24T12:00",
+          "abstract": "Low-rise buildings are highly susceptible to wind action due to the development of high suction pressures on their roofs, which result from vortices generated near the roof’s corners and edges. To mitigate wind loads on the roof structure, aerodynamic appendages may be incorporated into the building design. Previous work (see Bianchin and Braun, 2025) has shown that rigid spoilers can effectively reduce aerodynamic loading on the roofs of low-rise buildings. However, the feasibility of this load mitigation method depends on the spoiler dynamic stability and the strain/stress levels developed in the spoiler material. In this context, a fluid-structure interaction (FSI) model is proposed to numerically investigate the aeroelastic behavior and stress states induced by wind on aerodynamic appendages that are intended for future use in low-rise buildings to attenuate aerodynamic loading on roofs. In the present model, spoilers are considered elastic structures constituted of linear elastic material with geometrically nonlinear effects. The Finite Element Method (FEM) is adopted for spatial discretization using triangular shell elements (GPL_T9). The dynamic equilibrium equation is integrated over time using the implicit Newmark algorithm and the α-generalized method. The system of flow equations consists of the Navier-Stokes equations and the mass conservation equation for incompressible and isothermal flows, while Large Eddy Simulation (LES) is employed for turbulence modeling using a dynamic sub-grid approach. The numerical formulation for flow analysis is based on a semi-implicit Characteristic-Based Split (CBS) model within the Finite Element Method framework, where linear tetrahedra are used for spatial discretization. Fluid-structure coupling is achieved using a partitioned model, incorporating an arbitrary lagrangean-eulerian (ALE) formulation for flow kinematics and a numerical scheme for mesh motion. Test cases are simulated considering a boundary-layer wind profile and simple low-rise building models with rectangular spoilers positioned near the upwind roof edge. Results obtained here are compared with previous predictions using rigid spoilers. This study demonstrates the feasibility of using aerodynamic appendages for wind load attenuation in buildings, provided that they are not subject to excessive loading or aeroelastic phenomena.",
+          "keywords": [
+            "Computational Wind Engineering",
+            "Fluid-Structure interaction",
+            "Computational Fluid Dynamics",
+            "Spoilers",
+            "Aeroelasticity"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-BB-02",
       "size": "small",
-      "title": "Vibration Control",
-      "theme": "",
+      "title": "Computational Methods and Digital Transformation Applied to Oil & Gas Industry and Energy Integration",
+      "theme": "Computational Methods and Digital Transformation Applied to Oil & Gas Industry and Energy Integration",
       "room": "Big Ben",
       "start": "2025-11-24T13:30",
       "end": "2025-11-24T15:30",
-      "chair": "",
+      "chair": "João Paulo Lima Santos; Eduardo Nobre Lages; Lucas Pereira de Gouveia; Pedro Esteves Aranha; Emilio Cesar Cavalcante Melo da Silva",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Real-Time Rate of Penetration Prediction Analysis using LSTM Networks Under a Continuous Learning Scenario",
+          "authors": "Antonio Paulo Amancio Ferro, Erasmo Augusto Bezerra Silva , Francisco de Assis Viana Binas Júnior, Lucas Pereira de Gouveia , Aline da Silva Ramos Barboza, Aliel Faria Riente",
+          "start": "2025-11-24T14:30",
+          "end": "2025-11-24T14:45",
+          "abstract": "Recent technological advancements in data transmission and acquisition systems for drilling operations, along with the growing global energy demand, have led the Oil &amp; Gas industry to pursue data-driven solutions in real-time to improve performance and reduce well construction costs. In this context, the Rate of Penetration (ROP) serves as a key drilling performance metric, reflecting the effective speed of the drill string as the bit penetrates the rock formation. Predictive models for ROP can be employed in real time to suggest appropriate operational parameters that optimize ROP, potentially reducing drilling time and overall operating costs. This work investigates the application of Long Short-Term Memory (LSTM) networks for ROP prediction within a continual learning scenario based on drilling data. LSTM networks are well-suited for this task due to their ability to model dependencies in sequential data. The results obtained using the LSTM model are compared with benchmark results from Multilayer Perceptron (MLP) networks. A scenario is simulated in which the models are incrementally trained with new data received during drilling, predicting ROP in subsequent intervals. Given the transient nature of drilling, abrupt changes in data distribution are expected and may significantly impact predictive performance. Therefore, the model's performance in the test intervals is analyzed in relation to statistical characterizations of the newly received data. The dataset used comprises public data from three wells in the Volve field in the North Sea. It includes both operational parameters and lithological information, the latter being particularly important for analyzing the results obtained in this study. Model performance is evaluated using the Mean Absolute Error (MAE) and Root Mean Square Error (RMSE). The results demonstrate the potential of the adopted strategies using the LSTM model. It is expected that the comparative analyses presented in this study will contribute to key aspects of developing data-driven solutions for real-time drilling applications.",
+          "keywords": [
+            "Drilling",
+            "ROP Prediction",
+            "Real-Time",
+            "Deep Learning",
+            "LSTM"
+          ]
+        },
+        {
+          "title": "Application of a Bayesian Approach for Soil Classification in Brazillian Marine Soil: Benchmarking Against Robertson Chart and Fuzzy Techniques",
+          "authors": "João Fernandes, Christiano Várady, Joyce Tenório, Eduardo Toledo de Lima Junior, João Paulo Lima Santos, Rafael Dias",
+          "start": "2025-11-24T14:45",
+          "end": "2025-11-24T15:00",
+          "abstract": "This paper presents a Bayesian approach for identifying and classifying soil stratigraphy from Piezocone Penetration Test (CPTu) data, explicitly capturing uncertainties in CPTu-based classifications. The probabilistic model determines the most probable number of underground soil layers of different thicknesses and types. Comparisons with the Robertson chart and a fuzzy-based method were performed using real CPTu data supplied by an oil and gas operator in the Campos Basin, Southeastern Brazil. This study integrates the Robertson soil classification chart, fuzzy-based classification, and a Bayesian probabilistic method. The Bayesian technique comprises two main steps: (i) model class selection to identify the most probable number of soil layers and (ii) system identification to estimate layer thickness and classify soil types. In the classical approaches, the layer thickness was determined using a Kernel Density Function technique. The probabilistic model merges prior knowledge with site-specific CPTu data from tests conducted in the Campos Basin. The Bayesian classification technique demonstrated strong capability for identifying soil stratigraphy, and determining the most probable layer boundaries. This approach begins with statistically significant boundaries and incrementally refines the resolution, effectively filtering out potential noise from the raw CPTu measurements. Comparative assessments show that the Bayesian model closely aligned with the outcomes from the Robertson soil classification chart and a fuzzy-based method, offering comparable accuracy while incorporating explicit uncertainty quantification. Notably, the Bayesian framework effectively adapts to varying subsurface conditions, providing a more thorough understanding of stratigraphic transitions than deterministic methods. As the number of model classes increases, the approach achieves finer stratification, confirming its utility for complex depositional environments. The probabilistic underpinnings of the method are especially beneficial in offshore petroleum applications, where reliable site characterization is critical. Overall, the results highlight the robustness and versatility of the proposed Bayesian strategy in improving geotechnical assessments and guiding informed design decisions.",
+          "keywords": [
+            "Soil classification",
+            "CPTu data",
+            "Stratigraphy",
+            "Bayesian approach"
+          ]
+        },
+        {
+          "title": "Time-Dependent Reliability Analysis of Well Barrier Elements",
+          "authors": "Jonathan Henrique Cordeiro Nunes, Eduardo Toledo de Lima Junior, Luís Philipe Ribeiro Almeida, Lucas Pereira de Gouveia, João Paulo Lima Santos, Danilo Colombo, Andre Luis Severino Abrego",
+          "start": "2025-11-24T15:00",
+          "end": "2025-11-24T15:15",
+          "abstract": "The exploration and production of hydrocarbons in pre-salt ultra-deepwater environments demand robust integrity assessment methodologies due to extreme operational conditions and high intervention costs. This work proposes a time-dependent reliability framework to evaluate the structural performance of well barrier elements (WBEs) throughout the well lifecycle. The approach integrates Monte Carlo simulation, corrosion modeling, and fault logic via cut sets. Historical failure rates were combined with simulated casing corrosion to assess two critical failure modes: internal burst under formation fluid pressure (Klever-Stewart model) and collapse under full evacuation (Klever-Tamano model). Results show that accounting for time-dependent corrosion increases system failure rates and cumulative probabilities, with the KT model yielding more conservative outcomes. These findings highlight the importance of incorporating temporal degradation mechanisms into offshore well integrity management, particularly for long-life assets. The methodology allows for the estimation of remaining useful life (RUL), identification of critical degradation paths, and quantification of system reliability at any point in time.",
+          "keywords": [
+            "Well Integrity",
+            "Time-Dependent Reliability",
+            "Well Barriers",
+            "Monte Carlo Simulation"
+          ]
+        },
+        {
+          "title": "A Python interface for DOOLINES: a framework for nonlinear static and dynamic analysis of offshore lines",
+          "authors": "Erasmo Augusto Bezerra Silva, Fábio Martins Gonçalves Ferreira, Eduardo Nobre Lages",
+          "start": "2025-11-24T15:15",
+          "end": "2025-11-24T15:30",
+          "abstract": "DOOLINES is a finite element-based framework for nonlinear static and dynamic analysis of mooring lines and risers. By modeling structural configurations and environmental conditions, the framework computes force and displacement histories using time integration methods. Developed in C++ with object-oriented programming, DOOLINES can be used as a standalone system or integrated into other platforms, such as DYNASIM (developed by PETROBRAS), where it has supported the design of offshore mooring systems. To enhance accessibility and broaden its applicability, a Python interface was developed through a wrapper, preserving the high performance and usability of the underlying framework. This interface simplifies access to the framework’s functionalities, enabling the analysis of complex systems with just a few lines of code and facilitating integration with visualization libraries and other analysis tools. The presented case studies demonstrate the effectiveness of the developed interface in modeling and analyzing offshore systems, highlighting its computational efficiency and user-friendliness for offshore engineering applications.",
+          "keywords": [
+            "offshore systems",
+            "line dynamics",
+            "python wrapper"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-KH-02",
       "size": "small",
       "title": "Modeling and Simulation of Dynamics, Stability, Control, and Reliability of Aerospace Structures",
-      "theme": "",
+      "theme": "Modeling and Simulation of Dynamics, Stability, Control, and Reliability of Aerospace Structures",
       "room": "Khalifa",
       "start": "2025-11-24T13:30",
       "end": "2025-11-24T15:30",
-      "chair": "",
+      "chair": "Marcelo Araujo da Silva; Reyolando M.L.R.F. Brasil; André Fenili; José Manoel Balthazar",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Application of the Nonlinear SDRE Approach to Control Smal Satellite During Detumble Orbit Phase",
+          "authors": "Luiz Carlos Gadelha de Souza,",
+          "start": "2025-11-24T14:00",
+          "end": "2025-11-24T14:15",
+          "abstract": "Attitude Control of small satellite during detumbling orbit phase is of fundamental importance for the mission's success. In general, the small satellite starts this phase with high angular velocity and the Attitude Control System (ACS) needs to maneuver it to the normal mode of operation, which is has attitude of small angles. The ACS performs this operation between these two phases modes which has nonlinear dynamics due to the high angular velocities and perturbations using cold gas thrusters. As a result, the application of linear control techniques can compromise the performance and robustness requirements of the SAC System. To mitigate this problem, we apply the State-Dependent Riccati Equation (SDRE) method which can deal with such a nonlinear system. The SDRE controller is based on cold gas thruster torques to perform the large-angle maneuver in order to reduce the high angular velocities. The investigation serves to validate the numerical simulator model and to verify the functionality of the control algorithm as well as the signal between the controller and the actuators designed by the SDRE technique. In this study the SDRE controller is designed as a continuous time system for a full Monte Carlo perturbation model to test the adequacy of the control strategy adopted. The ACS is ready for the next step of this study, which is the analysis of discretization techniques, in which the sampling rate should be evaluated for the digital version of the SDRE technique aiming at its implementation in on-board computer.",
+          "keywords": [
+            "Satellite Nonlinear Control",
+            "SDRE method",
+            "Cold Gas Thruster"
+          ]
+        },
+        {
+          "title": "Mathematical modeling of a space tether considering the transition from the slack cable configuration to the tensioned cable configuration",
+          "authors": "André Fenili, Reyolando Manoel Lopes Rebello da Fonseca Brasil",
+          "start": "2025-11-24T14:15",
+          "end": "2025-11-24T14:30",
+          "abstract": "This paper proposes a mathematical model for the dynamics of a space tether in the unstretched configuration (cable deformed but not tensioned; also named slack cable configuration), in the stretched configuration (cable deformed and tensioned) and considers the transition from one configuration to the other. Hamilton's principle is applied to obtain the governing equations of motion and boundary conditions for both configurations. Constraint equations are presented that determines the transition from the untensioned configuration to the tensioned configuration and vice-versa. External forces applied to the masses (satellites) at the ends of the space tether are responsible for the stretching of the cable, which is the desired configuration. The ultimate goal of this research is that in the stretched configuration, a desired value for the tension developed in the cable must be achieved and maintained so that the space-tether operation is satisfactory.",
+          "keywords": [
+            "stretched cable",
+            "slack cable",
+            "constraint equation",
+            "space tether",
+            "dynamics"
+          ]
+        },
+        {
+          "title": "Probabilistic Analysis of Celestial Bodies Entering Earth's Atmosphere Using the Monte Carlo Process",
+          "authors": "MARCELO ARAUJO DA SILVA, Mauro Montezuma Duarte Domingues",
+          "start": "2025-11-24T14:30",
+          "end": "2025-11-24T14:45",
+          "abstract": "The risk of celestial bodies—such as asteroids and comets—colliding with Earth is a growing concern, especially in the context of planetary defense. This study aims to estimate the probability of such bodies entering Earth's atmosphere using the Reliability Theory framework and the Monte Carlo Process (MCP). The analysis is grounded on modeling a performance (or failure) function dependent on the relative velocity and minimum distance of the object from Earth. Both real-world data from NASA's database and randomly generated datasets are utilized. The calculated failure probabilities, corresponding to potential impacts, were 0.11% for real bodies and 0.13% for synthetic ones. These results demonstrate the applicability of MCP in evaluating collision risks and pave the way for further enhancements using more advanced statistical tools and simulation platforms.",
+          "keywords": [
+            "Reliability",
+            "Monte Carlo Process",
+            "Celestial Bobies"
+          ]
+        },
+        {
+          "title": "Wing Structural Changes of Hybrid-Electric Aircraft: a case of study",
+          "authors": "HELIO DE ASSIS PEGADO, \"Pedro Lucas França Alves\"",
+          "start": "2025-11-24T14:45",
+          "end": "2025-11-24T15:00",
+          "abstract": "Decarbonization and sustainability are emerging global goals as solutions to mitigate these temperature changes. The search for alternative fuels that reduce or eliminate gas emissions has become one of the most researched topics. In this context, electric energy has re-emerged as a source with the potential to revolutionize humanity, both for powering cars and airplanes. The attempt to use electric energy to power aircraft is not new. Pioneers tried to use it, but in the late nineteenth and early twentieth centuries, the weight-to-power ratio made this possibility unfeasible. Currently, with lighter engines and batteries with greater energy storage capacity, in addition to the use of renewable sources such as wind and photovoltaic energy, this possibility has begun to become a reality. Electric aircraft have begun to appear using photovoltaic panels on the wings and fuselage, demonstrating the viability of this energy alternative. Another option found was to electrify existing aircraft. This option does not simply involve removing the piston engine and turbine and replacing them with electric motors. From a structural perspective, the designer will have to deal with, at the very least, a fixed center of gravity (CG) instead of the CG movement during the flight that exists in aircraft as a result of the consumption of fuel. If he chooses to replace the propeller in the nose of the aircraft with several smaller propellers on the wings, called distributed propulsion, he will have to deal with changes in loads and moments, and it may be necessary to increase the number of ribs to increase their resistance. This work studies the transformation of an aircraft to hybrid-electric propulsion and the effects of these modifications on the wing structures and their attachment to the fuselage. The structural analysis is performed in a typical flight scenario at sea level, with a fixed standard atmosphere temperature, maximum cruise speed, and a specific angle of attack. It was necessary to determine a power-plant configuration to run a Vortex Lattice Method simulation to obtain the aerodynamic loads. Once the wing loads and the power plant were defined, it was possible to obtain the modified wing loads, and, in addition to the geometry model, it was possible to run the structural simulation. Despite the challenges related to added weight and reduced useful load, the developed study indicated that the proposed modification is viable from a structural viewpoint.",
+          "keywords": [
+            "Distributed propulsion",
+            "aircraft electrification",
+            "hybrid-electric aircraft"
+          ]
+        },
+        {
+          "title": "Finite Element-Based Dynamic Analysis of a Hybrid Sounding Rocket During Key Flight Stages",
+          "authors": "Davi Toledo da Costa,",
+          "start": "2025-11-24T15:00",
+          "end": "2025-11-24T15:15",
+          "abstract": "This work presents a computational structural dynamic analysis of a hybrid sounding rocket developed at University of Brasília (UnB), aiming to investigate the vibrational response of the structure at different stages of launch. The analysis focuses on the region connected to the base of the payload section, an area particularly sensitive to dynamic excitations due to the presence of onboard instruments and critical structural connections. The rocket’s structure was modeled in three dimensions using the finite element method within the ANSYS environment, incorporating geometric details and the actual material properties employed in the prototype.\nThree distinct scenarios were simulated, representing different flight stages with significant variations in the remaining propellant mass. This approach seeks to capture the effects of mass variation on the system’s dynamic behavior, particularly regarding the shift in natural frequencies and the amplification of structural responses. The thrust force applied to the models was obtained from experimental data collected during a hybrid rocket motor burn test conducted by the project’s supervising professor at the university’s facilities, ensuring a more realistic representation of external excitation.\nThe methodology involved the application of modal analysis to identify the vibration modes and their respective frequencies, as well as transient analysis under realistic time-varying loads simulating the thrust profile over time. The acceleration associated solely with the rigid body modes and the acceleration response corresponding to the structure’s elastic frequencies were considered separately. The values of the damping factor was also considered in the analysis, aiming to reproduce a more reliable result. The direct integration of the equations of motion was also performed in ANSYS, using the same configuration as in the modal analysis, allowing for a consistent comparison between methods and the evolution of the structural response over time. The combined use of these techniques provided a robust characterization of the rocket’s dynamic behavior, enabling an assessment of vibrations under different operational conditions, with a focus on structural integrity and the functional performance of the payload. This study contributes to the ongoing effort to strengthen the national scientific and technical foundation dedicated to the development of academic aerospace vehicles.",
+          "keywords": [
+            "Vibrational response",
+            "Hybrid Rocket",
+            "Structural dynamic analysis",
+            "Finite element method"
+          ]
+        },
+        {
+          "title": "Airplane Independência: History, Model and Analysis",
+          "authors": "JOAO DE AGUIAR, José M. de Aguiar",
+          "start": "2025-11-24T15:15",
+          "end": "2025-11-24T15:30",
+          "abstract": "In 1922 by the time of the comemoration of first century of Brazilian Independence, the first bimotor constructed in South America was presented in Rio de Janeiro. It was constructed under the auspices of a French Mission commanded by Etienne Lafay. Construction took place at the installations of Henrique Lage, a brazilian entrepeneur. The biplane could transport 5 passangers as it was powered with Clerget engines of 130 hp in a push-pull fashion. The airplane flew during some years, without any accidents, but disapeared from hystory. Only a few photos remain. So from them, drawings and a structural model of the airplane is developed in computer. From this model, in an operational scenario, construction materials are assigned. Associated loads are imposed and a finite element analysis performed to render the response of the airplane. Strain and stress fields result. Based on the obtained results, safety and performance evaluations of the airplane show a good level of reliabilty.",
+          "keywords": [
+            "Biplane",
+            "Independência",
+            "Model",
+            "FEA",
+            "Evaluation"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-MI-02",
       "size": "small",
       "title": "Boundary element and mesh-reduced methods",
-      "theme": "",
+      "theme": "Boundary element and mesh-reduced methods",
       "room": "Milad",
       "start": "2025-11-24T13:30",
       "end": "2025-11-24T15:30",
-      "chair": "",
+      "chair": "Ney Dumont; Francisco Célio de Araújo; Josué Labaki",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "An ACA accelerated boundary element analysis of viscous flow",
+          "authors": "Lucas  Campos, LUCAS ARAUJO DE ALMEIDA, EDER LIMA DE ALBUQUERQUE, Thiago Ribeiro Nicolaidis",
+          "start": "2025-11-24T13:30",
+          "end": "2025-11-24T13:45",
+          "abstract": "This paper presents an accelerated boundary element method (BEM) for analyzing incompressible viscous flow. The formulation stems from the continuity and Navier-Stokes equations. By employing the direct interpolation method within the BEM framework, domain integrals are handled without the need for cells. Hierarquical matrices are used to mitigate the computational cost inherent in traditional BEM, leading to significant improvements in simulation time and storage efficiency.",
+          "keywords": [
+            "Viscous Flow",
+            "Boundary element method",
+            "Hierarchical matrices"
+          ]
+        },
+        {
+          "title": "Direct Interpolation-Based Matrix Assembly in the Boundary Element Method for Elasticity",
+          "authors": "Lucas  Campos, Carlos Friedrich Loeffler",
+          "start": "2025-11-24T13:45",
+          "end": "2025-11-24T14:00",
+          "abstract": "A  strategy for faster matrix assembly in the Boundary Element Method (BEM) is applied to elasticity problems in this work. The key idea lies in extending the direct interpolation method, conventionally applied to domain integrals, to boundary integrals. This approach yields enhanced computational efficiency while preserving solution accuracy and ensuring convergence with mesh refinement. The effectiveness of this technique is demonstrated through its application to two-dimensional elasticity problems.",
+          "keywords": [
+            "Computational Efficiency",
+            "Boundary Element Method (BEM)",
+            "Direct Interpolation"
+          ]
+        },
+        {
+          "title": "Pipeline Heating Analysis Using the Method of Fundamental Solutions: A Computational Approach",
+          "authors": "Igor Falcão Tosi, Wellington Betencurte da Silva, Júlio Cesar Sampaio Dutra",
+          "start": "2025-11-24T14:00",
+          "end": "2025-11-24T14:15",
+          "abstract": "Pipeline Heating Analysis Using the Method of Fundamental Solutions: A Computational Approach\nThis work proposes an alternative approach to the study presented by Vianna et al. on pipeline heating systems in deep waters, utilizing the Method of Fundamental Solutions (MFS) to solve the direct heat conduction problem. The original study, which employed the finite volume method to model temperature distribution in a pipeline cross-section during shutdown conditions, will be revisited using MFS as a more computationally efficient tool.\nThe MFS offers significant advantages for this type of problem as a meshless method, eliminating the need for physical domain discretization and simplifying the representation of the pipeline's circular geometry. Our aim is to solve the same transient heat conduction problem in a homogeneous medium with constant thermophysical properties, considering the indirect heating system with electrical cables on the external surface.\nImplementation via MFS is expected to provide high numerical precision and reduced computational cost compared to mesh-based methods, characteristics particularly relevant for real-time applications such as control systems. The results will be validated against analytical solutions and compared with the original study's findings, focusing on computational performance evaluation and accuracy of the proposed method.\nThis study maintains the fundamental objective of adequately modeling the temperature field within the pipeline, an essential step for implementing optimal control strategies that prevent solid deposit formation during deepwater operations.\nVianna, F. L. V., Orlande, H. R. B., &amp; Dulikravich, G. S. (2012). Pipeline Heating Method Based on Optimal Control and State Estimation. Heat Transfer Engineering, 34(5–6), 511–519. https://doi.org/10.1080/01457632.2012.723536",
+          "keywords": [
+            "Method of Funamental Solutions",
+            "Meshless",
+            "Heat conduction",
+            "Thermal Analysis"
+          ]
+        },
+        {
+          "title": "BEM Analysis for Coupled Single and Double Beam Systems",
+          "authors": "Welky Klefson Ferreira de Brito, Clóvis de Medeiros Dantas Júnior, Arthur Coutinho de Araújo Pereira, Ana Clara Ferreira Siqueira, Moab Bezerra Rodrigues, Ângelo Vieira Mendonça, Edson Denner Leonel",
+          "start": "2025-11-24T14:15",
+          "end": "2025-11-24T14:30",
+          "abstract": "The static and dynamic behavior of elastically connected structures has been extensively studied due to its numerous practical applications in civil, mechanical, and aerospace engineering. In the last decades, many works have focused on continuously connected double-beam systems (DBS), using numerical or analytical approaches. However, these studies often rely on idealized assumptions, such as continuous connections, identical beam lengths, and classical boundary conditions. In this work, a numerical formulation based on the boundary element method (BEM) for the bending analysis of DBS partially connected by elastic layer is presented. The Euler-Bernoulli beam theory is used to represent the beams, while Winkler model is used for the connecting layer. A BEM coupling technique based on sub-domains is employed to model the problem, which combines single-beam and double-beam boundary elements to represent the partial connection. Numerical examples considering arbitrary flexural rigidities, classical and non-classical boundary conditions are presented. The results demonstrate the accuracy and efficiency of the proposed formulation, and highlight its applicability to a wide range of DBS configurations.",
+          "keywords": [
+            "BEM Coupling problem",
+            "Euler-Bernoulli",
+            "Partially connected DBS",
+            "Winkler"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-OT-02",
       "size": "small",
       "title": "Structural Reliability Methods and Design Optimization Under Uncertainties",
-      "theme": "",
+      "theme": "Structural Reliability Methods and Design Optimization Under Uncertainties",
       "room": "One Tower",
       "start": "2025-11-24T13:30",
       "end": "2025-11-24T15:30",
-      "chair": "",
+      "chair": "Andre Beck; Henrique Machado Kroetz; Rafael Holdorf Lopes; Wellison J. S. Gomes; André Jacomel Torii; Leandro F. Fadel Miguel",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Calibration of the Resistance Factor for Beam-Columns in Cold-Formed Steel Members",
+          "authors": "André Brandão, Marcílio Sousa da Rocha Freitas, Victor Antonio Moreira de Faria, Giovanne de Lana Santana",
+          "start": "2025-11-24T13:30",
+          "end": "2025-11-24T13:45",
+          "abstract": "The Direct Strength Method (DSM), used for the design of cold-formed steel structural members, is based on the analysis of local, distortional, and global elastic buckling of the cross-section, combined with empirically derived direct expressions to estimate ultimate strength. This method is widely accepted and incorporated into national design standards, as it enables a unified, robust, and flexible approach to structural design. Specifically for beam-columns, current DSM-based design specifications still rely on simplified linear interaction expressions, which combine axial and bending strength responses separately. With the advancement of computational tools—such as the finite strip method—it is now feasible to accurately determine local, distortional, and global elastic buckling under any combination of axial load and bending moment. This allows for a more realistic stability assessment that directly accounts for combined actions. In this context, Torabian and Schafer (2018) proposed new DSM expressions specifically tailored for the design of beam-columns, incorporating the effects of combined compression and bending directly into the stability evaluation. The authors also conducted an extensive experimental program, complemented by data from the literature, to validate the performance of the proposed formulations. The development of the DSM for beam-columns represents a significant step forward in achieving a more realistic and mechanically consistent design approach, while also reducing the excessive conservatism inherent in traditional interaction-based expressions. This study presents a structural reliability analysis based on the First-Order Reliability Method (FORM), applied to the enhanced DSM model proposed by Torabian and Schafer for stiffened channel beam-columns under combined axial compression and bending. Using the experimental and theoretical dataset provided by the authors, a statistical analysis of model error is performed, followed by the calibration of the resistance factor, assuming a target reliability index of 2.5. The aim is to contribute to the refinement of design codes through statistically grounded safety calibration, aligned with structural reliability principles.",
+          "keywords": [
+            "reliability",
+            "beam-column",
+            "DSM",
+            "FORM",
+            "cold-formed"
+          ]
+        },
+        {
+          "title": "Strategies to Enhance Column Robustness and Reduce CO2 Emissions in Progressive Collapse Scenarios: A Risk-Based Optimization Approach",
+          "authors": "Luiz Eduardo Gonçalves de Mattos, Mariana Borges Oliveira, André Teófilo Beck",
+          "start": "2025-11-24T13:45",
+          "end": "2025-11-24T14:00",
+          "abstract": "A significant challenge in structural engineering is the rational design of systems exposed to exceptional events, often referred to as low-probability, high-consequence actions, such as fires, earthquakes, explosions, and impacts. Climate change exacerbates these risks by increasing the frequency and severity of hazards, potentially exposing structural vulnerabilities. Structural robustness refers to the capacity of a structure to withstand such actions, preventing initial and localized damage from escalating into disproportionately severe consequences, such as progressive collapse. Traditional reinforcement techniques, while mitigating risks, are often costly and may be inefficient under uncertain triggering events or simultaneous failure of multiple elements. Moreover, structural reinforcements typically involve unsustainable material consumption, significantly contributing to greenhouse gas emissions, highlighting the urgent need for sustainable alternatives. Studies reveal a notable lack of multifaceted protection techniques capable of addressing different levels and stages of failure in the progressive collapse context. The main objective of this work is to perform a risk-based optimization of alternative protection techniques to mitigate progressive collapse in reinforced concrete systems, focusing on solutions that enhance structural safety through robustness, while prioritizing cost-efficiency and environmental sustainability. The proposed methodology, grounded in structural reliability, accounts for random and epistemic uncertainties in design variables and hazard probabilities, and aims to minimize global collapse probability and the associated risks in terms of costs and CO₂ emissions. The techniques explored include ultra-high-performance fiber-reinforced concretes (UHPFRC), traditional reinforcement approaches (Alternative Load Path method), and the combination of these to achieve optimized solutions. The study focuses on column reinforcement in flat slab parking garages exposed to fire and vehicular collisions, as these structures are particularly vulnerable to column loss due to the punching shear phenomenon and increased fire risk from flammable materials. The results include innovative and robust solutions capable of transforming engineering practices, advancing structural safety, sustainability, and cost-efficiency in the construction sector.",
+          "keywords": [
+            "Progressive collapse",
+            "Risk optimization",
+            "CO2 emissions",
+            "Robustness",
+            "Reliability analysis"
+          ]
+        },
+        {
+          "title": "An Artificial Neural Network Application for Efficient System Reliability Analysis",
+          "authors": "Bruno Gustavo Dos Santos, Henrique Machado Kroetz",
+          "start": "2025-11-24T14:00",
+          "end": "2025-11-24T14:15",
+          "abstract": "Artificial neural networks (ANNs) have emerged as a powerful tool for structural reliability analysis due to their capacity to effectively capture intricate, nonlinear relationships between input and output variables. In this domain, ANN models are typically trained on independent variables, such as material and geometric properties, to establish the connection between these inputs and the output variable, usually a probability of failure. However, despite their potential, ANNs are often disregarded in favor of well-established and computationally tractable methods like Polynomial Chaos Expansions and Kriging. Nevertheless, ANNs offer a significant advantage in addressing system reliability problems with multiple outputs. Their inherent ability to generate multiple outputs simultaneously eliminates the need for resorting to numerous surrogate models or intricate formulations, thereby leading to reduced computational demands. This paper proposes an efficient ANN-based surrogate modelling approach for system realibility analysis. A meta-heuristic optimization algorithm is employed to select the best architecture, considering three possible types of metamodels: multilayer perceptron (MLP), radial basis function (RBF) and long short-term memory networks (LSTM). A single optimal ANN is then used as a surrogate model for system reliability problems, whose several limit states are represented by the neurons on the last layer of the optimal network. Results are compared with classical surrogate models. Five examples are addressed, showing that multiple output ANNs can be a viable approach in this context.",
+          "keywords": [
+            "Artificial neural networks",
+            "structural reliability",
+            "metamodeling"
+          ]
+        },
+        {
+          "title": "Reliability Analysis of Litzka Castellated Beams",
+          "authors": "Washington Batista Vieira, André Brandão, Giovanne de Lana Santana",
+          "start": "2025-11-24T14:15",
+          "end": "2025-11-24T14:30",
+          "abstract": "This paper presents a safety evaluation of Litzka castellated beams, based on calculation models proposed in the technical literature. It is noteworthy that there are currently no applicable Brazilian standards or official design criteria for this type of structure. The safety assessment is carried out through structural reliability analysis of the beams and advanced finite element-based analysis of their actual resistance. The effects of geometric imperfections and residual stresses on the resistance of the beams are considered. Statistical parameters related to model error, material strength, geometric properties, and permanent and variable loads are taken into account in the reliability evaluation. Reliability indices are obtained for load combinations according to Brazilian, American, and European standards. These indices reflect the safety level of the beams designed according to the analyzed models. The results are compared with target reliability indices recommended by ASCE and Eurocode.",
+          "keywords": [
+            "castellated beams",
+            "Litzka",
+            "numerical model",
+            "finite element method",
+            "structural reliability"
+          ]
+        },
+        {
+          "title": "Reliability Analysis of Cold-Formed Steel Columns Subjected to Load Combinations Prescribed by Brazilian and North American Structural Codes",
+          "authors": "Giovanne de Lanna Santana, André Brandão, Washington Batista Vieira, Marcílio Sousa da Rocha Freitas",
+          "start": "2025-11-24T14:30",
+          "end": "2025-11-24T14:45",
+          "abstract": "The structural safety of columns made of cold-formed steel sections, when the wind load is considered in the analysis, requires further studies for a more in-depth understanding, as most reliability studies focus on combinations of actions involving only self-weight and overload. This paper proposes the evaluation of the reliability of columns designed according to the Direct Strength Method (DSM). Using a comprehensive database, a statistical analysis of the variable \"model error\" was performed, defined as the ratio between the experimentally measured strength and the strength calculated via DSM. Based on this database, a statistical analysis of the test results was carried out to determine the optimal probabilistic distribution that best fits the model error data and its relevant distribution parameters. Variables related to material strength and geometric properties were incorporated into the reliability evaluation. The structural reliability levels were assessed using the FORM (First Order Reliability Method) for bars designed according to the design requirements of the standards NBR 14762 (ABNT, 2010) and AISI S100 (AISI, 2024). The results indicate that both standards provide adequate levels of reliability, with emphasis on the uniformity of the ASCE 7-22 load combinations. The Brazilian standard showed greater sensitivity to variations in loading, especially when wind is the predominant action. Most of the evaluated combinations achieved the target reliability index of β = 2.5, although in some cases, values below this threshold were observed for the Brazilian standard.",
+          "keywords": [
+            "reliability",
+            "columns",
+            "cold-formed",
+            "FORM Method"
+          ]
+        },
+        {
+          "title": "Reliability-Based Assessment of Corroded Reinforced Concrete Bridge Girders Under Limit State Criteria",
+          "authors": "Ana Carolina  Cavalcanti Moraes, Renato de Siqueira Motta, Silvana Maria Bastos Afonso da Silva, Eleni Toumpanaki, Raffaele de Risi",
+          "start": "2025-11-24T14:45",
+          "end": "2025-11-24T15:00",
+          "abstract": "The design and assessment of reinforced concrete structures rely on limit state principles, which define structural performance based on safety (ultimate limit state) and functionality (serviceability limit state). The ultimate limit state ensures that applied loads do not exceed the structural capacity, preventing collapse, while the serviceability limit state addresses the conditions required for proper usage over time. Although the ultimate limit state for flexure rarely governs the design of prestressed bridge girders - except in short spans - it must always be verified to confirm adequate capacity.This study introduces a reliability-based framework to evaluate the time-dependent performance of reinforced concrete bridge girders affected by pitting corrosion by taking into account both the ultimate limit state (ULS), which is connected to the beam's bending failure, and the serviceability limit state (SLS), which is related with the reinforced steel's onset of corrosion. Advanced numerical simulations, combined with the Monte Carlo method, are employed to analyze the probabilistic behavior of structural degradation. Both temporal and spatial variables are modelled as uniformly distributed random variables, allowing for a comprehensive understanding of corrosion effects. Additionally, the study investigates the influence of varying concentrations of the corrosive agent and examines the evolution of failure probability over time. The proposed approach is applied to a corroded reinforced concrete bridge girder, and the results are compared to a benchmark example from the literature. The methodology provides a robust decision-making tool for maintenance planning and resource allocation, ensuring long-term structural safety and durability.",
+          "keywords": [
+            "Structural Safety",
+            "Reliability Analysis",
+            "Monte Carlo Simulation",
+            "Limit States",
+            "Pitting Corrosion"
+          ]
+        },
+        {
+          "title": "Optimizing Retrofit Strategies for Irregular Structures under Seismic Loads: A Performance-Based Risk Approach",
+          "authors": "Isabela D. Rodrigues, Rubia M. Bosse, Gustavo M. S. Gidrão, Seymour M. J. Spence, André T. Beck",
+          "start": "2025-11-24T15:00",
+          "end": "2025-11-24T15:15",
+          "abstract": "Irregular structures often exhibit inadequate behavior under seismic loads, resulting in higher levels of damage when compared to regular structures. This represents a challenge that underscores the necessity of exploring strategies to enhance their performance and reduce associated risks. One promising solution corresponds to developing effective retrofit alternatives to optimize structural behavior and minimize expected losses. This work aims to assess the seismic performance of irregular structures using braces as a retrofit strategy. The primary goal is to determine the optimal brace cross-sectional area that balances construction and repair costs, achieving a cost-effective solution. The methodology integrates Performance-Based Earthquake Engineering (PBEE) principles with a novel Performance-Based Risk Optimization (PBRO) framework. A surrogate modeling approach is employed to model Engineering Demand Parameters (EDPs), leveraging a Kriging metamodel. This metamodel estimates the median and standard deviation of the EDPs, assuming a lognormal distribution, to capture the variability and uncertainty in seismic responses. The proposed approach is validated through a case study of an irregular steel building. The study evaluates the structure's performance both with and without the retrofit braces. Then, a multi-objective optimization process is conducted to identify the cross-sectional area of the braces that minimizes the combined costs of construction and expected repairs. The optimization framework incorporates the FEMA P-58 [1] methodology, ensuring a comprehensive evaluation of seismic performance and associated risks. The findings contribute to advancing the understanding of irregular structures subjected to seismic actions. The results provide a practical guide for identifying cost-effective retrofit solutions, offering valuable insights for practitioners and researchers in the field of earthquake engineering.\n[1] Applied Technology Council, &amp; National Earthquake Hazards Reduction Program (US). (2012). FEMA P-58-1: Seismic performance assessment of buildings. Federal Emergency Management Agency.",
+          "keywords": [
+            "Performance Based Risk Optimization",
+            "Irregular buildings",
+            "Metamodels"
+          ]
+        },
+        {
+          "title": "Reliability assessment of built-up steel beams subjected to bending",
+          "authors": "Marcelo Borges Pereira, André Luiz Riqueira Brandão, Marcílio Sousa da Rocha Freitas",
+          "start": "2025-11-24T15:15",
+          "end": "2025-11-24T15:30",
+          "abstract": "Although built-up cold-formed steel members are commonly used under bending loads, the structural design of such sections requires further investigation. This study proposes an assessment of the reliability of built-up cold-formed steel members subjected to bending and designed using the Direct Strength Method (DSM). A comprehensive database was assembled, comprising 87 specimens with open cross-sections and 61 with closed cross-sections, formed from singly and doubly stiffened C-sections, all exhibiting double symmetry. Based on this database, a statistical analysis of the experimental results was carried out to identify the probability distribution that best fits the model error variable, along with its corresponding parameters. In addition to model error, the statistical parameters of material properties, cross-sectional geometry, loading type, and load ratio were considered in the reliability study, and a sensitivity analysis was performed to evaluate the relative importance of these variables. Subsequently, the reliability indices of members designed according to load combinations from the North American specification (AISI S100, 2016) in the LRFD (Load and Resistance Factor Design) and LSD (Limit States Design) formats, as well as from the Brazilian standard (NBR 14762, 2010), were compared. The results showed that the LRFD load combination yielded reliability indices closer to the target value, while the LSD format presented lower indices, and the Brazilian load combination yielded intermediate performance. Furthermore, it was observed that closed sections demonstrated higher reliability levels compared to open sections.",
+          "keywords": [
+            "Built-up beams",
+            "DSM",
+            "FORM",
+            "Reliability",
+            "Cold-formed steel"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-PI-02",
       "size": "small",
       "title": "Scientific Machine Learning and Applications",
-      "theme": "",
+      "theme": "Scientific Machine Learning and Applications",
       "room": "Pisa",
       "start": "2025-11-24T13:30",
       "end": "2025-11-24T15:30",
-      "chair": "",
+      "chair": "Adriano Cortes; Alvaro Coutinho; Fernando Rochinha",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Analysis of Steel Structural Profiles under Flexural-Compression stress using Machine Learning Algorithms",
+          "authors": "David Coimbra, André Sarkis Müller",
+          "start": "2025-11-24T13:30",
+          "end": "2025-11-24T13:45",
+          "abstract": "The design of steel profiles requires a rigorous analytical approach, especially for elements subjected to flexural-compression, which involves the simultaneous action of compressive forces and bending moments. This type of loading is more complex than cases such as pure tension, pure compression, or flexural-tension, as it demands the combined consideration of both instability and interaction between acting forces. Given this complexity, conventional verification methods may be insufficient for rapid generalizations, particularly when analyzing multiple types of cross-sections. In this context, Machine Learning (ML) emerges as a promising alternative tool, capable of modeling complex relationships between input and output variables based on historical data. ML is a subfield of artificial intelligence that enables the development of computational models that learn from experience, recognizing patterns in data and making predictions without explicit programmed rules. This study proposes the application of machine learning algorithms to verify members under flexural compression stress. The algorithms K-Nearest Neighbors (KNN), Support Vector Machine (SVM), and Decision Tree were employed, combined with ensemble techniques and class balancing strategies to mitigate bias and variance issues. The implementation was conducted in Python using the Scikit-Learn library. The dataset was generated through a FORTRAN program, based on the NBR 8800:2024 standard criteria. The study considered multiple commercial steel profiles, common structural load combinations, different steel grades, and varied restraints along both principal axes. The diversity of these variables resulted in a high number of combinations, necessitating a robust computational tool to perform all calculations —a role fulfilled effectively by FORTRAN. The input features included section geometry, applied load, element length, steel class, and boundary conditions, while the output was a binary classification (OK/NOT OK) indicating structural compliance. The dataset was split into 80% for training and 20% for testing. The results showed satisfactory performance for all applied algorithms, with Random Forest – an ensemble method based on decision trees – standing out due to its high accuracy in estimating the class. This reinforces the potential of machine learning as a complementary tool to traditional approaches, especially in situations involving multiple variables.",
+          "keywords": [
+            "Machine Learning",
+            "Ensemble Methods",
+            "Structural Analysis",
+            "Steel Profiles",
+            "Flexural-Compression"
+          ]
+        },
+        {
+          "title": "Online Model Order Reduction for Flow Simulations problems using Dynamic Mode Decomposition",
+          "authors": "felipe toledo,  Alvaro Coutinho, Gabriel F. Barros, Renato Nascimento Elias",
+          "start": "2025-11-24T13:45",
+          "end": "2025-11-24T14:00",
+          "abstract": "In this study, a reduced-order model (ROM) was directly coupled with a physical solver to predict system evolution and progressively replace the full-order model (FOM) solutions. Dynamic Mode Decomposition (DMD), implemented via the PyDMD library, was employed to perform the ROM predictions. The flow around a 2D cylinder with Reynolds number Re = 100 was chosen as the case study. The FOM solver uses the FEniCSx platform. The quality of the online DMD model approximation was evaluated using the residual norm generated exclusively by the DMD prediction, ensuring that velocity and pressure predictions remained within an acceptable tolerance. Additionally, the Frobenius norm was employed to monitor the accuracy of the velocity and pressure matrix predictions, assessing DMD’s non-intrusive capability to capture and reproduce the system’s dynamics. Experiments were conducted varying the number of dynamic modes required to achieve the desired accuracy. Using DMD as an alterative to the nonlinear solver reduced the computational time for the numerical simulations up to 20% with little to no loss in the solution quality.",
+          "keywords": [
+            "model order reduction",
+            "dynamic mode decomposition",
+            "scientific machine learning",
+            "computational fluid dynamics"
+          ]
+        },
+        {
+          "title": "Use of Physics-Informed Neural Networks to compute velocity and pressure fields around an airfoil in transonic flow",
+          "authors": "Vinícius  Passeri Moraes de Souza , Thiago da Silva Batista, Vinícius de Carvalho Rispoli",
+          "start": "2025-11-24T14:00",
+          "end": "2025-11-24T14:15",
+          "abstract": "This work presents a novel application of Physics-Informed Neural Networks (PINNs) to simulate transonic (Mach 0.8–1.2) flow around an airfoil. The transonic regime features coexisting subsonic and supersonic zones, which generate shock waves and possibly boundary layer separation. This makes it a highly nonlinear and challenging flow condition for conventional Computational Fluid Dynamics (CFD) methods. Traditional finite-volume and finite-element solvers often require extremely fine shock-aligned meshes and significant computational cost to resolve transonic shocks and complex wave interactions. In contrast, our approach employs a PINN that embeds the compressible Navier–Stokes and continuity equations directly into the network’s loss function, enabling the flow field solution without a predefined mesh. PINN was implemented using DeepXDE library in a two-dimensional wind tunnel domain, with no-slip boundary conditions on the airfoil surface and far-field conditions on the outer boundaries. The mesh-free formulation avoids the grid generation burden and inherently sidesteps mesh-dependency in the solution, while working with residual-based adaptive collocation points sampling in the domain. We assess how well the PINN captures key transonic flow features—particularly the shock wave pattern and pressure field—by comparing its predictions to a high-fidelity finite-volume CFD solution. Applying PINNs to shock-dominated transonic flows remains largely uncharted, and previous attempts have struggled to resolve normal shock waves without special numerical treatments. To address this challenge by drawing on recent PINN advances, such as adaptive loss weighting and adding localized artificial viscosity at the shock was done. These help stabilize training and improve convergence for shock resolution. Preliminary results show that the PINN reproduces the flowfield accurately, capturing the shock location and overall pressure distribution in close agreement with the CFD benchmark. This study demonstrates the potential of PINNs as a promising, mesh-independent solver for complex aerodynamic simulations. It may offer advantages in regimes where traditional solvers encounter prohibitive meshing requirements or stability issues.",
+          "keywords": [
+            "PINN",
+            "Airfoil",
+            "Transonic",
+            "Flow"
+          ]
+        },
+        {
+          "title": "Neural Network Application for Aerodynamic Force Estimation in Heavy Artillery Projectile Trajectories",
+          "authors": "Lucas gomes do amaral, Daniel Henrique Braz de Sousa, André Rezende",
+          "start": "2025-11-24T14:15",
+          "end": "2025-11-24T14:30",
+          "abstract": "This work proposes the use of a neural network to estimate components of the aerodynamic forces acting on the trajectory of a 155 mm projectile. The approach aims to replace analytical expressions with a machine learning-based model, in order to compare the computational efficiency and flexibility of ballistic modeling techniques. The network was designed to estimate, based on the projectile's aerodynamic coefficients, the lift, drag, Magnus effect, rotational damping forces, and the projectile's angular adjustment. The dataset used for training was generated through the analysis of aerodynamic coefficients using the ballistic software PRODAS, considering different elevations, muzzle velocities, and atmospheric conditions. For validation, real firing data under various conditions were employed. The results show a mean squared error on the order of 3.10⁻³ and a correlation coefficient (R²) above 0.9, indicating that the neural network is capable of adequately reproducing aerodynamic effects and presents itself as a viable alternative to traditional models.",
+          "keywords": [
+            "Neural Networks",
+            "Aerodynamic Coefficients",
+            "Heavy Artillery",
+            "External Ballistics"
+          ]
+        },
+        {
+          "title": "Non-Intrusive Data-driven Surrogate Models for Predicting Turbidity Currents Deposition from 3D Simulations",
+          "authors": "Roberto Machado Velho, Adriano M. Cortes, Gabriel M. Guerra, José Camata, Renato N. Elias, Alvaro L. G. A. Coutinho, Fernando A. Rochinha, Tiago H. F. Jesus, Thais C. A. Empinotti, Paulo L. B. Paraizo",
+          "start": "2025-11-24T14:30",
+          "end": "2025-11-24T14:45",
+          "abstract": "Non-intrusive data-driven methodologies, such as POD-DL, offer a powerful approach for constructing surrogate models to address complex parametric problems. POD-DL integrates deep neural networks and follows a multi-step dimensionality reduction process, beginning with a linear reduction via Proper Orthogonal Decomposition (POD) and followed by a nonlinear reduction using a deep autoencoder. A subsequent nonlinear regression, implemented with a forward neural network, accounts for temporal and parametric coefficients.\nThe framework involves numerous hyperparameters, including the number of POD basis modes, network architecture specifications, and typical neural network parameters like learning rate and batch size, all of which influence both training time and model accuracy.\n In a previous work, we applied this scheme to study gravity currents under the 2D lock-exchange configuration [3] for multiple angles of the initial configuration [4]. The angle of the channel served as a parameter, i.e., different angles generated different dynamics that were learned by the surrogate model. The regression neural network could then predict the dynamics for unseen angles. \n Now, we extend the methodology to more realistic scenarios, a 3D channel-basin configuration for gravity currents, adapted from [5], analyzing variations in inlet velocities and sediment concentrations. Synthetic data were generated through large-scale parallel finite element simulations, allowing POD-DL to predict deposition maps for unseen parameter values.\n \n[1] M. Cracco et al., “Deep learning-based reduced-order methods for fast transient dynamics”, Arxiv Preprint 2212.07737, 2022. \n[2] S. Fresca and A. Manzoni, “POD-DL-ROM: Enhancing deep learning-based reduced order models for nonlinear parametrized PDEs by proper orthogonal decomposition”, Comput. Methods Appl. Mech. Engrg., 2022. \n[3] V. K. Birman, B. A. Battandier, E. Meiburg, and P. F. Linden, “Lock-exchange flows in sloping channels”, Journal of Fluid Mechanics, 577:53–77, 2007. \n[4] R. M. Velho, A. M. Cortes, G. F. Barros,  F. A. Rochinha, and A. L. G. A. Coutinho, Advances in Data-Driven Reduced Order Models Using Two-Stage Dimension Reduction for Coupled Viscous Flow and Transport. Finite Elements in Analysis and Design, vol. 248, 2025.\n[5] T. Spychala, J. T. Eggenhuisen, M. Tilston and F. Pohl,The influence of basin setting and turbidity current properties on the dimensions of submarine lobe elements, SEDIMENTOLOGY, 2020.",
+          "keywords": [
+            "Surrogate Models",
+            "Gravity currents",
+            "Residual-based variational multi-scale (RBVMS)",
+            "Machine Learning."
+          ]
+        },
+        {
+          "title": "Advancing Graph Neural Networks for CO2 Plume Migration in Complex Geological Formations",
+          "authors": "Adriano Cortes, Roberto M. Velho,  Rodrigo de S. Luna, Thiago H. N. Coelho, Renato N. Elias, Alexandre Evsukoff, Herve Gross, Mauricio Araya, Fernando A. Rochinha, Alvaro L. G. A. Coutinho",
+          "start": "2025-11-24T14:45",
+          "end": "2025-11-24T15:00",
+          "abstract": "Carbon Capture and Storage (CCS) is essential for mitigating climate change by permanently storing industrial CO2 emissions in subsurface formations [1]. As net-zero targets gain urgency, accurately predicting injected CO2 behavior over long timeframes becomes critical for ensuring storage integrity and regulatory compliance. Simulating CO2 plume migration presents significant computational challenges. Conventional numerical simulators, while accurate, require prohibitive computational resources when modeling the centuries-long timescales relevant to CO2 storage, especially for uncertainty quantification or optimization studies requiring multiple simulations. Deep learning surrogate models offer orders-of-magnitude speedup while maintaining reasonable accuracy [2].\nCurrent literature features two main surrogate modeling approaches: Fourier Neural Operators (FNO) [2] and Graph Neural Networks (GNN) [3]. FNO models perform well on structured domains but are limited to Cartesian grids, inadequately representing complex geological features. In contrast, GNN approaches like MeshGraphNet (MGN) [4] can naturally handle unstructured meshes, better representing heterogeneous subsurface environments and geological boundaries critical to CO2 migration.\nWe present our MGN-LSTM implementation for temporal prediction of CO2 plume migration in faulted reservoirs [3], incorporating algorithmic improvements for enhanced prediction stability and efficiency. Our key contribution is integrating physics-aware loss terms from FNO literature [5] into the GNN framework. By incorporating mass conservation, phase behavior, and Darcy flow principles directly into the loss function, we achieve physically consistent predictions even with limited training data. These physics-aware constraints improve model generalization to unseen geological configurations.\nReferences\n[1] IPCC. Special Report on Carbon Dioxide Capture and Storage. CUP, 2005.\n[2] Wen, G. et al. Towards a predictor for CO2 plume migration using deep neural networks. Int. J. Greenhouse Gas Control, 2021.\n[3] Ju, X et al Learning CO2 plume migration in faulted reservoirs with Graph Neural Networks. Computers &amp; Geosciences, 193, 2024.\n[4] Pfaff, T. et al. Learning mesh-based simulation with graph networks. ICML, 2021.\n[5] Badawi, D., Gildin, E. Neural operator-based proxy for reservoir simulations considering varying well settings, locations, and permeability fields. J. Petroleum Science and Engineering, 2023.",
+          "keywords": [
+            "Carbon Capture and Storage",
+            "Graph Neural Networks",
+            "Physics-aware Learning",
+            "CO2 Plume Migration",
+            "Surrogate Modeling"
+          ]
+        },
+        {
+          "title": "Automatic Detection of Cardiac Pathologies from ECG Signals Using Variational Autoencoders (VAE)",
+          "authors": "Elis De Mori Ravagnani, Daniel Cruz Cavalieri",
+          "start": "2025-11-24T15:00",
+          "end": "2025-11-24T15:15",
+          "abstract": "The electrocardiogram (ECG) is one of the most widely used tools for identifying cardiac pathologies (MINCHOLÉ et al., 2019). Although manual analysis of this exam can be effective, it is subject to human error and time constraints, which underscores the importance of automatic abnormality detection. In this context, the present study aims to develop an intelligent system based on Variational Autoencoder (VAE) networks for the automated detection of cardiac pathologies from ECG signals. VAEs are models that, in addition to reconstructing original inputs with high fidelity, have the ability to generate new data, which is particularly useful for analyzing complex signals such as those in ECGs. The use of this type of model can potentially improve the quality of automatic diagnoses by offering a more robust and reliable approach to identifying cardiac anomalies. For the implementation of this system, the MIT-BIH Arrhythmia Database was used, which is recognized for its diversity and richness of arrhythmia information. ECG signal preprocessing steps included noise filtering, data normalization, and categorization of pathology classes. These steps were crucial to ensure that the model was trained on high-quality and representative data. The model architecture consists of an encoder that captures the relevant features of the ECG signals, a latent space that allows for compact information representation, and a decoder that generates the reconstructions. The model evaluation focuses on analyzing the generated latent space, where samples are examined to understand how different pathologies are represented and to verify the model's ability to distinguish between them. The generation of new data from the model helped in creating balanced datasets, which are fundamental for training machine learning models in clinical scenarios. In the long term, this system can be integrated into telemedicine platforms, contributing to faster and more efficient diagnosis of cardiac conditions.",
+          "keywords": [
+            "Variational Autoencoder (VAE)",
+            "Cardiac Anomaly Detection",
+            "Machine Learning in Healthcare"
+          ]
+        },
+        {
+          "title": "A machine learning-based method for analyzing the axial load capacity of rectangular reinforced concrete columns.",
+          "authors": "juliana souza, Emerson Felipe Felix, Leandro Lopes da Silva",
+          "start": "2025-11-24T15:15",
+          "end": "2025-11-24T15:30",
+          "abstract": "The axial load capacity of columns is a critical variable for structural systems, as the failure of a single element can lead to the collapse of the entire structure. Therefore, an accurate prediction of this variable is essential to ensure the safety of the system. In this context, machine learning methods have gained prominence in modeling the behavior of reinforced concrete structures. Accordingly, this study aimed to investigate the axial load capacity of rectangular reinforced concrete columns using Artificial Neural Networks (ANNs) and Tree/Forest-based algorithms. Ten input parameters related to the geometric and mechanical properties of this type of structural element were selected in order to capture their behavior under different loading conditions. Prior to training, data preprocessing was carried out to identify the importance of each input variable with respect to the output of interest, as well as to detect the presence of outliers in the dataset.Model training was performed using supervised learning, with the Python programming language and the Scikit-Learn library. To assess model performance, error metrics such as the Mean Absolute Percentage Error (MAPE), Root Mean Square Error (RMSE), and the coefficient of determination (R²) were used.The results indicated that both models (ANNs and tree/forest algorithms) achieved satisfactory performance in predicting the ultimate load capacity of the columns. However, the tree/forest-based model stood out, which can be attributed to its robustness against potential outliers and its efficiency during the training process.",
+          "keywords": [
+            "Reinforced concrete",
+            "columns",
+            "neural networks",
+            "random forests",
+            "axial load"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-ST-02",
       "size": "small",
       "title": "Analysis and Design of Offshore Systems",
-      "theme": "",
+      "theme": "Analysis and Design of Offshore Systems",
       "room": "Sky Tree",
       "start": "2025-11-24T13:30",
       "end": "2025-11-24T15:30",
-      "chair": "",
+      "chair": "Bruno da Fonseca Monteiro; Bruno Martins Jacovazzo; Juliana Souza Baioco; Mauro Henrique Alves de Lima Junior",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Numerical Analysis of Stress Concentration Factors in Mooring Chain Links Tensioned with and without Geometric Barriers",
+          "authors": "Evilly  Silveira , Michele Agra de Lemos Martins, Eduardo Nobre Lages, Mauro Costa de Oliveira",
+          "start": "2025-11-24T13:30",
+          "end": "2025-11-24T13:45",
+          "abstract": "The increasing demand for energy resources, combined with technological advancements, has enabled the exploration of offshore fields at increasingly greater depths. This scenario imposes more severe environmental conditions, requiring continuous improvement of guidelines and standards for mooring analysis and design. Conversely, there has been a significant increase in the number of mooring line incidents over the years. Despite advancements in understanding the behavior of these systems and their relationship with failure events, some gaps still exist. The interaction between the mooring chain links and devices such as chain hawses, mooring chocks, and fairleads - responsible for guiding or restricting the upper end of mooring lines - is often overlooked, and research in this area is limited. This study investigates the influence of contact interaction between mooring chain links and geometric barriers on stress concentration factors. A three-dimensional finite element model is developed using Abaqus to simulate chain links under combined tension, bending, and torque. Results show that the presence of geometric barriers significantly alters the behavior of the links and the locations of critical stress points. Furthermore, the interaction between the links and curved surfaces of different radii significantly influenced the accumulated plastic deformation of the chain links. The study also examines the impact of residual stress fields from proof load testing, demonstrating that their omission leads to notable differences in the results. These findings highlight the importance of accurately representing the real configuration of mooring chain links in numerical models to support more accurate fatigue assessments under actual operating conditions.",
+          "keywords": [
+            "mooring chain links",
+            "geometrical barriers",
+            "stress concentration factors",
+            "residual stresses"
+          ]
+        },
+        {
+          "title": "Optimal Support Placement for VIV Mitigation in Subsea Rigid Pipelines",
+          "authors": "Matheus Amancio Miranda, Eduardo Nobre Lages, Adeildo Soares Ramos Júnior",
+          "start": "2025-11-24T13:45",
+          "end": "2025-11-24T14:00",
+          "abstract": "This study presents an optimization approach for determining the placement of supports to mitigate vortex-induced vibrations (VIV) in free spans of subsea rigid pipelines. Free spans caused by seabed irregularities can critically compromise the pipeline’s structural integrity. To address this challenge, the proposed methodology integrates numerical modeling based on the Finite Element Method (FEM), following the recommendations outlined in DNV-RP-F105, with discrete optimization techniques, namely, a metaheuristic genetic algorithm and a deterministic branch-and-bound algorithm. The objective function minimizes support installation costs by assigning specific penalties to each free span and incorporating constraints related to the pipeline's natural frequency. Results show that the framework is efficient, with the branch-and-bound algorithm consistently reaching optimal solutions while avoiding the variability inherent in stochastic approaches.",
+          "keywords": [
+            "Subsea rigid pipelines",
+            "Vortex-induced vibrations",
+            "Structural optimization",
+            "Branch-and-bound algorithm"
+          ]
+        },
+        {
+          "title": "Structural Optimization of Mooring Systems for Geometric Efficiency",
+          "authors": "Eduardo Nobre Lages, Adeildo Soares Ramos Júnior, Alan Patrik de Abreu, Anderson Takehiro Oshiro, Mauro Costa de Oliveira, Gabriel Rocha Domingos",
+          "start": "2025-11-24T14:00",
+          "end": "2025-11-24T14:15",
+          "abstract": "Structural optimization of mooring systems is an effective strategy for reducing design effort and cost in the offshore industry. This study builds on previous work that introduced efficient optimization methodologies. Here, we extend the approach to a practical goal: minimizing the total length of the mooring system while satisfying performance and geometric constraints. Using the Equivalent Static Analyses (ESA) methodology proposed by Domingos et al. (2023), the optimization framework allows each mooring line to vary independently in total length, horizontal projection (fairlead-to-anchor distance), and azimuthal orientation. This design flexibility enables the exploration of a broader design space while complying with the physical and operational constraints of offshore systems. By integrating these variables and leveraging the computational benefits of earlier research, the method produces optimized mooring layouts that are computationally efficient and readily applicable to practical offshore engineering scenarios. The resulting configurations reached the lower bounds on line lengths while satisfying all design criteria, demonstrating the method’s capability to achieve effective layouts under realistic constraints.",
+          "keywords": [
+            "Structural Optimization",
+            "Offshore Structures",
+            "Mooring Systems",
+            "Equivalent Static Analyses"
+          ]
+        },
+        {
+          "title": "Assessment of mesh sensitivity of hotspot methods applied to offshore structures",
+          "authors": "Gabriel Costa Rodrigues, Carlos Eduardo de Souza, Bruno Klahr, Daniel Milbrath de Leon",
+          "start": "2025-11-24T14:15",
+          "end": "2025-11-24T14:30",
+          "abstract": "To execute fatigue analysis of offshore structures, it is important to adequately determine the stresses field, especially on welds.  Welded regions tend to have significant stress concentration.  To deal with this problem, some international standards suggest the hot spot stress (HSS) method to estimate the stresses near welds, including guidelines for finite element analysis. Two strategies of HSS calculations are considered here: surface-extrapolated stress and through-thickness linearized stress. Recommendations exist for elements sizes of mesh depending on element type, geometry and method for HSS calculation. In this work, the calculations are applied initially to a simple flat model with different meshes, with varying element sizes and proportions between the three dimensions. Next, the strategies are applied to more complex structure, representing a bell mouth used in offshore oil platforms. Being mostly a cylindrical geometry, meshing is controlled mainly by the number of elements in thickness as well as element size in circumferential and axial direction. Different loads were applied on each case to verify mesh sensitivity relation with load type. Results indicate different levels of effect on HSS results for each direction of mesh refinement. The relation of sensitivity of the mesh with the load applied is shown and discussed.",
+          "keywords": [
+            "hotspot stress",
+            "finite element analysis",
+            "offshore structures",
+            "mesh sensitivity",
+            "complex geometry"
+          ]
+        },
+        {
+          "title": "Evaluating Structural Failure in Subsea Equipment: A Comparative Study of API 17G’s 2% Strain Criterion and Strain Energy Methods",
+          "authors": "Gabriel Gaynett Leturiondo, Felipe Tempel Stumpf, Rogério José Marczak",
+          "start": "2025-11-24T14:30",
+          "end": "2025-11-24T14:45",
+          "abstract": "One of the most commonly used criterion to determine the structural failure of subsea equipment is found in API standard 17G, according to which the collapse takes place if, for any individual component or part, the average equivalent plastic strain in the through section path reaches 2% in the deformed configuration. This is known as \"the 2 % strain method\". In the present work we investigate alternative methodologies to determine the structural failure of an equipment using approaches based on strain energy. We conduct a series of numerical simulations of structures with prior damaged geometries and determine their structural capacity based on the 2% strain method of API 17G. Those results are used as input for posterior analyses in which the strain energy around the damage is measured (numerically) so we can correlate the ultimate load and the energy absorbed in the vicinity of the damaged area. The results are used for successfully predicting the failure load of different geometries with different damaged areas and a critical discussion is carried out concerning the conservativeness of the API 17G criterion.",
+          "keywords": [
+            "Structural Failure",
+            "Subsea Equipment",
+            "Strain Energy",
+            "FEM"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-24-TM-02",
       "size": "small",
       "title": "Computational Fluid Dynamics in Environmental Engineering",
-      "theme": "",
+      "theme": "Computational Fluid Dynamics in Environmental Engineering",
       "room": "Taj Mahal",
       "start": "2025-11-24T13:30",
       "end": "2025-11-24T15:30",
-      "chair": "",
+      "chair": "Bruno Furieri; Cristina Lima de Morais; Enilene Regina Lovatte; Maria Clara Schuwartz Ferreira",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Advanced modeling of particle-laden gravity currents over flat and wavy surfaces using a residual-based variational multi-scale approach",
+          "authors": "Gabriel Guerra, Roberto M. Velho, Adriano M. A. Cortes, José Camata, Renato. N. Elias, Álvaro L. G. A. Coutinho, Fernando A. Rochinha, Tiago H. F. Jesus, Thais C. A. Empinotti, Paulo L. B. Paraizo",
+          "start": "2025-11-24T13:30",
+          "end": "2025-11-24T13:45",
+          "abstract": "In this study, we introduce a numerical framework for simulating dilute particle-laden gravity currents at high Reynolds numbers (Re) using a residual-based variational multi-scale (RBVMS) approach. Our formulation effectively represents the coupling between velocity fine scales and the residual of the density concentration equation, ensuring a more accurate and robust representation of the underlying physical processes.\nWe simulate lock-exchange particle-laden gravity currents across different Reynolds numbers to evaluate the proposed methodology. First, we validate the formulation by modelling gravity currents over flat terrain. Subsequently, we extend our analysis to particle-laden gravity currents over wavy terrains and varying wave heights to explore their influence on flow. \nResults indicate that floor roughness reduces the front velocity while significantly enhancing instabilities, leading to the earlier emergence of secondary instabilities. Additionally, roughness serves as an additional vorticity generation mechanism. Findings demonstrate that the (RBVMS) framework achieves high accuracy while requiring significantly low mesh resolution.",
+          "keywords": [
+            "Gravity currents",
+            "Residual-based variational multi-scale (RBVMS)",
+            "Roughness floor"
+          ]
+        },
+        {
+          "title": "CFD Analysis of Open Pit Mining Airflow Using Real Topography Data",
+          "authors": "Renata  Corrêa, Bruna Lima Veras Maia, Eduardo Pescada, Bruno Furieri, Taciana Toledo de Almeida Albuquerque",
+          "start": "2025-11-24T13:45",
+          "end": "2025-11-24T14:00",
+          "abstract": "Open pit mining activities associated with the action of wind on exposed áreas can significantly influence local air dynamics, contributing to the emission and dispersion of particulate matter that affects air quality and human health, especially particles smaller than 2.5 micrometers, which are capable of penetrating the entire respiratory system. Computational Fluid Dynamics (CFD) is a powerful tool that allows for the analysis of airflow patterns over an open pit mine and the prediction of areas with higher potential for particulate matter emission. Unlike previous studies that use simplified terrain geometries, this research integrates high-resolution topographical data obtained from official surveys, ensuring greater accuracy in representing real surface features. Similar studies have shown that realistic topography plays a role in improving the stability of the results with respect to mesh refinement, particularly in regions os steep terrain.\nThe simulations were conducted using Ansys Fluent, employing the Reynolds-Averaged Navier-Stokes (RANS) turbulence model with the k-epsilon closure to capture turbulent flow characteristics. The computational domain was discretized with a high-resolution mesh of approximately 12 million elements, incorporating wind velocity profiles derived from a nearby weather station to reflect realistic atmospheric conditions. Results highlight zones of high and low wind velocity over the pit and surrounding areas, indicating potential regions for particulate matter accumulation or dispersion.\nOverall, this work demonstrates the effectiveness of combining high-fidelity terrain data with advanced CFD modeling to improve the understanding of airflow in mining environments. The methodology supports improved planning and implementation of mitigation technologies aimed at reducing atmospheric pollution caused by mining activities. Consequently, this research contributes to enhancing air quality management and protecting public health in mining-affected regions.",
+          "keywords": [
+            "Open Pit Mining",
+            "Computational Fluid Dynamics",
+            "Real Topography Data"
+          ]
+        },
+        {
+          "title": "Assessment of the effects of the temporal state in the numerical simulation of the airflow around a storage pile in the presence of a cubic bulding",
+          "authors": "Matheus  de Araujo Siqueira, Bruno Furieri, Jean-Luc Harion, Jane Meri Santos",
+          "start": "2025-11-24T14:00",
+          "end": "2025-11-24T14:15",
+          "abstract": "Diffuse emissions of granular material from storage piles open to the atmosphere represent an important source of pollution by industrial sites.  Thus, to better deal with its impacts, a good understanding of the airflow around piles at small scales is vital, for example, at the characteristic scale of an industrial site. In this sense, Computational Fluid Dynamics (CFD) numerical simulations are largely applied. However, recent works have reported non-symmetric results for the airflow around the storage pile. This is not expected for this kind of geometrical case. The present work evaluates the influence, in terms of symmetry, of numerically simulating the airflow around the storage pile in a steady and unsteady state, using the open source software OpenFOAM-v2312. It was shown that the cubic building presence induces several instabilities in the airflow. Such instabilities cause convergence problems in the steady state solution and produce non-symmetric results. On the other hand, through an unsteady simulation, it was possible to capture the instabilities well and thus obtain averaged symmetric results. Second-order upwind methods were used.",
+          "keywords": [
+            "Wind erosion",
+            "Euler-Lagrange modelling",
+            "CFD",
+            "Storage Piles",
+            "Particle Transport"
+          ]
+        },
+        {
+          "title": "The discretization error analysis for simulation of transient flow in a water reservoir",
+          "authors": "Sara Coelho da Silva, Márcio Augusto Villela Pinto, Ana Paula da Silveira Vargas, Daiane Cristina Zanatta",
+          "start": "2025-11-24T14:15",
+          "end": "2025-11-24T14:30",
+          "abstract": "The study of hydrodynamic and transport models that focus on their behavior and onexamining the results obtained with numerical and computational simulations seeks to ensurethe best performance in the analysis and decision-making process for real problems, such asthe dispersion of pollutants in two-dimensional (2D) transient flows in reservoirs and floodedregions with slopes and subject to resistance. Obtaining accurate and reliable numericalsolutions from models that involve interaction between advective and diffusive processes isa matter of great relevance due to the difficulties commonly experienced in solving thesemodels, but which can be reduced or eliminated by knowing the behavior of the solution andnumerical data, thus helping to understand the flow and dispersion patterns. This work presentsa simulation of a shallow water hydrodynamic model by means of a numerical solution thatuses the finite volume method (FVM) with a hybrid approximation scheme (central/upwind)for discretizing the advective-diffusive terms. A priori and a posteriori error analysis wereperformed to estimate discretization errors. The implemented code allows a temporal analysisof the level, volume, and flow in reservoirs that have devices at their outlets. An adequategraphical and numerical interpretation of the physical phenomenon studied was obtained witha high level of accuracy and a stable solution with low computational cost.",
+          "keywords": [
+            "Shallow water equations",
+            "Finite Volume",
+            "Implicit scheme",
+            "Discretization error estimators",
+            "Apparent order."
+          ]
+        }
+      ]
     },
     {
       "id": "CB01",
       "size": "wide",
       "title": "Coffee Break",
-      "theme": "",
-      "room": "All",
+      "theme": "Coffee Break",
+      "room": "Foyer",
       "start": "2025-11-24T15:30",
       "end": "2025-11-24T16:00",
       "chair": "",
@@ -199,8 +1287,8 @@
       "id": "Opening",
       "size": "wide",
       "title": "Opening Ceremony",
-      "theme": "",
-      "room": "All",
+      "theme": "Opening Ceremony",
+      "room": "One Tower",
       "start": "2025-11-24T16:00",
       "end": "2025-11-24T17:30",
       "chair": "",
@@ -211,22 +1299,22 @@
     {
       "id": "KS-JD",
       "size": "wide",
-      "title": "Keynote Speech - John Dolbow",
-      "theme": "",
-      "room": "All",
+      "title": "The Interplay Between Strength and Energetics in Fracture Mechanics",
+      "theme": "Plenary Lecture",
+      "room": "One Tower",
       "start": "2025-11-24T17:30",
       "end": "2025-11-24T18:30",
       "chair": "",
-      "authors": "",
-      "abstract": "",
+      "authors": "John Dolbow",
+      "abstract": "We provide an overview of several recent advances in models for the fracture mechanics of elastic brittle materials. These advances are changing the focus in the community from models and simulations of crack propagation to those for crack nucleation. At this point it is clear that at least three intrinsic macroscopic material properties govern fracture nucleation in elastic brittle materials: i) the elasticity; ii) the strength; and iii) the fracture toughness or critical energy release rate. Of these, material strength has been the most misunderstood and overlooked, despite its central role in governing crack nucleation under a broad set of conditions. Precisely how cracks nucleate and transition to propagation, and how descriptions of strength should be interlaced with Griffith-like energetics in models for fracture has been a subject of study for decades. We will focus attention on an emerging class of regularized models of the phase-field type that are complete in the sense that they allow for the representation of an arbitrary strength surface. This completeness is what has permitted these models to move beyond mere calibration against particular experimental observations. Select examples from quasi-static and dynamic fracture that illustrate the interplay between strength and energetics will be shown. The challenges and opportunities this new perspective provides for research in numerical methods will be discussed, as well as an outlook into modeling fracture nucleation beyond the basic setting of elastic brittle materials.",
       "papers": []
     },
     {
       "id": "Cocktail",
       "size": "wide",
       "title": "Opening Cocktail",
-      "theme": "",
-      "room": "All",
+      "theme": "Opening Cocktail",
+      "room": "External",
       "start": "2025-11-24T19:00",
       "end": "2025-11-24T21:00",
       "chair": "",
