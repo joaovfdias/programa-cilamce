@@ -116,7 +116,7 @@
       "room": "Khalifa",
       "start": "2025-11-27T10:00",
       "end": "2025-11-27T12:00",
-      "chair": "Eduardo de Moraes Rego Fairbairn; Jean‑Marie Désir; Pierre Rossi; Rodolfo Giacomim Mendes de Andrade",
+      "chair": "Eduardo de Moraes Rego Fairbairn; Jean‑Marie Désir; Pierre Rossi; Rodolfo Giacomim Mendes de Andrade; Marcos Rodrigues",
       "authors": "",
       "abstract": "",
       "papers": [
@@ -347,6 +347,19 @@
             "heat transfer",
             "numerical simulation"
           ]
+        },
+        {
+          "title": "On the detection of breast tumors using dynamic thermography and Self-adaptive Differential Evolution",
+          "authors": "Jan Pierre Agenciano da Silva Rocha, Felipe S. Loureiro, Heder Bernardino, Helio J.C. Barbosa",
+          "start": "2025-11-27T12:00",
+          "end": "2025-11-27T12:15",
+          "abstract": "Recently, the clinical diagnosis of breast tumors using thermal analysis has gained increasing attention as a non-invasive and cost-effective alternative to traditional techniques. To enhance breast cancer detection and reduce false positive and false negative rates, several authors have suggested the use of dynamic infrared thermography. In this study, we propose a dynamic thermography approach for the detection of breast cancer with tumor focus. We model a circular tumor embedded within a multilayered breast structure composed of five distinct tissue layers. Based on simulated skin surface temperature measurements, the geometric parameters of the tumors are estimated using metaheuristic optimization techniques. To simulate the effects of real-world measurement conditions, random noise is added to the synthetic temperature data, where the noise is consistent with the magnitude typically observed in modern infrared cameras. The forward problem is modeled using a two-dimensional transient bioheat transfer model governed by Pennes’ equation, and it is efficiently solved via the Finite Element Method implemented with FEniCS. The inverse problem is formulated as an optimization task and tackled using Self adaptive Differential Evolution, an auto-adaptive variant of Differential Evolution. Numerical experiments, conducted both with and without noise, demonstrate that the proposed approach is a promising alternative for solving inverse problems in breast tumor detection through thermographic analysis.",
+          "keywords": [
+            "Inverse Geometric Problem",
+            "Metaheuristics",
+            "Pennes’ Bioheat Equation",
+            "Finite Element Method"
+          ]
         }
       ]
     },
@@ -531,6 +544,20 @@
             "Water Quality Prediction",
             "Computational Intelligence",
             "Environmental Monitoring"
+          ]
+        },
+        {
+          "title": "Application of Machine Learning Techniques in the Pulp and Paper Industry",
+          "authors": "Breno Caue Saturnino Carlos e Casais, Bruno da Silva Macêdo, Sandro Pereira da Silva, Bruno Henrique Gronner Barbosa, Camila Martins Saporetti, Leonardo Goliatt",
+          "start": "2025-11-27T11:00",
+          "end": "2025-11-27T11:15",
+          "abstract": "Bleaching in the pulp and paper industry is essential to produce high-quality paper, but it faces challenges due to the complexity and interdependence of processes, as well as limitations in traditional control methods. Machine learning techniques appear to be a promising solution to predict pulp brightness and adjust operating conditions in real time. This study evaluates four algorithms (Support Vector Regression (SVR), Random Forest (RF), Linear Regression (LR), and Decision Tree (DT)) to predict brightness at the D1 bleaching stage in a pulp and paper industry. Experiments were performed using all features, with normalized features, with Principal Component Analysis (PCA) as feature selection, and with feature selection based on process knowledge. The RF model obtained the best results, with R² of 0.6576, 0.6576, 0.7177, and 0.7291, respectively, in each experiment.",
+          "keywords": [
+            "Machine Learning",
+            "Industry",
+            "Paper",
+            "Pulp",
+            "Bleaching"
           ]
         }
       ]
@@ -848,8 +875,8 @@
     {
       "id": "MS-27-KH-02",
       "size": "small",
-      "title": "Advances in Computational Geomechanics Modeling",
-      "theme": "Advances in Computational Geomechanics Modeling",
+      "title": "Developments and applications of wind energy and renewable energy",
+      "theme": "Developments and applications of wind energy and renewable energy",
       "room": "Khalifa",
       "start": "2025-11-27T14:30",
       "end": "2025-11-27T15:30",
@@ -858,30 +885,57 @@
       "abstract": "",
       "papers": [
         {
-          "title": "Pressure anisotropy on twin tunnel linings induced by a transverse gallery construction using time-dependent constitutive models",
-          "authors": "Bianca Milena Girardi, Felipe Pinto da Motta Quevedo, Samir Maghous",
+          "title": "Optimizing Offshore Wind Farms O&M Logistics in Brazil: A Techno-Economic MILP Model",
+          "authors": "Rafael Zorzetti Pereira, André Bergsten Mendes, Gustavo Roque da Silva Assi",
           "start": "2025-11-27T14:30",
           "end": "2025-11-27T14:45",
-          "abstract": "The increasing construction of twin tunnels demands a comprehensive understanding of their interaction with transverse galleries and the surrounding rock mass. This study conducts a 3D finite element analysis of the junction between deep twin tunnels and a transverse gallery, incorporating time-dependent effects such as rock mass creep, concrete creep, and shrinkage. The model is verified against existing numerical results, confirming its reliability in estimating internal forces in the lining. The influence of different rock mass friction angles on pressure distributions is investigated, revealing that higher friction angles significantly reduce lining pressures, particularly at the end of tunnel construction. The results indicate pronounced anisotropy in pressures, influenced by the properties of the lining and the rock mass, and peak pressures are observed at the lateral sides of the walls. Additionally, viscoelastic linings exhibit increased long-term stress redistribution, emphasizing the role of rheological behavior in tunnel performance. These findings offer valuable insights for the design and reinforcement of tunnel–gallery intersections. The study reinforces the importance of 3D modeling and time-dependent behavior in the safe and accurate design of tunnel–gallery intersections.",
+          "abstract": "Brazil’s offshore wind potential is largely unexplored and exceeds 1,200 GW (fixed and floating), according to a World Bank Group study, offering vast opportunities for renewable generation and for electrifying offshore oil and gas assets. Recent National Renewable Energy Laboratory (NREL) studies show that operations and maintenance (O&amp;M) costs account for about 18 % of the Levelized Cost of Energy (LCOE) in offshore wind farms, highlighting the importance of logistical cost optimization to achieve techno-economic viability.\nWe propose a mixed-integer linear programming (MILP) model that minimizes the combined fixed and variable costs of O&amp;M while scheduling activities over a multi-period horizon. The MILP optimizes two logistical choices: (i) given the distance from shore, a fixed Service Operation Vessel (SOV) base should be installed offshore or the wind farm should be serviced from an onshore port; (ii) the optimal vessel fleet size and mix - the types and quantities of vessels required to execute a multi-period O&amp;M plan at minimum total cost.\nUncertainty in input parameters, such as SOV fixed costs and vessel day rates, is captured by integrating Monte Carlo sampling into the MILP loop. The model is implemented in Python and solved with Gurobi. In a case study with 40 turbines of 15 MW each, the framework produces an optimized task schedule, an expected O&amp;M LCOE of USD 9.94 / MWh with 90 % confidence, and identifies approximately 45 km from shore as the break-even distance at which a fixed offshore base becomes cost-effective.\nThe model's modular structure supports extensions, including stochastic corrective maintenance, crane constraints and delay penalties, providing valuable insights for strategic O&amp;M decision-making in Brazil's offshore wind sector.",
           "keywords": [
-            "deep twin tunnel",
-            "transversal gallery",
-            "viscoelastic concrete",
-            "elastoplastic-viscoplastic coupled",
-            "finite element model"
+            "Offshore Wind Energy",
+            "Operations and Maintenance Activities (O&M)",
+            "Mixed-Integer Linear Programming (MILP)",
+            "Logistics Optimization",
+            "Levelized Cost of Energy (LCOE)"
           ]
         },
         {
-          "title": "Numerical Modeling for the Characterization of Fractured Damage Zones in Geological Faults",
-          "authors": "Amanda Scherer, Roberto Juan Quevedo Quispe , Deane Roehl, Bruno R.B.M. Carvalho",
+          "title": "Deep Learning for Offshore Wind Intensity Forecasting in the South Atlantic: A ConvLSTM Approach Using ERA5 Data",
+          "authors": "HUMBERTO LOMEU, Alexandre Gonçalves Evsukoff, Luiz Paulo de Freitas Assad",
           "start": "2025-11-27T14:45",
           "end": "2025-11-27T15:00",
-          "abstract": "Geological faults play a crucial role in the compartmentalization of reservoirs within rock formations due to the presence of impermeable fault cores. However, faults are not exclusively characterized by impermeable surfaces; they are also accompanied by adjacent damage zones formed by fracture networks. These damage zones may function as preferential pathways for fluid migration in cases where a high concentration of fractures is present. Consequently, an appropriate representation of these zones is imperative for the definition of more effective production strategies in oil fields. A variety of approaches have been proposed, including numerical modeling utilizing the finite element method and elastoplastic constitutive models through classical continuum mechanics. However, the depiction of damage zones as continuous domains often fails to adequately represent dominant fracture networks. Other methodologies employ fracture mechanics theory with elastic models to assess the formation, orientation, and propagation of fractures. However, the complex fracture networks frequently observed in fault damage zones cannot be accurately modeled using these approaches. The continuum model is not capable of explicitly representing fractures, leaving both their orientation and propagation path uncertain. In contrast, cohesive models employ a tailored finite element mesh that can simulate the nucleation and evolution of cracks within the continuum, allowing for an explicit representation of fractures. In light of this, the present study proposes the development of numerical models applied to geological faults, focusing on the representation of fractures through cohesive interface elements capable of explicitly simulating the propagation of discontinuities within the damage zone. The results obtained allow for the evaluation of fracture networks in wall and tip damage zones, highlighting some correlations with outcrop data.",
+          "abstract": "Accurate wind forecasting is crucial for optimizing the efficiency and operational planning of offshore wind energy projects. In Brazil, there is growing interest in offshore wind energy as companies seek to diversify their renewable energy portfolios. Numerical weather prediction (NWP) models, although widely employed, often require extensive computational resources and significant time to provide rapid short-term forecasts, limiting their applicability for near real-time decision-making. In addition, the scarcity of in situ measurements and the limited frequency of remote sensing data in the South Atlantic, particularly in the region of interest leads to a dependency on data generated by NWP models, such as ERA5, for training deep learning models. To address this challenge, this work proposes and evaluates a deep learning-based forecasting framework utilizing Convolutional Long Short-Term Memory (ConvLSTM) networks trained exclusively on ERA5 reanalysis data. ERA5 provides comprehensive atmospheric data globally, and in this work a sample of eight years of data was used, with intervals of 3 and 6 hours. This study explores various input configurations, including different lookback periods ranging from 24 to 72 hours to forecast future wind intensity for periods between 24 to 48 hours ahead. The predictive performance of the ConvLSTM model is compared when using wind intensity alone versus models incorporating additional atmospheric variables such as temperature and pressure. Model performance was rigorously assessed using Root Mean Square Error (RMSE), evaluating predictions of wind intensity. The preliminary analysis demonstrates promising performance of the ConvLSTM model in capturing complex spatial-temporal interactions. This research contributes valuable insights into effective ConvLSTM configurations and underscores the model’s potential advantages over traditional NWP approaches, particularly regarding rapid forecasting capabilities and computational efficiency, indicating their potential for improving short-term offshore wind forecasting in the South Atlantic region.",
           "keywords": [
-            "Numerical modeling",
-            "Geological faults",
-            "Fracturing",
-            "Finite elements"
+            "Wind Forecasting",
+            "ConvLSTM",
+            "ERA5",
+            "Deep Learning",
+            "Offshore Wind Energy"
+          ]
+        },
+        {
+          "title": "Optimal Tower Sizing of the IEA-15MW Offshore Wind Turbine Under Site-Specific Loading",
+          "authors": "Gino Bertollucci Colherinhas,  Hisham Tariq, Marcus Vinicius Girão de Morais, Francesco Petrini, Agathoklis Giaralis",
+          "start": "2025-11-27T15:00",
+          "end": "2025-11-27T15:15",
+          "abstract": "This study presents the optimal structural redesign of the IEA-15MW offshore wind turbine tower using a single-objective genetic algorithm coupled with a high-fidelity finite element model implemented in PyMAPDL. The optimization aims to minimize the tower mass while satisfying stress, frequency, displacement, geometric, and buckling constraints under site-specific environmental conditions. Four representative Design Load Cases (DLCs) were considered—normal, extreme, and idling sea states—based on wind and wave spectra typical of Northern Europe. Spectral dynamic responses were computed via power spectral density (PSD) analysis and applied in combination with static wind and wave loading. All optimizations converged to a single robust structural configuration, leading to a 9.94\\% mass reduction compared to the IEA-15MW reference design and a reduction in first natural frequency from 0.173 Hz to 0.140 Hz, satisfying the dynamic regime. Post-optimization buckling verification was performed based on Eurocode 3 Part 1--6, confirming shell stability under combined axial and shear stresses. The proposed framework demonstrates the potential of customized GA-based workflows for efficient and constraint-aware offshore tower design.",
+          "keywords": [
+            "Optimal Sizing",
+            "Offshore Wind Turbine",
+            "Structural Dynamics",
+            "Power Spectral Density",
+            "Genetic Optimization"
+          ]
+        },
+        {
+          "title": "Design and Evaluation of Savonius Wind Turbine Models in a Wind Tunnel",
+          "authors": "Anderson Gomes Girardi, Andreia  Aoyagui Nascimento, Felipe Pamplona Mariano",
+          "start": "2025-11-27T15:15",
+          "end": "2025-11-27T15:30",
+          "abstract": "To enhance understanding of the conversion of wind kinetic energy into mechanical work, this study presents the design and construction of vertical-axis Savonius wind turbine models for educational use in a wind tunnel. The work emphasizes the use of low-cost materials and a simplified manufacturing process. Two turbine models with distinct configurations were developed. The first model was constructed using PVC pipes, featuring overlapping blades, a single stage, and a defined central shaft. The second model was fabricated from acrylic, with non-overlapping blades, a two-stage configuration, and no apparent central shaft; the blades are mounted on acrylic disks, which in turn hold shaft tips that connect to either a torque measurement device or an electric generator. The two-stage design of the second model enables automatic startup of rotation, and the absence of a central shaft reduces the overall weight of the turbine, although it poses challenges for balancing. Rotational speed measurements were performed using a tachometer, while torque was measured using a custom-built static torque meter. The results include the tip speed ratio relative to wind speed and the torque coefficient, i.e., the efficiency curves of each wind turbine model. These are compared with results reported in the literature.",
+          "keywords": [
+            "Savonius Wind Turbine",
+            "Wind Tunnel",
+            "Wind Turbine Efficiency Curve"
           ]
         }
       ]
@@ -1306,14 +1360,28 @@
             "Soil interaction",
             "Stability"
           ]
+        },
+        {
+          "title": "Subsidence Analysis in Buried Pipelines Due to Fluid Leakage: Numerical Modeling and Machine Learning",
+          "authors": "Karl Igor Martins Guerra, Lariane Irene Farias da Silva, Guilherme Medeiros Ávila, Vinicius de Azevedo Lima e Souza, Railson Prado do Carmo, Guilherme Medeiros, José Gabriel Souza, Juliana Farias",
+          "start": "2025-11-27T18:00",
+          "end": "2025-11-27T18:15",
+          "abstract": "Buried pipeline systems are critical components of urban infrastructure, supporting essential services such as sewage, water supply, and the transport of oil and gas. Fluid leaks in these systems can significantly alter the stress distribution in the surrounding soil, leading to vertical deformations, ground surface subsidence, and, in severe cases, the formation of sinkholes. These processes involve the interplay of complex physical phenomena, including soil mechanics, solid mechanics, and unsaturated flow in porous media, making their accurate modeling both challenging and computationally intensive.\nThis study proposes a numerical and data-driven framework for analyzing subsidence caused by fluid leakage in buried pipelines. A high-fidelity database is constructed from coupled finite element simulations of the elastic equilibrium equations (∇·σ = f) and the unsaturated flow equations governed by Richards’ equation, incorporating the Van Genuchten–Mualem constitutive relationships. The coupling is achieved through the effective stress–pore pressure interaction, capturing the mechanical-hydraulic behavior of the system.\nTo identify the most influential parameters—such as pipeline depth, diameter, leak flow rate, and soil elasticity—a machine learning approach based on tree-based symbolic regression is employed. This method enables the discovery of explicit physical-mathematical laws from the simulation data, yielding interpretable analytical expressions that enhance the efficiency of subsequent numerical analyses.\nThe developed models will be applied to a case study in the city of Rio de Janeiro to assess the potential impacts of hypothetical leakage scenarios. The results aim to support the prediction of structural risks and inform preventive maintenance strategies, contributing to the resilience and sustainability of urban buried infrastructure.",
+          "keywords": [
+            "Coupled Analysis",
+            "Finite Element Method",
+            "Symbolic Regression",
+            "Soil Subsidence",
+            "Buried Pipes"
+          ]
         }
       ]
     },
     {
       "id": "MS-27-KH-03",
       "size": "small",
-      "title": "Developments and applications of wind energy and renewable energy",
-      "theme": "Developments and applications of wind energy and renewable energy",
+      "title": "Advances in Computational Geomechanics Modeling",
+      "theme": "Advances in Computational Geomechanics Modeling",
       "room": "Khalifa",
       "start": "2025-11-27T16:30",
       "end": "2025-11-27T18:30",
@@ -1322,45 +1390,69 @@
       "abstract": "",
       "papers": [
         {
-          "title": "Optimizing Offshore Wind Farms O&M Logistics in Brazil: A Techno-Economic MILP Model",
-          "authors": "Rafael Zorzetti Pereira, André Bergsten Mendes, Gustavo Roque da Silva Assi",
+          "title": "Pressure anisotropy on twin tunnel linings induced by a transverse gallery construction using time-dependent constitutive models",
+          "authors": "Bianca Milena Girardi, Felipe Pinto da Motta Quevedo, Samir Maghous",
           "start": "2025-11-27T16:30",
           "end": "2025-11-27T16:45",
-          "abstract": "Brazil’s offshore wind potential is largely unexplored and exceeds 1,200 GW (fixed and floating), according to a World Bank Group study, offering vast opportunities for renewable generation and for electrifying offshore oil and gas assets. Recent National Renewable Energy Laboratory (NREL) studies show that operations and maintenance (O&amp;M) costs account for about 18 % of the Levelized Cost of Energy (LCOE) in offshore wind farms, highlighting the importance of logistical cost optimization to achieve techno-economic viability.\nWe propose a mixed-integer linear programming (MILP) model that minimizes the combined fixed and variable costs of O&amp;M while scheduling activities over a multi-period horizon. The MILP optimizes two logistical choices: (i) given the distance from shore, a fixed Service Operation Vessel (SOV) base should be installed offshore or the wind farm should be serviced from an onshore port; (ii) the optimal vessel fleet size and mix - the types and quantities of vessels required to execute a multi-period O&amp;M plan at minimum total cost.\nUncertainty in input parameters, such as SOV fixed costs and vessel day rates, is captured by integrating Monte Carlo sampling into the MILP loop. The model is implemented in Python and solved with Gurobi. In a case study with 40 turbines of 15 MW each, the framework produces an optimized task schedule, an expected O&amp;M LCOE of USD 9.94 / MWh with 90 % confidence, and identifies approximately 45 km from shore as the break-even distance at which a fixed offshore base becomes cost-effective.\nThe model's modular structure supports extensions, including stochastic corrective maintenance, crane constraints and delay penalties, providing valuable insights for strategic O&amp;M decision-making in Brazil's offshore wind sector.",
+          "abstract": "The increasing construction of twin tunnels demands a comprehensive understanding of their interaction with transverse galleries and the surrounding rock mass. This study conducts a 3D finite element analysis of the junction between deep twin tunnels and a transverse gallery, incorporating time-dependent effects such as rock mass creep, concrete creep, and shrinkage. The model is verified against existing numerical results, confirming its reliability in estimating internal forces in the lining. The influence of different rock mass friction angles on pressure distributions is investigated, revealing that higher friction angles significantly reduce lining pressures, particularly at the end of tunnel construction. The results indicate pronounced anisotropy in pressures, influenced by the properties of the lining and the rock mass, and peak pressures are observed at the lateral sides of the walls. Additionally, viscoelastic linings exhibit increased long-term stress redistribution, emphasizing the role of rheological behavior in tunnel performance. These findings offer valuable insights for the design and reinforcement of tunnel–gallery intersections. The study reinforces the importance of 3D modeling and time-dependent behavior in the safe and accurate design of tunnel–gallery intersections.",
           "keywords": [
-            "Offshore Wind Energy",
-            "Operations and Maintenance Activities (O&M)",
-            "Mixed-Integer Linear Programming (MILP)",
-            "Logistics Optimization",
-            "Levelized Cost of Energy (LCOE)"
+            "deep twin tunnel",
+            "transversal gallery",
+            "viscoelastic concrete",
+            "elastoplastic-viscoplastic coupled",
+            "finite element model"
           ]
         },
         {
-          "title": "Deep Learning for Offshore Wind Intensity Forecasting in the South Atlantic: A ConvLSTM Approach Using ERA5 Data",
-          "authors": "HUMBERTO LOMEU, Alexandre Gonçalves Evsukoff, Luiz Paulo de Freitas Assad",
+          "title": "Numerical Modeling for the Characterization of Fractured Damage Zones in Geological Faults",
+          "authors": "Amanda Scherer, Roberto Juan Quevedo Quispe , Deane Roehl, Bruno R.B.M. Carvalho",
           "start": "2025-11-27T16:45",
           "end": "2025-11-27T17:00",
-          "abstract": "Accurate wind forecasting is crucial for optimizing the efficiency and operational planning of offshore wind energy projects. In Brazil, there is growing interest in offshore wind energy as companies seek to diversify their renewable energy portfolios. Numerical weather prediction (NWP) models, although widely employed, often require extensive computational resources and significant time to provide rapid short-term forecasts, limiting their applicability for near real-time decision-making. In addition, the scarcity of in situ measurements and the limited frequency of remote sensing data in the South Atlantic, particularly in the region of interest leads to a dependency on data generated by NWP models, such as ERA5, for training deep learning models. To address this challenge, this work proposes and evaluates a deep learning-based forecasting framework utilizing Convolutional Long Short-Term Memory (ConvLSTM) networks trained exclusively on ERA5 reanalysis data. ERA5 provides comprehensive atmospheric data globally, and in this work a sample of eight years of data was used, with intervals of 3 and 6 hours. This study explores various input configurations, including different lookback periods ranging from 24 to 72 hours to forecast future wind intensity for periods between 24 to 48 hours ahead. The predictive performance of the ConvLSTM model is compared when using wind intensity alone versus models incorporating additional atmospheric variables such as temperature and pressure. Model performance was rigorously assessed using Root Mean Square Error (RMSE), evaluating predictions of wind intensity. The preliminary analysis demonstrates promising performance of the ConvLSTM model in capturing complex spatial-temporal interactions. This research contributes valuable insights into effective ConvLSTM configurations and underscores the model’s potential advantages over traditional NWP approaches, particularly regarding rapid forecasting capabilities and computational efficiency, indicating their potential for improving short-term offshore wind forecasting in the South Atlantic region.",
+          "abstract": "Geological faults play a crucial role in the compartmentalization of reservoirs within rock formations due to the presence of impermeable fault cores. However, faults are not exclusively characterized by impermeable surfaces; they are also accompanied by adjacent damage zones formed by fracture networks. These damage zones may function as preferential pathways for fluid migration in cases where a high concentration of fractures is present. Consequently, an appropriate representation of these zones is imperative for the definition of more effective production strategies in oil fields. A variety of approaches have been proposed, including numerical modeling utilizing the finite element method and elastoplastic constitutive models through classical continuum mechanics. However, the depiction of damage zones as continuous domains often fails to adequately represent dominant fracture networks. Other methodologies employ fracture mechanics theory with elastic models to assess the formation, orientation, and propagation of fractures. However, the complex fracture networks frequently observed in fault damage zones cannot be accurately modeled using these approaches. The continuum model is not capable of explicitly representing fractures, leaving both their orientation and propagation path uncertain. In contrast, cohesive models employ a tailored finite element mesh that can simulate the nucleation and evolution of cracks within the continuum, allowing for an explicit representation of fractures. In light of this, the present study proposes the development of numerical models applied to geological faults, focusing on the representation of fractures through cohesive interface elements capable of explicitly simulating the propagation of discontinuities within the damage zone. The results obtained allow for the evaluation of fracture networks in wall and tip damage zones, highlighting some correlations with outcrop data.",
           "keywords": [
-            "Wind Forecasting",
-            "ConvLSTM",
-            "ERA5",
-            "Deep Learning",
-            "Offshore Wind Energy"
+            "Numerical modeling",
+            "Geological faults",
+            "Fracturing",
+            "Finite elements"
           ]
         },
         {
-          "title": "Optimal Tower Sizing of the IEA-15MW Offshore Wind Turbine Under Site-Specific Loading",
-          "authors": "Gino Bertollucci Colherinhas,  Hisham Tariq, Marcus Vinicius Girão de Morais, Francesco Petrini, Agathoklis Giaralis",
+          "title": "A Workflow for Wellbore Closure in Salt Formations Using Chronos: From Laboratory Testing to Numerical Simulation",
+          "authors": "Nelson Inoue, Sérgio A. B. da Fontoura, Eugênio da Silva",
           "start": "2025-11-27T17:00",
           "end": "2025-11-27T17:15",
-          "abstract": "This study presents the optimal structural redesign of the IEA-15MW offshore wind turbine tower using a single-objective genetic algorithm coupled with a high-fidelity finite element model implemented in PyMAPDL. The optimization aims to minimize the tower mass while satisfying stress, frequency, displacement, geometric, and buckling constraints under site-specific environmental conditions. Four representative Design Load Cases (DLCs) were considered—normal, extreme, and idling sea states—based on wind and wave spectra typical of Northern Europe. Spectral dynamic responses were computed via power spectral density (PSD) analysis and applied in combination with static wind and wave loading. All optimizations converged to a single robust structural configuration, leading to a 9.94\\% mass reduction compared to the IEA-15MW reference design and a reduction in first natural frequency from 0.173 Hz to 0.140 Hz, satisfying the dynamic regime. Post-optimization buckling verification was performed based on Eurocode 3 Part 1--6, confirming shell stability under combined axial and shear stresses. The proposed framework demonstrates the potential of customized GA-based workflows for efficient and constraint-aware offshore tower design.",
+          "abstract": "Understanding wellbore closure in salt formations requires an integrated approach that links laboratory characterization, material calibration, and advanced numerical simulation. This study presents a comprehensive workflow developed for halite from the Starks Dome (Louisiana, USA), combining experimental testing and finite-element modeling using the in-house program Chronos. Laboratory tests provided the mechanical parameters, including density (2.20 g/cm³) and unconfined compressive strength (17.85 MPa), as well as time-dependent creep data under triaxial conditions. These results were used to calibrate constitutive models implemented in Chronos, enabling accurate simulation of stress redistribution and wellbore closure during long-term exposure to high temperature and pressure. The proposed workflow ensures consistency between laboratory behavior and numerical predictions, offering a robust framework for evaluating casing integrity and long-term well stability in salt formations. The methodology can be extended to other viscoplastic geomaterials where creep and time-dependent deformation govern the mechanical response.",
           "keywords": [
-            "Optimal Sizing",
-            "Offshore Wind Turbine",
-            "Structural Dynamics",
-            "Power Spectral Density",
-            "Genetic Optimization"
+            "Salt formations",
+            "welbore closure"
+          ]
+        },
+        {
+          "title": "A modified creep analytical model for predicting shale wellbore closure in abandonment and CCS/CCUS applications",
+          "authors": "Marcello Congro, Pedro A. L. P. Firme, Deane Roehl",
+          "start": "2025-11-27T17:15",
+          "end": "2025-11-27T17:30",
+          "abstract": "Ensuring long-term well integrity remains a critical challenge in plug and abandonment (P&amp;A) and carbon capture, utilization, and storage (CCS/CCUS) operations, particularly in clayey formations like shales that exhibit time-dependent deformation. In such environments, wellbore closure due to creep forming a geological barrier contributes to zonal isolation and long-term sealing. This study proposes a modified creep analytical model that extends the classical Barker solution, originally developed for salt formations, to capture the creep behavior of shales. The formulation adopts deviatoric stress instead of the difference between horizontal stress and wellbore pressure as the main driver of time-dependent deformation, consistent with viscoelastic/viscoplastic constitutive models relevant to salt and shale geomechanics. The stress state surrounding the wellbore right after drilling is derived using Kirsch’s elastic solution, enabling a closed-form expression of the deviatoric stress field. Next, creep behavior is activated, and a time-dependent exponential decay function, calibrated using finite element simulations in ABAQUS, is introduced to capture progressive stress relaxation during material deformation. The resulting stress field is incorporated into a semi-analytical, iterative framework for computing wellbore radius evolution over time, based on a creep law that depends on stress, temperature, and empirically defined material parameters. The model is implemented in Python within a lightweight computational framework, offering rapid, yet robust, assessments suitable for field-scale applications. Validation against numerical simulations demonstrates strong agreement, underscoring the model’s applicability for integrity evaluation and barrier design in P&amp;A and CCS/CCUS scenarios. The proposed framework offers a computationally efficient, physically consistent approach for predicting long-term wellbore performance in creeping shale formations.",
+          "keywords": [
+            "shale",
+            "creep",
+            "sealing",
+            "p&a"
+          ]
+        },
+        {
+          "title": "Numerical simulation of thermal consolidation induced by a heat source in a clayey rock formation towards well plug and abandonment",
+          "authors": "Guilherme  Cunha de Barros Santos, Pedro Lobo Firme, Deane Roehl",
+          "start": "2025-11-27T17:30",
+          "end": "2025-11-27T17:45",
+          "abstract": "At the end of a well’s lifespan, proper plug and abandonment (P&amp;amp;A) procedures are crucial to preventenvironmental contamination due to fluid leakage. To this end, effective sealing barriers must beestablished. The conventional method for the creation of a barrier is the injection of cement forming aplug. However, under specific conditions, natural rock formations such as clay-rich sedimentary rocks(shales) and salt rocks can close around the casing and form an impermeable seal, potentially serving asan effective barrier. Some clayey rocks (shales) are strong candidates due to their low permeability,ductility, creep behavior and self-healing capacity. To accelerate the closure of the barrier, certainactivation techniques, including pressure reduction, heating, and chemical stimulation can be adopted.There are studies that address the formation of barriers by considering creep properties as the main andsole mechanism for rock movement over time through creep constitutive models. Another appropriateapproach for clayey rocks is to consider the mobility generated by thermal consolidation, in whichthermal stimulation causing well heating leads to deformation both in the solid skeleton of the rock andin the fluids within its pores.This study aims to improve the modeling of thermal-consolidation in shale formations considering theuse of a heat source inside the well. This has been achieved, firstly, by replicating an analytical solutionavailable in the literature for displacement, pore-pressure and temperature changes caused by a pointheat source inside a clayey rock formation. Secondly, a corresponding finite element model was built inABAQUS to benchmark the analytical solution. Finally, an additional model of a well scenario with avolumetric equivalent heat source was simulated.Among several relevant parameters for studying the model&amp;#39;s sensitivity considering their expectedvariability in the field and their impact on material behavior in the context of P&amp;amp;A, the first version ofthis study selected permeability to be varied between 10⁻¹⁷ and 10⁻²¹ m² (about 10 -2 and 10 -6 mD). It wasobserved that the lower the permeability, the higher the pore pressure increase. Additionally, the timerequired to reach the maximum pore pressure value also increases as permeability decreases. Thedeveloped model provides insights into the formation’s integrity and deformation, contributing to amore reliable prediction of the sealing performance during well P&amp;amp;A.",
+          "keywords": [
+            "Clayey rock",
+            "Shale",
+            "Thermal consolidation",
+            "P&amp",
+            "A",
+            "Computational Geomechanics."
           ]
         }
       ]
@@ -1429,6 +1521,19 @@
             "Vehicle dynamics",
             "Multibody model",
             "Semi-trailer truck safety"
+          ]
+        },
+        {
+          "title": "Stochastic Modeling and Uncertainty Quantification in the Operational Modal Analysis of a Honeycomb Sandwich Panel",
+          "authors": "Rodrigo Evangelista Aguiar de Souza, Sergio Henrique da Silva Carneiro, Maura Angelica Milfont Shzu, Davi Toledo da Costa",
+          "start": "2025-11-27T17:30",
+          "end": "2025-11-27T17:45",
+          "abstract": "The aeronautical and aerospace industries have been carried out researches to develop structures that combine cost-effectiveness with excellent mechanical properties. In this context, honeycomb sandwich panels stand out due to their high stiffness and low structural weight. In aerospace applications, these panels are often subjected to complex dynamic behavior, requiring advanced methods to analyze modal parameters under operational conditions and ensure structural integrity. Operational Modal Analysis (OMA) emerges as a robust approach that complements models based on the Finite Element Method (FEM), which are commonly used for simulating structures with dynamic behavior. OMA uses stochastic models to identify modal parameters accurately, even without knowledge of excitation forces. However, its application is subject to uncertainties associated with system variables such as nominal mechanical properties, geometric tolerances, manufacturing effects, and acquisition equipment errors, which may affect the accuracy of modal parameter estimation. Given the importance of accurately estimating modal parameters under real operational conditions, this study proposes an uncertainty analysis to quantify the influence of variability in the modal parameter estimation procedure for a honeycomb sandwich panel. The tested panel represents a structural element of SGDC 1, the first Brazilian geostationary satellite. The SSI-COV and SSI-DATA methods were used to extract modal parameters and, to quantify uncertainties, laboratory tests were conducted and the Monte Carlo method was used to generate synthetic responses with added noise, forming a randomized sample space. The SSI methods were applied to each dataset using computational routines, allowing modal parameter estimation. The goal is to quantify the impact of noise uncertainty on modal parameters estimation, identify the most sensitive variables, and support modeling strategies and the application of OMA to improve result reliability in aerospace projects. The results showed that the SSI-COV method yielded more reliable results, being less sensitive to noise and having lower computational cost. Although more sensitive to noise, the SSI-DATA method also provided reliable results and is recommended for cases using only direct structural response data",
+          "keywords": [
+            "Uncertainty Quantification",
+            "Operational Modal Analysis",
+            "Modal Parameter Estimation",
+            "Honeycomb Sandwich Panel"
           ]
         }
       ]
@@ -1519,6 +1624,34 @@
             "Partially encased composite columns",
             "Numerical simulation",
             "Recycled aggregate concrete"
+          ]
+        },
+        {
+          "title": "Numerical Analysis of External Diaphragm Connections Between I-Beams and Circular Hollow Section Column",
+          "authors": "Macksuel Soares de Azevedo, Rodrigo Roger Daré Uliana",
+          "start": "2025-11-27T18:00",
+          "end": "2025-11-27T18:15",
+          "abstract": "This article addresses the structural behavior of the connection between circular hollow steel tubular columns and I-section beams in civil construction. As a strategy to improve the stiffness of this connection, external diaphragms are used — flat components incorporated at the interface between the column and the beam. It is noteworthy that the Brazilian standard ABNT NBR 16239:2013 does not cover the design of this type of connection. The objective of this study is to numerically analyze the behavior of welded connections between a circular hollow section column and I-section beams, using external diaphragms in X-type and XX-type connections. These connections were subjected to compression and bending loads, and variations in the column diameter and wall thickness were also considered. Numerical modeling was performed using the finite element method and showed agreement with the numerical and experimental results obtained by Winkel (1998). The performance of the external diaphragm proved to be satisfactory, as it resulted in a considerable increase in stiffness, enhancing the connection’s load-bearing capacity, as well as the positive effects of increasing the column’s diameter and wall thickness.",
+          "keywords": [
+            "External diaphragm",
+            "steel structures",
+            "circular hollow section column",
+            "steel connections",
+            "numerical analysis."
+          ]
+        },
+        {
+          "title": "DEVELOPMENT OF A COMPUTATIONAL TOOL FOR THE STRUCTURAL ANALYSIS AND DESIGN OF COMPOSITE STEEL-CONCRETE SLABS WITH STEEL DECKING",
+          "authors": "Saul Aluce, Guilherme Santana Alencar, Lenildo Santos da Silva, Hermano Cardoso, Débora Maia Guimarães",
+          "start": "2025-11-27T18:15",
+          "end": "2025-11-27T18:30",
+          "abstract": "This contribution presents a web-based structural application for the design and verification of composite steel-concrete slabs, based on strength, stability, and serviceability limit state criteria. Its intuitive interface, accessible via browser on both desktop and mobile devices, enables engineers to efficiently perform structural calculations, including the determination of design actions and resisting capacities, as well as the verification of code-based requirements, shrinkage reinforcement, and, when applicable, negative moment reinforcement. The system also includes structural fire design checks and dynamic performance evaluation related to vibration serviceability. The application is structured into three core modules: a user interface (frontend), a data management layer (backend), and a processing module responsible for executing structural simulations. Once the input data is submitted, the backend processes the information and forwards the parameters to the analysis engine. Results are stored and presented to the user in a clear and organized format. The accuracy of the results has been validated against theoretical formulations and recent updated design standards, including NBR 8800:2024, AISI S100:2024, and NBR 14323:2013. The results obtained confirm the tool’s applicability to practical structural design scenarios. This solution contributes to the modernization of composite slab design in civil engineering, enhancing calculation efficiency, precision, and structural analysis automation.",
+          "keywords": [
+            "Composite slabs",
+            "Steel deck",
+            "SLS design",
+            "ULS design",
+            "Computational tool."
           ]
         }
       ]
@@ -1761,6 +1894,32 @@
             "active suspension",
             "roll stability",
             "vehicle handling"
+          ]
+        },
+        {
+          "title": "Dynamic Behavior of the Vehicle Body in an Automobile Equipped with Magnetorheological Dampers",
+          "authors": "Ricardo Teixeira da Costa Neto, Guilherme Barreto Rollemberg Conrado, Luiz Felipe Bassetto de Palma, Gabrielle Bonella Rangel",
+          "start": "2025-11-27T18:00",
+          "end": "2025-11-27T18:15",
+          "abstract": "The application of magnetorheological (MR) dampers has materially enhanced the safety of both passenger and heavy-duty vehicles. In this framework, the present work introduces a vehicle model—implemented within the MATLAB/Simulink® environment—whose suspension system is equipped with MR dampers, in which vertical and longitudinal dynamics are intrinsically coupled. The MR dampers are characterized by a hyperbolic tangent function incorporating a hysteresis component and are individually regulated via a Sugeno-type fuzzy control schema. Longitudinal tire forces are computed using the Modified Burckhardt model. The principal objective is to evaluate the vehicle-body response while traversing uneven terrain at velocities that engender high base-excitation frequencies. The MR damping system exhibited superior performance in all scenarios compared to conventional linear damping.",
+          "keywords": [
+            "Magnetorheological dampers",
+            "Fuzzy Controller",
+            "Modified Burckhardt Tire Model",
+            "Vehicle Dynamics"
+          ]
+        },
+        {
+          "title": "Modeling the Structural Response of Steel Frames Equipped with Tuned Liquid Dampers under Seismic Excitation in OpenSees",
+          "authors": "juan vallejo, Letícia Fleck Fadel Miguel, Jesus Daniel Villalba Morales",
+          "start": "2025-11-27T18:15",
+          "end": "2025-11-27T18:30",
+          "abstract": "Tuned Liquid Dampers (TLDs) are passive structural vibration control devices whose efficiency and low cost make them a promising solution in civil engineering applications. Their implementation is particularly beneficial in slender or high-rise structures, in which dynamic loads—such as wind or seismic excitations—can compromise structural safety, the integrity of non-structural components, and occupant comfort. The operational principle is based on tuning the fundamental sloshing frequency of the liquid to match the natural frequency of the structure’s dominant mode, thereby generating inertial forces on the tank walls that counteract the structural motion.This study numerically evaluates the performance of a rooftop-mounted TLD in a steel Moment-Resisting Frame (MRF) using OpenSees. The analysis includes both harmonic resonant excitations and representative seismic records. The TLD is modeled using an Equivalent Mechanical Model (EMM) based on Housner’s analogy, which captures the liquid’s nonlinear behavior through a coupled mass-spring-damper system.Results indicate that the EMM provides accurate predictions of the TLD’s response under conditions of low excitation amplitude and high structural damping, achieving notable reductions in dynamic response. However, a progressive loss of efficiency is observed as the liquid’s depth-to-length ratio (h/L) increases, underscoring the importance of this parameter in TLD design.",
+          "keywords": [
+            "Tuned Liquid Dampers",
+            "seismic excitations",
+            "vibration control",
+            "Equivalent Mechanical Model (EMM)"
           ]
         }
       ]

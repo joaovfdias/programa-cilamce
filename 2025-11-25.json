@@ -244,17 +244,17 @@
           ]
         },
         {
-          "title": "DEVELOPMENT OF AN EXPERIMENTAL PLATAFORM FOR THRUST TESTING  OF AIRCRAFT ELETRIC PROPULSION SYSTEM",
-          "authors": "Jaber João Macari Neto, Vinicius Reis, Vítor Paixão, Andrew Sarmento, José Manoel Balthazar, Jeferson José de Lima, Saulo Alfredo Gomez Salvedo, Luiz Carlos Sandoval Góes, Raphaela Carvalho Machado",
+          "title": "Airplane Independência: History, Model and Analysis",
+          "authors": "JOAO DE AGUIAR, José M. de Aguiar",
           "start": "2025-11-25T10:15",
           "end": "2025-11-25T10:30",
-          "abstract": "The objective of this work is to develop an experimental platform for measuring thrust data from the engine and propeller assembly of electric aerial vehicles, contributing to the validation of the aeronautical design phase. As electric propulsion systems gain prominence in modern aviation, accurate experimental data is crucial to ensuring efficiency, reliability, and optimal performance. The proposed platform facilitates the acquisition of experimental data from the engine and propeller, assisting in the proper sizing of the propulsion system. In this way, this paper examines how the thrust curve is influenced by different combinations of engine and propeller. Understanding these relationships is useful to optimize the propulsion system design by improving efficiency and power management. The propulsion system analyzed consists of a brushless electric motor, commonly used in electric aircraft due to its high efficiency, low maintenance requirements, and excellent power-to-weight ratio. To ensure accurate data acquisition, a measurement system was implemented using the Arduino platform. The setup includes load cells to measure thrust, current and voltage sensors to monitor power consumption, and an rpm encoder to determine motor speed. The experimental data are saved on an SD card for processing and analysis in the Matlab environment. Also, a flight controller Pixhawk was still used to control the motor speed. The experimental procedure involved testing several motor and propeller configurations under controlled conditions, systematically, varying propeller profiles, voltage levels, and load conditions. So, it was possible to determine how different design choices affect thrust and system performance. The results provide valuable insights for engineers working on electric propulsion systems, very useful to select the most suitable components for specific applications. Therefore, the developed experimental platform can be applied to an evaluation tool for researchers and engineers in the field of electric aviation. It provides a practical and reliable method for gathering performance data and, for example, validation of theoretical models. Additionally, the platform can be expanded for future studies on hybrid-electric propulsion, battery technology optimization, and aerodynamically improved propeller designs. Finally, this paper demonstrated that the platform is effective in studying and optimizing propulsion system parameters.",
+          "abstract": "In 1922 by the time of the comemoration of first century of Brazilian Independence, the first bimotor constructed in South America was presented in Rio de Janeiro. It was constructed under the auspices of a French Mission commanded by Etienne Lafay. Construction took place at the installations of Henrique Lage, a brazilian entrepeneur. The biplane could transport 5 passangers as it was powered with Clerget engines of 130 hp in a push-pull fashion. The airplane flew during some years, without any accidents, but disapeared from hystory. Only a few photos remain. So from them, drawings and a structural model of the airplane is developed in computer. From this model, in an operational scenario, construction materials are assigned. Associated loads are imposed and a finite element analysis performed to render the response of the airplane. Strain and stress fields result. Based on the obtained results, safety and performance evaluations of the airplane show a good level of reliabilty.",
           "keywords": [
-            "electric propulsion",
-            "aerial vehicles",
-            "thrust curves",
-            "performance analysis",
-            "experimental testing"
+            "Biplane",
+            "Independência",
+            "Model",
+            "FEA",
+            "Evaluation"
           ]
         },
         {
@@ -280,6 +280,43 @@
             "composite concrete and wood plates",
             "finite differences method",
             "requencies of undamped free vibration"
+          ]
+        },
+        {
+          "title": "DYNAMIC ANALYSIS OF A SIMPLY SUPPORTED FLUID-CONVEYING PIPE WITH A MASS ATTACHED IN THE MIDDLE OF THE SPAN",
+          "authors": "Milton Aparicio De Oliveira, Reyolando Brasil",
+          "start": "2025-11-25T11:00",
+          "end": "2025-11-25T11:15",
+          "abstract": "In this paper, the planar dynamics of a simply supported fluid-conveying pipe with a mass attached in the middle of the span are analyzed. Primarily, as external forces, a pulse load applied at the middle point, and the self-weight of the pipe-fluid system, were considered. For such loads, the dynamic behavior was analyzed for different flow velocities. Additionally, to the current external applied forces, a gravitational force has been considered, because of the attached mass at the middle span. The pipe was considered an Euler-Bernoulli beam having a non-negligible flexural rigidity. Only transversal and angular displacements related to the undeformed pipe axis were considered. We assume an incompressible fluid and an elastic pipe material. The equation of motion for the model is obtained using Hamilton's variational principle. The direct integration of the dynamic equations was solved by the Galerkin's method. Numerical analysis and simulations were performed using a code developed in Matlab. This paper demonstrated that, in the presence of the attached mass, for different flow velocities, the system frequencies decrease with time, for increasing flow velocities, approaching zero at the theoretical critical velocity.",
+          "keywords": [
+            "dynamic systems",
+            "fluid-structure interactions"
+          ]
+        },
+        {
+          "title": "Dynamic Analysis of a CubeSat launch",
+          "authors": "Geise Pereira, Reyolando M. L. R. F. Brasil",
+          "start": "2025-11-25T11:15",
+          "end": "2025-11-25T11:30",
+          "abstract": "Dynamic analysis is essential in the initial design phase of a CubSat because it identifies the natural vibration frequencies, possible deformations and stresses induced by vibrations, and resonance that may occur due to the vibrations of the rocket at the time of its launch.\nAiming at safety and mitigation of structural failures based on the CubeSat Design specifications and the system requirements of the QB50 project, this work evaluates the launch of a CubeSat – 1U with dimensions of 0.10m x 0.10m x 0.10m through terms of modal analysis, harmonic response, random vibrations and specific software with the objective of evaluating, through numerical analysis, the launch conditions of this kind of nanosatellite.",
+          "keywords": [
+            "CubeSat",
+            "Undamped free vibrations",
+            "Dynamics analysis",
+            "satellite launching"
+          ]
+        },
+        {
+          "title": "MODELING AND SIMULATION OF A LANDING GEAR SYSTEM WITH EULER-LAGRANGE VECTOR BOND-GRAPH APPROACH",
+          "authors": "Yuri Silva Souza, Daniel Bueno Silveira Lima, Luiz Carlos Goes",
+          "start": "2025-11-25T11:30",
+          "end": "2025-11-25T11:45",
+          "abstract": "This work aims to develop and simulate a model of landing gear system during an aircraft touch down. During an aircraft development process, many experimental tests are made to ensure the functionality and safety of the landing gear systems. Instead of using iron bird prototypes to perform the tests, using digital twins as high-fidelity model simulations to predict their physical behavior is safer and less expensive. This work applies the vector bond-graph method to model the landing gear dynamics during touchdown. The aircraft landing gear dynamics are modeled as a multi-body system. The methodology uses modern modeling tools based on a combination of vector bond graph (VBG) representation allied to the Euler-Lagrange variational method for system dynamics modeling. The system studied consists of a planar aircraft model composed of three main modules: a nose landing gear, the airframe, and the aircraft's main landing gear. The landing gear system was first modeled using a vector bond graph representation. Once the effectiveness of this modeling methodology was proved, the resultant vector bond graph was analyzed from the Euler-Lagrange standpoint by determining the system's generalized coordinates and total Lagrangian function. The symbolic algebraic processing was applied to determine the coupled nonlinear differential equations in a symbolic form. In this case, the energy interactions of all the system elements were calculated to generate equations of motion in the form of Euler-Lagrange equations. The analytical equations were implemented in a Matlab/Simulink computational environment to simulate a typical landing condition. A vertical load was applied to the model, simulating a smooth aircraft touchdown. When the aircraft speed reached 40 m/s, and the vertical load reached the aircraft's total weight, braking force was applied to decelerate the aircraft until it stopped. The simulation results showed the effectiveness of the proposed methodology in the aeronautical field. Although the chosen study case comprises a purely mechanical system, the combined vectorized Lagrangian bond graph modeling methodology can be applied to the Multiphysics domain typical of several aeronautical systems of interest.",
+          "keywords": [
+            "Lagrange",
+            "Bond-Graph",
+            "Multibody System",
+            "Aircraft landing gear"
           ]
         }
       ]
@@ -361,6 +398,46 @@
             "Random variables",
             "Concrete blocks",
             "Recycled aggregate"
+          ]
+        },
+        {
+          "title": "The influence of corrosion's spatial correlation on the structural reliability of corroded pipelines",
+          "authors": "Álamo Pessoa, Silvana Maria Bastos Afonso, André Teófilo Beck",
+          "start": "2025-11-25T11:15",
+          "end": "2025-11-25T11:30",
+          "abstract": "Pipelines play a crucial role in the transport of various commodities, particularly within the oil and gas industry, owing to their safety, cost-effectiveness, and efficiency over extended distances. As these networks continue to expand, their relevance is projected to remain significant for the foreseeable future, making their safe and reliable operation a priority for industry stakeholders. Among the primary risks to pipeline integrity is corrosion, making its study essential. Corrosion deteriorates the pipeline wall, diminishing the pipeline's structural integrity and mechanical resistance. Modeling the electrochemical process is inherently complex, and this is further complicated by challenges in representing the varying environmental conditions along the pipeline, which are unevenly distributed and exhibit spatial correlation. This paper investigates how the correlation between the linear growth rates of defect depths in corroded pipelines affects the probability of failure over time. The failure probability was determined using the concept of first passage probability, with correlation coefficients for the defect growth rates estimated by assigning values to the parameters of the autocorrelation functions – specifically, the correlation length and the spacing between defects. Two types of autocorrelation functions, triangular and squared exponential, were analyzed to assess their impact. Simulations were conducted for pipeline lifespans of 15, 20, 25, and 30 years, considering between 2 and 5 defects distributed along a pipeline of arbitrary length. Findings indicate that a higher correlation between the defect depth growth rates leads to a reduced probability of failure. This trend becomes more pronounced with an increasing number of defects and when evaluating longer lifespan periods. Additionally, the fit between the failure probability and correlation exhibited a stronger match to a selected curve – identified based on the highest R² value among various curve types – as both the number of defects and the evaluation period increased.",
+          "keywords": [
+            "corroded pipelines",
+            "structural reliability",
+            "correlation",
+            "Monte Carlo Method"
+          ]
+        },
+        {
+          "title": "Reliability-Based Assessment and Design of Cold-Formed Steel Beams with Web Openings",
+          "authors": "Frederico Borges Costa, André Luís Riqueira Brandão, Marcilio Sousa de Rocha Freitas",
+          "start": "2025-11-25T11:30",
+          "end": "2025-11-25T11:45",
+          "abstract": "This study collects and evaluates an extensive data bank of experimental results for cold-formed steel (CFS) beams with web openings, aiming to assess their impact on shear resistance. These openings, commonly introduced to accommodate building services, can significantly reduce the shear capacity of the beams. A structural reliability analysis using the First-Order Reliability Method (FORM) is conducted based on standard design equations that do not adequately account for the presence of web openings, as well as on alternative formulations proposed by other researchers that consider such discontinuities. Model error statistics, quantified as the ratio between the experimentally observed shear strength and the nominal strength predicted by the design equations, are incorporated into the analysis. The results indicate that existing code-based equations are often either overly conservative or unsafe for beams with web openings, leading to significant discrepancies between predicted and actual performance.",
+          "keywords": [
+            "Cold-formed steel",
+            "web openings",
+            "shear resistance",
+            "structural reliability",
+            "FORM"
+          ]
+        },
+        {
+          "title": "Risk-based optimization of a RC frame against progressive collapse and assessment of seismic performance",
+          "authors": "Lucas da Rosa Ribeiro, André Teófilo Beck",
+          "start": "2025-11-25T11:45",
+          "end": "2025-11-25T12:00",
+          "abstract": "Progressive collapse is a major concern in structural engineering, particularly for critical infrastructure and taller buildings expected to be exposed to extreme events. Previous studies reveal, by risk-based optimization, a tradeoff in mitigating progressive collapse between beam and column moments of inertia: stronger columns with higher moments of inertia enhance ductility and catenary action in weaker beams, whereas weaker columns (squared-cross sections) primarily mobilize compressive arch action in stronger beams but exhibit reduced ductility prior to collapse. Hence, the \"strong columns – weak beams\" configuration, widely adopted in seismic design, has also shown potential for mitigating progressive collapse across a broad range of frame aspect ratios. This study investigates which optimal risk-based design against progressive collapse better suits against lateral loadings due to earthquakes. Design variables include cross-sectional depth, rebar and stirrup ratios, and concrete strength. Structural behavior is evaluated for both intact and column loss scenarios, employing physical and geometrical nonlinear static analyses in OpenSees. Pseudo-static pushdown curves are used to approximate dynamic response. Failure probabilities are computed using Weighted Average Simulation Method, while risk optimization is conducted with the Firefly Algorithm. To reduce the computational burden, surrogate models are used to estimate limit states and reliability indexes. To address seismic loadings, Pushover analysis is conducted. Results highlight that \"strong columns – weak beams\" configurations, although costly for mitigating progressive collapse alone, provide superior performance under seismic loadings. Conversely, \"weak columns – strong beams\" designs are more cost-effective for progressive collapse scenarios alone, but perform poorly under lateral loadings. The findings emphasize the importance of addressing multi-hazard scenarios in structural optimization, particularly for infrastructures to be built in regions of greater threat of earthquakes.",
+          "keywords": [
+            "progressive collapse",
+            "earthquake",
+            "risk optimization",
+            "reinforced concrete"
           ]
         }
       ]
@@ -909,6 +986,20 @@
             "Sagittal craniosynostosis",
             "Suture"
           ]
+        },
+        {
+          "title": "Exploiting POD-based model order reduction for damped structural dynamics without damped training data",
+          "authors": "Yargo Pezzin Souza, Felipe dos Santos Loureiro, Delfim Soares Junior, Walnório Graça Ferreira, Webe João Mansur",
+          "start": "2025-11-25T15:15",
+          "end": "2025-11-25T15:30",
+          "abstract": "The Proper Orthogonal Decomposition (POD) model order reduction technique can identify underlying patterns and reproduce system configurations beyond those present in the training dataset. In this study, we investigate this capability through the simulation of proportional Rayleigh damping matrices, in structural dynamic problems, despite the absence of damping samples in the algorithm's training phase. This aspect of the method remains underexplored, despite its potential to significantly reduce computational effort by avoiding the simulation of the damping matrices in the physical domain (in addition to the computational savings already afforded by the reduced order itself). The proposed strategy is applied to the solution of structural problems discretized via the Finite Element Method (FEM) and time integration methods based on numerical Green’s functions (namely, ImGA and ExGA). The results are then compared with those obtained through standard solution approaches.",
+          "keywords": [
+            "reduced order model",
+            "structural dynamics",
+            "Proper Orthogonal Decomposition.",
+            "Rayleigh damping matrix",
+            "numerical Green's function"
+          ]
         }
       ]
     },
@@ -923,7 +1014,22 @@
       "chair": "Maira C.O. Lima Santo; José Luis Drummond Alves; Paulo Couto; Alexandre Evsukoff; Rodrigo Surmas; André Luiz Martins Compan; Amir Raoof",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Estimating free-fluid porosity from microtomography images erosion: A case study of coquinas from the Morro do Chaves Formation",
+          "authors": "Silvia Lorena Bejarano Bermudez, Gabriel Sousa dos Santos Ribeiro, Thiago Pineiro , Luciano Barros Guedes, Austin Boyd, Maira da Costa de Oliveira Lima Santo, José Luis Drummond Alves, Paulo Couto",
+          "start": "2025-11-25T14:30",
+          "end": "2025-11-25T14:45",
+          "abstract": "Free fluid porosity (FFI) is a key petrophysical parameter for reservoir characterization, representing the fraction of the porous volume that contains potentially producible fluids. It is commonly estimated from transverse relaxation time (T₂) distributions derived from Nuclear Magnetic Resonance (NMR), using a cutoff value to distinguish free (mobile) fluids from irreducible ones. The latter are retained within micropores due to capillary forces or adsorption onto mineral surfaces. Precise quantification of free fluid porosity is critical for estimating recoverable hydrocarbon volumes, particularly in hybrid carbonate reservoirs with mixed siliciclastic and carbonate facies, where standard NMR interpretations may be limited. This study investigates a novel approach based on digital erosion of segmented X-ray micro-computed tomography (µCT) images to estimate free fluid porosity in hybrid carbonate rocks, using coquinas from the Morro do Chaves Formation as a case study. In addition, the image-derived FFI was integrated with NMR measurements to assess its potential as an input for permeability estimation using the Timur-Coates model. The dataset includes six segmented pore space images from coquina samples that were previously centrifuged to determine irreducible water saturation (Swirr) and establish T₂ cutoff values. The digital erosion technique was applied using Avizo software, applying successive layers of fixed thickness to the segmented pore space. The goal was to determine an optimal erosion width that approximates the average mobile fluid layer, maximizing the correlation between µCT-derived porosity and NMR-based FFP. This estimated porosity was subsequently used as input to the Timur-Coates permeability model, and the resulting predictions were compared to absolute permeability values measured by gas flow on corresponding core plugs. The results confirmed the existence of an optimal erosion width that maximizes the correlation between µCT-derived and NMR-derived FFI. Furthermore, the Density Equation (DE) approach was applied to differentiate between macropores (associated with mobile fluids) and micropores (associated with bound fluids), providing an additional comparative framework alongside the digital erosion technique. This integrated method provides a robust, non-destructive workflow to estimate FFI, improving petrophysical characterization and modeling of complex porous media, especially in hybrid carbonate reservoirs.",
+          "keywords": [
+            "Free fluid porosity",
+            "Nuclear Magnetic Resonance",
+            "Microtomography",
+            "Permeability model",
+            "Carbonate"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-25-ST-02",
@@ -976,6 +1082,19 @@
           ]
         }
       ]
+    },
+    {
+      "id": "MS-25-TM-02",
+      "size": "small",
+      "title": "Research Beginners",
+      "theme": "Research Beginners",
+      "room": "Taj Mahal",
+      "start": "2025-11-25T14:30",
+      "end": "2025-11-25T15:30",
+      "chair": "Élcio Cassimiro Alves; João Victor Fragoso Dias; Eduardo Toledo Lima Junior; André Jacomel Torii; Aline Ramos Barboza",
+      "authors": "",
+      "abstract": "",
+      "papers": []
     },
     {
       "id": "CB01",
@@ -1069,6 +1188,20 @@
             "real-time systems",
             "multisensor fusion"
           ]
+        },
+        {
+          "title": "Numerical Analysis of the Thermomechanical Behavior of 1.4301 Stainless Steel Beams Under Fire Conditions: Influence of Geometric Parameters on Fire Resistance",
+          "authors": "Andre L. Zanoni , Paulo A. G. Piloto , Luiz M. R. Mesquita , Diego Rossetto",
+          "start": "2025-11-25T17:15",
+          "end": "2025-11-25T17:30",
+          "abstract": "Fires in urban areas pose a significant risk to human life and infrastructure, highlighting the need to assess structural stability and material integrity under extreme temperatures to prevent collapse. Structural failures during fire events can lead to catastrophic consequences, making it essential to understand how different elements behave under such conditions. Stainless steel, widely used in modern construction for its durability, mechanical strength, and corrosion resistance, undergoes significant reductions in strength and stiffness when exposed to high temperatures, which can lead to structural failure. Therefore, evaluating its fire performance is crucial for ensuring structural safety and designing fire-resistant buildings. To predict the performance of stainless steel in fire scenarios, numerical simulations have become indispensable, with the Finite Element Method (FEM) being one of the most effective tools. Advanced computational methods allow for detailed analysis of material behavior under thermal loads, helping to develop fire-resistant structural solutions. This study uses ANSYS software to model the thermo-mechanical response of stainless steel structures exposed to fire. Specifically, it investigates variations in mechanical properties at elevated temperatures and their influence on overall fire performance. The methodology employs Geometrically and Materially Nonlinear Imperfection Analysis (GMNIA) for both static and fire simulations, along with nonlinear transient temperature analyses. A comprehensive parametric study was conducted to assess the impact of geometrical section dimensions on the strength of 1.4301 austenitic stainless steel beams, considering seven different transverse sections exposed to fire on three sides and subjected to a four-point bending load condition. The results indicate that thickness and width significantly influence temperature distribution, affecting structural stability and fire resistance. For the RHS 180x100x5 section, at a load level of 0.2, the simulation time was 55 minutes, while at load levels of 0.4 and 0.6, the maximum supported time decreased to approximately 27 minutes and 15 minutes, respectively. These findings reinforce the importance of geometric parameters in determining the fire resistance of stainless steel beams. The study provides valuable insights for optimizing structural design, improving fire safety, and contributing to the development of safer and more resilient buildings.",
+          "keywords": [
+            "fire resistance",
+            "stainless steel",
+            "finite element method (FEM)",
+            "thermo-mechanical analysis",
+            "structural stability."
+          ]
         }
       ]
     },
@@ -1085,17 +1218,17 @@
       "abstract": "",
       "papers": [
         {
-          "title": "Deep Learning-Based Classification of OCT Images for Retinal Disease Detection",
-          "authors": "Oziel da Silva, Celomar Oliveira da Silva Filho, Geziel Nelsino Ferreira da Silva, Gabriela Emanuele de Araújo Amorim, Giovani Bernardes Vitor",
+          "title": "Synthetic Facial Aging: A Comparative Study of Stable Diffusion and StyleGAN",
+          "authors": "Bruno de Barros Oliveira, Marco Antonio de Souza, Flávio Barros Vidal",
           "start": "2025-11-25T16:00",
           "end": "2025-11-25T16:15",
-          "abstract": "Retinal diseases, such as Age-Related Macular Degeneration (AMD), Diabetic Macular Edema (DME), and Choroidal Neovascularization (CNV), are leading causes of vision impairment globally. These conditions are characterized by structural alterations in the retina, including the formation of deposits like drusen, fluid accumulation, and abnormal blood vessel growth, which can progressively impair vision if not detected early. Optical Coherence Tomography (OCT) is a non-invasive imaging technique that provides high-resolution cross-sectional images of the retina, enabling detailed visualization of these pathological features.\nThis study focuses on developing and evaluating deep neural network (DNN) models for the automatic classification of OCT images aimed at detecting these ocular diseases. Using transfer learning, the research adapts pretrained architectures, including VGG16, VGG19, InceptionV3, ResNet50, and DenseNet121, to specialize in identifying disease-specific features within OCT scans. The models are trained on a balanced dataset, utilizing data augmentation and dataset balancing strategies to enhance their generalization and robustness.\nPerformance metrics such as accuracy, sensitivity, specificity, and Area Under the Receiver Operating Characteristic Curve (AUC) demonstrate that the models achieve high classification effectiveness. Further analysis through confusion matrices and activation maps indicates that the networks focus on clinically relevant regions within the images—such as areas of drusen, fluid accumulation, or abnormal vasculature—supporting the models’ interpretability and their potential for clinical trust.\nResults show that classical architectures like VGG16 and VGG19 outperform some modern lightweight models, with precision and recall rates exceeding 96%. These findings suggest that well-tuned, relatively shallow networks can efficiently distinguish retinal pathologies. The study concludes that transfer learning with pre-trained models is a promising approach for early and automated diagnosis of retinal diseases, potentially integrating into clinical workflows to enable timely interventions, improve patient outcomes, and increase access to accurate retinal assessments worldwide.",
+          "abstract": "This study investigates the use of generative models for identity-preserving facial aging, focusing on the progression of real facial images over time. Traditional facial recognition systems often struggle with long-term age progression, as individuals undergo gradual yet significant changes in appearance.\nTo address this challenge, we use real images of young adults from the FFHQ, BUPT-CBFace, and LFW datasets, ensuring balanced representation across ethnicities and genders. Facial aging is simulated at five target ages (30, 40, 50, 60, and 70 years) using two generative models: Stable Diffusion and StyleGAN. The outputs are evaluated in terms of identity preservation and perceptual quality.\nThis approach enables a controlled comparison of age progression techniques. The results contribute to the advancement of AI-driven facial aging methods, with potential applications in forensic investigations, identity verification, and digital security.",
           "keywords": [
-            "Deep Neural Network",
-            "Medical Image Classification",
-            "Ocular Diseases",
-            "Optical Coherence Tomography",
-            "Transfer Learning"
+            "Stable Diffusion",
+            "StyleGAN",
+            "Identity Preservation",
+            "Facial Aging",
+            "Computer Vision"
           ]
         },
         {
@@ -1179,17 +1312,17 @@
           ]
         },
         {
-          "title": "Active Local Search Approach in Non-Delayed Solutions for the Job Shop Scheduling Problem",
-          "authors": "David  Betoni, Fabio Henrique Perira",
+          "title": "Deep Learning-Based Classification of OCT Images for Retinal Disease Detection",
+          "authors": "Oziel da Silva, Celomar Oliveira da Silva Filho, Geziel Nelsino Ferreira da Silva, Gabriela Emanuele de Araújo Amorim, Giovani Bernardes Vitor",
           "start": "2025-11-25T17:45",
           "end": "2025-11-25T18:00",
-          "abstract": "This paper presents a computational approach for solving task sequencing problems in production environments, known as the Job Shop Scheduling Problem (JSSP). This problem is recognized as difficult within the field of Operations Research and is classified as NP-hard, with direct applications in the optimization of production processes. In the current literature, metaheuristics have been widely used to address this problem, particularly Genetic Algorithms, as they enable the discovery of high-quality solutions with acceptable computational cost. Generally, however, metaheuristics require the combined use of solution refinement techniques, known as local search methods. While these techniques enhance the performance of metaheuristics, they also increase the computational cost of the approach. This work contributes to this context by proposing a method to refine solutions obtained through the random-key genetic algorithm (RKGA). The RKGA is configured so that the search for a solution occurs solely within the space of non-delayed solutions, which is considerably smaller than the space of active solutions. The best solutions found are subsequently refined using a mechanism that identifies non-critical operations and introduces incremental delays to them. The initial search by RKGA within the reduced space of non-delayed solutions allows for a reduction in computational cost, followed by a refinement process in which small delays are introduced in selected operations to improve the makespan (total execution time). Results using classical academic benchmarks—particularly those defined by Fisher and Thompson (1963) and Lawrence (1984)—show that suboptimal non-delayed solutions are often improved through the proposed refinement method, achieving better results than conventional Genetic Algorithm implementations. Therefore, it is concluded that the results obtained from this set of benchmark instances validate the proposed approach, demonstrating its superiority in obtaining more efficient outcomes.",
+          "abstract": "Retinal diseases, such as Age-Related Macular Degeneration (AMD), Diabetic Macular Edema (DME), and Choroidal Neovascularization (CNV), are leading causes of vision impairment globally. These conditions are characterized by structural alterations in the retina, including the formation of deposits like drusen, fluid accumulation, and abnormal blood vessel growth, which can progressively impair vision if not detected early. Optical Coherence Tomography (OCT) is a non-invasive imaging technique that provides high-resolution cross-sectional images of the retina, enabling detailed visualization of these pathological features.\nThis study focuses on developing and evaluating deep neural network (DNN) models for the automatic classification of OCT images aimed at detecting these ocular diseases. Using transfer learning, the research adapts pretrained architectures, including VGG16, VGG19, InceptionV3, ResNet50, and DenseNet121, to specialize in identifying disease-specific features within OCT scans. The models are trained on a balanced dataset, utilizing data augmentation and dataset balancing strategies to enhance their generalization and robustness.\nPerformance metrics such as accuracy, sensitivity, specificity, and Area Under the Receiver Operating Characteristic Curve (AUC) demonstrate that the models achieve high classification effectiveness. Further analysis through confusion matrices and activation maps indicates that the networks focus on clinically relevant regions within the images—such as areas of drusen, fluid accumulation, or abnormal vasculature—supporting the models’ interpretability and their potential for clinical trust.\nResults show that classical architectures like VGG16 and VGG19 outperform some modern lightweight models, with precision and recall rates exceeding 96%. These findings suggest that well-tuned, relatively shallow networks can efficiently distinguish retinal pathologies. The study concludes that transfer learning with pre-trained models is a promising approach for early and automated diagnosis of retinal diseases, potentially integrating into clinical workflows to enable timely interventions, improve patient outcomes, and increase access to accurate retinal assessments worldwide.",
           "keywords": [
-            "Genetic Algorithms",
-            "Local Search",
-            "Active Solutions",
-            "Scheduling",
-            "Job Shop"
+            "Deep Neural Network",
+            "Medical Image Classification",
+            "Ocular Diseases",
+            "Optical Coherence Tomography",
+            "Transfer Learning"
           ]
         }
       ]
@@ -1350,7 +1483,7 @@
       "room": "One Tower",
       "start": "2025-11-25T16:00",
       "end": "2025-11-25T18:30",
-      "chair": "",
+      "chair": "Ney Dumont; Paulo M. Pimenta; José Luis Drummond Alves; Philippe Devloo",
       "authors": "",
       "abstract": "",
       "papers": [
@@ -1440,6 +1573,33 @@
             "composite",
             "beam element",
             "structure"
+          ]
+        },
+        {
+          "title": "Advances on Model Merging for Physics-Informed Neural Networks (PINNs)",
+          "authors": "LUIZ FERNANDO ALVES MACEDO, Flavio Valberto Barrionuevo Rodrigues, Paulo de Mattos Pimenta",
+          "start": "2025-11-25T18:00",
+          "end": "2025-11-25T18:15",
+          "abstract": "Physics-Informed Neural Networks (PINNs) have emerged as a powerful paradigm for solving partial differential equations by incorporating physical laws directly into neural network training. However, scaling PINNs to large domains and capturing high-frequency solution components remains challenging due to increased complexity and optimization difficulties. In this work, we introduce a novel nonlinear model merging approach for PINNs that extends beyond traditional linear combinations of model parameters. We demonstrate our approach on the linear damped oscillator problem. The experimental results show consistent improvements over both pretrained baselines and linear merging approaches, suggesting that the novel technique can effectively assist not only PINNs on larger domains but also facilitate integration of specialized submodels for large-scale foundation models.",
+          "keywords": [
+            "Physics-Informed Neural Networks",
+            "Computational Mechanics",
+            "Structural Dynamics",
+            "Model Merging"
+          ]
+        },
+        {
+          "title": "Mechanical Characterization of Breast Compression with Cancerous Tissue Using an Axisymmetric Numerical Model",
+          "authors": "William de Almeida Peters, Renato Vaz Linn, Branca Freitas de Oliveira, Mariana Pohlmann de Oliveira",
+          "start": "2025-11-25T18:15",
+          "end": "2025-11-25T18:30",
+          "abstract": "Breast cancer is the leading cause of cancer-related deaths among women in Brazil and the second leading cause worldwide. Detecting the disease in its early stages is an effective way to increase survival rates. Ultrasound elastography is a non-invasive procedure used for this purpose, capable of providing data on tissue stiffness based on compression applied by an external force to the breast. Cancerous tissue is stiffer than the surrounding healthy tissue, and the nonlinear strain behavior of the compressed breast can be used to determine the nature of the inclusion using this approach. Since the relationship between applied forces and observed strains is essential for an accurate diagnosis, the mechanical characterization of the procedure becomes relevant. In this work, a numerical axisymmetric breast model is proposed. A simplified tissue distribution is modeled, incorporating a cancerous inclusion parameterized by its size and stiffness to represent different stages of the disease and tumor types (benign or malignant). The tissues were modeled as nonlinear elastic materials, and the breast model was compressed by a rigid spherical indenter to simulate the clinical elastography test, in which large strains and nonlinear geometric effects take place. The Finite Element Method was used for the numerical evaluation of the model, and parametric results were obtained by considering different cancerous inclusions and breast tissue distributions. While the results for tumors with small inclusions indicate no significant strain increase in the surrounding cancerous tissue compared to the healthy case, noticeable variations are observed for medium-sized and large tumors as stiffness increases. A relationship between applied forces and the increase in stiffness due to cancer characteristics is discussed and presented. The obtained results were compared with simplified theoretical analytical solutions for spherical indentation in a homogeneous material, as well as with results from other authors using different three-dimensional numerical models. As a result, the present simplified axisymmetric model shows good agreement in the mechanical characterization of the effect of cancerous inclusions on breast compression, while considering a simplified geometry and tissue distribution model, enabling fast and parametric analysis.",
+          "keywords": [
+            "Biomechanics",
+            "Finite Element Analysis",
+            "Breast Cancer",
+            "Elasticity",
+            "Elastography"
           ]
         }
       ]
@@ -1668,6 +1828,19 @@
           ]
         }
       ]
+    },
+    {
+      "id": "MS-25-TM-03",
+      "size": "small",
+      "title": "Research Beginners",
+      "theme": "Research Beginners",
+      "room": "Taj Mahal",
+      "start": "2025-11-25T16:00",
+      "end": "2025-11-25T18:30",
+      "chair": "",
+      "authors": "",
+      "abstract": "",
+      "papers": []
     },
     {
       "id": "Assembly",

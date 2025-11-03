@@ -238,6 +238,20 @@
             "State Space Model",
             "Long Short-Term Memory"
           ]
+        },
+        {
+          "title": "Active Local Search Approach in Non-Delayed Solutions for the Job Shop Scheduling Problem",
+          "authors": "David  Betoni, Fabio Henrique Perira",
+          "start": "2025-11-26T11:45",
+          "end": "2025-11-26T12:00",
+          "abstract": "This paper presents a computational approach for solving task sequencing problems in production environments, known as the Job Shop Scheduling Problem (JSSP). This problem is recognized as difficult within the field of Operations Research and is classified as NP-hard, with direct applications in the optimization of production processes. In the current literature, metaheuristics have been widely used to address this problem, particularly Genetic Algorithms, as they enable the discovery of high-quality solutions with acceptable computational cost. Generally, however, metaheuristics require the combined use of solution refinement techniques, known as local search methods. While these techniques enhance the performance of metaheuristics, they also increase the computational cost of the approach. This work contributes to this context by proposing a method to refine solutions obtained through the random-key genetic algorithm (RKGA). The RKGA is configured so that the search for a solution occurs solely within the space of non-delayed solutions, which is considerably smaller than the space of active solutions. The best solutions found are subsequently refined using a mechanism that identifies non-critical operations and introduces incremental delays to them. The initial search by RKGA within the reduced space of non-delayed solutions allows for a reduction in computational cost, followed by a refinement process in which small delays are introduced in selected operations to improve the makespan (total execution time). Results using classical academic benchmarks—particularly those defined by Fisher and Thompson (1963) and Lawrence (1984)—show that suboptimal non-delayed solutions are often improved through the proposed refinement method, achieving better results than conventional Genetic Algorithm implementations. Therefore, it is concluded that the results obtained from this set of benchmark instances validate the proposed approach, demonstrating its superiority in obtaining more efficient outcomes.",
+          "keywords": [
+            "Genetic Algorithms",
+            "Local Search",
+            "Active Solutions",
+            "Scheduling",
+            "Job Shop"
+          ]
         }
       ]
     },
@@ -458,6 +472,20 @@
             "Strategy Game Design",
             "STEM Education",
             "Game-Based Learning"
+          ]
+        },
+        {
+          "title": "e-Stress3D: A Web-Based Educational Tool for Interactive 3D Stress Tensor Visualization in Solid Mechanics",
+          "authors": "Matheus Amancio Miranda, Eduardo Nobre Lages",
+          "start": "2025-11-26T11:45",
+          "end": "2025-11-26T12:00",
+          "abstract": "We present e-Stress3D, a web-based educational tool designed to enhance the learning of Solid Mechanics in undergraduate and graduate engineering curricula. The application enables interactive visualization of the 3D stress tensor, integrating mathematical formulations with graphical representations. Key features include stress decomposition into isotropic and deviatoric components with their invariants, a dedicated module for Cauchy traction vector analysis on arbitrary planes, visualization of principal stresses, and construction of the 3D Mohr’s circle. The platform supports real-time manipulation of input parameters and provides immediate visual feedback. This interactivity promotes a deeper and more intuitive understanding of fundamental concepts. Overall, the tool contributes to the growing integration of digital tools in engineering education, responding to the increasing demand for more engaging and effective pedagogical approaches.",
+          "keywords": [
+            "Stress tensor visualization",
+            "Solid mechanics",
+            "Teaching tools",
+            "Interactive learning",
+            "Engineering education"
           ]
         }
       ]
@@ -692,6 +720,19 @@
             "Structural concrete",
             "Foundation engineering"
           ]
+        },
+        {
+          "title": "Optimization of composite risers using genetic algorithms",
+          "authors": "Renata Araujo, Elias Saraiva Barroso",
+          "start": "2025-11-26T11:45",
+          "end": "2025-11-26T12:00",
+          "abstract": "Flexible risers are critical components in offshore production systems, serving as dynamic pipelines that connect subsea equipment to surface platforms. Given this configuration, innovative technical challenges arise, particularly when composite materials are used in their manufacture. In this context, the use of laminated structural systems offers advantages such as reduced weight and enhanced corrosion resistance. However, the combinatorial complexity involved in designing these structures—due to the interaction between multiple design parameters and operational criteria—renders conventional empirical approaches inadequate. Under these conditions, genetic algorithms (GAs) emerge as particularly well-suited tools for addressing this class of constrained optimization problems. This study proposes a GA-based methodology for optimizing the laminated layers of flexible risers in a lazy-wave configuration. Numerical studies were conducted using BIOS (Bio-Inspired Optimization System), an optimization framework based on bio-inspired algorithms, and Orcaflex, a commercial software used to simulate the structural behavior of risers under offshore operating conditions. Finally, the results were compared with literature reference data, enabling the assessment of the GA’s effectiveness for this type of problem.",
+          "keywords": [
+            "Flexible Riser",
+            "Laminated Structures",
+            "Composite Materials",
+            "Optimization"
+          ]
         }
       ]
     },
@@ -850,7 +891,59 @@
       "chair": "Zenon Jose Guzman del Prado; Paulo B. Gonçalves; Frederico Martins Alves da Silva; Renata Machado Soares",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Nonlinear free axisymmetric vibration analysis of dielectric hyperelastic cylindrical shells",
+          "authors": "Renata Machado Soares , Frederico Martins Alves da Silva, Alano Rodrigues Leal",
+          "start": "2025-11-26T14:30",
+          "end": "2025-11-26T14:45",
+          "abstract": "This work investigates the nonlinear free axisymmetric vibration of a cylindrical shell composed of an isotropic, homogeneous, incompressible, and dielectric hyperelastic material described by the Mooney-Rivlin constitutive model. The external static loading considers two cases: a uniform radial pressure and an axisymmetric radial pressure with the spatial distribution of the first axisymmetric vibration mode. Geometric nonlinearity is incorporated into the analytical model through Sanders-Koiter’s nonlinear shell theory. The Rayleigh-Ritz method, combined with Hamilton’s principle, is used to derive the set of nonlinear equilibrium equations. A comprehensive parametric study examines the effects of initial geometric imperfections, dielectric properties, and static preloading on the nonlinear frequency–amplitude relationship and static equilibrium paths. The results highlight significant changes in both static stability and nonlinear dynamic behavior, depending on the considered parameters and load conditions.",
+          "keywords": [
+            "cylindrical shell",
+            "hyperelastic material",
+            "dielectric",
+            "geometric imperfections"
+          ]
+        },
+        {
+          "title": "Nonlinear static analysis and stability of a three-dimensional guyed truss tower considering the unilateral contact of the stays",
+          "authors": "Victorino Victor Matias, Frederico Martins Alves da Silva, Arthur Álax Araújo de Albuquerque",
+          "start": "2025-11-26T14:45",
+          "end": "2025-11-26T15:00",
+          "abstract": "Guyed towers are widely used in various engineering applications, such as telecommunications, broadcasting, and power transmission, due to their slender geometry, favorable structural performance under service loads, and economic efficiency. However, numerous structural failures resulting in tower collapse are often associated with stay cable rupture or malfunction. In this context, the present work investigates the nonlinear static equilibrium and structural stability of a three-dimensional guyed truss tower, taking into account the hypothesis of unilateral contact in the stays. To achieve this, a positional formulation combined with the Euler–Lagrange equations is employed to derive a set of nonlinear second-order ordinary differential equations that describe the structural behavior of the guyed tower. This nonlinear system is then solved to obtain equilibrium paths and assess their stability under two practical loading scenarios: (i) the guyed tower subjected to vertical loads, and (ii) the guyed tower subjected to horizontal loads. Particular emphasis is placed on the influence of unilateral contact in the stays on the nonlinear equilibrium path, which reveals a complex bifurcation and stability scenario arising from this critical assumption regarding stay behavior.",
+          "keywords": [
+            "Guyed tower",
+            "nonlinear static analysis",
+            "structural stability",
+            "unilateral contact"
+          ]
+        },
+        {
+          "title": "NUMERICAL ANALYSIS OF LOCAL-GLOBAL BUCKLING INTERACTION IN LAMINATED COMPOSITE CHANNEL COLUMNS",
+          "authors": "Pedro Sanderson Bastos Barros, Carlos Hiago Ramos Monteiro, Luiz Antônio Taumaturgo Mororó, Marcelo Silva Medeiros Júnior, Evandro Parente Junior",
+          "start": "2025-11-26T15:00",
+          "end": "2025-11-26T15:15",
+          "abstract": "The study of buckling in thin-walled structures is essential to ensure safety, efficiency, and economic viability in structural design, as these systems are particularly prone to instability phenomena. Channel, widely used in structural applications, can exhibit various buckling modes: local (plate-type), global (flexural and flexural-torsional), or through interactions between these modes. Accurate design must account for such interactions to ensure sufficient structural capacity, as understanding these mechanisms is crucial for reliably predicting the behavior of compressed columns and preventing premature failure. These stability problems become even more complex when advanced materials, such as fiber-reinforced composites, are employed. These materials have attracted significant attention due to their high specific strength, corrosion resistance, and tailorability. In thin-walled members, fiber-reinforced composites enable the optimization of mechanical performance through controlled ply orientations and stacking sequences. Nonetheless, their anisotropic behavior introduces significant complexity in accurately predicting structural buckling responses. Therefore, this work aims to develop a numerical model using the Finite Element Method to investigate the interaction between local and global buckling in simply supported fiber-reinforced composite channel columns under axial compression, and to assess the influence of initial geometric imperfections on the load-carrying capacity of these structural elements.",
+          "keywords": [
+            "Laminated composites",
+            "Channel columns",
+            "Post-buckling behavior",
+            "Imperfection sensitivity"
+          ]
+        },
+        {
+          "title": "Seat-Induced Vibration Transmission to a biodynamic model in a freight vehicle",
+          "authors": "Jonatas Soller Vianna, Rafael Ramanzini, Vitor Siqueira Figueiredo, Lucas Miranda Visnievski, WALTER JESUS PAUCAR CASAS",
+          "start": "2025-11-26T15:15",
+          "end": "2025-11-26T15:30",
+          "abstract": "Prolonged exposure to mechanical vibrations in motor vehicles presents a health risk to drivers, as it can cause discomfort and fatigue without a proper seat. Knowledge of these vibrations is essential for their monitoring, control, and minimization. To this end, mathematical models are used to simulate the vibrational behavior of vehicles in interaction with biomechanical models of the human body. These simulations offer a dynamic analysis that enables the optimization of component design and manufacturing. The use of software such as MATLAB, for example, allows for mass-spring-damper modeling to represent both the vehicle and the human body. This makes it possible to understand how the masses of the biodynamic model behave when a truck moves on, for instance, a Class C road. Analyzing the propagation of vibrations from the seat to the driver's body, combined with numerical integration, frequency response analysis, and modal analysis, offers an approach to assess system performance. This methodology is fundamental for design optimization as it allows for the analysis of vibrations and, consequently, improves driver comfort and safety.",
+          "keywords": [
+            "biodynamic modeling",
+            "mechanical vibration",
+            "human comfort"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-26-OT-02",
@@ -863,7 +956,49 @@
       "chair": "Heder Bernardino; Nelson Francisco Favilla Ebecken",
       "authors": "",
       "abstract": "",
-      "papers": []
+      "papers": [
+        {
+          "title": "Noise Reduction on Inertial Measurement Unit Sensors in Ballistic Simulators using Deep Models",
+          "authors": "Flavio de Barros Vidal, Noelio Heluy Ferreira, Aleteia Patricia Favacho de Araujo",
+          "start": "2025-11-26T14:30",
+          "end": "2025-11-26T14:45",
+          "abstract": "This paper introduces a novel approach to stabilizing data from low-cost Inertial Measurement Unit (IMU) sensors. Capitalizing on recent advances in machine learning, the study utilizes a Long Short-Term Memory Recurrent Neural Network (LSTM-RNN) algorithm to mitigate noise caused by electromagnetic interference, which leads to instability and drift in sensor orientation. The proposed method is designed to complement traditional techniques such as noise removal and low-pass filters, providing an initial refinement of the IMU sensor data. By training the model and applying it to dynamic sensor data, the study demonstrates that accuracy can be enhanced through software-based embedded technology, reducing the dependence on expensive high-precision hardware. The findings have significant implications for applications such as simulators (including motion platforms and simulated shooting systems), Unmanned Aerial Vehicles (UAVs), large-scale structural platforms, robotics, and various industrial and engineering contexts.",
+          "keywords": [
+            "Noise Reduction",
+            "Inertial Measurement Unit Sensors",
+            "Ballistic Simulators",
+            "Deep Models"
+          ]
+        },
+        {
+          "title": "Computer Vision Applied to Management and Optimization Logistics Operations",
+          "authors": "Marcos Antonio Nunes da Silveira, Gustavo Maia de  Almeida",
+          "start": "2025-11-26T14:45",
+          "end": "2025-11-26T15:00",
+          "abstract": "This paper proposes a computer vision system for active monitoring of logistics operations, focusing on detecting and mitigating risks, such as interactions between people and vehicles. The main objective is to increase safety in the operational environment. IP cameras with RTSP transmission are used. Images are processed remotely on a notebook connected to the Wi-Fi network, while visual alerts are generated locally on the identified target. The use of color-coded segmentation in HSV space allows dynamically defining regions of interest (ROIs), with real-time adjustments using trackbars. Segmented objects have their contours detected and receive blue ROIs with configurable offsets. Target classification as ”person” or ”vehicle” is performed by a Convolutional Neural Network (CNN) with the YOLOv8n model. The preprocessing of the image dataset used the transfer learning technique via Roboflow, using 1,500 images. Data argumentation was applied, generating a final dataset of 3,612 images. The system was implemented in Python, using OpenCV and integration with ESP32 via HTML requests, triggering an alert LED. The combination of color segmentation in HSV space and CNN offers an accurate, efficient, and low-cost solution compared to traditional methods.",
+          "keywords": [
+            "Computer Vision",
+            "Logistics Operations",
+            "Convolutional Neural Networks",
+            "Object Detection",
+            "Industrial Safety."
+          ]
+        },
+        {
+          "title": "Automated Detection of Small Water Accumulations in Aerial Images Acquired by Drones: A Genetic Algorithm-Based Method",
+          "authors": "Sidnei Alves de Araújo, Gustavo Araujo Lima, Sergio Vicente Denser Pamboukian, Vitor Pessoa Colombo",
+          "start": "2025-11-26T15:00",
+          "end": "2025-11-26T15:15",
+          "abstract": "The use of drones in combating mosquito breeding sites, such as Aedes aegypti, is already a consolidated reality. However, although the presence of stagnant water is an essential condition for the reproduction of these vectors, computer vision approaches reported in the literature rarely address the direct detection of water in suspected objects and scenarios, representing a significant research gap. In this work, we propose a method based on Genetic Algorithms (GA) for creating a water index, obtained from arithmetic combinations of the image spectral bands. Each GA chromosome, when decoded, generates an index that is evaluated by a fitness function aimed at minimizing the difference between the pixel values produced by the application of the index and the expected values, extracted from manually annotated images. In summary, at the end of the evolutionary cycle, the GA produces a water index that, when applied to an image captured by the drone, generates a binary image highlighting the regions corresponding to the presence of water. The results obtained (accuracy = 87.2%, precision = 85.2%, and sensitivity = 95.2%), demonstrate the feasibility of the proposed method for detecting small water accumulations in objects and scenarios potentially associated with breeding sites, thus enhancing the effectiveness of drones in surveillance and epidemiological control activities.",
+          "keywords": [
+            "Drone",
+            "Aedes aegypti",
+            "Water",
+            "Genetic Algorithm",
+            "Particle Swarm Optimization"
+          ]
+        }
+      ]
     },
     {
       "id": "MS-26-PI-02",
@@ -873,7 +1008,7 @@
       "room": "Pisa",
       "start": "2025-11-26T14:30",
       "end": "2025-11-26T15:30",
-      "chair": "Eduardo de Moraes Rego Fairbairn; Jean‑Marie Désir; Pierre Rossi; Rodolfo Giacomim Mendes de Andrade",
+      "chair": "Eduardo de Moraes Rego Fairbairn; Jean‑Marie Désir; Pierre Rossi; Rodolfo Giacomim Mendes de Andrade; Marcos Rodrigues",
       "authors": "",
       "abstract": "",
       "papers": [
@@ -998,6 +1133,19 @@
       ]
     },
     {
+      "id": "MS-26-TM-02",
+      "size": "small",
+      "title": "Research Beginners",
+      "theme": "Research Beginners",
+      "room": "Taj Mahal",
+      "start": "2025-11-26T14:30",
+      "end": "2025-11-26T15:30",
+      "chair": "Élcio Cassimiro Alves; João Victor Fragoso Dias; Eduardo Toledo Lima Junior; André Jacomel Torii; Aline Ramos Barboza",
+      "authors": "",
+      "abstract": "",
+      "papers": []
+    },
+    {
       "id": "CB03",
       "size": "wide",
       "title": "Coffee Break",
@@ -1081,6 +1229,20 @@
             "Student Performance",
             "Unsupervised Learning",
             "Brazilian Education"
+          ]
+        },
+        {
+          "title": "Integrated Platform for Energy Consumption Management and Efficiency in Public Buildings in the State of Goiás",
+          "authors": "Felipe Pamplona Mariano, Gino Bertollucci Colherinhas, Paulo Henrique Neves Pimenta, Gabriela Miguel Fraga, Getulio Santiago dos Santos Junior",
+          "start": "2025-11-26T17:15",
+          "end": "2025-11-26T17:30",
+          "abstract": "This paper presents the development of a digital platform for managing and assessing energy performance in public buildings, with a pilot application in the state of Goiás, Brazil. The system, implemented in Python using the Flet framework, integrates three interconnected SQLite databases covering electricity billing, certified equipment performance data from Brazil’s National Energy Labeling Program (PBE-INMETRO) and on-site audit records. It enables the automated import and structured extraction of key billing information such as consumption, demand, tariff group and cost from PDF and Excel files, as well as the detailed registration of installed equipment at the room level. All entries are cross-referenced with standardized efficiency data to ensure consistency and accuracy. The platform provides interactive dashboards for consumption analysis, supports both macro-level and micro-level diagnostics and facilitates transparent monitoring of energy use patterns over time. A pilot case study was carried out at the Secretaria-Geral de Governo de Goiás (Goiás State Government’s General Secretariat – SGG), where the tool replaced manual paper-based data collection with direct digital registration, significantly improving data acquisition efficiency. The results highlight the platform’s potential to inform public policy, guide targeted energy efficiency interventions and serve as a replicable and open-access solution for other public institutions. Its structured architecture also establishes a foundation for the analysis of large data repositories through advanced data analytics techniques, enabling large-scale pattern recognition, trend forecasting and enhanced decision-making capabilities. Future developments include advanced dashboard features for year-to-year comparisons, group-based consumption analysis and the integration of performance indicators to evaluate energy efficiency and end-use consumption shares by equipment category.",
+          "keywords": [
+            "Energy Consumption Database",
+            "Energy Efficiency",
+            "Public Buildings",
+            "Electricity Consumption Management",
+            "Goiás"
           ]
         }
       ]
@@ -1294,6 +1456,62 @@
             "modal parameters",
             "footbridges"
           ]
+        },
+        {
+          "title": "Nonlinear structural analysis of suspension bridges composed of natural fiber cables: application to the Inca Q’eswachaka bridge",
+          "authors": "JUAN FRANKS VALENZUELA CARRASCO, Elvis Yuri Mamani Vargas, Luis Fernando Paullo Muñoz",
+          "start": "2025-11-26T17:30",
+          "end": "2025-11-26T17:45",
+          "abstract": "This study aims to evaluate the structural behavior of a suspension bridge composed of natural fiber cables. For this, a structural-computational analysis of the Q’eswachaka bridge is performed. The Q’eswachaka bridge is an Inca heritage structure that is rebuilt annually using Q’oya fibers (Festuca dolichophylla). A numerical model was developed in the structural analysis software Abaqus/CAE using a finite element mesh composed of truss elements. The mechanical equilibrium under self-weight and pedestrian loads is assessed considering geometric nonlinearities, assuming linear-elastic material behavior. The model’s validation is carried out at two distinct levels. Firstly, the FEM model is compared with a simplified analytical solution based on the response of an inextensible catenary cable. Secondly, an external contrast is performed using the classical experiment by Irvine &amp; Sinclair (1976) for cables under off-center loads. The proposed framework also includes a structural sensitivity analysis considering variations in key structural parameters such as the elastic modulus (E), cross-sectional area (A), linear weight (w), and initial sag. In addition, this work aims to identify critical behavioral thresholds. The methodology enables the estimation of the structural working range of the bridge under different service-load scenarios, avoiding destructive testing and preserving the integrity of the heritage asset. This approach provides a replicable basis for the structural evaluation and conservation of traditional suspension bridges, integrating empirical knowledge with advanced computational modeling.",
+          "keywords": [
+            "nonlinear analysis",
+            "natural fibers",
+            "Q'eswachaka bridge",
+            "suspension cables",
+            "Abaqus software"
+          ]
+        },
+        {
+          "title": "A Differential Evolution and Nelder-Mead hybrid algorithm for constrained Engineering Design problems",
+          "authors": "Renan Aguiar Chagas, Renan Rodrigues Sousa, Michelli Marlane Silva Loureiro, Gustavo Rodrigues de Souza, Felipe dos Santos Loureiro",
+          "start": "2025-11-26T17:45",
+          "end": "2025-11-26T18:00",
+          "abstract": "Engineering design optimization problems frequently involve complex, nonlinear, and computationally expensive objective functions subject to various constraints. Differential Evolution (DE) is a population-based evolutionary algorithm well-suited for global optimization, whereas the Nelder-Mead (NM) simplex method offers efficient local search capabilities without requiring gradient information. This paper investigates a hybrid optimization strategy that integrates DE with the NM method to exploit their complementary strengths. The DE algorithm is initially employed to explore the global search space and identify promising regions by iteratively evolving a population of candidate solutions based on a predefined stopping criterion. Once a suitable region is identified, the NM algorithm is applied to perform local refinement, enhancing convergence toward the optimal solution. To handle constrained problems, the NM method is extended using the penalty function method proposed by Deb, wherein constraint violations are incorporated into the objective function. The proposed hybrid algorithm taking into account Deb's penalization approach is evaluated on a suite of constrained engineering design benchmarks using MATLAB. The results demonstrate superior performance compared to the standalone DE algorithm, yielding improved solution accuracy and a reduced number of objective function evaluations.",
+          "keywords": [
+            "Optimization",
+            "Hybrid Algorithm",
+            "Engineering Design",
+            "Nelder-Mead",
+            "Differential Evolution"
+          ]
+        },
+        {
+          "title": "Topology Optimization of Undamped Plates for the Extremization of Natural Frequencies",
+          "authors": "Matheus Fabbris Guerreiro, Jucélio Tomás Pereira, Jéderson da Silva, João Luiz do Vale",
+          "start": "2025-11-26T18:00",
+          "end": "2025-11-26T18:15",
+          "abstract": "In the design of mechanical components subjected to vibrations, it is important to understand how the natural frequencies of a structure are distributed and whether any of them coincides with the operating range of the equipment. When this occurs, the phenomenon of resonance can significantly amplify vibrations, compromising the structural integrity and potentially leading to failures and/or accidents.In this context, a topology optimization methodology is proposed to extremize the ranges of natural frequencies in plate-type structures. In the optimization problem, is employed a Solid Isotropic Microstructure with Penalization (SIMP) with volume constraints. A functional is used to penalize regions with intermediate densities, and the main contribution of this work lies in the application of a functional based on the penalization of the density field gradient to mitigate the occurrence of the checkerboard phenomenon, a technique not previously applied in topology optimization with the objective of extremizing the natural frequencies of plates. The optimization problem is solved using the Augmented Lagrangian Method (ALM), aiming for efficient and stable solutions.With this approach, new geometric configurations for plates used in various applications can be obtained, significantly increasing or shifting natural frequency values. As a result, the structure becomes less prone to resonance, reducing excessive vibration propagation and improving the performance and durability of mechanical components.",
+          "keywords": [
+            "Topology optimization",
+            "Natural frequencies",
+            "SIMP",
+            "Augmented Lagrangian",
+            "Checkerboard"
+          ]
+        },
+        {
+          "title": "Finite Element Analysis for Structural Optimization of a Drum-Shaft Assembly  in Bulk Material Handling Equipment",
+          "authors": "Victor  Matos, Devanir Silva, Marcelo Gava, Rafael Vetturazzi",
+          "start": "2025-11-26T18:15",
+          "end": "2025-11-26T18:30",
+          "abstract": "This work aims to present a detailed structural investigation carried out through numerical simulations using the finite element method, applied to the drum of a metal extractor used in the handling of bulk granular materials. The main motivation for this study arises from the recurring observation of structural failures due to shaft fractures, which have been identified through predictive monitoring strategies and periodic visual inspections. The analyses indicate that these failures are caused by fatigue mechanisms associated with rotational bending, especially in regions with geometric transitions, and are worsened by compressive loads from fastening elements. To perform the structural analyses, a detailed three-dimensional model of the drumshaft assembly is developed, incorporating key components such as hubs, expansion rings, bearings, and fastening bolts. The computational simulations consider the actual operating conditions of the equipment, including the system’s self-weight, the tension transmitted by the belt, and the assembly torque applied to the expansion rings. The structural assessment reveals critical regions of stress concentration, with safety factors below the minimum recommended values for cyclic loading conditions. Based on the results, the shaft design is reformulated with specific geometric modifications and the replacement of the original material with a metal alloy of higher mechanical strength, aiming to mitigate fatigue effects. The results demonstrate the effectiveness of the finite element method as a tool for structural diagnosis and optimization, enabling the anticipation of failures, enhancement of the design, and increased operational reliability. This highlights the importance of accurate modeling and the consideration of real operating conditions in making technical decisions in industrial environments.",
+          "keywords": [
+            "finite element analysis",
+            "belt conveyor",
+            "pulley",
+            "mechanical components",
+            "fatigue"
+          ]
         }
       ]
     },
@@ -1423,6 +1641,20 @@
             "polygonal tubular sections",
             "buckling analysis"
           ]
+        },
+        {
+          "title": "Design of Rectangular Concrete-Filled Steel Tube (RCFT) Columns of Noncompact and Slender Section",
+          "authors": "Glaubert Miranda, Rodrigo Silveira Camargo, Adenilcia Fernanda Grobério Calenzani,  Walnório Graça Ferreira",
+          "start": "2025-11-26T18:15",
+          "end": "2025-11-26T18:30",
+          "abstract": "Concrete-filled steel tubular (CFT) columns have gained prominence in structural projects due to their high strength, stiffness and combined bending and compression performance. In Brazil, NBR 8800:2024 introduced provisions for the combined bending and compression design of noncompact and slender sections through Calculation Models I and III. This study presents a computational tool developed in MATLAB to verify the combined bending and compression resistance of rectangular composite filled columns, based on the formulations of the NBR 8800:2024. According to the normative stress diagrams, the neutral axis was determined by force equilibrium, applying the secant method for noncompact sections and the quadratic formula for slender sections, while the resistant moments were obtained by moment equilibrium. The normative procedures were evaluated by comparison with experimental results reported in the literature. The findings showed reasonable agreement with the experimental data, with a conservative trend in the assessed cases. However, the scarcity of tests involving noncompact and slender sections still limits a broader assessment of the normative models, highlighting the need for further experimental studies.",
+          "keywords": [
+            "Composite columns",
+            "combined bending and compression",
+            "noncompact section",
+            "slender section",
+            "NBR 8800:2024"
+          ]
         }
       ]
     },
@@ -1434,7 +1666,7 @@
       "room": "Pisa",
       "start": "2025-11-26T16:00",
       "end": "2025-11-26T18:30",
-      "chair": "Eduardo de Moraes Rego Fairbairn; Jean‑Marie Désir; Pierre Rossi; Rodolfo Giacomim Mendes de Andrade",
+      "chair": "Eduardo de Moraes Rego Fairbairn; Jean‑Marie Désir; Pierre Rossi; Rodolfo Giacomim Mendes de Andrade; Marcos Rodrigues",
       "authors": "",
       "abstract": "",
       "papers": [

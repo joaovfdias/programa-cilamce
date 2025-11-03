@@ -517,30 +517,29 @@
           ]
         },
         {
-          "title": "Bend stiffeners for flexible pipes: A comparative study between Attachment and Pipe in Pipe modeling",
-          "authors": "Bruno da Fonseca Monteiro, Ana Paula Oliveira Benete, Carl Horst Albrecht, Juliana Souza Baioco, Breno Pinheiro Jacob, Marcelo Igor L. de Souza",
+          "title": "Numerical Analysis of Stress Concentration Factors in Mooring Chain Links Tensioned with and without Geometric Barriers",
+          "authors": "Evilly  Silveira , Michele Agra de Lemos Martins, Eduardo Nobre Lages, Mauro Costa de Oliveira",
           "start": "2025-11-24T11:30",
           "end": "2025-11-24T11:45",
-          "abstract": "This paper presents a comparative analysis between two modeling methodologies for bend stiffeners applied to subsea flexible pipes: the Attachment model and the Pipe in Pipe model. The main motivation lies in the need to ensure the structural integrity of pipelines during installation operations in offshore environments, especially in deep and ultra deep waters, where dynamic loads are significant. A top riser deployment scenario was simulated under different environmental conditions and top angle presets of 1º, 3º, and 5º. The analysis focused on maximum top tension, top angle, shear force and bending moment of the stiffener, line curvature below the stiffener, and simulation runtime. Results show that both approaches yield similar global performance for top tension and angle, while the Pipe in Pipe model offers greater freedom of movement for the riser and shorter simulation times (on average 22% faster). However, this approach requires more detailed input data, especially regarding the definition of contact stiffness, which can cause convergence problems. It is possible to conclude that Attachment is preferable for early design stages or when frequent adjustments are needed, whereas Pipe in Pipe is recommended for consolidated projects demanding greater accuracy in representing stresses and relative motions.",
+          "abstract": "The increasing demand for energy resources, combined with technological advancements, has enabled the exploration of offshore fields at increasingly greater depths. This scenario imposes more severe environmental conditions, requiring continuous improvement of guidelines and standards for mooring analysis and design. Conversely, there has been a significant increase in the number of mooring line incidents over the years. Despite advancements in understanding the behavior of these systems and their relationship with failure events, some gaps still exist. The interaction between the mooring chain links and devices such as chain hawses, mooring chocks, and fairleads - responsible for guiding or restricting the upper end of mooring lines - is often overlooked, and research in this area is limited. This study investigates the influence of contact interaction between mooring chain links and geometric barriers on stress concentration factors. A three-dimensional finite element model is developed using Abaqus to simulate chain links under combined tension, bending, and torque. Results show that the presence of geometric barriers significantly alters the behavior of the links and the locations of critical stress points. Furthermore, the interaction between the links and curved surfaces of different radii significantly influenced the accumulated plastic deformation of the chain links. The study also examines the impact of residual stress fields from proof load testing, demonstrating that their omission leads to notable differences in the results. These findings highlight the importance of accurately representing the real configuration of mooring chain links in numerical models to support more accurate fatigue assessments under actual operating conditions.",
           "keywords": [
-            "Offshore systems",
-            "Installation Engineering",
-            "Flexible Pipes",
-            "Bend Stiffener"
+            "mooring chain links",
+            "geometrical barriers",
+            "stress concentration factors",
+            "residual stresses"
           ]
         },
         {
-          "title": "A FINITE ELEMENT APPROACH FOR EVALUATION OF THE MOMENT–CURVATURE RESPONSE OF FLEXIBLE RISERS",
-          "authors": "Johon Lenon dos Santos Rocha, Marcelo Silva Medeiros Júnior, Elias Saraiva Barroso, Evandro Parente Junior, Antônio Macário Cartaxo de Melo, Gabriel Braga Alves de Matos",
+          "title": "Structural Optimization of Mooring Systems for Geometric Efficiency",
+          "authors": "Eduardo Nobre Lages, Adeildo Soares Ramos Júnior, Alan Patrik de Abreu, Anderson Takehiro Oshiro, Mauro Costa de Oliveira, Gabriel Rocha Domingos",
           "start": "2025-11-24T11:45",
           "end": "2025-11-24T12:00",
-          "abstract": "Flexible risers are critical components employed in the offshore oil and gas industry, designed to withstand significant loads arising from their self-weight, environmental actions (such as ocean currents and wave loads), and the dynamic motions imposed by floating production platforms. These systems are engineered to exhibit high axial tensile stiffness while maintaining low bending stiffness — a fundamental characteristic for operations in dynamic environments. This anisotropic mechanical response is enabled by a multilayered architecture, composed of alternating structural and sealing elements with varying levels of interlayer adhesion. Helically wound metallic layers provide structural reinforcement and resistance to both tensile forces and internal/external pressures, whereas polymeric layers ensure fluid tightness throughout the system. This configuration allows flexible risers to operate under considerably smaller bending radii compared to metallic pipes of equivalent pressure capacity, making them particularly suitable for scenarios requiring high flexibility without compromising structural integrity. Due to their intricate construction, the global mechanical behavior of flexible risers is inherently nonlinear and strongly influenced by interlayer interactions. Under bending loads, this behavior becomes even more complex, as relative sliding between layers induces hysteresis effects in the moment-curvature response, thereby necessitating advanced modeling techniques for accurate representation. In this context, the present work proposes a methodology for estimating the moment-curvature behavior of flexible risers. To this end, various analytical formulations available in the technical literature were reviewed and compared, forming the foundation for the proposed procedure. The approach includes numerical modeling using the finite element method (FEM) implemented in the Abaqus software, with particular attention given to the interlayer interaction and sliding mechanisms between layers. The methodology was validated through comparison with experimental data and reference models reported in the literature. The proposed model was able to capture the moment-curvature response, including the unloading path hysteresis. The bending stiffnesses obtained through this methodology showed good agreement with the values reported in previous studies, demonstrating its effectiveness.",
+          "abstract": "Structural optimization of mooring systems is an effective strategy for reducing design effort and cost in the offshore industry. This study builds on previous work that introduced efficient optimization methodologies. Here, we extend the approach to a practical goal: minimizing the total length of the mooring system while satisfying performance and geometric constraints. Using the Equivalent Static Analyses (ESA) methodology proposed by Domingos et al. (2023), the optimization framework allows each mooring line to vary independently in total length, horizontal projection (fairlead-to-anchor distance), and azimuthal orientation. This design flexibility enables the exploration of a broader design space while complying with the physical and operational constraints of offshore systems. By integrating these variables and leveraging the computational benefits of earlier research, the method produces optimized mooring layouts that are computationally efficient and readily applicable to practical offshore engineering scenarios. The resulting configurations reached the lower bounds on line lengths while satisfying all design criteria, demonstrating the method’s capability to achieve effective layouts under realistic constraints.",
           "keywords": [
-            "Flexible riser",
-            "moment–curvature response",
-            "offshore riser",
-            "computational modeling",
-            "analytical model"
+            "Structural Optimization",
+            "Offshore Structures",
+            "Mooring Systems",
+            "Equivalent Static Analyses"
           ]
         }
       ]
@@ -804,17 +803,17 @@
           ]
         },
         {
-          "title": "Airplane Independência: History, Model and Analysis",
-          "authors": "JOAO DE AGUIAR, José M. de Aguiar",
+          "title": "DEVELOPMENT OF AN EXPERIMENTAL PLATAFORM FOR THRUST TESTING  OF AIRCRAFT ELETRIC PROPULSION SYSTEM",
+          "authors": "Jaber João Macari Neto, Vinicius Reis, Vítor Paixão, Andrew Sarmento, José Manoel Balthazar, Jeferson José de Lima, Saulo Alfredo Gomez Salvedo, Luiz Carlos Sandoval Góes, Raphaela Carvalho Machado",
           "start": "2025-11-24T15:15",
           "end": "2025-11-24T15:30",
-          "abstract": "In 1922 by the time of the comemoration of first century of Brazilian Independence, the first bimotor constructed in South America was presented in Rio de Janeiro. It was constructed under the auspices of a French Mission commanded by Etienne Lafay. Construction took place at the installations of Henrique Lage, a brazilian entrepeneur. The biplane could transport 5 passangers as it was powered with Clerget engines of 130 hp in a push-pull fashion. The airplane flew during some years, without any accidents, but disapeared from hystory. Only a few photos remain. So from them, drawings and a structural model of the airplane is developed in computer. From this model, in an operational scenario, construction materials are assigned. Associated loads are imposed and a finite element analysis performed to render the response of the airplane. Strain and stress fields result. Based on the obtained results, safety and performance evaluations of the airplane show a good level of reliabilty.",
+          "abstract": "The objective of this work is to develop an experimental platform for measuring thrust data from the engine and propeller assembly of electric aerial vehicles, contributing to the validation of the aeronautical design phase. As electric propulsion systems gain prominence in modern aviation, accurate experimental data is crucial to ensuring efficiency, reliability, and optimal performance. The proposed platform facilitates the acquisition of experimental data from the engine and propeller, assisting in the proper sizing of the propulsion system. In this way, this paper examines how the thrust curve is influenced by different combinations of engine and propeller. Understanding these relationships is useful to optimize the propulsion system design by improving efficiency and power management. The propulsion system analyzed consists of a brushless electric motor, commonly used in electric aircraft due to its high efficiency, low maintenance requirements, and excellent power-to-weight ratio. To ensure accurate data acquisition, a measurement system was implemented using the Arduino platform. The setup includes load cells to measure thrust, current and voltage sensors to monitor power consumption, and an rpm encoder to determine motor speed. The experimental data are saved on an SD card for processing and analysis in the Matlab environment. Also, a flight controller Pixhawk was still used to control the motor speed. The experimental procedure involved testing several motor and propeller configurations under controlled conditions, systematically, varying propeller profiles, voltage levels, and load conditions. So, it was possible to determine how different design choices affect thrust and system performance. The results provide valuable insights for engineers working on electric propulsion systems, very useful to select the most suitable components for specific applications. Therefore, the developed experimental platform can be applied to an evaluation tool for researchers and engineers in the field of electric aviation. It provides a practical and reliable method for gathering performance data and, for example, validation of theoretical models. Additionally, the platform can be expanded for future studies on hybrid-electric propulsion, battery technology optimization, and aerodynamically improved propeller designs. Finally, this paper demonstrated that the platform is effective in studying and optimizing propulsion system parameters.",
           "keywords": [
-            "Biplane",
-            "Independência",
-            "Model",
-            "FEA",
-            "Evaluation"
+            "electric propulsion",
+            "aerial vehicles",
+            "thrust curves",
+            "performance analysis",
+            "experimental testing"
           ]
         }
       ]
@@ -879,6 +878,55 @@
             "Euler-Bernoulli",
             "Partially connected DBS",
             "Winkler"
+          ]
+        },
+        {
+          "title": "ON THE DYNAMICS OF PERIODIC FOUNDATION-STRUCTURES INTERACTING WITH FRAME STRUCTURES",
+          "authors": "Luis Lima, AMAURI COELHO FERRAZ, LUCAS AGATTI PACHECO, EUCLIDES MESQUITA",
+          "start": "2025-11-24T14:30",
+          "end": "2025-11-24T14:45",
+          "abstract": "A lot of research has been performed in the last years concerning dynamics of periodic structures and their ability to create band gaps at certain frequencies that dramatically reduce the vibration amplitudes of associated systems. The general idea is to create a periodic structure that filters out the vibration amplitude of a given dynamical system. For the case of dynamic systems interacting with the soil the reasoning is more complex. When a classical structural system is supported by the soil, the behavior is not unilateral. The dynamic behavior of the soil presents geometric damping, which usually damps out part of the vibration amplitude of the supported dynamical system. But there is a price to pay. The vibration amplitude of the system supported by the soil is decreased but it generates outgoing waves that will cause perturbation to the surrounding environment. There is a trade-off, less vibration on the system usually means more waves propagating into the environment. This article will address the idea of incorporating a periodic foundation structure between the soil and the dynamical system. The idea is to investigate if the periodic structure decouples the soil from the dynamic system for given frequencies. The soil is modelled by the Boundary Element Method, the periodic foundation structure is described by the Finite Element Method. The ability of the periodic foundation structure to create band gaps is distinct directions corresponding to multiple degrees of freedom will also be addressed.",
+          "keywords": [
+            "Dynamic Soil Structure Interaction",
+            "Structural Dynamics",
+            "Foundation dynamics"
+          ]
+        },
+        {
+          "title": "A Comparison Between the Finite Volume and the Boundary Element Methods Solving Homogeneous and Heterogeneous Two-dimensional Media Wave Problems",
+          "authors": "Thiago Galdino Balista, Carlos Friedrich Loeffler, Julio Tomás Aquije Chacaltana, Renan André Peres, Luciano de Oliveira Castro Lara",
+          "start": "2025-11-24T14:45",
+          "end": "2025-11-24T15:00",
+          "abstract": "This work presents a comparison between the boundary element method with direct interpolation and the finite volume method, the latter in an unstructured version, solving problems of scalar wave propagation in homogeneous and heterogeneous media in two dimensions. The objective is to evaluate the potential of the two numerical techniques in solving dynamic problems of this nature, which are known to be challenging in terms of accuracy of results. Evaluations regarding the convergence rate as a function of the mesh refinement, the numerical robustness involving the stability of the temporal advance schemes, among other particularities, are assessed by solving some classical problems and others in which analytical solutions were generated to better assess the accuracy of the results.",
+          "keywords": [
+            "Boundary element",
+            "Direct interpolation",
+            "Finite volume",
+            "Dynamic problems"
+          ]
+        },
+        {
+          "title": "Boundary Element Method Applied to the Solution of  Fractional Poisson Equation",
+          "authors": "José Antonio Marques Carrer, Bruno dos Santos Solheid, Manuel Jesus Cruz Barreda",
+          "start": "2025-11-24T15:00",
+          "end": "2025-11-24T15:15",
+          "abstract": "This work presents a Boundary Element Method (BEM) formulation for the solution of Fractional Poisson differential equation, in which the order of the space derivative, say a, belongs to the interval (1,2).  A comprehensive discussion regarding the development of the BEM formulation is presented and some examples are analysed. The BEM results are compared with the analytical solutions.",
+          "keywords": [
+            "Boundary Element Method",
+            "Fractional Poisson Equation",
+            "Fractional Calculus"
+          ]
+        },
+        {
+          "title": "On the two-dimensional analysis of reinforced materials using the BEM/1D-BEM coupling",
+          "authors": "Mário Sérgio Oliveira César Filho, Edson Denner Leonel",
+          "start": "2025-11-24T15:15",
+          "end": "2025-11-24T15:30",
+          "abstract": "The design of structures composed of different materials—aiming to harness their individual advantages in the final product—has become increasingly common due to the demands for economic feasibility and high performance in new projects. Among the numerical alternatives for evaluating the mechanical quantities of such structures, the coupling of the Boundary Element Method (BEM) with its one-dimensional version, the 1D-BEM, has shown excellent results when compared to commercial software. Moreover, this coupling proves to be numerically more stable in comparison to the classical one with reinforcements represented by the Finite Element Method. The BEM/1D-BEM formulation presented herein accounts perfect adherence between the matrix domain and the reinforcements. To build the global system of equations, this coupling scheme requires the integral equation for assessing the displacements in internal points, which may be computationally costly. This study proposes a more efficient discretization methodology for the reinforcement domain, reducing the number of internal points required for evaluating the aforementioned integral. Additionally, methods are proposed to avoid accuracy loss due to near singularities resulting from the proximity of sources in a reinforcement domain to other domains. This issue is more common in two-dimensional analyses than in three-dimensional ones and is rarely avoided without proper treatment when analyzing randomly distributed reinforcements. Examples are presented using both the classical BEM formulation, with Lagrangian basis functions for boundary discretization, and the isogeometric one (IGABEM), with discretization based on Non-Uniform Rational B-Splines (NURBS) curves.",
+          "keywords": [
+            "BEM",
+            "1D-BEM",
+            "Reinforced structures"
           ]
         }
       ]
@@ -1137,16 +1185,16 @@
       "abstract": "",
       "papers": [
         {
-          "title": "Numerical Analysis of Stress Concentration Factors in Mooring Chain Links Tensioned with and without Geometric Barriers",
-          "authors": "Evilly  Silveira , Michele Agra de Lemos Martins, Eduardo Nobre Lages, Mauro Costa de Oliveira",
+          "title": "Bend stiffeners for flexible pipes: A comparative study between Attachment and Pipe in Pipe modeling",
+          "authors": "Bruno da Fonseca Monteiro, Ana Paula Oliveira Benete, Carl Horst Albrecht, Juliana Souza Baioco, Breno Pinheiro Jacob, Marcelo Igor L. de Souza",
           "start": "2025-11-24T13:30",
           "end": "2025-11-24T13:45",
-          "abstract": "The increasing demand for energy resources, combined with technological advancements, has enabled the exploration of offshore fields at increasingly greater depths. This scenario imposes more severe environmental conditions, requiring continuous improvement of guidelines and standards for mooring analysis and design. Conversely, there has been a significant increase in the number of mooring line incidents over the years. Despite advancements in understanding the behavior of these systems and their relationship with failure events, some gaps still exist. The interaction between the mooring chain links and devices such as chain hawses, mooring chocks, and fairleads - responsible for guiding or restricting the upper end of mooring lines - is often overlooked, and research in this area is limited. This study investigates the influence of contact interaction between mooring chain links and geometric barriers on stress concentration factors. A three-dimensional finite element model is developed using Abaqus to simulate chain links under combined tension, bending, and torque. Results show that the presence of geometric barriers significantly alters the behavior of the links and the locations of critical stress points. Furthermore, the interaction between the links and curved surfaces of different radii significantly influenced the accumulated plastic deformation of the chain links. The study also examines the impact of residual stress fields from proof load testing, demonstrating that their omission leads to notable differences in the results. These findings highlight the importance of accurately representing the real configuration of mooring chain links in numerical models to support more accurate fatigue assessments under actual operating conditions.",
+          "abstract": "This paper presents a comparative analysis between two modeling methodologies for bend stiffeners applied to subsea flexible pipes: the Attachment model and the Pipe in Pipe model. The main motivation lies in the need to ensure the structural integrity of pipelines during installation operations in offshore environments, especially in deep and ultra deep waters, where dynamic loads are significant. A top riser deployment scenario was simulated under different environmental conditions and top angle presets of 1º, 3º, and 5º. The analysis focused on maximum top tension, top angle, shear force and bending moment of the stiffener, line curvature below the stiffener, and simulation runtime. Results show that both approaches yield similar global performance for top tension and angle, while the Pipe in Pipe model offers greater freedom of movement for the riser and shorter simulation times (on average 22% faster). However, this approach requires more detailed input data, especially regarding the definition of contact stiffness, which can cause convergence problems. It is possible to conclude that Attachment is preferable for early design stages or when frequent adjustments are needed, whereas Pipe in Pipe is recommended for consolidated projects demanding greater accuracy in representing stresses and relative motions.",
           "keywords": [
-            "mooring chain links",
-            "geometrical barriers",
-            "stress concentration factors",
-            "residual stresses"
+            "Offshore systems",
+            "Installation Engineering",
+            "Flexible Pipes",
+            "Bend Stiffener"
           ]
         },
         {
@@ -1163,16 +1211,17 @@
           ]
         },
         {
-          "title": "Structural Optimization of Mooring Systems for Geometric Efficiency",
-          "authors": "Eduardo Nobre Lages, Adeildo Soares Ramos Júnior, Alan Patrik de Abreu, Anderson Takehiro Oshiro, Mauro Costa de Oliveira, Gabriel Rocha Domingos",
+          "title": "A FINITE ELEMENT APPROACH FOR EVALUATION OF THE MOMENT–CURVATURE RESPONSE OF FLEXIBLE RISERS",
+          "authors": "Johon Lenon dos Santos Rocha, Marcelo Silva Medeiros Júnior, Elias Saraiva Barroso, Evandro Parente Junior, Antônio Macário Cartaxo de Melo, Gabriel Braga Alves de Matos",
           "start": "2025-11-24T14:00",
           "end": "2025-11-24T14:15",
-          "abstract": "Structural optimization of mooring systems is an effective strategy for reducing design effort and cost in the offshore industry. This study builds on previous work that introduced efficient optimization methodologies. Here, we extend the approach to a practical goal: minimizing the total length of the mooring system while satisfying performance and geometric constraints. Using the Equivalent Static Analyses (ESA) methodology proposed by Domingos et al. (2023), the optimization framework allows each mooring line to vary independently in total length, horizontal projection (fairlead-to-anchor distance), and azimuthal orientation. This design flexibility enables the exploration of a broader design space while complying with the physical and operational constraints of offshore systems. By integrating these variables and leveraging the computational benefits of earlier research, the method produces optimized mooring layouts that are computationally efficient and readily applicable to practical offshore engineering scenarios. The resulting configurations reached the lower bounds on line lengths while satisfying all design criteria, demonstrating the method’s capability to achieve effective layouts under realistic constraints.",
+          "abstract": "Flexible risers are critical components employed in the offshore oil and gas industry, designed to withstand significant loads arising from their self-weight, environmental actions (such as ocean currents and wave loads), and the dynamic motions imposed by floating production platforms. These systems are engineered to exhibit high axial tensile stiffness while maintaining low bending stiffness — a fundamental characteristic for operations in dynamic environments. This anisotropic mechanical response is enabled by a multilayered architecture, composed of alternating structural and sealing elements with varying levels of interlayer adhesion. Helically wound metallic layers provide structural reinforcement and resistance to both tensile forces and internal/external pressures, whereas polymeric layers ensure fluid tightness throughout the system. This configuration allows flexible risers to operate under considerably smaller bending radii compared to metallic pipes of equivalent pressure capacity, making them particularly suitable for scenarios requiring high flexibility without compromising structural integrity. Due to their intricate construction, the global mechanical behavior of flexible risers is inherently nonlinear and strongly influenced by interlayer interactions. Under bending loads, this behavior becomes even more complex, as relative sliding between layers induces hysteresis effects in the moment-curvature response, thereby necessitating advanced modeling techniques for accurate representation. In this context, the present work proposes a methodology for estimating the moment-curvature behavior of flexible risers. To this end, various analytical formulations available in the technical literature were reviewed and compared, forming the foundation for the proposed procedure. The approach includes numerical modeling using the finite element method (FEM) implemented in the Abaqus software, with particular attention given to the interlayer interaction and sliding mechanisms between layers. The methodology was validated through comparison with experimental data and reference models reported in the literature. The proposed model was able to capture the moment-curvature response, including the unloading path hysteresis. The bending stiffnesses obtained through this methodology showed good agreement with the values reported in previous studies, demonstrating its effectiveness.",
           "keywords": [
-            "Structural Optimization",
-            "Offshore Structures",
-            "Mooring Systems",
-            "Equivalent Static Analyses"
+            "Flexible riser",
+            "moment–curvature response",
+            "offshore riser",
+            "computational modeling",
+            "analytical model"
           ]
         },
         {
@@ -1200,6 +1249,20 @@
             "Subsea Equipment",
             "Strain Energy",
             "FEM"
+          ]
+        },
+        {
+          "title": "Influence of Thermal Variations on the Behavior of Mooring Lines Using a Heterogeneous Extensible Catenary Model",
+          "authors": "Milton Mateus Guimarães dos Santos, Eduardo Nobre Lages",
+          "start": "2025-11-24T14:45",
+          "end": "2025-11-24T15:00",
+          "abstract": "This study investigates the mechanical behavior of mooring lines in floating offshore units subjected to thermal variations along the water column, employing a static numerical model based on a heterogeneous extensible catenary formulation. The growing global energy demand and the expansion of deepwater operations have increased the importance of mooring systems for platform stability and station-keeping. As key structural elements, mooring lines provide essential horizontal stiffness, govern restoring forces, and ensure structural integrity. However, conventional design models frequently neglect thermal effects, particularly the influence of depth-dependent temperature variations on deformed configuration of the line and its overall performance. To address this limitation, the proposed model incorporates both multimaterial line segments and vertical oceanic temperature profiles to evaluate their combined impact on horizontal stiffness and restoring capability. Results demonstrate that these thermal variations substantially alter the mechanical response of the line, directly affecting its interaction with the platform. This methodology enhances the reliability of mooring system design and contributes to a better understanding of thermo-mechanical behavior of mooring lines in offshore engineering.",
+          "keywords": [
+            "Thermal variations",
+            "Mooring lines",
+            "Static numerical model",
+            "Heterogeneous extensible catenary",
+            "Offshore engineering"
           ]
         }
       ]
@@ -1266,6 +1329,20 @@
             "Implicit scheme",
             "Discretization error estimators",
             "Apparent order."
+          ]
+        },
+        {
+          "title": "Adaptive Improvements to the LGMRES(m, l) Method for Efficient Resolution of Sparse Linear Systems  in Computational Fluid Dynamics",
+          "authors": "Juan Carlos Cabral, Gustavo Espínola, Jhabriel Varela, Christian Schaerer",
+          "start": "2025-11-24T14:30",
+          "end": "2025-11-24T14:45",
+          "abstract": "Accurate and efficient resolution of sparse linear systems arising from computational fluid dynamics simulations is a computationally intensive task. Traditional iterative methods such as GMRES(m) often suffer from stagnation when applied to large, non-symmetric matrices derived from discretized fluid dynamics models. To address this limitation, a modified version of GMRES(m), known as LGMRES(m,l), was developed to incorporate additional error vectors in the search space. However, previous studies have mainly focused on increasing the subspace dimension m while keeping the number of error vectors l fixed. From a computational cost perspective, this approach may be inefficient, as larger subspaces demand increased memory and processing time, without necessarily enhancing convergence rates.To address this gap, the present work proposes an adaptive enhancement to the LGMRES(m,l) method, incorporating a control-based strategy for dynamic adjustment of both parameters. A proportional control mechanism adjusts m based on the observed rate of convergence, allowing increased subspace dimensions in phases of slow convergence and reduction during fast convergence. Currently, the parameter l is dynamically updated by evaluating the magnitude of error vectors, retaining only those that contribute significantly to residual reduction. This dual adaptation framework aims to mitigate stagnation while optimizing computational resources.The proposed adaptive LGMRES is tested on matrices derived from computational fluid dynamics applications, including groundwater flow models, contaminant transport simulations, and atmospheric modeling for validation. Benchmark matrices from the SuiteSparse Matrix Collection specific to these applications will be used to assess the robustness and efficiency of the adaptive LGMRES method compared to its static counterpart and other iterative solvers. Numerical results obtained using benchmark matrices derived from environmental fluid dynamics applications confirm the effectiveness of the proposed adaptive LGMRES. Significant reductions in the number of iterations and the overall execution time were observed, highlighting the potential of adaptive parameter tuning to improve the robustness and scalability of LGMRES in contexts of computational fluid dynamics.",
+          "keywords": [
+            "Computational Fluid Dynamics",
+            "LGMRES",
+            "Adaptive Methods",
+            "Sparse Linear Systems",
+            "Computational Efficiency"
           ]
         }
       ]
