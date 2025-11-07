@@ -296,7 +296,7 @@
           ]
         },
         {
-          "title": "339 - Quantification of numerical uncertainty in hemodynamic parameters of a cerebral aneurysm using the Grid Convergence Index (GCI) method",
+          "title": "339 - Numerical uncertainty quantification of the hemodynamic parameters of a cerebral aneurysm using the Grid Convergence Index (GCI) method",
           "authors": "Gabriel Fávaro Pereira, Iago Lessa de Oliveira,  Carlos Eduardo Baccin, José Luiz Gasche",
           "start": "2025-11-27T11:00",
           "end": "2025-11-27T11:15",
@@ -1814,7 +1814,7 @@
         },
         {
           "title": "36 - Robust Nonlinear Control of Seismic-Resilient Structures via a Hybrid SDRE-H∞ Approach",
-          "authors": "Ximena Cubullos, Gisella R Lamas Samanamud",
+          "authors": "Ximena Cubillos, Gisella R Lamas Samanamud",
           "start": "2025-11-27T16:45",
           "end": "2025-11-27T17:00",
           "abstract": "This paper presents a robust nonlinear control methodology for seismic-resilient structures, based on the hybrid integration of the State-Dependent Riccati Equation(SDRE) and H-Infinity (H∞) control techniques. As structural systems become increasingly complex and are expected to withstand extreme dynamic events such as earthquakes, there is a growing need for control strategies capable of managing nonlinearities, parametric uncertainties, and external disturbances in real-time.The SDRE method is leveraged to parameterize the nonlinear system dynamics into state-dependent coefficient (SDC) matrices, preserving  system nonlinearity and enabling localized optimal feedback through the recursive solution of Riccati equations. The H∞ technique complements this by introducing robustness criteria to attenuate the worst-case gain between exogenous seismic disturbances and structural response  outputs. The proposed framework is suitable for structures equipped with active mass dampers (AMD), base isolation systems, or magnetorheological devices. The control law is formulated through symbolic modeling of nonlinear multi-degree-of-freedom (MDOF) shear-building structures and implemented in the MATLAB/Simulink environment. The system formulation follows an input-affine structure, and parameterization alternatives are discussed to ensure stabilizability and observability across operating conditions. The Riccati equation is integrated numerically at each time step, and the gain matrices are adapted in real time to match the system’s evolving state. Although simulations are ongoing, the approach is grounded in prior successful applications of SDRE-H∞ control to nonlinear systems such as inverted pendulums and synchronous motors. This research intends to contribute a computationally efficient and adaptable methodology for structural control, combining the strengths of modern robust control theory with practical implementation capabilities.",

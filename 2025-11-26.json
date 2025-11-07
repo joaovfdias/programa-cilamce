@@ -2050,45 +2050,17 @@
           ]
         },
         {
-          "title": "60 - A Differential Evolution and Nelder-Mead hybrid algorithm for constrained Engineering Design problems",
-          "authors": "Renan Aguiar Chagas, Renan Rodrigues Sousa, Michelli Marlane Silva Loureiro, Gustavo Rodrigues de Souza, Felipe dos Santos Loureiro",
+          "title": "531 - Neural Network Surrogates for Efficient Mass Optimization of Web-Tapered Beams",
+          "authors": "Marissa Teixeira da Silva, Élcio Cassimiro Alves, João Victor Fragoso Dias",
           "start": "2025-11-26T17:45",
           "end": "2025-11-26T18:00",
-          "abstract": "Engineering design optimization problems frequently involve complex, nonlinear, and computationally expensive objective functions subject to various constraints. Differential Evolution (DE) is a population-based evolutionary algorithm well-suited for global optimization, whereas the Nelder-Mead (NM) simplex method offers efficient local search capabilities without requiring gradient information. This paper investigates a hybrid optimization strategy that integrates DE with the NM method to exploit their complementary strengths. The DE algorithm is initially employed to explore the global search space and identify promising regions by iteratively evolving a population of candidate solutions based on a predefined stopping criterion. Once a suitable region is identified, the NM algorithm is applied to perform local refinement, enhancing convergence toward the optimal solution. To handle constrained problems, the NM method is extended using the penalty function method proposed by Deb, wherein constraint violations are incorporated into the objective function. The proposed hybrid algorithm taking into account Deb's penalization approach is evaluated on a suite of constrained engineering design benchmarks using MATLAB. The results demonstrate superior performance compared to the standalone DE algorithm, yielding improved solution accuracy and a reduced number of objective function evaluations.",
+          "abstract": "The use of web-tapered beams allows for more efficient structural designs, as these members can have larger cross-sectional areas in highly loaded regions. However, checking the design criteria of web-tapered beams can be challenging, since there is no analytical formula for determining their critical bending moment. Although this parameter can be estimated using a finite element model (FEM), this strategy can be costly, increasing the cost of the model in design optimization algorithms, which may require several evaluations of the objective function. This study develops a surrogate model for the FEM based on an artificial neural network (ANN) for mass optimization of web-tapered beams. Three optimization strategies were evaluated: (i) using only FEM throughout the process; (ii) using only the ANN surrogate; and (iii) using the ANN for initial exploration and switching to FEM for refinement. Results show that using the surrogate model significantly reduces computational costs by up to two orders of magnitude. However, reliance on the ANN alone may lead to suboptimal solutions due to approximation errors, increasing the structural mass by 16.83% to 37.27% relative to the FEM strategy. A hybrid approach is recommended, with slight differences compared to the optimal solution (0.07% - 10.25%).",
           "keywords": [
-            "Optimization",
-            "Hybrid Algorithm",
-            "Engineering Design",
-            "Nelder-Mead",
-            "Differential Evolution"
-          ]
-        },
-        {
-          "title": "587 - Topology Optimization of Undamped Plates for the Extremization of Natural Frequencies",
-          "authors": "Matheus Fabbris Guerreiro, Jucélio Tomás Pereira, Jéderson da Silva, João Luiz do Vale",
-          "start": "2025-11-26T18:00",
-          "end": "2025-11-26T18:15",
-          "abstract": "In the design of mechanical components subjected to vibrations, it is important to understand how the natural frequencies of a structure are distributed and whether any of them coincides with the operating range of the equipment. When this occurs, the phenomenon of resonance can significantly amplify vibrations, compromising the structural integrity and potentially leading to failures and/or accidents.In this context, a topology optimization methodology is proposed to extremize the ranges of natural frequencies in plate-type structures. In the optimization problem, is employed a Solid Isotropic Microstructure with Penalization (SIMP) with volume constraints. A functional is used to penalize regions with intermediate densities, and the main contribution of this work lies in the application of a functional based on the penalization of the density field gradient to mitigate the occurrence of the checkerboard phenomenon, a technique not previously applied in topology optimization with the objective of extremizing the natural frequencies of plates. The optimization problem is solved using the Augmented Lagrangian Method (ALM), aiming for efficient and stable solutions.With this approach, new geometric configurations for plates used in various applications can be obtained, significantly increasing or shifting natural frequency values. As a result, the structure becomes less prone to resonance, reducing excessive vibration propagation and improving the performance and durability of mechanical components.",
-          "keywords": [
-            "Topology optimization",
-            "Natural frequencies",
-            "SIMP",
-            "Augmented Lagrangian",
-            "Checkerboard"
-          ]
-        },
-        {
-          "title": "810 - Finite Element Analysis for Structural Optimization of a Drum-Shaft Assembly  in Bulk Material Handling Equipment",
-          "authors": "Victor  Matos, Devanir Silva, Marcelo Gava, Rafael Vetturazzi",
-          "start": "2025-11-26T18:15",
-          "end": "2025-11-26T18:30",
-          "abstract": "This work aims to present a detailed structural investigation carried out through numerical simulations using the finite element method, applied to the drum of a metal extractor used in the handling of bulk granular materials. The main motivation for this study arises from the recurring observation of structural failures due to shaft fractures, which have been identified through predictive monitoring strategies and periodic visual inspections. The analyses indicate that these failures are caused by fatigue mechanisms associated with rotational bending, especially in regions with geometric transitions, and are worsened by compressive loads from fastening elements. To perform the structural analyses, a detailed three-dimensional model of the drumshaft assembly is developed, incorporating key components such as hubs, expansion rings, bearings, and fastening bolts. The computational simulations consider the actual operating conditions of the equipment, including the system’s self-weight, the tension transmitted by the belt, and the assembly torque applied to the expansion rings. The structural assessment reveals critical regions of stress concentration, with safety factors below the minimum recommended values for cyclic loading conditions. Based on the results, the shaft design is reformulated with specific geometric modifications and the replacement of the original material with a metal alloy of higher mechanical strength, aiming to mitigate fatigue effects. The results demonstrate the effectiveness of the finite element method as a tool for structural diagnosis and optimization, enabling the anticipation of failures, enhancement of the design, and increased operational reliability. This highlights the importance of accurate modeling and the consideration of real operating conditions in making technical decisions in industrial environments.",
-          "keywords": [
-            "finite element analysis",
-            "belt conveyor",
-            "pulley",
-            "mechanical components",
-            "fatigue"
+            "Web-Tapered Beams",
+            "Artificial Neural Network",
+            "Single-Objective Optimization",
+            "Surrogate Model",
+            "Optimal Design"
           ]
         }
       ]
