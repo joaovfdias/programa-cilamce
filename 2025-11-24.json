@@ -289,17 +289,16 @@
       "abstract": "",
       "papers": [
         {
-          "title": "14 -  U-net-based Segmentation Of Sensor Data For Detecting Important Events In Oil Wells",
-          "authors": "Lucas Gouveia Omena Lopes, Thales Miranda de Almeida Vieira, Andressa Celestino Araújo Da Silva, Igor de Melo Nery, Davi Leão Ramos, Eduardo Toledo de Lima Junior, William Wagner Matos Lira, Pedro Esteves Aranha",
+          "title": "523 - Neural Network Application for Aerodynamic Force Estimation in Heavy Artillery Projectile Trajectories",
+          "authors": "Lucas gomes do amaral, Daniel Henrique Braz de Sousa, André Rezende",
           "start": "2025-11-24T10:00",
           "end": "2025-11-24T10:15",
-          "abstract": "Detecting key events in oil well sensor data is essential for optimizing operations and preventing failures. This study presents a non-parametric, U-Net-based deep learning approach for segmenting time-series sensor data to identify significant changes. Unlike analytical methods that require manual tuning or machine learning models dependent on fixed thresholds and frequent retraining due to concept drift, our model adapts automatically to different wells without the need for manual adjustment. We modify the U-Net architecture to handle time-series segmentation, enabling automatic detection of sensor transitions without predefined thresholds. Trained on both synthetic and real-world data, the model is evaluated across diverse operational conditions. The segmented output supports downstream classification models in determining whether detected events correspond to regular human operations or previously unnoticed anomalies. To enhance reliability, we incorporate wavelet-based denoising, which effectively removes noise while preserving critical transitions. By combining U-Net segmentation with wavelet-based denoising, this approach offers a novel solution for event detection in industrial time-series data, advancing automation and anomaly detection in oilfield operations.",
+          "abstract": "This work proposes the use of a neural network to estimate components of the aerodynamic forces acting on the trajectory of a 155 mm projectile. The approach aims to replace analytical expressions with a machine learning-based model, in order to compare the computational efficiency and flexibility of ballistic modeling techniques. The network was designed to estimate, based on the projectile's aerodynamic coefficients, the lift, drag, Magnus effect, rotational damping forces, and the projectile's angular adjustment. The dataset used for training was generated through the analysis of aerodynamic coefficients using the ballistic software PRODAS, considering different elevations, muzzle velocities, and atmospheric conditions. For validation, real firing data under various conditions were employed. The results show a mean squared error on the order of 3.10⁻³ and a correlation coefficient (R²) above 0.9, indicating that the neural network is capable of adequately reproducing aerodynamic effects and presents itself as a viable alternative to traditional models.",
           "keywords": [
-            "Oil Production Event Analysis",
-            "U-net",
-            "Time Series Segmentation",
-            "Anomaly Detection",
-            "Signal Processing"
+            "Neural Networks",
+            "Aerodynamic Coefficients",
+            "Heavy Artillery",
+            "External Ballistics"
           ]
         },
         {
@@ -1089,16 +1088,17 @@
           ]
         },
         {
-          "title": "523 - Neural Network Application for Aerodynamic Force Estimation in Heavy Artillery Projectile Trajectories",
-          "authors": "Lucas gomes do amaral, Daniel Henrique Braz de Sousa, André Rezende",
+          "title": "14 -  U-net-based Segmentation Of Sensor Data For Detecting Important Events In Oil Wells",
+          "authors": "Lucas Gouveia Omena Lopes, Thales Miranda de Almeida Vieira, Andressa Celestino Araújo Da Silva, Igor de Melo Nery, Davi Leão Ramos, Eduardo Toledo de Lima Junior, William Wagner Matos Lira, Pedro Esteves Aranha",
           "start": "2025-11-24T14:15",
           "end": "2025-11-24T14:30",
-          "abstract": "This work proposes the use of a neural network to estimate components of the aerodynamic forces acting on the trajectory of a 155 mm projectile. The approach aims to replace analytical expressions with a machine learning-based model, in order to compare the computational efficiency and flexibility of ballistic modeling techniques. The network was designed to estimate, based on the projectile's aerodynamic coefficients, the lift, drag, Magnus effect, rotational damping forces, and the projectile's angular adjustment. The dataset used for training was generated through the analysis of aerodynamic coefficients using the ballistic software PRODAS, considering different elevations, muzzle velocities, and atmospheric conditions. For validation, real firing data under various conditions were employed. The results show a mean squared error on the order of 3.10⁻³ and a correlation coefficient (R²) above 0.9, indicating that the neural network is capable of adequately reproducing aerodynamic effects and presents itself as a viable alternative to traditional models.",
+          "abstract": "Detecting key events in oil well sensor data is essential for optimizing operations and preventing failures. This study presents a non-parametric, U-Net-based deep learning approach for segmenting time-series sensor data to identify significant changes. Unlike analytical methods that require manual tuning or machine learning models dependent on fixed thresholds and frequent retraining due to concept drift, our model adapts automatically to different wells without the need for manual adjustment. We modify the U-Net architecture to handle time-series segmentation, enabling automatic detection of sensor transitions without predefined thresholds. Trained on both synthetic and real-world data, the model is evaluated across diverse operational conditions. The segmented output supports downstream classification models in determining whether detected events correspond to regular human operations or previously unnoticed anomalies. To enhance reliability, we incorporate wavelet-based denoising, which effectively removes noise while preserving critical transitions. By combining U-Net segmentation with wavelet-based denoising, this approach offers a novel solution for event detection in industrial time-series data, advancing automation and anomaly detection in oilfield operations.",
           "keywords": [
-            "Neural Networks",
-            "Aerodynamic Coefficients",
-            "Heavy Artillery",
-            "External Ballistics"
+            "Oil Production Event Analysis",
+            "U-net",
+            "Time Series Segmentation",
+            "Anomaly Detection",
+            "Signal Processing"
           ]
         },
         {
