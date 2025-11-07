@@ -1382,6 +1382,46 @@
             "Sparse Linear Systems",
             "Computational Efficiency"
           ]
+        },
+        {
+          "title": "19 - CFD Modeling of Sanitary Effluent Flow in Parshall Flumes Considering Surface Tension Variability",
+          "authors": "Bruno de Oliveira Lázaro, João Marcelo Vedovotto",
+          "start": "2025-11-24T14:45",
+          "end": "2025-11-24T15:00",
+          "abstract": "This research aims to analyze the flow behavior of sanitary effluents in Parshall flumes through Computational Fluid Dynamics (CFD) simulations performed using ANSYS Fluent. The central hypothesis is that the surface tension of wastewater, which differs from that of pure water, significantly influences the hydraulic behavior of the flow, especially in critical regions of the flume. To represent wastewater in a simplified but technically grounded manner, water was used as the base fluid, with surface tension values varied across three scenarios: 0.030 N/m, 0.040 N/m, and 0.050 N/m, as recommended by the literature.\nThe flume geometry was modeled according to technical standards, and the flow was considered two-phase (water–air), incompressible, and transient, with the interface between phases captured using the Volume of Fluid (VOF) method. Turbulence was modeled using the Shear Stress Transport k-omega (k-ω SST) model, chosen for its proven capability to capture strong shear zones and boundary layer behavior in transitional flows. Boundary conditions included a uniform velocity profile at the inlet, atmospheric pressure at the outlet, rough no-slip walls, and a free surface representing air–water interaction.\nThe results revealed that lower surface tension values lead to greater surface instability, enhanced recirculation zones downstream of the throat, and increased air entrainment. These effects can compromise flow measurement accuracy, particularly in flumes equipped with ultrasonic or pressure-based level sensors. Variations were also observed in velocity profiles and stage-discharge curves, with higher surface tensions yielding smoother flow surfaces and more stable hydraulic conditions.\nIt is concluded that surface tension is a non-negligible parameter in CFD modeling of wastewater flows in Parshall flumes. Its influence extends beyond surface aesthetics, impacting the internal flow structure and potentially altering hydraulic measurements. The study contributes to advancing CFD applications in sanitary engineering by proposing a realistic and computationally efficient approach for simulating effluent flows with varying physicochemical properties.",
+          "keywords": [
+            "Computational Fluid Dynamics (CFD)",
+            "Parshall Flume",
+            "Surface Tension",
+            "Wastewater Flow Modeling",
+            "Turbulence Model"
+          ]
+        },
+        {
+          "title": "45 - A High-Performance ADI–Pressure Projection Method for Solving the Navier–Stokes Equations",
+          "authors": "Raphael Laroca, Iury Igreja",
+          "start": "2025-11-24T15:00",
+          "end": "2025-11-24T15:15",
+          "abstract": "The Navier–Stokes equations are fundamental for describing fluid motion, yet they remain among the most challenging problems in mathematical and computational fluid dynamics. Their strong nonlinearity, coupled with the necessity of simultaneously approximating velocity and pressure fields, leads to a highly complex and computationally demanding system. In particular, mixed formulations introduce compatibility requirements that add further difficulty to ensuring stable and accurate solutions. Moreover, the consistent enforcement of mass conservation remains a delicate aspect in numerical schemes. To address these challenges, this work proposes a simple and efficient numerical strategy that combines an Alternating Direction Implicit (ADI) method with a Pressure Projection technique. The ADI method efficiently handles the velocity computation, while the Pressure Projection ensures the enforcement of the divergence-free condition, preserving mass conservation naturally. For enhanced computational performance, the velocity field is solved in CPU using OpenMP parallelization in the ADI steps, while GPU acceleration using CUDA is employed for the solution of the pressure equation. The proposed methodology is validated through convergence studies and comparisons with benchmark solutions from the literature, applied to classical CFD test cases. The results demonstrate the accuracy, efficiency, and robustness of the approach, highlighting its potential for scalable and reliable simulations in computational fluid dynamics.",
+          "keywords": [
+            "CFD",
+            "ADI",
+            "Navier-Stokes",
+            "Pressure Projection"
+          ]
+        },
+        {
+          "title": "218 - A simple mass-conserved Level Set Method for FSI problems with free-surface flows",
+          "authors": "Mateus Guimarães Tonin, Alexandre Luis Braun",
+          "start": "2025-11-24T15:15",
+          "end": "2025-11-24T15:30",
+          "abstract": "The present work is dedicated to the numerical simulation of Fluid-Structure Interaction (FSI) problems involving floating bodies subjected to the action of free-surface flows. The free-surface treatment is considered using the Level Set Method (LSM), which historically has a drawback of being too dissipative, leading to mass conservation errors. In a relatively new modification, proposed by Yuan et al. (2018) and implemented here, a source or sink term is introduced into the original Level Set equation to compensate the mass loss or offset the mass increase, leading to better results. Also, in our model, the flow equations are discretized using the Characteristic-Based Split (CBS) method in the context of the Finite Element Method (FEM). The structure is kinematically described using a rigid body approach. The system of equations of motion is discretized in time using the implicit Newmark and a-Generalized methods. Several problems are simulated, comparing the results with those from the original LSM, demonstrating that the modified version has the capability of accurately capturing the interface and keeping the mass conservation.",
+          "keywords": [
+            "Free-Surface Flows",
+            "Level Set Method",
+            "Floating Structures",
+            "Fluid-Structure Interaction"
+          ]
         }
       ]
     },

@@ -1921,8 +1921,8 @@
         {
           "title": "620 - NUMERICAL MODELING OF TALL STRUCTURAL MASONRY BUILDINGS: EVALUATION OF WALL-BEAM INTERACTION IN TRANSITION ZONES",
           "authors": "LUIZ LINHARES, LUCAS CANDIDO PEREIRA, LUCIANO RODRIGUES COELHO",
-          "start": "2025-11-26T17:45",
-          "end": "2025-11-26T18:00",
+          "start": "2025-11-26T17:30",
+          "end": "2025-11-26T17:45",
           "abstract": "The classification of a building as tall is not solely related to the number of stories, but also to the influence of wind loads on structural stability. As the height of buildings using this construction system increases, the challenge of implementing solutions that satisfy the Ultimate Limit State (ULS) and the Serviceability Limit State (SLS) involves, among other factors, the mathematical modeling adopted, the structural design concept, the use of concrete or masonry lintels, and the strength of the available materials. However, traditional design methodologies are often unable to account for the wide range of building typologies and may produce inconsistent results. Moreover, commercial software generally does not provide integrated modeling that considers the arching effect. In this context, numerical modeling using the Finite Element Method (FEM) stands out as a valuable tool. This study aims to evaluate the internal forces acting on transition beams in tall structural masonry buildings. Three-dimensional numerical models were developed using FEM for two tall buildings, with and without flange length constraints, to analyze the distribution of vertical loads as well as wind-induced forces on the transition elements. Stress concentrations were observed in both models, along with the influence of wall quantity and positioning, and the impact of model stiffness on the structural responses obtained.",
           "keywords": [
             "Finite Element Analysis",
@@ -1933,8 +1933,8 @@
         {
           "title": "192 - Analysis of Slender Reinforced Concrete Columns based on a Nonlinear Mixed Formulation with Analytical Interpolation Functions",
           "authors": "Marcos  Rodrigues,",
-          "start": "2025-11-26T18:00",
-          "end": "2025-11-26T18:15",
+          "start": "2025-11-26T17:45",
+          "end": "2025-11-26T18:00",
           "abstract": "The design of concrete columns requires two main steps: global and local analysis. Generally, the global analysis is performed using a simplified model considering the gz coefficient with a stiffness reduction of the structural elements to simulate the nonlinear behavior. In contrast, the local analysis demands a more rigorous process, particularly for slender columns. Typically, column analysis usually is conducted using the Finite Element Method, with appropriate discretization to accurately capture the nonlinear behavior and effects P-D and P-d. In this context, the local modelling of columns using a mixed element formulation with analytical interpolation functions can avoid the need for intense discretization while effectively capturing the curvature along the element. This study proposes a design methodology for slender and very slender reinforced concrete columns based on a mixed element formulation, which employs analytical interpolation functions to approximate displacements and internal forces and uses a corotational total Lagrangian description. The P-D and P-d effects are naturally considered in this approach. The proposed numerical application clearly demonstrates the capacity of the formulation to simulate the nonlinear local analysis of reinforced concrete columns using just one element and to accurately capture the curvature and bending moments along the column in the design process.",
           "keywords": [
             "Slender Reinforced Concrete Columns",

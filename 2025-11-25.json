@@ -361,6 +361,20 @@
           ]
         },
         {
+          "title": "9 - Failure probability calculation model applied to gas pipelines",
+          "authors": "Frederico Thom, Geraldo Rossoni Sisquini, Matheus Jordão de Jesus, Oldrich Joel Romero",
+          "start": "2025-11-25T10:15",
+          "end": "2025-11-25T10:30",
+          "abstract": "This article presents an application for failure probability in long-pipeline gas systems through the development of trend curves over time for the attributes of corrosion wear, which are related to the length, width, and depth of the defect. In addition, Risk-Based Inspection (RBI) is applied in the most favorable numerical failure values according to the location of the defect, with the aim of analyzing the structural reliability and the expected useful life of the gas pipeline. To do this, it was necessary to use the data provided by pig readings in 2008, 2012 and 2018 by an instrumented pig, type Magnetic Flux Leakage (MFL), inspecting a gas pipeline with the finality to measure wall thickness. The 56 km long and 18 in diameter pipeline is partly onshore and partly offshore. Also, the pipeline anomaliesare standardized according to the standards established in POF (2016). It is important to emphasize that the methodology described in this article can be used in the industry where the prevention of leakage incidents, the predictability of maintenance, and the elaboration of the respective inspection plans are required, since it has been theoretically possible to calculate the probability of failure in time beyond the respective impact on risk for the operational variables presented.",
+          "keywords": [
+            "smart pigs",
+            "RBI",
+            "structural reliability",
+            "failure probability",
+            "gas pipelines"
+          ]
+        },
+        {
           "title": "721 - Reliability analysis of pultruded GFRP I-sections subjected to lateral torsional buckling ultimate limit state",
           "authors": "Leonardo Wendler Felchak, Roberto Dalledone Machado, Henrique Machado Kroetz",
           "start": "2025-11-25T10:30",
@@ -398,6 +412,46 @@
             "Random variables",
             "Concrete blocks",
             "Recycled aggregate"
+          ]
+        },
+        {
+          "title": "21 - Enhancing Structural Health Monitoring with Probabilistic Analysis: A Case Study on a Bridge Reclaimer",
+          "authors": "Cádmo Rodrigues, Fernando Texeira, Gabriel M. C. Machado, Jánes Landre Jr",
+          "start": "2025-11-25T11:15",
+          "end": "2025-11-25T11:30",
+          "abstract": "Bridge reclaimers play a crucial role in industrial operations, yet their structural integrity is often threatened by environmental exposure and cyclic loading. Meanwhile, traditional deterministic methods may overlook early signs of degradation, compromising maintenance strategies. In this context, this study introduces a probabilistic approach to structural health monitoring (SHM), emphasizing its advantages over conventional techniques. Visual inspections revealed cracks in critical regions of a bridge reclaimer’s box girder that deterministic simulations failed to predict. In addition, finite element analysis was employed to define key monitoring points, followed by the acquisition of hourly stress and strain data over fifteen days. Using the VibraConf (VcE) software and the Probabilistic Condition-Based Maintenance (PCBM) methodology, failure probabilities and reliability indices were computed. The analysis identified a significantly higher probability of failure in the box girder diaphragms, precisely where physical cracks were observed. These findings highlight the limitations of deterministic assessments and demonstrate the value of probabilistic simulations in forecasting failures and prioritizing maintenance. By integrating field observations with numerical and probabilistic tools, this case study provides a robust framework for proactive asset management and more reliable SHM practices.",
+          "keywords": [
+            "probabilistic condition-based maintenance",
+            "structural health monitoring",
+            "bridge reclaimer",
+            "asset management",
+            "Structural reliability"
+          ]
+        },
+        {
+          "title": "126 - Reliability-Based Multi-Material 3D Topology Optimization: A Comparative Study Between SIMP and SESO Methods",
+          "authors": "Marcio Maciel da Silva, Francisco de Assis das Neves, Hélio Luiz Simonetti, Marcílio Sousa da Rocha Freitas",
+          "start": "2025-11-25T11:30",
+          "end": "2025-11-25T11:45",
+          "abstract": "Topology optimization aims to improve structural design efficiency by determining the optimal material distribution within the solution domain. This paper presents an automated approach for three-dimensional multi-material topology optimization using the Solid Isotropic Material with Penalization (SIMP) and Smoothing-ESO (SESO) methods, implemented in MATLAB. The formulation employs hexahedral finite elements and a power-law interpolation scheme to minimize material discontinuities during the discrete optimization process. A three-dimensional linear elastic analysis is adopted for both methods, integrating commercial materials including steel, aluminum, and concrete. Additionally, the optimization program is coupled with a reliability-based topology optimization analysis module where Young's modulus, force, volume, and compliance are treated as random variables using the First-order Reliability Method (FORM), considering both normal and lognormal distributions with target reliability indices β = 3.0 and β = 2.5. Numerical examples, including a Michell-type structure and bridge design, demonstrate the method's effectiveness in achieving material efficiency while ensuring structural reliability. The results show significant reductions in high-performance material usage, confirming the approach's potential for practical engineering applications.",
+          "keywords": [
+            "Multi-material topology optimization",
+            "SESO and SIMP",
+            "RBTO."
+          ]
+        },
+        {
+          "title": "219 - A Modified FOSM Method for the Reliability Assessment of Cold-Formed Steel Members",
+          "authors": "André Brandão, Eloá Faria Brandão, Giovanne de Lana Santana, Marcílio Sousa da Rocha Freitas",
+          "start": "2025-11-25T11:45",
+          "end": "2025-11-25T12:00",
+          "abstract": "The FOSM (First Order Second Moment) method is a structural reliability analysis technique that estimates the probability of failure based on the first two statistical moments (mean and variance) of the variables involved. Structural reliability assessments are often conducted using the FOSM method due to its simplicity and the absence of advanced computational requirements. Unlike more complex approaches—such as the First Order Reliability Method (FORM), which involves variable transformations and iterative procedures, or Monte Carlo Simulation (MCS), whose accuracy depends on a large number of simulations—FOSM provides a straightforward and practical framework, suitable for the calibration of design codes. However, this simplification compromises the accuracy of FOSM. This paper proposes a modified version of the FOSM method (denoted FOSMₘ), which incorporates adjustment functions to better approximate the results of MCS in the reliability analysis of cold-formed steel members. The FOSMₘ method showed excellent agreement with MCS results for load combinations of the type D (dead load) + L (live load), with L/D ratios ranging from 1 to 10. Moreover, FOSMₘ proved to be effective when applied to typical ranges of load factors used in the design of structural members. The proposed methodology retains the simplicity of FOSM while significantly improving its accuracy, offering a robust and accessible alternative for structural reliability assessments.",
+          "keywords": [
+            "reliability",
+            "FOSM",
+            "FORM",
+            "MCS",
+            "cold-formed"
           ]
         }
       ]
@@ -904,6 +958,48 @@
             "Prestressed Concrete",
             "SIMP"
           ]
+        },
+        {
+          "title": "60 - A Differential Evolution and Nelder-Mead hybrid algorithm for constrained Engineering Design problems",
+          "authors": "Renan Aguiar Chagas, Renan Rodrigues Sousa, Michelli Marlane Silva Loureiro, Gustavo Rodrigues de Souza, Felipe dos Santos Loureiro",
+          "start": "2025-11-25T14:45",
+          "end": "2025-11-25T15:00",
+          "abstract": "Engineering design optimization problems frequently involve complex, nonlinear, and computationally expensive objective functions subject to various constraints. Differential Evolution (DE) is a population-based evolutionary algorithm well-suited for global optimization, whereas the Nelder-Mead (NM) simplex method offers efficient local search capabilities without requiring gradient information. This paper investigates a hybrid optimization strategy that integrates DE with the NM method to exploit their complementary strengths. The DE algorithm is initially employed to explore the global search space and identify promising regions by iteratively evolving a population of candidate solutions based on a predefined stopping criterion. Once a suitable region is identified, the NM algorithm is applied to perform local refinement, enhancing convergence toward the optimal solution. To handle constrained problems, the NM method is extended using the penalty function method proposed by Deb, wherein constraint violations are incorporated into the objective function. The proposed hybrid algorithm taking into account Deb's penalization approach is evaluated on a suite of constrained engineering design benchmarks using MATLAB. The results demonstrate superior performance compared to the standalone DE algorithm, yielding improved solution accuracy and a reduced number of objective function evaluations.",
+          "keywords": [
+            "Optimization",
+            "Hybrid Algorithm",
+            "Engineering Design",
+            "Nelder-Mead",
+            "Differential Evolution"
+          ]
+        },
+        {
+          "title": "587 - Topology Optimization of Undamped Plates for the Extremization of Natural Frequencies",
+          "authors": "Matheus Fabbris Guerreiro, Jucélio Tomás Pereira, Jéderson da Silva, João Luiz do Vale",
+          "start": "2025-11-25T15:00",
+          "end": "2025-11-25T15:15",
+          "abstract": "In the design of mechanical components subjected to vibrations, it is important to understand how the natural frequencies of a structure are distributed and whether any of them coincides with the operating range of the equipment. When this occurs, the phenomenon of resonance can significantly amplify vibrations, compromising the structural integrity and potentially leading to failures and/or accidents.In this context, a topology optimization methodology is proposed to extremize the ranges of natural frequencies in plate-type structures. In the optimization problem, is employed a Solid Isotropic Microstructure with Penalization (SIMP) with volume constraints. A functional is used to penalize regions with intermediate densities, and the main contribution of this work lies in the application of a functional based on the penalization of the density field gradient to mitigate the occurrence of the checkerboard phenomenon, a technique not previously applied in topology optimization with the objective of extremizing the natural frequencies of plates. The optimization problem is solved using the Augmented Lagrangian Method (ALM), aiming for efficient and stable solutions.With this approach, new geometric configurations for plates used in various applications can be obtained, significantly increasing or shifting natural frequency values. As a result, the structure becomes less prone to resonance, reducing excessive vibration propagation and improving the performance and durability of mechanical components.",
+          "keywords": [
+            "Topology optimization",
+            "Natural frequencies",
+            "SIMP",
+            "Augmented Lagrangian",
+            "Checkerboard"
+          ]
+        },
+        {
+          "title": "810 - Finite Element Analysis for Structural Optimization of a Drum-Shaft Assembly  in Bulk Material Handling Equipment",
+          "authors": "Victor  Matos, Devanir Silva, Marcelo Gava, Rafael Vetturazzi",
+          "start": "2025-11-25T15:15",
+          "end": "2025-11-25T15:30",
+          "abstract": "This work aims to present a detailed structural investigation carried out through numerical simulations using the finite element method, applied to the drum of a metal extractor used in the handling of bulk granular materials. The main motivation for this study arises from the recurring observation of structural failures due to shaft fractures, which have been identified through predictive monitoring strategies and periodic visual inspections. The analyses indicate that these failures are caused by fatigue mechanisms associated with rotational bending, especially in regions with geometric transitions, and are worsened by compressive loads from fastening elements. To perform the structural analyses, a detailed three-dimensional model of the drumshaft assembly is developed, incorporating key components such as hubs, expansion rings, bearings, and fastening bolts. The computational simulations consider the actual operating conditions of the equipment, including the system’s self-weight, the tension transmitted by the belt, and the assembly torque applied to the expansion rings. The structural assessment reveals critical regions of stress concentration, with safety factors below the minimum recommended values for cyclic loading conditions. Based on the results, the shaft design is reformulated with specific geometric modifications and the replacement of the original material with a metal alloy of higher mechanical strength, aiming to mitigate fatigue effects. The results demonstrate the effectiveness of the finite element method as a tool for structural diagnosis and optimization, enabling the anticipation of failures, enhancement of the design, and increased operational reliability. This highlights the importance of accurate modeling and the consideration of real operating conditions in making technical decisions in industrial environments.",
+          "keywords": [
+            "finite element analysis",
+            "belt conveyor",
+            "pulley",
+            "mechanical components",
+            "fatigue"
+          ]
         }
       ]
     },
@@ -1000,6 +1096,20 @@
             "Microtomography",
             "Permeability model",
             "Carbonate"
+          ]
+        },
+        {
+          "title": "764 - Facies Classification and Porosity–Permeability Modeling Using Self-Organizing Maps in Hybrid Carbonate Rocks",
+          "authors": "Gabriel Sousa dos Santos Ribeiro, Silvia Lorena Bejarano Bermudez, Maira da Costa de Oliveira Lima Santo",
+          "start": "2025-11-25T14:45",
+          "end": "2025-11-25T15:00",
+          "abstract": "Detailed studies on the hybrid carbonate rocks of the Morro do Chaves Formation are essential, as these outcrops serve as analogues to the Brazilian pre-salt carbonate reservoirs, allowing for the validation and application of advanced petrophysical characterization methods. However, the heterogeneity resulting from the complex mixture of carbonate and siliciclastic minerals significantly challenges facies classification and the prediction of critical properties such as porosity and permeability. Unsupervised techniques based on Self-Organizing Maps (SOM) have gained prominence in petrophysics for their ability to project complex multidimensional data onto two-dimensional maps, preserving original topology and revealing clusters and nonlinear patterns not perceptible through traditional approaches. In this context, four distinct SOM models were developed in the Interactive Petrophysics (IP) software, and the best-performing model was selected. This spherical-topology network, comprising 1,442 nodes, was trained over 50,000 epochs (η₀=0.1). To train the SOM, we employed well logs, 57 core-plug measurements of porosity and permeability, and a lithologic profile based on core descriptions. Classification was validated using contingency tables, with the best model achieving 72.59% accuracy, and was complemented by qualitative analysis through Fit Flag. Subsequently, petrophysical properties were predicted and statistically evaluated using the mean absolute error (MAE), root-mean-square error (RMSE), and uncertainty bands. These bands correspond to a ±1 σ standard deviation, weighted at each node, and are derived from continuous calibration data, and plotted alongside the predicted curves. Finally, regression fits between predicted and observed values yielded correlation coefficients (R²) of 0.9398 for porosity and 0.8266 for permeability, corroborating the robustness and expanding the applicability of this approach to well-scale petrophysical characterization of hybrid carbonate systems.",
+          "keywords": [
+            "Hybrid Carbonate Reservoirs",
+            "Self-Organizing Maps (SOM)",
+            "Facies Classification",
+            "Porosity Prediction",
+            "Permeability Estimation"
           ]
         }
       ]
