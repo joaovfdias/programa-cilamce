@@ -441,17 +441,17 @@
           ]
         },
         {
-          "title": "219 - A Modified FOSM Method for the Reliability Assessment of Cold-Formed Steel Members",
-          "authors": "André Brandão, Eloá Faria Brandão, Giovanne de Lana Santana, Marcílio Sousa da Rocha Freitas",
+          "title": "467 - Reliability Analysis of Litzka Castellated Beams",
+          "authors": "Washington Batista Vieira, André Brandão, Giovanne de Lana Santana",
           "start": "2025-11-25T11:45",
           "end": "2025-11-25T12:00",
-          "abstract": "The FOSM (First Order Second Moment) method is a structural reliability analysis technique that estimates the probability of failure based on the first two statistical moments (mean and variance) of the variables involved. Structural reliability assessments are often conducted using the FOSM method due to its simplicity and the absence of advanced computational requirements. Unlike more complex approaches—such as the First Order Reliability Method (FORM), which involves variable transformations and iterative procedures, or Monte Carlo Simulation (MCS), whose accuracy depends on a large number of simulations—FOSM provides a straightforward and practical framework, suitable for the calibration of design codes. However, this simplification compromises the accuracy of FOSM. This paper proposes a modified version of the FOSM method (denoted FOSMₘ), which incorporates adjustment functions to better approximate the results of MCS in the reliability analysis of cold-formed steel members. The FOSMₘ method showed excellent agreement with MCS results for load combinations of the type D (dead load) + L (live load), with L/D ratios ranging from 1 to 10. Moreover, FOSMₘ proved to be effective when applied to typical ranges of load factors used in the design of structural members. The proposed methodology retains the simplicity of FOSM while significantly improving its accuracy, offering a robust and accessible alternative for structural reliability assessments.",
+          "abstract": "This paper presents a safety evaluation of Litzka castellated beams, based on calculation models proposed in the technical literature. It is noteworthy that there are currently no applicable Brazilian standards or official design criteria for this type of structure. The safety assessment is carried out through structural reliability analysis of the beams and advanced finite element-based analysis of their actual resistance. The effects of geometric imperfections and residual stresses on the resistance of the beams are considered. Statistical parameters related to model error, material strength, geometric properties, and permanent and variable loads are taken into account in the reliability evaluation. Reliability indices are obtained for load combinations according to Brazilian, American, and European standards. These indices reflect the safety level of the beams designed according to the analyzed models. The results are compared with target reliability indices recommended by ASCE and Eurocode.",
           "keywords": [
-            "reliability",
-            "FOSM",
-            "FORM",
-            "MCS",
-            "cold-formed"
+            "castellated beams",
+            "Litzka",
+            "numerical model",
+            "finite element method",
+            "structural reliability"
           ]
         }
       ]
@@ -560,20 +560,6 @@
             "CT scan",
             "Rock Samples",
             "Digital rocks"
-          ]
-        },
-        {
-          "title": "764 - Facies Classification and Porosity–Permeability Modeling Using Self-Organizing Maps in Hybrid Carbonate Rocks",
-          "authors": "Gabriel Sousa dos Santos Ribeiro, Silvia Lorena Bejarano Bermudez, Maira da Costa de Oliveira Lima Santo",
-          "start": "2025-11-25T11:45",
-          "end": "2025-11-25T12:00",
-          "abstract": "Detailed studies on the hybrid carbonate rocks of the Morro do Chaves Formation are essential, as these outcrops serve as analogues to the Brazilian pre-salt carbonate reservoirs, allowing for the validation and application of advanced petrophysical characterization methods. However, the heterogeneity resulting from the complex mixture of carbonate and siliciclastic minerals significantly challenges facies classification and the prediction of critical properties such as porosity and permeability. Unsupervised techniques based on Self-Organizing Maps (SOM) have gained prominence in petrophysics for their ability to project complex multidimensional data onto two-dimensional maps, preserving original topology and revealing clusters and nonlinear patterns not perceptible through traditional approaches. In this context, four distinct SOM models were developed in the Interactive Petrophysics (IP) software, and the best-performing model was selected. This spherical-topology network, comprising 1,442 nodes, was trained over 50,000 epochs (η₀=0.1). To train the SOM, we employed well logs, 57 core-plug measurements of porosity and permeability, and a lithologic profile based on core descriptions. Classification was validated using contingency tables, with the best model achieving 72.59% accuracy, and was complemented by qualitative analysis through Fit Flag. Subsequently, petrophysical properties were predicted and statistically evaluated using the mean absolute error (MAE), root-mean-square error (RMSE), and uncertainty bands. These bands correspond to a ±1 σ standard deviation, weighted at each node, and are derived from continuous calibration data, and plotted alongside the predicted curves. Finally, regression fits between predicted and observed values yielded correlation coefficients (R²) of 0.9398 for porosity and 0.8266 for permeability, corroborating the robustness and expanding the applicability of this approach to well-scale petrophysical characterization of hybrid carbonate systems.",
-          "keywords": [
-            "Hybrid Carbonate Reservoirs",
-            "Self-Organizing Maps (SOM)",
-            "Facies Classification",
-            "Porosity Prediction",
-            "Permeability Estimation"
           ]
         }
       ]

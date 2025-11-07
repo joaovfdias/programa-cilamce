@@ -222,60 +222,6 @@
       "abstract": "",
       "papers": [
         {
-          "title": "9 - Failure probability calculation model applied to gas pipelines",
-          "authors": "Frederico Thom, Geraldo Rossoni Sisquini, Matheus Jordão de Jesus, Oldrich Joel Romero",
-          "start": "2025-11-24T10:00",
-          "end": "2025-11-24T10:15",
-          "abstract": "This article presents an application for failure probability in long-pipeline gas systems through the development of trend curves over time for the attributes of corrosion wear, which are related to the length, width, and depth of the defect. In addition, Risk-Based Inspection (RBI) is applied in the most favorable numerical failure values according to the location of the defect, with the aim of analyzing the structural reliability and the expected useful life of the gas pipeline. To do this, it was necessary to use the data provided by pig readings in 2008, 2012 and 2018 by an instrumented pig, type Magnetic Flux Leakage (MFL), inspecting a gas pipeline with the finality to measure wall thickness. The 56 km long and 18 in diameter pipeline is partly onshore and partly offshore. Also, the pipeline anomaliesare standardized according to the standards established in POF (2016). It is important to emphasize that the methodology described in this article can be used in the industry where the prevention of leakage incidents, the predictability of maintenance, and the elaboration of the respective inspection plans are required, since it has been theoretically possible to calculate the probability of failure in time beyond the respective impact on risk for the operational variables presented.",
-          "keywords": [
-            "smart pigs",
-            "RBI",
-            "structural reliability",
-            "failure probability",
-            "gas pipelines"
-          ]
-        },
-        {
-          "title": "21 - Enhancing Structural Health Monitoring with Probabilistic Analysis: A Case Study on a Bridge Reclaimer",
-          "authors": "Cádmo Rodrigues, Fernando Texeira, Gabriel M. C. Machado, Jánes Landre Jr",
-          "start": "2025-11-24T10:15",
-          "end": "2025-11-24T10:30",
-          "abstract": "Bridge reclaimers play a crucial role in industrial operations, yet their structural integrity is often threatened by environmental exposure and cyclic loading. Meanwhile, traditional deterministic methods may overlook early signs of degradation, compromising maintenance strategies. In this context, this study introduces a probabilistic approach to structural health monitoring (SHM), emphasizing its advantages over conventional techniques. Visual inspections revealed cracks in critical regions of a bridge reclaimer’s box girder that deterministic simulations failed to predict. In addition, finite element analysis was employed to define key monitoring points, followed by the acquisition of hourly stress and strain data over fifteen days. Using the VibraConf (VcE) software and the Probabilistic Condition-Based Maintenance (PCBM) methodology, failure probabilities and reliability indices were computed. The analysis identified a significantly higher probability of failure in the box girder diaphragms, precisely where physical cracks were observed. These findings highlight the limitations of deterministic assessments and demonstrate the value of probabilistic simulations in forecasting failures and prioritizing maintenance. By integrating field observations with numerical and probabilistic tools, this case study provides a robust framework for proactive asset management and more reliable SHM practices.",
-          "keywords": [
-            "probabilistic condition-based maintenance",
-            "structural health monitoring",
-            "bridge reclaimer",
-            "asset management",
-            "Structural reliability"
-          ]
-        },
-        {
-          "title": "126 - Reliability-Based Multi-Material 3D Topology Optimization: A Comparative Study Between SIMP and SESO Methods",
-          "authors": "Marcio Maciel da Silva, Francisco de Assis das Neves, Hélio Luiz Simonetti, Marcílio Sousa da Rocha Freitas",
-          "start": "2025-11-24T10:30",
-          "end": "2025-11-24T10:45",
-          "abstract": "Topology optimization aims to improve structural design efficiency by determining the optimal material distribution within the solution domain. This paper presents an automated approach for three-dimensional multi-material topology optimization using the Solid Isotropic Material with Penalization (SIMP) and Smoothing-ESO (SESO) methods, implemented in MATLAB. The formulation employs hexahedral finite elements and a power-law interpolation scheme to minimize material discontinuities during the discrete optimization process. A three-dimensional linear elastic analysis is adopted for both methods, integrating commercial materials including steel, aluminum, and concrete. Additionally, the optimization program is coupled with a reliability-based topology optimization analysis module where Young's modulus, force, volume, and compliance are treated as random variables using the First-order Reliability Method (FORM), considering both normal and lognormal distributions with target reliability indices β = 3.0 and β = 2.5. Numerical examples, including a Michell-type structure and bridge design, demonstrate the method's effectiveness in achieving material efficiency while ensuring structural reliability. The results show significant reductions in high-performance material usage, confirming the approach's potential for practical engineering applications.",
-          "keywords": [
-            "Multi-material topology optimization",
-            "SESO and SIMP",
-            "RBTO."
-          ]
-        },
-        {
-          "title": "219 - A Modified FOSM Method for the Reliability Assessment of Cold-Formed Steel Members",
-          "authors": "André Brandão, Eloá Faria Brandão, Giovanne de Lana Santana, Marcílio Sousa da Rocha Freitas",
-          "start": "2025-11-24T10:45",
-          "end": "2025-11-24T11:00",
-          "abstract": "The FOSM (First Order Second Moment) method is a structural reliability analysis technique that estimates the probability of failure based on the first two statistical moments (mean and variance) of the variables involved. Structural reliability assessments are often conducted using the FOSM method due to its simplicity and the absence of advanced computational requirements. Unlike more complex approaches—such as the First Order Reliability Method (FORM), which involves variable transformations and iterative procedures, or Monte Carlo Simulation (MCS), whose accuracy depends on a large number of simulations—FOSM provides a straightforward and practical framework, suitable for the calibration of design codes. However, this simplification compromises the accuracy of FOSM. This paper proposes a modified version of the FOSM method (denoted FOSMₘ), which incorporates adjustment functions to better approximate the results of MCS in the reliability analysis of cold-formed steel members. The FOSMₘ method showed excellent agreement with MCS results for load combinations of the type D (dead load) + L (live load), with L/D ratios ranging from 1 to 10. Moreover, FOSMₘ proved to be effective when applied to typical ranges of load factors used in the design of structural members. The proposed methodology retains the simplicity of FOSM while significantly improving its accuracy, offering a robust and accessible alternative for structural reliability assessments.",
-          "keywords": [
-            "reliability",
-            "FOSM",
-            "FORM",
-            "MCS",
-            "cold-formed"
-          ]
-        },
-        {
           "title": "223 - Structural Reliability Analysis of Reinforced Concrete: A Comparison of MCS, FORM, SORM, and Parallelized Subset Simulation in Julia",
           "authors": "Kristian Yuiti Matsushita, Herbert Martins Gomes , Felipe Schaedler de Almeida",
           "start": "2025-11-24T11:00",
@@ -1022,17 +968,17 @@
           ]
         },
         {
-          "title": "467 - Reliability Analysis of Litzka Castellated Beams",
-          "authors": "Washington Batista Vieira, André Brandão, Giovanne de Lana Santana",
+          "title": "219 - A Modified FOSM Method for the Reliability Assessment of Cold-Formed Steel Members",
+          "authors": "André Brandão, Eloá Faria Brandão, Giovanne de Lana Santana, Marcílio Sousa da Rocha Freitas",
           "start": "2025-11-24T14:15",
           "end": "2025-11-24T14:30",
-          "abstract": "This paper presents a safety evaluation of Litzka castellated beams, based on calculation models proposed in the technical literature. It is noteworthy that there are currently no applicable Brazilian standards or official design criteria for this type of structure. The safety assessment is carried out through structural reliability analysis of the beams and advanced finite element-based analysis of their actual resistance. The effects of geometric imperfections and residual stresses on the resistance of the beams are considered. Statistical parameters related to model error, material strength, geometric properties, and permanent and variable loads are taken into account in the reliability evaluation. Reliability indices are obtained for load combinations according to Brazilian, American, and European standards. These indices reflect the safety level of the beams designed according to the analyzed models. The results are compared with target reliability indices recommended by ASCE and Eurocode.",
+          "abstract": "The FOSM (First Order Second Moment) method is a structural reliability analysis technique that estimates the probability of failure based on the first two statistical moments (mean and variance) of the variables involved. Structural reliability assessments are often conducted using the FOSM method due to its simplicity and the absence of advanced computational requirements. Unlike more complex approaches—such as the First Order Reliability Method (FORM), which involves variable transformations and iterative procedures, or Monte Carlo Simulation (MCS), whose accuracy depends on a large number of simulations—FOSM provides a straightforward and practical framework, suitable for the calibration of design codes. However, this simplification compromises the accuracy of FOSM. This paper proposes a modified version of the FOSM method (denoted FOSMₘ), which incorporates adjustment functions to better approximate the results of MCS in the reliability analysis of cold-formed steel members. The FOSMₘ method showed excellent agreement with MCS results for load combinations of the type D (dead load) + L (live load), with L/D ratios ranging from 1 to 10. Moreover, FOSMₘ proved to be effective when applied to typical ranges of load factors used in the design of structural members. The proposed methodology retains the simplicity of FOSM while significantly improving its accuracy, offering a robust and accessible alternative for structural reliability assessments.",
           "keywords": [
-            "castellated beams",
-            "Litzka",
-            "numerical model",
-            "finite element method",
-            "structural reliability"
+            "reliability",
+            "FOSM",
+            "FORM",
+            "MCS",
+            "cold-formed"
           ]
         },
         {
