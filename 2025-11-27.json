@@ -1242,6 +1242,19 @@
             "Finite Element Method",
             "Brittle Materials"
           ]
+        },
+        {
+          "title": "110 - A comparative study of edge and cell-based smoothing domains in SPIM-FEM coupling for phase-field modeling of hydraulic fracture",
+          "authors": "Eduarda Marques Ferreira, Larissa Novelli, Roque Luiz da Silva Pitangueira, Lapo Gori",
+          "start": "2025-11-27T15:00",
+          "end": "2025-11-27T15:15",
+          "abstract": "Hydraulic fracturing is a multi-physical process characterized by the occurrence of complex crack patterns, accentuated by the presence of the fluid pressure load on the crack surface. For this reason, the choice of a suitable model for treating the cracking process and the non-linear behavior of the material is very important. An interesting approach is the use of phase-field model (PFM), which treats the onset and propagation of any number of cracks automatically, as part of the solution to a variational problem of energy minimization. The PFM has already been studied by several authors in the modeling of hydraulic fracturing and will be used in this work together with a coupling strategy of a meshfree method with the standard finite element method (FEM). The meshfree method adopted is the Smoothed Point Interpolation Method (SPIM). SPIM-FEM coupling is performed according to predetermined division of the problem domain into FEM and meshfree parts, seeking to ensure that the inelastic process occurs in the SPIM region. Edge- and cell-based smoothing domains are adopted, and their results will be compared through numerical simulations, which also validate and exemplify the proposed strategy. The computational implementation was carried out in INSANE, free software developed by the Department of Structural Engineering at the Federal University of Minas Gerais (UFMG).",
+          "keywords": [
+            "Hydraulic fracturing",
+            "Phase-field method",
+            "Smoothed point interpolation methods",
+            "Coupled model"
+          ]
         }
       ]
     },

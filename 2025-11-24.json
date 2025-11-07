@@ -222,17 +222,17 @@
       "abstract": "",
       "papers": [
         {
-          "title": "223 - Structural Reliability Analysis of Reinforced Concrete: A Comparison of MCS, FORM, SORM, and Parallelized Subset Simulation in Julia",
-          "authors": "Kristian Yuiti Matsushita, Herbert Martins Gomes , Felipe Schaedler de Almeida",
+          "title": "9 - Failure probability calculation model applied to gas pipelines",
+          "authors": "Frederico Thom, Geraldo Rossoni Sisquini, Matheus Jordão de Jesus, Oldrich Joel Romero",
           "start": "2025-11-24T11:00",
           "end": "2025-11-24T11:15",
-          "abstract": "In civil engineering, estimating the probability of rare events is essential for ensuring the safety and reliability of structural systems. Scenarios such as failures in reinforced concrete elements, progressive collapse, and performance-based design require accurate evaluation of low-probability events. Traditional methods like Monte Carlo Simulation (MCS), the First-Order Reliability Method (FORM), and the Second-Order Reliability Method (SORM) are widely used due to their theoretical foundation and practical simplicity. However, MCS becomes computationally prohibitive for rare events, while FORM and SORM may lose accuracy in nonlinear or non-Gaussian problems, common in structural analysis. Subset Simulation (SuS) overcomes these limitations by decomposing the rare event into a sequence of intermediate events, sampled efficiently through Markov Chain Monte Carlo (MCMC) techniques. To reduce computational time, SuS can be parallelized by distributing the sampling across multiple processors, this strategy enables faster analysis without compromising accuracy, making it suitable for large-scale models in civil engineering. This work explores the use of MCS, FORM, SORM, and SuS within the Julia programming environment, which offers high-performance computing capabilities. The methods are evaluated based on accuracy, computational cost, and robustness across a range of examples, including benchmark problems and structural models of reinforced concrete. Results indicate that SuS delivers accurate estimates with significantly fewer samples. When parallelized, it becomes a computationally efficient tool for reliability analysis in civil engineering, outperforming traditional methods in complex scenarios.",
+          "abstract": "This article presents an application for failure probability in long-pipeline gas systems through the development of trend curves over time for the attributes of corrosion wear, which are related to the length, width, and depth of the defect. In addition, Risk-Based Inspection (RBI) is applied in the most favorable numerical failure values according to the location of the defect, with the aim of analyzing the structural reliability and the expected useful life of the gas pipeline. To do this, it was necessary to use the data provided by pig readings in 2008, 2012 and 2018 by an instrumented pig, type Magnetic Flux Leakage (MFL), inspecting a gas pipeline with the finality to measure wall thickness. The 56 km long and 18 in diameter pipeline is partly onshore and partly offshore. Also, the pipeline anomaliesare standardized according to the standards established in POF (2016). It is important to emphasize that the methodology described in this article can be used in the industry where the prevention of leakage incidents, the predictability of maintenance, and the elaboration of the respective inspection plans are required, since it has been theoretically possible to calculate the probability of failure in time beyond the respective impact on risk for the operational variables presented.",
           "keywords": [
-            "Structural Reliability",
-            "Reinforced Concrete",
-            "Subset Simulation",
-            "Monte Carlo Methods",
-            "Parallel Computing"
+            "smart pigs",
+            "RBI",
+            "structural reliability",
+            "failure probability",
+            "gas pipelines"
           ]
         },
         {
@@ -526,46 +526,6 @@
       "authors": "",
       "abstract": "",
       "papers": [
-        {
-          "title": "19 - CFD Modeling of Sanitary Effluent Flow in Parshall Flumes Considering Surface Tension Variability",
-          "authors": "Bruno de Oliveira Lázaro, João Marcelo Vedovotto",
-          "start": "2025-11-24T10:00",
-          "end": "2025-11-24T10:15",
-          "abstract": "This research aims to analyze the flow behavior of sanitary effluents in Parshall flumes through Computational Fluid Dynamics (CFD) simulations performed using ANSYS Fluent. The central hypothesis is that the surface tension of wastewater, which differs from that of pure water, significantly influences the hydraulic behavior of the flow, especially in critical regions of the flume. To represent wastewater in a simplified but technically grounded manner, water was used as the base fluid, with surface tension values varied across three scenarios: 0.030 N/m, 0.040 N/m, and 0.050 N/m, as recommended by the literature.\nThe flume geometry was modeled according to technical standards, and the flow was considered two-phase (water–air), incompressible, and transient, with the interface between phases captured using the Volume of Fluid (VOF) method. Turbulence was modeled using the Shear Stress Transport k-omega (k-ω SST) model, chosen for its proven capability to capture strong shear zones and boundary layer behavior in transitional flows. Boundary conditions included a uniform velocity profile at the inlet, atmospheric pressure at the outlet, rough no-slip walls, and a free surface representing air–water interaction.\nThe results revealed that lower surface tension values lead to greater surface instability, enhanced recirculation zones downstream of the throat, and increased air entrainment. These effects can compromise flow measurement accuracy, particularly in flumes equipped with ultrasonic or pressure-based level sensors. Variations were also observed in velocity profiles and stage-discharge curves, with higher surface tensions yielding smoother flow surfaces and more stable hydraulic conditions.\nIt is concluded that surface tension is a non-negligible parameter in CFD modeling of wastewater flows in Parshall flumes. Its influence extends beyond surface aesthetics, impacting the internal flow structure and potentially altering hydraulic measurements. The study contributes to advancing CFD applications in sanitary engineering by proposing a realistic and computationally efficient approach for simulating effluent flows with varying physicochemical properties.",
-          "keywords": [
-            "Computational Fluid Dynamics (CFD)",
-            "Parshall Flume",
-            "Surface Tension",
-            "Wastewater Flow Modeling",
-            "Turbulence Model"
-          ]
-        },
-        {
-          "title": "45 - A High-Performance ADI–Pressure Projection Method for Solving the Navier–Stokes Equations",
-          "authors": "Raphael Laroca, Iury Igreja",
-          "start": "2025-11-24T10:15",
-          "end": "2025-11-24T10:30",
-          "abstract": "The Navier–Stokes equations are fundamental for describing fluid motion, yet they remain among the most challenging problems in mathematical and computational fluid dynamics. Their strong nonlinearity, coupled with the necessity of simultaneously approximating velocity and pressure fields, leads to a highly complex and computationally demanding system. In particular, mixed formulations introduce compatibility requirements that add further difficulty to ensuring stable and accurate solutions. Moreover, the consistent enforcement of mass conservation remains a delicate aspect in numerical schemes. To address these challenges, this work proposes a simple and efficient numerical strategy that combines an Alternating Direction Implicit (ADI) method with a Pressure Projection technique. The ADI method efficiently handles the velocity computation, while the Pressure Projection ensures the enforcement of the divergence-free condition, preserving mass conservation naturally. For enhanced computational performance, the velocity field is solved in CPU using OpenMP parallelization in the ADI steps, while GPU acceleration using CUDA is employed for the solution of the pressure equation. The proposed methodology is validated through convergence studies and comparisons with benchmark solutions from the literature, applied to classical CFD test cases. The results demonstrate the accuracy, efficiency, and robustness of the approach, highlighting its potential for scalable and reliable simulations in computational fluid dynamics.",
-          "keywords": [
-            "CFD",
-            "ADI",
-            "Navier-Stokes",
-            "Pressure Projection"
-          ]
-        },
-        {
-          "title": "218 - A simple mass-conserved Level Set Method for FSI problems with free-surface flows",
-          "authors": "Mateus Guimarães Tonin, Alexandre Luis Braun",
-          "start": "2025-11-24T10:30",
-          "end": "2025-11-24T10:45",
-          "abstract": "The present work is dedicated to the numerical simulation of Fluid-Structure Interaction (FSI) problems involving floating bodies subjected to the action of free-surface flows. The free-surface treatment is considered using the Level Set Method (LSM), which historically has a drawback of being too dissipative, leading to mass conservation errors. In a relatively new modification, proposed by Yuan et al. (2018) and implemented here, a source or sink term is introduced into the original Level Set equation to compensate the mass loss or offset the mass increase, leading to better results. Also, in our model, the flow equations are discretized using the Characteristic-Based Split (CBS) method in the context of the Finite Element Method (FEM). The structure is kinematically described using a rigid body approach. The system of equations of motion is discretized in time using the implicit Newmark and a-Generalized methods. Several problems are simulated, comparing the results with those from the original LSM, demonstrating that the modified version has the capability of accurately capturing the interface and keeping the mass conservation.",
-          "keywords": [
-            "Free-Surface Flows",
-            "Level Set Method",
-            "Floating Structures",
-            "Fluid-Structure Interaction"
-          ]
-        },
         {
           "title": "286 - Numerical Modeling and Simulation of Wind-Induced Water Elevation By Tropical Cyclones Using Shallow Water Equations",
           "authors": "Marcos Wilson Ogata, Renato Vaz Linn, Alexandre Luis Braun, Herbert Martins Gomes",

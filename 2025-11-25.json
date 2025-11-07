@@ -361,17 +361,17 @@
           ]
         },
         {
-          "title": "9 - Failure probability calculation model applied to gas pipelines",
-          "authors": "Frederico Thom, Geraldo Rossoni Sisquini, Matheus Jordão de Jesus, Oldrich Joel Romero",
+          "title": "223 - Structural Reliability Analysis of Reinforced Concrete: A Comparison of MCS, FORM, SORM, and Parallelized Subset Simulation in Julia",
+          "authors": "Kristian Yuiti Matsushita, Herbert Martins Gomes , Felipe Schaedler de Almeida",
           "start": "2025-11-25T10:15",
           "end": "2025-11-25T10:30",
-          "abstract": "This article presents an application for failure probability in long-pipeline gas systems through the development of trend curves over time for the attributes of corrosion wear, which are related to the length, width, and depth of the defect. In addition, Risk-Based Inspection (RBI) is applied in the most favorable numerical failure values according to the location of the defect, with the aim of analyzing the structural reliability and the expected useful life of the gas pipeline. To do this, it was necessary to use the data provided by pig readings in 2008, 2012 and 2018 by an instrumented pig, type Magnetic Flux Leakage (MFL), inspecting a gas pipeline with the finality to measure wall thickness. The 56 km long and 18 in diameter pipeline is partly onshore and partly offshore. Also, the pipeline anomaliesare standardized according to the standards established in POF (2016). It is important to emphasize that the methodology described in this article can be used in the industry where the prevention of leakage incidents, the predictability of maintenance, and the elaboration of the respective inspection plans are required, since it has been theoretically possible to calculate the probability of failure in time beyond the respective impact on risk for the operational variables presented.",
+          "abstract": "In civil engineering, estimating the probability of rare events is essential for ensuring the safety and reliability of structural systems. Scenarios such as failures in reinforced concrete elements, progressive collapse, and performance-based design require accurate evaluation of low-probability events. Traditional methods like Monte Carlo Simulation (MCS), the First-Order Reliability Method (FORM), and the Second-Order Reliability Method (SORM) are widely used due to their theoretical foundation and practical simplicity. However, MCS becomes computationally prohibitive for rare events, while FORM and SORM may lose accuracy in nonlinear or non-Gaussian problems, common in structural analysis. Subset Simulation (SuS) overcomes these limitations by decomposing the rare event into a sequence of intermediate events, sampled efficiently through Markov Chain Monte Carlo (MCMC) techniques. To reduce computational time, SuS can be parallelized by distributing the sampling across multiple processors, this strategy enables faster analysis without compromising accuracy, making it suitable for large-scale models in civil engineering. This work explores the use of MCS, FORM, SORM, and SuS within the Julia programming environment, which offers high-performance computing capabilities. The methods are evaluated based on accuracy, computational cost, and robustness across a range of examples, including benchmark problems and structural models of reinforced concrete. Results indicate that SuS delivers accurate estimates with significantly fewer samples. When parallelized, it becomes a computationally efficient tool for reliability analysis in civil engineering, outperforming traditional methods in complex scenarios.",
           "keywords": [
-            "smart pigs",
-            "RBI",
-            "structural reliability",
-            "failure probability",
-            "gas pipelines"
+            "Structural Reliability",
+            "Reinforced Concrete",
+            "Subset Simulation",
+            "Monte Carlo Methods",
+            "Parallel Computing"
           ]
         },
         {
