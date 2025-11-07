@@ -1797,8 +1797,8 @@
           ]
         },
         {
-          "title": "369 - Comparison between 3D Finite element and analytical models in railway track analysis",
-          "authors": "Guilherme Nunes Bassegio , Paulo André Moraes Pereira, Alfredo Gay Neto",
+          "title": "369 - The Extended Lumped Damage Mechanics in the failure analysis of anisotropic materials",
+          "authors": "Daniel Victor da Cunha Teles, David Leonardo Nascimento de Figueiredo Amorim, Edson Denner Leonel",
           "start": "2025-11-25T16:15",
           "end": "2025-11-25T16:30",
           "abstract": "The satisfactory performance of a railway track throughout its service life depends on an adequate design. In this process, analytical models are often employed which, despite their practicality, are based on assumptions that may not accurately represent real site conditions. A more enhanced representation of these conditions can be provided by higher-hierarchy models, such as ones employing the finite element method. A reliable finite element analysis requires a suitable constitutive model and properly defined parameters, which can be obtained from on-site data, laboratory tests, or from the literature referring to similar conditions. In this paper, the analytical model of the Winkler foundation is compared to a finite element analysis for the problem of a statically loaded railway track section, characterized by on-site data, to assess the main discrepancies that may arise between the two methods. The comparison between both models is made by evaluating the track modulus, which is an important parameter for analytical models. In the high hierarchy model, stress fields are visualized along layers of under-rail materials, helping in understanding the physical behavior of the system.",
@@ -1807,6 +1807,14 @@
             "Track Modulus",
             "FEM"
           ]
+        },
+        {
+          "title": "388 - Comparison between 3D Finite element and analytical models in railway track analysis",
+          "authors": "Guilherme Nunes Bassegio , Paulo André Moraes Pereira, Alfredo Gay Neto",
+          "start": "2025-11-25T16:30",
+          "end": "2025-11-25T16:45",
+          "abstract": "",
+          "keywords": []
         },
         {
           "title": "410 - An optimized adaptive semi-explicit/explicit time-marching formulation for elastodynamic analyses",
