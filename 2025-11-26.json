@@ -959,7 +959,7 @@
       "papers": [
         {
           "title": "144 - Noise Reduction on Inertial Measurement Unit Sensors in Ballistic Simulators using Deep Models",
-          "authors": "Flavio de Barros Vidal, Noelio Heluy Ferreira, Aleteia Patricia Favacho de Araujo",
+          "authors": "Noelio Heluy Ferreira, Flavio de Barros Vidal,  Aleteia Patricia Favacho de Araujo",
           "start": "2025-11-26T14:30",
           "end": "2025-11-26T14:45",
           "abstract": "This paper introduces a novel approach to stabilizing data from low-cost Inertial Measurement Unit (IMU) sensors. Capitalizing on recent advances in machine learning, the study utilizes a Long Short-Term Memory Recurrent Neural Network (LSTM-RNN) algorithm to mitigate noise caused by electromagnetic interference, which leads to instability and drift in sensor orientation. The proposed method is designed to complement traditional techniques such as noise removal and low-pass filters, providing an initial refinement of the IMU sensor data. By training the model and applying it to dynamic sensor data, the study demonstrates that accuracy can be enhanced through software-based embedded technology, reducing the dependence on expensive high-precision hardware. The findings have significant implications for applications such as simulators (including motion platforms and simulated shooting systems), Unmanned Aerial Vehicles (UAVs), large-scale structural platforms, robotics, and various industrial and engineering contexts.",
