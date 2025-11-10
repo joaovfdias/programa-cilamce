@@ -1877,6 +1877,18 @@
             "Structural Dynamics",
             "Model Merging"
           ]
+        },
+        {
+          "title": "579 - Advanced numerical modeling of fracture mechanics problems with the open-source FEniCS platform",
+          "authors": "Leonardo Faria e Silva, Gabriel M. Guerra, Rodrigo Pereira da Silva, Alfredo E. Huespe, Fernando P. Duda",
+          "start": "2025-11-25T18:15",
+          "end": "2025-11-25T18:30",
+          "abstract": "Fracture mechanics is a fundamental field within solid mechanics that focuses on initiating and propagating cracks, which can lead to catastrophic mechanical failures in in-service components. Traditional Mechanics of Materials approaches often fall short of accurately predicting the behaviour of cracked materials, making analytical solutions impractical or even unattainable. Numerical modelling techniques, such as the finite element method, are employed to address this. However, high costs often restrict access to advanced engineering software for these simulations.  Originally developed for simulating phase transformations, phase-field modelling has recently emerged as a powerful tool for overcoming longstanding challenges in the finite element formulation of fracture mechanics problems. This study presents the development of a computational tool for fracture simulation in anisotropic materials, implemented using the open-source FEniCS software. FEniCS is an open-source computational platform for solving partial differential equations via the finite element method. The effectiveness of this implementation will be assessed through numerical simulations, validated against benchmark experimental observations, including those documented in fracture challenge studies.",
+          "keywords": [
+            "3D Fracture mechanics",
+            "FEniCS",
+            "Phase Field"
+          ]
         }
       ]
     },

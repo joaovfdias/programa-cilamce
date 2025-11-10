@@ -766,29 +766,29 @@
           ]
         },
         {
-          "title": "68 - Parallel Thread Processing for Performance Optimization in a Multilevel Finite Element Method (FE2) Analysis",
-          "authors": "Hugo Mouro Leão, Eduarda Marques Ferreira, Roque Luiz da Silva Pitangueira, Lapo Gori, Ramon Pereira da Silva",
+          "title": "110 - A comparative study of edge and cell-based smoothing domains in SPIM-FEM coupling for phase-field modeling of hydraulic fracture",
+          "authors": "Eduarda Marques Ferreira, Larissa Novelli, Roque Luiz da Silva Pitangueira, Lapo Gori",
           "start": "2025-11-27T11:30",
           "end": "2025-11-27T11:45",
+          "abstract": "Hydraulic fracturing is a multi-physical process characterized by the occurrence of complex crack patterns, accentuated by the presence of the fluid pressure load on the crack surface. For this reason, the choice of a suitable model for treating the cracking process and the non-linear behavior of the material is very important. An interesting approach is the use of phase-field model (PFM), which treats the onset and propagation of any number of cracks automatically, as part of the solution to a variational problem of energy minimization. The PFM has already been studied by several authors in the modeling of hydraulic fracturing and will be used in this work together with a coupling strategy of a meshfree method with the standard finite element method (FEM). The meshfree method adopted is the Smoothed Point Interpolation Method (SPIM). SPIM-FEM coupling is performed according to predetermined division of the problem domain into FEM and meshfree parts, seeking to ensure that the inelastic process occurs in the SPIM region. Edge- and cell-based smoothing domains are adopted, and their results will be compared through numerical simulations, which also validate and exemplify the proposed strategy. The computational implementation was carried out in INSANE, free software developed by the Department of Structural Engineering at the Federal University of Minas Gerais (UFMG).",
+          "keywords": [
+            "Hydraulic fracturing",
+            "Phase-field method",
+            "Smoothed point interpolation methods",
+            "Coupled model"
+          ]
+        },
+        {
+          "title": "68 - Parallel Thread Processing for Performance Optimization in a Multilevel Finite Element Method (FE2) Analysis",
+          "authors": "Hugo Mouro Leão, Eduarda Marques Ferreira, Roque Luiz da Silva Pitangueira, Lapo Gori, Ramon Pereira da Silva",
+          "start": "2025-11-27T11:45",
+          "end": "2025-11-27T12:00",
           "abstract": "Heterogeneous materials are widely used in civil engineering, and studying these materials is essential to ensure the safety and reliability of structures. One approach to analyzing these complex materials is multiscale analysis, which involves dividing the problem into two distinct observation scales: the macro scale and the micro scale. At the macro scale, the material behaves as if it were homogeneous, while at the micro scale, it is possible to identify and analyze the interactions between the material's different constituents. From these interactions arise the formation of microcracks and other failure mechanisms.\nThis paper employs the Multilevel Finite Element Method (FE2) to perform multiscale analysis on quasi-brittle materials. This strategy consists of using a finite element model to represent the macro scale and others finite element models to represent the micro scale, enabling the capture of the complexities at both scales. Each integration point at the macro scale is associated with a micro scale model, and the macro scale parameters are obtained from a homogenization process based on the micro scale information. However, one of the main challenges of this approach is the high computational cost, as micro scale models typically require significant refinement to correctly describe the different constituents of the medium. This is particularly relevant in phase-field models, the constitutive model adopted at the micro scale.\nGiven the complexity of processing all microscale models, the multiscale analysis becomes computationally expensive. Therefore, the objective of this article is to investigate the potential performance gains achieved through parallel processing, utilizing threads to optimize execution time. Preliminary results will be presented.\nAll implementations were carried out in INSANE (Interactive Structural Analysis Environment), an open-source software developed by the Department of Structural Engineering at UFMG.",
           "keywords": [
             "Phase-field",
             "multiscale analysis",
             "multithreading",
             "computational homogenization"
-          ]
-        },
-        {
-          "title": "437 - The Influence of the Fluctuation Term on the Accuracy of Multiscale Analysis Results",
-          "authors": "Dayane  Lima, Roque Luiz da Silva Pitangueira, Eduarda Marques Ferreira, Hugo Mouro Leão",
-          "start": "2025-11-27T11:45",
-          "end": "2025-11-27T12:00",
-          "abstract": "This work investigates the influence of the fluctuation term in the formulation of the homogenized constitutive tensor within a multiscale approach applied to the analysis of heterogeneous media. A phase-field constitutive model is used, coupled with the multilevel finite element method, which allows for the simultaneous consideration of macro and micro scales. The phase-field model enables the diffuse representation of fractures, capturing the evolution of the displacement field and crack propagation without the need for an explicit description of the fracture geometry. This makes the model particularly useful for materials like concrete, which may exhibit complex cracking patterns.\nAt the macroscopic scale, the material's constitutive behavior is not directly defined; it must be obtained from solving the microscopic scale, where the local material properties, such as variations in stress and strain, are better represented. The connection between the scales requires defining homogenized parameters that adequately represents the material’s behavior. Literature suggests that this transition cannot be done through a simple average of the local constitutive tensors, as this approach disregards important fluctuations in the displacement field.\nTo ensure theoretical consistency, the inclusion of a fluctuation term is required, which depends on the inverse of the stiffness matrix of the microscale problem. However, calculating this term results in a significant computational cost. With the multiscale implementation in place, comparative tests were conducted between simulations with and without the fluctuation tensor, evaluating both the accuracy of the results and the impact on processing time. All implementations were carried out using INSANE, an open-source platform developed by the Department of Structural Engineering (DEES) at the Federal University of Minas Gerais (UFMG).",
-          "keywords": [
-            "Fluctuation",
-            "Homogenized constitutive tensor",
-            "Phase-field method",
-            "Multilevel finite elements"
           ]
         }
       ]
@@ -1218,10 +1218,23 @@
       "abstract": "",
       "papers": [
         {
-          "title": "213 - Reducing Computational Costs in Phase-Field Fracture Simulations Using Machine Learning Techniques",
-          "authors": "Adalberto  Horácio, Saulo Silvestre de Castro, Hugo Mouro Leão, Roque Luiz da Silva Pitangueira",
+          "title": "437 - The Influence of the Fluctuation Term on the Accuracy of Multiscale Analysis Results",
+          "authors": "Dayane  Lima, Roque Luiz da Silva Pitangueira, Eduarda Marques Ferreira, Hugo Mouro Leão",
           "start": "2025-11-27T14:30",
           "end": "2025-11-27T14:45",
+          "abstract": "This work investigates the influence of the fluctuation term in the formulation of the homogenized constitutive tensor within a multiscale approach applied to the analysis of heterogeneous media. A phase-field constitutive model is used, coupled with the multilevel finite element method, which allows for the simultaneous consideration of macro and micro scales. The phase-field model enables the diffuse representation of fractures, capturing the evolution of the displacement field and crack propagation without the need for an explicit description of the fracture geometry. This makes the model particularly useful for materials like concrete, which may exhibit complex cracking patterns.\nAt the macroscopic scale, the material's constitutive behavior is not directly defined; it must be obtained from solving the microscopic scale, where the local material properties, such as variations in stress and strain, are better represented. The connection between the scales requires defining homogenized parameters that adequately represents the material’s behavior. Literature suggests that this transition cannot be done through a simple average of the local constitutive tensors, as this approach disregards important fluctuations in the displacement field.\nTo ensure theoretical consistency, the inclusion of a fluctuation term is required, which depends on the inverse of the stiffness matrix of the microscale problem. However, calculating this term results in a significant computational cost. With the multiscale implementation in place, comparative tests were conducted between simulations with and without the fluctuation tensor, evaluating both the accuracy of the results and the impact on processing time. All implementations were carried out using INSANE, an open-source platform developed by the Department of Structural Engineering (DEES) at the Federal University of Minas Gerais (UFMG).",
+          "keywords": [
+            "Fluctuation",
+            "Homogenized constitutive tensor",
+            "Phase-field method",
+            "Multilevel finite elements"
+          ]
+        },
+        {
+          "title": "213 - Reducing Computational Costs in Phase-Field Fracture Simulations Using Machine Learning Techniques",
+          "authors": "Adalberto  Horácio, Saulo Silvestre de Castro, Hugo Mouro Leão, Roque Luiz da Silva Pitangueira",
+          "start": "2025-11-27T14:45",
+          "end": "2025-11-27T15:00",
           "abstract": "The study of crack propagation is critical in Structural Engineering to prevent material failure and structural collapse. Among the various approaches available, phase-field modeling stands out by transforming the sharp crack into a smooth transition between intact and damaged material. This eliminates the need for explicit tracking of the crack surface. In this method, an additional field variable is introduced to quantify the damage level at each material point, with values ranging from zero for intact material to one for fully damaged material.\nPhase-field models are particularly suitable for modeling heterogeneous materials, such as concrete or composite structures, due to their ability to naturally capture complex crack patterns, including branching and merging, without the need for predefined crack paths. Despite these advantages, phase-field modeling is computationally expensive and limits its applicability in large-scale simulations or in real-time scenarios.\nTo address this limitation, the present work proposes replacing the incremental iterative procedure used for computing the phase-field variable with a machine learning model, which has been previously trained to directly predict the phase-field. Machine learning offers a promising alternative by learning complex mappings from input fields (such as stress or strain) to damage evolution patterns, potentially bypassing the need for iterative numerical solutions. This integration of traditional numerical methods with artificial intelligence aims to reduce computational time while maintaining accuracy, enabling more efficient simulations of fracture in heterogeneous materials. All simulations will be conducted using the open-source INSANE software.",
           "keywords": [
             "phase field",
@@ -1233,27 +1246,14 @@
         {
           "title": "638 - Integrating ML-Based Models into the INSANE Finite Element System",
           "authors": "SAULO Silvestre DE CASTRO,  Hugo M. Leão, Adalberto Horácio de Oliveira Mendes, Roque Luiz da Silva Pitangueira",
-          "start": "2025-11-27T14:45",
-          "end": "2025-11-27T15:00",
+          "start": "2025-11-27T15:00",
+          "end": "2025-11-27T15:15",
           "abstract": "Machine learning (ML) models have emerged as promising alternatives to classical constitutive formulations for representing quasi brittle materials, such as concrete, rock, and composite media. Unlike traditional analytical approaches, ML models are trained directly on experimental or simulated data, enabling them to capture complex nonlinear behaviors—such as stiffness degradation, progressive cracking, and brittle-to-ductile transitions—in a more adaptive and generalizable manner. Their inherent flexibility allows for the incorporation of material variability and the customization of constitutive responses according to boundary conditions and loading history.\nHowever, the integration of ML-based constitutive models into finite element simulation environments demands substantial modifications to the underlying software architecture. Since such models operate through predictions made by neural networks or similar algorithms, they require dedicated structures for storing and updating internal variables, as well as efficient communication mechanisms with the numerical core to ensure the stability and performance of the analysis.\nThis work presents the strategies adopted to adapt the INSANE system—originally developed in Java—to support ML-based constitutive modeling. Interoperability mechanisms with Python environments were implemented, alongside robust runtime data exchange interfaces and modifications to the constitutive integration logic, while preserving the modularity of the system. The adopted approach enables future extensions to various ML architectures and enhances INSANE’s predictive capabilities in simulations involving brittle and heterogeneous materials.",
           "keywords": [
             "Machine Learning",
             "Constitutive Modeling",
             "Finite Element Method",
             "Brittle Materials"
-          ]
-        },
-        {
-          "title": "110 - A comparative study of edge and cell-based smoothing domains in SPIM-FEM coupling for phase-field modeling of hydraulic fracture",
-          "authors": "Eduarda Marques Ferreira, Larissa Novelli, Roque Luiz da Silva Pitangueira, Lapo Gori",
-          "start": "2025-11-27T15:00",
-          "end": "2025-11-27T15:15",
-          "abstract": "Hydraulic fracturing is a multi-physical process characterized by the occurrence of complex crack patterns, accentuated by the presence of the fluid pressure load on the crack surface. For this reason, the choice of a suitable model for treating the cracking process and the non-linear behavior of the material is very important. An interesting approach is the use of phase-field model (PFM), which treats the onset and propagation of any number of cracks automatically, as part of the solution to a variational problem of energy minimization. The PFM has already been studied by several authors in the modeling of hydraulic fracturing and will be used in this work together with a coupling strategy of a meshfree method with the standard finite element method (FEM). The meshfree method adopted is the Smoothed Point Interpolation Method (SPIM). SPIM-FEM coupling is performed according to predetermined division of the problem domain into FEM and meshfree parts, seeking to ensure that the inelastic process occurs in the SPIM region. Edge- and cell-based smoothing domains are adopted, and their results will be compared through numerical simulations, which also validate and exemplify the proposed strategy. The computational implementation was carried out in INSANE, free software developed by the Department of Structural Engineering at the Federal University of Minas Gerais (UFMG).",
-          "keywords": [
-            "Hydraulic fracturing",
-            "Phase-field method",
-            "Smoothed point interpolation methods",
-            "Coupled model"
           ]
         }
       ]
