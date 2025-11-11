@@ -393,6 +393,18 @@
             "Uncertainty Quantification",
             "Covid-19"
           ]
+        },
+        {
+          "title": "804 - Forecasting Wind and Solar Energy Generation Using Recurrent Neural Networks: A Comparison Between LSTM and GRU",
+          "authors": "Fábio Pinto Monte, Daniel Barreto Merlo, Cassius Zanetti Resende, Fidelis Zanetti de Castro",
+          "start": "2025-11-24T12:00",
+          "end": "2025-11-24T12:15",
+          "abstract": "Accurate forecasting of wind and solar power generation is crucial for the efficient operation, management, and planning of low-carbon electric power systems, as it directly influences grid stability, energy trading strategies, and integration of renewable sources. In this work, predictive models based on recurrent neural networks (RNNs) were developed and compared, aiming to forecast the generation of renewable energy in the United Kingdom using real historical data provided by an international competition organized by leading companies in the energy sector. The time series data consist of hourly measurements for Solar_MW and Wind_MW generation from different regions, covering multiple seasons and reflecting typical fluctuations and operational challenges associated with renewable sources. After a comprehensive exploratory analysis, seasonal and daily patterns were identified, and relevant variables were selected to compose the input features for the predictive models. Two architectures were implemented: Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU), both widely recognized for their ability to model temporal dependencies and handle complex patterns in sequential data. The models were trained using normalized datasets, and their performance was evaluated using mean squared error (MSE), mean absolute error (MAE), and coefficient of determination (R²). The LSTM model achieved an R² of 0.819, an MSE of 0.072, and an MAE of 0.042, while the GRU model obtained an R² of 0.774, an MSE of 0.078, and an MAE of 0.043. In addition to the quantitative performance comparison, a qualitative analysis of the architectures was carried out, considering model complexity, training time, and computational cost. The LSTM model, despite requiring longer training time, demonstrated slightly better performance and stability for both energy sources. The results indicate that recurrent neural networks, especially LSTM, offer significant potential for applications in predictive modeling of renewable energy systems, contributing to the advancement of intelligent decision-making tools for modern power grids and supporting the transition towards sustainable and low-carbon energy solutions.",
+          "keywords": [
+            "Renewable energy",
+            "Recurrent neural networks",
+            "Energy forecasting"
+          ]
         }
       ]
     },
