@@ -1221,6 +1221,20 @@
             "Heterogeneous extensible catenary",
             "Offshore engineering"
           ]
+        },
+        {
+          "title": "34 - Mooring Line Rupture Identification via Natural Period Variation of FPSO",
+          "authors": "Fabrício Corrêa, Rodrigo Kochem, Carl Horst Albrecht, Breno Pinheiro Jacob, Rodrigo Augusto Barreira",
+          "start": "2025-11-24T15:00",
+          "end": "2025-11-24T15:15",
+          "abstract": "The large number of mooring line failure events that have been observed in floating offshore platforms stress the importance of performing integrity monitoring activities. Such activities traditionally have been comprised by direct methods including visual underwater inspection, ultrasonic and electromagnetic tests,vibration signal analysis. However, it has already been recognized that those methods face enormous challenges, especially in deep waters, motivating research on indirect monitoring methods to identify rupture of mooring lines \nIn this context, this paper presents the basic concepts of an indirect numerical approach to identify mooring failures of a FPSO (Floating Production and Storage and Offloading) turret system. The methodology is based on recognizing failure situations by observing the variation of the surge natural period, also taking into account the influence of the platform draft that varies along the operation of the platform. It incorporates mathematical procedures using specialized filters and Fourier transform applied to the surge motion time series of the hull, to determine the variation of the natural period over time. \nTo illustrate the intrinsic issues of the methodology, case studies are performed using hull motion time series generated through numerical simulations based on coupled analysis (that considers the complete hydrodynamic and structural integration between the mooring lines, risers and platform) and in a representative scenario of actual situations with a rupture of a mooring line of a deep-water FPSO turret system. The results show that the methodology is able to identify the failure events, thus demonstrating the feasibility of the proposed approach.",
+          "keywords": [
+            "Floating production systems",
+            "Rupture Failure",
+            "Mooring Systems",
+            "Numerical simulation",
+            "Dynamic analysis"
+          ]
         }
       ]
     },
