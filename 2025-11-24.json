@@ -77,16 +77,17 @@
           ]
         },
         {
-          "title": "667 - GPU-Accelerated High-Order Regularized LBM for Three-Dimensional Cavity Flows with the D3Q19 Model",
-          "authors": "Talita Luci da Silva, Luiz A. Hegele Junior",
+          "title": "677 - Feasibility analysis of implementing emerging technologies in the infrastructure sector",
+          "authors": "Carlos  Martins, Cristiano Saad Travassos do Carmo",
           "start": "2025-11-24T11:00",
           "end": "2025-11-24T11:15",
-          "abstract": "We investigate the application of high-order regularization techniques within the lattice Boltzmann method (LBM) to simulate three-dimensional lid-driven cavity flows using the D3Q19 velocity model. The adopted approach enhances numerical stability and accuracy by filtering out non-hydrodynamic modes through Hermite polynomial expansions, allowing for a more accurate reconstruction of both equilibrium and non-equilibrium distribution functions. This formulation improves the representation of advective and diffusive processes in high-Reynolds-number regimes. The regularized framework is particularly effective in complex flow conditions, offering a systematic treatment of higher-order moments based on recursive relations. Our simulations reveal improved numerical robustness and reduce numerical noise when compared to standard LBM implementations. The solver is adapted for execution on GPU architectures using CUDA, enabling efficient large-scale computations. Current developments focus on evaluating the accuracy and computational performance of the high-order regularized model relative to conventional three-dimensional LBM schemes, aiming to quantify the benefits of the proposed methodology in terms of fidelity and scalability.",
+          "abstract": "Despite the historically conservative stance of civil engineering regarding the adoption of new technologies, innovations such as Building Information Modeling (BIM), the Internet of Things (IoT), Artificial Intelligence (AI), Unmanned Aerial Vehicles (drones), digital twins, and the metaverse have been progressively transforming infrastructure management. These technologies have contributed to the reconfiguration of how infrastructure projects are designed, executed, and operated, resulting in significant gains in efficiency, accuracy, sustainability, and safety.In this context, the present study aims to analyze the impacts of Construction 4.0 on the lifecycle of infrastructure projects, encompassing the planning, construction, and operation phases. To achieve this objective, a systematic literature review was conducted, enabling a critical and well-founded examination of the main academic and technical contributions on the topic.The findings indicate a consistent trend toward improving construction processes compared to traditional methods, particularly regarding data integration, task automation, and data-driven decision-making support. However, barriers to the widespread adoption of these technologies persist, especially among small and medium-sized enterprises. This highlights the need for investment in public policies, professional training, and standardization of practices to enable and consolidate the digital transformation of the construction sector.",
           "keywords": [
-            "Lattice Boltzmann Method",
-            "High-Order Regularization",
-            "GPU",
-            "Lid-Driven Cavity"
+            "Construction 4.0",
+            "infrastructure",
+            "Building Information Modeling (BIM)",
+            "Artificial Intelligence (AI)",
+            "digital transformation"
           ]
         }
       ]
