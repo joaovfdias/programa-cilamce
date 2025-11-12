@@ -1577,6 +1577,19 @@
             "SIMP",
             "Topology Optimization"
           ]
+        },
+        {
+          "title": "50 - Reliability-Based Multi-Material Topology Optimization with Cubic Spline Interpolation",
+          "authors": "Thiago Merici, Hélio Luiz Simonetti, Valério Silva Almeida, Marcio Maciel da Silva",
+          "start": "2025-11-26T18:00",
+          "end": "2025-11-26T18:15",
+          "abstract": "Topology optimization (TO) aims to improve structural performance through the optimal distribution of materials within a fixed extended domain, maximizing efficiency and reducing costs. This paper investigates the application of the SESO (Smoothing Evolutionary Structural Optimization) method in multi-material topology optimization problems, integrating it with the reliability-based topology optimization (RBTO) approach. The main contribution of the study lies in the extension of the SESO method to multi-materials by applying a cubic spline to interpolate and estimate the values of the elastic moduli (E) and costs (C) as a function of density (ρ). The algorithm developed in MATLAB also calculates the derivatives of these interpolations, applying a simple Gaussian filter to smooth the results, promoting a smoother transition between materials and ensuring numerical stability during the optimization process. Examples of OT, including a short cantilever beam and the structure known as the Michell type, in which materials such as steel, aluminum and concrete are used. The results obtained demonstrate significant reductions in design costs, in addition to improvements in overall structural performance, especially in scenarios with uncertainties in design parameters. The proposed technique shows promise for practical applications involving the simultaneous selection and distribution of different materials in optimized structures, contributing to the development of more sustainable and high-performance solutions in structural engineering.",
+          "keywords": [
+            "Spline Cúbica",
+            "MATLAB",
+            "SESO",
+            "Topological Optimization."
+          ]
         }
       ]
     },

@@ -631,19 +631,6 @@
           ]
         },
         {
-          "title": "749 - Application of a Bayesian Approach for Soil Classification in Brazillian Marine Soil: Benchmarking Against Robertson Chart and Fuzzy Techniques",
-          "authors": "João Fernandes, Christiano Várady, Joyce Tenório, Eduardo Toledo de Lima Junior, João Paulo Lima Santos, Rafael Dias",
-          "start": "2025-11-24T14:45",
-          "end": "2025-11-24T15:00",
-          "abstract": "This paper presents a Bayesian approach for identifying and classifying soil stratigraphy from Piezocone Penetration Test (CPTu) data, explicitly capturing uncertainties in CPTu-based classifications. The probabilistic model determines the most probable number of underground soil layers of different thicknesses and types. Comparisons with the Robertson chart and a fuzzy-based method were performed using real CPTu data supplied by an oil and gas operator in the Campos Basin, Southeastern Brazil. This study integrates the Robertson soil classification chart, fuzzy-based classification, and a Bayesian probabilistic method. The Bayesian technique comprises two main steps: (i) model class selection to identify the most probable number of soil layers and (ii) system identification to estimate layer thickness and classify soil types. In the classical approaches, the layer thickness was determined using a Kernel Density Function technique. The probabilistic model merges prior knowledge with site-specific CPTu data from tests conducted in the Campos Basin. The Bayesian classification technique demonstrated strong capability for identifying soil stratigraphy, and determining the most probable layer boundaries. This approach begins with statistically significant boundaries and incrementally refines the resolution, effectively filtering out potential noise from the raw CPTu measurements. Comparative assessments show that the Bayesian model closely aligned with the outcomes from the Robertson soil classification chart and a fuzzy-based method, offering comparable accuracy while incorporating explicit uncertainty quantification. Notably, the Bayesian framework effectively adapts to varying subsurface conditions, providing a more thorough understanding of stratigraphic transitions than deterministic methods. As the number of model classes increases, the approach achieves finer stratification, confirming its utility for complex depositional environments. The probabilistic underpinnings of the method are especially beneficial in offshore petroleum applications, where reliable site characterization is critical. Overall, the results highlight the robustness and versatility of the proposed Bayesian strategy in improving geotechnical assessments and guiding informed design decisions.",
-          "keywords": [
-            "Soil classification",
-            "CPTu data",
-            "Stratigraphy",
-            "Bayesian approach"
-          ]
-        },
-        {
           "title": "790 - Time-Dependent Reliability Analysis of Well Barrier Elements",
           "authors": "Jonathan Henrique Cordeiro Nunes, Eduardo Toledo de Lima Junior, Luís Philipe Ribeiro Almeida, Lucas Pereira de Gouveia, João Paulo Lima Santos, Danilo Colombo, Andre Luis Severino Abrego",
           "start": "2025-11-24T15:00",
