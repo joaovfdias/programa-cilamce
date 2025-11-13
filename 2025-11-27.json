@@ -1786,7 +1786,7 @@
           ]
         },
         {
-          "title": "663 - Two-dimensional CUDA-based regularized lattice Boltzmann method: Flow past a cylinder",
+          "title": "663 - GPU-Accelerated Regularized LBM with Curved Boundaries: Confinement Effects on Cylinder Wake Dynamics",
           "authors": "Sakthivel Munikrishnan, Bruno Yan dos Anjos, Gustavo Trindade Choaire, Luiz A. Hegele Junior",
           "start": "2025-11-27T17:15",
           "end": "2025-11-27T17:30",

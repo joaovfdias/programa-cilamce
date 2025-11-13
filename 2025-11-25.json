@@ -974,7 +974,7 @@
           ]
         },
         {
-          "title": "810 - Finite Element Analysis for Structural Optimization of a Drum-Shaft Assembly  in Bulk Material Handling Equipment",
+          "title": "810 - Finite Element Analysis for Structural Analysis of a Drum-Shaft Assembly in Bulk Material Handling Equipment",
           "authors": "Victor  Matos, Devanir Silva, Marcelo Gava, Rafael Vetturazzi",
           "start": "2025-11-25T15:15",
           "end": "2025-11-25T15:30",
@@ -1096,6 +1096,20 @@
             "Facies Classification",
             "Porosity Prediction",
             "Permeability Estimation"
+          ]
+        },
+        {
+          "title": "751 - Simulation of procedures for water filling a sand experimental apparatus using a locally conservative two-phase formulation of the Finite Element Method",
+          "authors": "Giovane Avancini, Nathan Shauer, Gustavo Henrique Siqueira, Philippe Remy Bernard Devloo",
+          "start": "2025-11-25T15:00",
+          "end": "2025-11-25T15:15",
+          "abstract": "This work presents a locally conservative scheme to solve two-phase flow problems in heterogeneous porous media. The Darcy equations are discretized using a mixed formulation of the Finite Element Method (FEM) based on de Rham compatible spaces; i.e. H(div, Ω) functions to approximate the flux field and L2(Ω) discontinuous functions for the pressure field. These choices ensure that mass conservation holds strongly and provide highorder accuracy for the flux variables. For the transport problem, piecewise constant functions (Finite Volume Method) are used to approximate the saturation field. Quadratic relative permeability curves with residual saturation is adopted for both water and air, and a linear density function is considered to account for the air compressibility. The time-marching procedure is performed using a standard Backward-Euler method. The nonlinearity due to the coupling is solved using a Sequential Fully Implicit (FSI) strategy. The proposed scheme is applied to simulate an experiment on filling an initially unsaturated experimental apparatus using different water injection procedures.",
+          "keywords": [
+            "Multiphase flow",
+            "Local conservation",
+            "H(div) spaces",
+            "Compressible Darcy",
+            "Coupled problems"
           ]
         }
       ]
