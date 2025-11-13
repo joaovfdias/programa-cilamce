@@ -2195,6 +2195,30 @@
             "Multi-Objective Optimization",
             "Multi-Objective Particle Swarm Optimization"
           ]
+        },
+        {
+          "title": "345 - Implementation of a hybrid strategy for addressing mechanical structural models: AI and finite element analysis",
+          "authors": "Juan Esteban Gonzalez Soto, José Alejandro Guerrero Vargas",
+          "start": "2025-11-25T17:00",
+          "end": "2025-11-25T17:15",
+          "abstract": "FEM is one of the main numerical methods in engineering to solve boundary problems; however, the computational cost associated with this method is a challenge to be faced when using it in real cases. The objective of this paper is to evaluate the performance of Neural Networks (NN) in the approximation of results obtained by FEM while maintaining accuracy and reducing computational time. The results show an accurate model for the case of a flat plate subjected to tension, altering the elastic modulus (E), applied force (F), and plate thickness (h) in the trainig data. This work is a starting point for the optimization of computational time in the calculation of the approximate solution of engineering problems of greater complexity. In the future, hybrid strategies of FEM with neural networks could benefit mathematical modeling and computational simulation, making its use viable in critical areas such as medicine, where the presence of tissues with nonlinear characteristics is a common challenge to be solved or where real-time decision making is crucial.",
+          "keywords": [
+            "Computational Cost",
+            "Finite Element Method",
+            "Neural Networks"
+          ]
+        },
+        {
+          "title": "348 - Computational Fluid Dynamics Simulations for Hemodynamic Analysis of Coronary Artery Disease",
+          "authors": "Juan José Zuluaga Patiño, José Alejandro Guerrero Vargas",
+          "start": "2025-11-25T17:15",
+          "end": "2025-11-25T17:30",
+          "abstract": "This work presents a computational study of coronary artery disease using finite element simulations of incompressible blood flow. The Navier–Stokes equations are solved with a custom scheme implemented in FEniCSx to analyze key hemodynamic variables such as velocity, pressure, wall shear stress and vorticity. Blood flow is simulated through healthy and stenosed coronary artery geometries to assess the influence of morphological changes on local hemodynamics.",
+          "keywords": [
+            "Computational fluid dynamics",
+            "Coronary artery disease",
+            "Incompressible Navier–Stokes"
+          ]
         }
       ]
     },
