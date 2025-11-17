@@ -1327,32 +1327,6 @@
             "Vertical oil wells",
             "Directional oil wells"
           ]
-        },
-        {
-          "title": "Poster 3 - 560 - Applications of Optimization Algorithms for Structural Damage Detection",
-          "authors": "Vinícius Nogueira Magalhães, João Victor Fragoso Dias",
-          "start": "2025-11-26T15:15",
-          "end": "2025-11-26T15:30",
-          "abstract": "Applications of optimization algorithms along with finite element (FE) software have become a promising field in civil engineering, predominantly for structural monitoring, since they attenuate the need for regular inspection campaigns, minimizing time, transport costs, and potential human errors. Hence, this article intends to evaluate the efficiency of optimization algorithms, specifically, the Genetic Algorithm (GA) and the Particle Swarm Optimization (PSO), for locating and quantifying the damage in steel and concrete frames. Therefore, numerical models of deteriorated concrete beams (BEAM188) were developed in ANSYS Mechanical APDL. Furthermore, modal results, which comprise natural frequency and vibration modes, were extracted from FE to calibrate the structures with GA and PSO, implemented in Python, aiming to obtain the damaged coordinate and the degree of deterioration for the girder. GA converged well, showing accuracy, when evaluating the coefficients of variation obtained: 0.03 and 0.15, for position and intensity of damage, respectively. PSO displayed good results, but in one case, this technique failed. In addition, it was noted that the efficiency of the algorithm decreased when the damage was small. Thus, the algorithms proved capable of identifying structural damage, despite PSO failing to escape local minima.",
-          "keywords": [
-            "damage detection",
-            "genetic algorithm",
-            "particle swarm optimization",
-            "finite elements",
-            "frequency and vibration modes"
-          ]
-        },
-        {
-          "title": "Poster 4 - 794 - Application of Artificial Neural Networks in the topological optimization of 2D structures",
-          "authors": "Heloísa Apulcro, Cátia da Costa e Silva, Jesús D. Villalba-Morales",
-          "start": "2025-11-26T15:15",
-          "end": "2025-11-26T15:30",
-          "abstract": "Artificial Intelligence (AI) has increasingly permeated diverse fields of knowledge, enhancing processes across disciplines. Civil engineering is no exception, particularly in the area of structural engineering, where AI contributes to automating and optimizing design tasks. This research presents the development of an artificial neural network (ANN) implemented in MATLAB for the topological optimization of bidimensional structures subjected to in-plane loads. The study explores various structural geometries and evaluates different training algorithms to identify the best trade-off between computational efficiency and predictive accuracy. The ANN is trained using datasets generated from a classical topological optimization algorithm, where the input data describe the structural configuration and loading conditions, and the output data represent the optimized material layout. The proposed approach aims to accelerate the optimization process while maintaining the reliability of the results.",
-          "keywords": [
-            "Machine Learning",
-            "Neural Networks",
-            "Topology Optimization"
-          ]
         }
       ]
     },
@@ -1955,6 +1929,21 @@
             "Analytical Interpolation Functions",
             "Nonlinear Analysis",
             "Single Element"
+          ]
+        },
+        {
+          "title": "179 - Service life and reliability of reinforced concrete under chloride intrusion",
+          "authors": "Gustavo de Miranda Saleme Gidrão, Laura Silvestro, Henrique Machado Kroetz, Rúbia Mara Bosse, Edson Dener Leonel, Rodrigo Ribeiro",
+          "start": "2025-11-26T18:00",
+          "end": "2025-11-26T18:15",
+          "abstract": "A two-dimensional probabilistic model of chloride ingress in reinforced concrete was established by coupling finite-volume diffusion simulations with Monte Carlo analysis to generate spatial and temporal chloride concentration fields. The time-dependent diffusion coefficient was calibrated against experimental measurements and validated using a 3D Abaqus FEM model, with errors below 10%. Unlike conventional one-dimensional Fick’s-law approaches, the 2D framework reveals localized corrosion “hot spots” driven by complex geometry and boundary interactions. Subsequent Monte Carlo simulations produce maps of steel-bar depassivation probability and corresponding reliability curves.",
+          "keywords": [
+            "Chloride ingress",
+            "Reinforced concrete  2D",
+            "probabilistic modeling",
+            "Finite-volume method  Monte Carlo simulation",
+            "Steel-bar depassivation",
+            "Corrosion hot spots"
           ]
         }
       ]
