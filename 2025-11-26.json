@@ -1327,6 +1327,19 @@
             "Vertical oil wells",
             "Directional oil wells"
           ]
+        },
+        {
+          "title": "Poster 3 - 652 - Automated Python Agent for Accelerating Material Point Method Simulations of Hammer-Driven Conductor Installation in Anura3D",
+          "authors": "Nuno Pires, Mávyla Sandreya Correia Tenório, Jennifer Mikaella Ferreira Melo, Beatriz Ramos Barboza, João Paulo Lima Santos , Eduardo Toledo de Lima Junior, Fábio Sawada Cutrim , Rafael Dias",
+          "start": "2025-11-26T15:15",
+          "end": "2025-11-26T15:30",
+          "abstract": "In computational simulations, time is a critical resource that often limits the scope and depth of analyses. Complex geotechnical simulations such as the hammer driven installation of conductor casings in oil‐well projects require extensive computational resources and frequent manual interventions during execution. This work presents the development of an automated agent that optimizes the simulation process for conductor casing installation using an open‐source software, a Material Point Method (MPM) simulator. The conventional hammer‐installation workflow in this tool exhibits significant limitations, as each hammer impact must be performed manually by the operator through successive modifications of input files at each simulation step. Considering that typical simulations involve more than 3,000 impacts, with an average processing time of 20 minutes per impact, manual intervention becomes impractical, leading to extended total simulation times and a high likelihood of operational errors.\nThe Python based agent employs graphical interface automation techniques to manipulate input files and control the software’s execution, carrying out a three‐step cycle for each hammer blow: impact force application, force removal, and inter impact pause. The system automatically detects the current simulation stage, updates the required parameters in the control files, and issues the calculation commands entirely eliminating the need for human intervention. The soil is modeled as an undrained, cohesionless material using the Mohr Coulomb criterion, while the conductor casing is treated as a rigid body. Results show that automation delivers significant efficiency gains by reducing total simulation time and eliminating operational errors associated with manual handling. The agent’s implementation enables uninterrupted execution of hundreds of hammering cycles, allowing for more comprehensive and accurate analyses of soil behavior during conductor casing installation.",
+          "keywords": [
+            "Material Point Method",
+            "Python",
+            "Simulation Time",
+            "Automation Techniques"
+          ]
         }
       ]
     },
