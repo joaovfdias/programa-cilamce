@@ -2199,15 +2199,15 @@
           ]
         },
         {
-          "title": "384 - Multi-Objective Optimization of Steel–Concrete Composite Slabs Using MOPSO: Structural, Energy, and Environmental Assessment",
-          "authors": "Abner Endrye  Pimentel de Almeida, ELCIO CASSIMIRO ALVES",
+          "title": "348 - Computational Fluid Dynamics Simulations for Hemodynamic Analysis of Coronary Artery Disease",
+          "authors": "Juan José Zuluaga Patiño, José Alejandro Guerrero Vargas",
           "start": "2025-11-25T16:45",
           "end": "2025-11-25T17:00",
-          "abstract": "This study proposes a multiobjective optimization methodology for steel–concrete composite slabs, aiming to enhance structural and environmental performance. Variants of the Multi-Objective Particle Swarm Optimization (MOPSO) algorithm were implemented in MATLAB to solve an optimization problem defined by three conflicting objective functions: minimizing CO₂ emissions, minimizing total energy consumption, and maximizing load-bearing capacity. The computational model focuses on the post-curing phase of the concrete and includes reinforcement detailing. The structural capacity of each solution was evaluated with MOPSO implemented in the Matlab software, and a set of Pareto optimal solutions was obtained. The best-performing solution was selected from the Pareto front and used to generate a constructive model based on the geometric patterns of the Metform steel decking catalogue. A comparative analysis was conducted by applying the optimized values to the commercial slab configurations, validating the practical applicability of the proposed approach. The results demonstrate the effectiveness of MOPSO in producing balanced structural designs that also contribute to reducing environmental impact.",
+          "abstract": "This work presents a computational study of coronary artery disease using finite element simulations of incompressible blood flow. The Navier–Stokes equations are solved with a custom scheme implemented in FEniCSx to analyze key hemodynamic variables such as velocity, pressure, wall shear stress and vorticity. Blood flow is simulated through healthy and stenosed coronary artery geometries to assess the influence of morphological changes on local hemodynamics.",
           "keywords": [
-            "Steel and Concrete Composite Slab",
-            "Multi-Objective Optimization",
-            "Multi-Objective Particle Swarm Optimization"
+            "Computational fluid dynamics",
+            "Coronary artery disease",
+            "Incompressible Navier–Stokes"
           ]
         },
         {
@@ -2223,15 +2223,15 @@
           ]
         },
         {
-          "title": "348 - Computational Fluid Dynamics Simulations for Hemodynamic Analysis of Coronary Artery Disease",
-          "authors": "Juan José Zuluaga Patiño, José Alejandro Guerrero Vargas",
+          "title": "384 - Multi-Objective Optimization of Steel–Concrete Composite Slabs Using MOPSO: Structural, Energy, and Environmental Assessment",
+          "authors": "Abner Endrye  Pimentel de Almeida, ELCIO CASSIMIRO ALVES",
           "start": "2025-11-25T17:15",
           "end": "2025-11-25T17:30",
-          "abstract": "This work presents a computational study of coronary artery disease using finite element simulations of incompressible blood flow. The Navier–Stokes equations are solved with a custom scheme implemented in FEniCSx to analyze key hemodynamic variables such as velocity, pressure, wall shear stress and vorticity. Blood flow is simulated through healthy and stenosed coronary artery geometries to assess the influence of morphological changes on local hemodynamics.",
+          "abstract": "This study proposes a multiobjective optimization methodology for steel–concrete composite slabs, aiming to enhance structural and environmental performance. Variants of the Multi-Objective Particle Swarm Optimization (MOPSO) algorithm were implemented in MATLAB to solve an optimization problem defined by three conflicting objective functions: minimizing CO₂ emissions, minimizing total energy consumption, and maximizing load-bearing capacity. The computational model focuses on the post-curing phase of the concrete and includes reinforcement detailing. The structural capacity of each solution was evaluated with MOPSO implemented in the Matlab software, and a set of Pareto optimal solutions was obtained. The best-performing solution was selected from the Pareto front and used to generate a constructive model based on the geometric patterns of the Metform steel decking catalogue. A comparative analysis was conducted by applying the optimized values to the commercial slab configurations, validating the practical applicability of the proposed approach. The results demonstrate the effectiveness of MOPSO in producing balanced structural designs that also contribute to reducing environmental impact.",
           "keywords": [
-            "Computational fluid dynamics",
-            "Coronary artery disease",
-            "Incompressible Navier–Stokes"
+            "Steel and Concrete Composite Slab",
+            "Multi-Objective Optimization",
+            "Multi-Objective Particle Swarm Optimization"
           ]
         }
       ]
