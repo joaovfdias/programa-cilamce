@@ -587,17 +587,15 @@
           ]
         },
         {
-          "title": "61 - Non-Intrusive Parallel Implementation of GFEM with Global-Local Enrichment for Multi-Domain Simulations",
-          "authors": "Túlio Marques, Ana Clara Pedras Bueno, Ramon Pereira da Silva, Felício Bruzzi Barros",
+          "title": "472 - Isogeometric Analysis vs. NURBS-Mapped Finite Elements: A Study on Selected Examples",
+          "authors": "Bianca Esteves Pirani, Nathan Shauer",
           "start": "2025-11-25T10:15",
           "end": "2025-11-25T10:30",
-          "abstract": "This paper expands the non-intrusive implementation of the Generalized Finite Element Method with Global-Local enrichment (IGL-GFEMgl) for multi-domain analyses simulated under a parallel algorithm approach. In IGL-GFEMgl, the global problem is initially discretized using a coarse mesh without considering localized phenomena. This problem is solved by the Abaqus commercial software using the Finite Element Method. The localized phenomena of interest, such as cracks, are effectively represented on a local scale, defining problems associated with one or more local domains. Mesoscale problems are created as intermediate scales between the global and local domains. The association between each mesoscale and its respective local problem is carried out through the global-local enrichment of GFEMgl. The coupling of the mesoscales to the global problem is established through the transfer of displacements and generalized forces, characterizing the non-intrusive strategy known as Iterative Global-Local (IGL). Numerical simulations using GFEMgl are performed in the computational system INSANE (Interactive Structural ANalysis Environment – www.insane.dees.ufmg.br), a free software project developed at the Department of Structural Engineering at the Federal University of Minas Gerais. Numerical examples are presented to demonstrate the simulation's performance and to investigate the influence of the main parameters related to the proposed strategy. The quality of the results is evaluated based on the state of stresses and strains at critical points of the models and Linear Elastic Fracture Mechanics parameters. The investigations indicate that the convergence process is not affected by the consideration of multiple local domains, as long as these do not result in a significant increase in the stiffness difference between the coupled scales. Additionally, the computational performance of the algorithm was evaluated, comparing simulations in which the mesoscale processing was executed sequentially and in parallel.",
+          "abstract": "Isogeometric Analysis (IGA) is a numerical method that integrates finite element analysis (FEA) with CAD geometry representations using NURBS-based basis functions. In this work, we compare numerical simulations using IGA with a finite element approximation, where the geometric mapping is performed using NURBS, but the approximation space is constructed using traditional hierarchical finite element shape functions. The comparison focuses on problems with manufactured solutions involving both linear and curved geometries. Error analyses are conducted with respect to the number of degrees of freedom to assess the relative performance and accuracy of each approach.",
           "keywords": [
-            "Generalized Finite Element Method",
-            "Global-Local Analysis",
-            "Non-intrusive Coupling",
-            "Linear Elastic Fracture Mechanics",
-            "Parallel Computing"
+            "Isogeometric Analysis",
+            "Finite Element Method",
+            "Curved geometries"
           ]
         },
         {
@@ -626,17 +624,16 @@
           ]
         },
         {
-          "title": "316 - Free vibration analysis of elastic rods by the enhanced Ck-generalized finite element method",
-          "authors": "Diego Amadeu Torres,",
+          "title": "736 - An automated h-adaptive G/XFEM for the analysis and SIF extraction of 3-D fracture mechanics problems",
+          "authors": "Murilo Henrique Campana Bento, Sergio P. B. Proença, C. Armando Duarte, Nathan Shauer",
           "start": "2025-11-25T11:00",
           "end": "2025-11-25T11:15",
-          "abstract": "Mesh-based smooth approximations endowed with the first degree of consistency can be built through the Ck-Generalized Finite Element Method (Ck-GFEM). This is accomplished by incorporating the Moving Least Squares (MLS) method in its procedure when computing the Partition of Unity (PoU) functions. Despite the widened PoU’s supports demanded, the enhanced polynomial reproducibility yields solutions with a cost, in terms of degrees of freedom, similar to those approximations provided by the original version of GFEM, with C0 continuity, for a certain polynomial degree of the ansatz. Additionally, in the case of static loading, such modified PoU functions allow some advantages when using special enrichment functions for localized features, leading to an increase in the conditioning of the stiffness matrices comparable to the original GFEM (Torres, 2024). The present work discusses some results for the free vibration analysis of linear elastic straight rods, considering different levels of k-continuity and polynomial degrees, with both attributes uniformly applied along the domain. It is emphasized that the k-order of continuity can be adjusted separately from the polynomial degree. The findings indicate that a certain level of smoothness allows better use of the degrees of freedom in the sense that a greater number of discrete natural frequencies have physical meaning. This is in contrast to conventional finite element approximations with C0 regularity, for which higher-order discrete modes deviate significantly from continuous ones.",
+          "abstract": "The Generalized/eXtended Finite Element Method (G/XFEM) is a numerical method whose approximation space is obtained by augmenting standard FEM spaces with functions designed to capture well the behavior of local features of the problem under investigation, such as cracks and material interfaces. In the context of linear elastic fracture mechanics (LEFM) problems, the G/XFEM significantly alleviates mesh requirements and facilitates mesh generation by allowing cracks to cut through finite elements, with the discontinuity inside an element being captured by enrichment functions. At the same time, it also enables using coarser meshes close to crack fronts if the appropriate singular enrichments are adopted. In the case of second-order G/XFEM formulations for 3-D LEFM problems, mesh refinement close to crack fronts is still needed to reach optimal convergence rates if singular enrichment functions that represent only the square root of r singularity are adopted. To address this, we present a computationally efficient and robust h-adaptive algorithm. The procedure is driven by a block-diagonal Zienkiewicz and Zhu (ZZ-BD) error estimator, specifically tailored to estimate well discretization errors of 3-D LEFM problems solved by second-order G/XFEM. It also enables automatic non-uniform mesh refinement around crack fronts, effectively resolving problems with strong three-dimensional effects. The proposed h-adaptive strategy recovers optimal convergence rates for second-order G/XFEM and holds practical significance, as it delivers final discretizations on the fly that satisfy a user-defined tolerance for the discretization error. The influence of this h-adaptive technique on quantities of interest, such as stress intensity factors, is also investigated in this contribution.",
           "keywords": [
-            "smooth GFEM",
-            "free vibration",
-            "k-refinement",
-            "continuity",
-            "linear elastic straight rods"
+            "G/XFEM",
+            "3-D fracture mechanics",
+            "Stress intensity factors",
+            "Adaptivity"
           ]
         },
         {
@@ -1127,28 +1124,31 @@
       "abstract": "",
       "papers": [
         {
-          "title": "472 - Isogeometric Analysis vs. NURBS-Mapped Finite Elements: A Study on Selected Examples",
-          "authors": "Bianca Esteves Pirani, Nathan Shauer",
+          "title": "61 - Non-Intrusive Parallel Implementation of GFEM with Global-Local Enrichment for Multi-Domain Simulations",
+          "authors": "Túlio Marques, Ana Clara Pedras Bueno, Ramon Pereira da Silva, Felício Bruzzi Barros",
           "start": "2025-11-25T14:30",
           "end": "2025-11-25T14:45",
-          "abstract": "Isogeometric Analysis (IGA) is a numerical method that integrates finite element analysis (FEA) with CAD geometry representations using NURBS-based basis functions. In this work, we compare numerical simulations using IGA with a finite element approximation, where the geometric mapping is performed using NURBS, but the approximation space is constructed using traditional hierarchical finite element shape functions. The comparison focuses on problems with manufactured solutions involving both linear and curved geometries. Error analyses are conducted with respect to the number of degrees of freedom to assess the relative performance and accuracy of each approach.",
+          "abstract": "This paper expands the non-intrusive implementation of the Generalized Finite Element Method with Global-Local enrichment (IGL-GFEMgl) for multi-domain analyses simulated under a parallel algorithm approach. In IGL-GFEMgl, the global problem is initially discretized using a coarse mesh without considering localized phenomena. This problem is solved by the Abaqus commercial software using the Finite Element Method. The localized phenomena of interest, such as cracks, are effectively represented on a local scale, defining problems associated with one or more local domains. Mesoscale problems are created as intermediate scales between the global and local domains. The association between each mesoscale and its respective local problem is carried out through the global-local enrichment of GFEMgl. The coupling of the mesoscales to the global problem is established through the transfer of displacements and generalized forces, characterizing the non-intrusive strategy known as Iterative Global-Local (IGL). Numerical simulations using GFEMgl are performed in the computational system INSANE (Interactive Structural ANalysis Environment – www.insane.dees.ufmg.br), a free software project developed at the Department of Structural Engineering at the Federal University of Minas Gerais. Numerical examples are presented to demonstrate the simulation's performance and to investigate the influence of the main parameters related to the proposed strategy. The quality of the results is evaluated based on the state of stresses and strains at critical points of the models and Linear Elastic Fracture Mechanics parameters. The investigations indicate that the convergence process is not affected by the consideration of multiple local domains, as long as these do not result in a significant increase in the stiffness difference between the coupled scales. Additionally, the computational performance of the algorithm was evaluated, comparing simulations in which the mesoscale processing was executed sequentially and in parallel.",
           "keywords": [
-            "Isogeometric Analysis",
-            "Finite Element Method",
-            "Curved geometries"
+            "Generalized Finite Element Method",
+            "Global-Local Analysis",
+            "Non-intrusive Coupling",
+            "Linear Elastic Fracture Mechanics",
+            "Parallel Computing"
           ]
         },
         {
-          "title": "736 - An automated h-adaptive G/XFEM for the analysis and SIF extraction of 3-D fracture mechanics problems",
-          "authors": "Murilo Henrique Campana Bento, Sergio P. B. Proença, C. Armando Duarte, Nathan Shauer",
+          "title": "316 - Free vibration analysis of elastic rods by the enhanced Ck-generalized finite element method",
+          "authors": "Diego Amadeu Torres,",
           "start": "2025-11-25T14:45",
           "end": "2025-11-25T15:00",
-          "abstract": "The Generalized/eXtended Finite Element Method (G/XFEM) is a numerical method whose approximation space is obtained by augmenting standard FEM spaces with functions designed to capture well the behavior of local features of the problem under investigation, such as cracks and material interfaces. In the context of linear elastic fracture mechanics (LEFM) problems, the G/XFEM significantly alleviates mesh requirements and facilitates mesh generation by allowing cracks to cut through finite elements, with the discontinuity inside an element being captured by enrichment functions. At the same time, it also enables using coarser meshes close to crack fronts if the appropriate singular enrichments are adopted. In the case of second-order G/XFEM formulations for 3-D LEFM problems, mesh refinement close to crack fronts is still needed to reach optimal convergence rates if singular enrichment functions that represent only the square root of r singularity are adopted. To address this, we present a computationally efficient and robust h-adaptive algorithm. The procedure is driven by a block-diagonal Zienkiewicz and Zhu (ZZ-BD) error estimator, specifically tailored to estimate well discretization errors of 3-D LEFM problems solved by second-order G/XFEM. It also enables automatic non-uniform mesh refinement around crack fronts, effectively resolving problems with strong three-dimensional effects. The proposed h-adaptive strategy recovers optimal convergence rates for second-order G/XFEM and holds practical significance, as it delivers final discretizations on the fly that satisfy a user-defined tolerance for the discretization error. The influence of this h-adaptive technique on quantities of interest, such as stress intensity factors, is also investigated in this contribution.",
+          "abstract": "Mesh-based smooth approximations endowed with the first degree of consistency can be built through the Ck-Generalized Finite Element Method (Ck-GFEM). This is accomplished by incorporating the Moving Least Squares (MLS) method in its procedure when computing the Partition of Unity (PoU) functions. Despite the widened PoU’s supports demanded, the enhanced polynomial reproducibility yields solutions with a cost, in terms of degrees of freedom, similar to those approximations provided by the original version of GFEM, with C0 continuity, for a certain polynomial degree of the ansatz. Additionally, in the case of static loading, such modified PoU functions allow some advantages when using special enrichment functions for localized features, leading to an increase in the conditioning of the stiffness matrices comparable to the original GFEM (Torres, 2024). The present work discusses some results for the free vibration analysis of linear elastic straight rods, considering different levels of k-continuity and polynomial degrees, with both attributes uniformly applied along the domain. It is emphasized that the k-order of continuity can be adjusted separately from the polynomial degree. The findings indicate that a certain level of smoothness allows better use of the degrees of freedom in the sense that a greater number of discrete natural frequencies have physical meaning. This is in contrast to conventional finite element approximations with C0 regularity, for which higher-order discrete modes deviate significantly from continuous ones.",
           "keywords": [
-            "G/XFEM",
-            "3-D fracture mechanics",
-            "Stress intensity factors",
-            "Adaptivity"
+            "smooth GFEM",
+            "free vibration",
+            "k-refinement",
+            "continuity",
+            "linear elastic straight rods"
           ]
         },
         {
